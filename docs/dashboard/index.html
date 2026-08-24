@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>실질과세 원칙: 귀속과 거래내용의 실질 · 세법 읽기</title>
+  <style>
+    :root { color-scheme: light; --stone: #eee9dd; --stone-light: #f8f5ed; --paper: #fffdf7; --ink: #16283d; --ink-soft: #536170; --blue: #155d9c; --rule: #8d9aa5; --focus: #005fcc; }
+    * { box-sizing: border-box; scrollbar-color: var(--blue) var(--stone); scrollbar-width: thin; }
+    html { background: var(--stone); }
+    body { margin: 0; color: var(--ink); background: var(--stone); font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; line-height: 1.65; }
+    ::selection { color: var(--paper); background: var(--blue); }
+    a { color: var(--blue); text-underline-offset: .22em; }
+    a:hover { color: var(--ink); text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .skip { position: absolute; top: .5rem; left: .5rem; padding: .7rem; color: var(--paper); background: var(--ink); transform: translateY(-180%); }
+    .skip:focus { transform: translateY(0); }
+    .shell { width: min(100% - 2rem, 46rem); margin-inline: auto; padding-block: clamp(2rem, 9vw, 5rem); }
+    .docket { border-top: 6px solid var(--ink); border-bottom: 1px solid var(--rule); background: var(--paper); }
+    .heading { margin: 0; padding: clamp(1.4rem, 6vw, 3rem) clamp(1rem, 5vw, 2.4rem) 1.1rem; font-size: clamp(1.48rem, 7vw, 1.8rem); line-height: 1.25; letter-spacing: -.025em; }
+    .facts { margin: 0; padding: 0 clamp(1rem, 5vw, 2.4rem); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); list-style: none; }
+    .facts li { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .facts li + li { border-top: 1px solid #ddd5c6; }
+    .facts span { color: var(--ink-soft); }
+    .action-wrap { padding: 1.25rem clamp(1rem, 5vw, 2.4rem) 2rem; }
+    .action { min-height: 44px; padding: .75rem 1rem; display: inline-flex; align-items: center; justify-content: center; color: var(--paper); background: var(--blue); font-weight: 800; }
+    .action:hover { color: var(--paper); background: var(--ink); }
+    .note { margin: 1rem 0 0; color: var(--ink-soft); font-size: .92rem; max-width: 68ch; }
+    @media (min-width: 42rem) { .facts { display: grid; grid-template-columns: 1fr 1fr; } .facts li + li { border-top: 0; border-left: 1px solid var(--rule); padding-left: 1.25rem; } }
+  </style>
+</head>
+<body>
+<!--
+THESIS: 오늘 읽을 검증된 수업 한 건을 바로 연다; 공개 화면을 진도 지표 벽으로 만들지 않는다.
+OWN-WORLD: 따뜻한 석재 배경, 종이 표면, 잉크 글자, 공식 파랑 행동, 직각 규선으로 이루어진 사건배당부다.
+STORY: 방문자는 현재 쟁점과 출처 기준일을 확인하고 검증된 읽기 화면으로 이동한다.
+FIRST VIEWPORT: 좁은 읽기 폭 안에 제목, 법률·출처 규선, 44px 행동을 한 장의 종이처럼 배치한다.
+FORM: Read mode의 단일 배당표, ordered form 1, seed key pages-read-v1.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and the design record
+-->
+  <a class="skip" href="#current-lesson">현재 수업으로 건너뛰기</a>
+  <main class="shell" id="current-lesson">
+    <article class="docket" aria-labelledby="lesson-title">
+      <h1 class="heading" id="lesson-title">실질과세 원칙: 귀속과 거래내용의 실질</h1>
+      <ul class="facts" aria-label="수업 확인 정보">
+        <li><span>적용 법률</span><strong>국세기본법</strong></li>
+        <li><span>출처 확인일</span><time datetime="2026-08-22">2026-08-22</time></li>
+      </ul>
+      <div class="action-wrap">
+        <a class="action" href="../lesson-reader/2026-08-22-ntba-substance-over-form-001.html">현재 수업 읽기</a>
+        <p class="note">공개 화면은 검증된 수업 내용만 제공합니다. 읽기 화면에서 법리와 공식 출처를 확인하세요.</p>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

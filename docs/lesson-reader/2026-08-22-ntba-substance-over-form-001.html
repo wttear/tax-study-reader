@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-lesson-id" content="LESSON-20260822-NTBA-SUBSTANCE-001">
+  <title>실질과세 원칙: 귀속과 거래내용의 실질 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label,
+    .learning-block--importance .learning-block__label,
+    .learning-block--case-story .learning-block__label,
+    .learning-block--case-dispute .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--case-result {
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .learning-block--case-result .learning-block__label {
+      color: var(--teal);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      details:not([open]) > * {
+        display: block !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 읽기 진도와 일곱 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 진도">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">읽기 진도</label>
+      <progress id="reading-progress" value="1" max="7">1 / 7</progress>
+      <span>7구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>이 수업의 일곱 구간</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 쟁점 개념부터 시작하기</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 법적 구조와 쟁점 확장</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">3. 세무조사 실무와 증빙 판단</a></li>
+<li><a class="lesson-toc__link" href="#exam">4. 세무사 2차 연결</a></li>
+<li><a class="lesson-toc__link" href="#precedent">5. 중요 판례 분석</a></li>
+<li><a class="lesson-toc__link" href="#recall">6. 오늘의 학습 연결</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">실질과세 원칙: 귀속과 거래내용의 실질</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 국세기본법</li>
+<li class="meta-chip">난도 입문</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-22</li>
+<li class="meta-chip meta-chip--verified">자료 상태 전달됨</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 40% · 조사와 증빙 30% · 세무사 2차 30%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 쟁점 개념부터 시작하기</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>계약서나 계좌에 적힌 이름은 거래의 출발점이다. 그러나 실제로 돈을 지배한 사람, 위험을 부담한 사람, 일을 수행한 사람이 따로 있다면 세법은 그 실제 모습을 확인한다. 이것이 실질과세 원칙이다.</p>
+</section>
+<section class="learning-block learning-block--importance" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">왜 중요한가</p>
+<h3 id="concept-heading-2">왜 중요한가</h3>
+<p>세무조사에서는 명의만 보고 소득의 주인이나 거래 성격을 정하면 잘못된 처분으로 이어질 수 있다. 반대로 실질이라는 말만으로 당사자의 계약을 무시해도 안 된다. 객관적 증빙으로 형식과 실제 사실의 차이, 그리고 그 차이가 과세요건에 미치는 영향을 설명해야 한다.</p>
+</section>
+<section class="learning-block learning-block--glossary" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="concept-heading-3">핵심 용어</h3>
+<ul>
+<li>형식: 계약서 명칭, 계좌 명의, 등기, 회계처리처럼 겉으로 확인되는 법적·문서상 모습이다.</li>
+<li>실질: 실제 자금 지배, 위험 부담, 의사결정, 업무 수행처럼 거래가 현실에서 작동한 모습이다.</li>
+<li>귀속: 소득·수익·재산이 실제로 누구에게 돌아가고 지배되는지를 뜻한다.</li>
+<li>과세요건: 납세의무와 세액이 성립하기 위해 세법이 요구하는 사실과 조건이다.</li>
+</ul>
+</section>
+<h3 id="concept-heading-4">가장 쉬운 예시</h3>
+<p>가령 매출대금이 직원 명의 계좌로 들어왔더라도 직원은 단순히 수령만 하고 회사가 돈을 지배·사용했다면, 계좌 명의만으로 직원의 소득이라고 단정하기 어렵다. 반대로 회사 명의 계약서가 있어도 실제 용역 수행, 비용 부담, 대금 지배가 다른 사업자에게 집중되어 있다면 실질 귀속자를 더 확인해야 한다.</p>
+<p>여기서 두 질문을 분리하면 처음부터 길을 잃지 않는다.</p>
+<ul>
+<li>귀속의 실질: 소득·수익·재산·거래가 실제로 누구에게 돌아갔는가.</li>
+<li>내용의 실질: 당사자가 붙인 명칭과 별개로 실제 수행된 행위나 거래는 무엇인가.</li>
+</ul>
+<p>실무에서 중요한 안전장치는 하나다. 형식과 실질이 다르다는 결론은 느낌이 아니라 확인된 사실과 증빙의 연결로 설명되어야 한다.</p>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 법적 구조와 쟁점 확장</h2>
+<h3 id="legal-structure-heading-1">국세기본법 제14조의 세 층</h3>
+<p>2026-08-22 기준 국가법령정보센터의 현행 국세기본법은 2026-08-11 시행 법률 제21860호로 표시된다. 현행 제14조는 다음 세 층으로 구성된다.</p>
+<ul>
+<li>제1항은 귀속 명의자와 사실상 귀속자가 다른 경우 사실상 귀속자를 납세의무자로 삼는 귀속 실질을 다룬다.</li>
+<li>제2항은 과세표준 계산에서 소득·수익·재산·행위·거래의 명칭이나 형식이 아니라 실질 내용에 따라 세법을 적용하는 거래내용 실질을 다룬다.</li>
+<li>제3항은 제3자를 통한 간접적인 방법이나 둘 이상의 행위·거래를 거치는 방법으로 이 법 또는 세법의 혜택을 부당하게 받기 위한 것으로 인정되는 경우, 경제적 실질에 따라 직접 거래 또는 연속된 하나의 행위·거래로 보아 이 법 또는 세법을 적용하도록 한다.</li>
+</ul>
+<p>세 항은 서로 닮았지만 적용 질문이 다르다. 제1항에서는 누구의 소득인지가 중심이고, 제2항에서는 어떤 거래인지가 중심이며, 제3항에서는 간접·다단계 구조를 하나로 재구성할 수 있는지가 중심이다.</p>
+<h3 id="legal-structure-heading-2">적용 순서</h3>
+<ol>
+<li>개별 세법의 과세요건과 납세의무자를 먼저 특정한다.</li>
+<li>계약, 회계처리, 등기, 신고 등 법적 형식과 당사자가 주장하는 거래를 확인한다.</li>
+<li>자금 지배, 위험 부담, 의사결정, 실제 수행, 거래 전후 상태 등 경제적 사실을 확인한다.</li>
+<li>형식과 사실 사이에 차이가 있다면 그 차이가 과세요건에 영향을 주는지 판단한다.</li>
+<li>선택한 법률관계를 부인할 특별한 사정을 증거로 설명하고, 납세자의 사업상 이유와 대체 설명도 검토한다.</li>
+</ol>
+<h3 id="legal-structure-heading-3">경계선 세 가지</h3>
+<ul>
+<li>실질과세와 조세법률주의: 실질과세는 법률에 없는 과세요건을 새로 만드는 도구가 아니다. 개별 세법의 문언과 요건 안에서 적용해야 한다.</li>
+<li>경제적 유사성과 법적 동일성: 두 거래의 금액이나 시기가 비슷하다는 사정만으로 하나가 다른 하나의 대가라고 확정할 수 없다.</li>
+<li>절세와 부당한 조세회피: 세 부담이 줄었다는 결과만으로 거래 형식을 부인할 수 없다. 사업목적, 거래의 독립성, 실제 이행과 위험 부담을 함께 본다.</li>
+</ul>
+<p>인접 쟁점으로는 실제 공급자 판정, 소득 귀속, 부당행위계산 부인, 업무 관련 비용, 국제거래의 수익적 소유자 판단이 있다. 각 제도는 요건과 효과가 다르므로 실질과세라는 한 문장으로 개별 규정을 건너뛰면 안 된다.</p>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">3. 세무조사 실무와 증빙 판단</h2>
+<h3 id="audit-evidence-heading-1">가상 조사 상황</h3>
+<p>비식별 가상 사례다. A법인은 사업부문을 합작법인 B에 이전하고 이전대가를 받았다. 별도 약정에는 B가 2년간 목표 매출을 달성하면 A가 가진 우선주를 유상감자한다고 적혀 있다. 목표 달성 후 B가 A에 감자대금을 지급하자 A는 이를 의제배당으로 신고했다. 조사팀은 감자대금이 실제로는 뒤늦게 지급한 사업양도대금일 수 있다고 본다.</p>
+<h3 id="audit-evidence-heading-2">먼저 경쟁 가설을 세운다</h3>
+<ul>
+<li>과세 가설: 감자 약정은 사업양도대금을 나누어 지급하기 위한 외관이고, 감자대금의 실질은 추가 양도대금이다.</li>
+<li>반대 가설: 사업양도와 감자는 각각 독립된 계약·조건·사업목적에 따라 실제 이행된 별도 거래다.</li>
+</ul>
+<p>한쪽 가설만 확인하면 확증편향이 생긴다. 조사계획에는 각 가설을 지지하는 자료와 깨뜨리는 자료를 함께 적는다.</p>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>확인 축</th>
+<th>우선 확보 자료</th>
+<th>과세 가설을 지지할 수 있는 신호</th>
+<th>반대 가설을 지지할 수 있는 신호</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="확인 축">계약 관계</td>
+<td data-label="우선 확보 자료">기본계약, 사업양도계약, 주주간계약, 우선주약정, 부속계약 목록, 협상본</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">감자대금이 양도대가 정산과 연동되고 별도 협상이 없음</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">약정이 별도로 협상되고 조건이 양도대가와 독립</td>
+</tr>
+<tr>
+<td data-label="확인 축">가격 적정성</td>
+<td data-label="우선 확보 자료">외부평가서, 이사회 보고, 가격산정 파일, 사후 정산표</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">최초 양도대가가 의도적으로 낮고 감자대금까지 합쳐야 평가액과 근접</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">최초 양도대가가 객관적 평가 범위이고 실제 사후 정산도 별도로 작동</td>
+</tr>
+<tr>
+<td data-label="확인 축">사업목적</td>
+<td data-label="우선 확보 자료">투자심의서, 사업계획, KPI 설정 근거, 당사자 이메일</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">목표 조건이 형식적이거나 달성 여부와 무관하게 지급 예정</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">사업 안정과 협력 유인이라는 목적이 당시 문서와 실제 행동에서 확인</td>
+</tr>
+<tr>
+<td data-label="확인 축">조건의 실제성</td>
+<td data-label="우선 확보 자료">매출 원장, 외부감사 자료, KPI 산식, 조건 충족 통지</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">조건 불충족인데도 지급하거나 산식이 사후 변경</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">사전에 정한 목표를 실제 달성한 뒤 약정대로 지급</td>
+</tr>
+<tr>
+<td data-label="확인 축">회사법 절차</td>
+<td data-label="우선 확보 자료">주주총회·이사회 의사록, 감자·신주발행 서류, 자본 변동표</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">필요한 절차가 없고 회계처리도 양도대가 정산과 동일</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">감자와 신주발행 절차를 각각 이행하고 자본 항목도 구분</td>
+</tr>
+<tr>
+<td data-label="확인 축">자금 흐름</td>
+<td data-label="우선 확보 자료">지급 계좌, 자금조달 문서, 원장, 상계 내역</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">자금이 순환하거나 실질 부담자가 따로 있음</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">자금 출처·도착·회계처리가 약정과 일치</td>
+</tr>
+<tr>
+<td data-label="확인 축">당사자 관계</td>
+<td data-label="우선 확보 자료">지분·특수관계 자료, 교섭력 자료</td>
+<td data-label="과세 가설을 지지할 수 있는 신호">동일 지배 아래 미리 정한 조세 목적 구조</td>
+<td data-label="반대 가설을 지지할 수 있는 신호">독립 당사자 사이의 실질 협상과 상업적 긴장관계</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="audit-evidence-heading-4">소명과 재확인</h3>
+<p>납세자가 사업상 협력 유인을 위해 우선주약정을 두었다고 소명하면, 그 주장을 곧바로 받아들이거나 배척하지 않는다. 약정 체결 당시 작성된 자료, 목표치의 합리성, 목표 달성 전후의 행동, 다른 투자자에게도 같은 구조를 썼는지를 확인한다. 사후 작성 설명서보다 거래 당시 자료의 설명력이 일반적으로 높다.</p>
+<p>반대로 조사팀이 금액과 지급시기의 근접성을 제시한다면, 그것만으로 법적 성격이 바뀌는지 점검한다. 계약 간 효력 연동, 최초 가격의 비정상성, 조건의 허구성처럼 두 거래를 하나로 볼 추가 사실이 필요하다.</p>
+<h3 id="audit-evidence-heading-5">처분 판단의 세 구간</h3>
+<ul>
+<li>과세 가능: 형식과 다른 실질을 보여 주는 객관적 사실이 모이고, 사업목적·독립성에 관한 소명이 증빙과 충돌하며, 개별 세법상 과세요건까지 충족된다.</li>
+<li>추가 확인 필요: 의심 신호는 있으나 계약의 독립성, 가격 적정성, 실제 조건 이행 중 핵심 축이 비어 있다.</li>
+<li>과세 곤란: 거래 당시 사업목적과 독립된 조건, 적정 가격, 적법한 절차, 실제 이행이 서로 일치하고 이를 뒤집을 특별한 사정이 부족하다.</li>
+</ul>
+<p>처분서에는 명칭이 아니라 실질이라는 추상 문구만 쓰지 말고, 어느 증빙에서 어떤 사실을 인정했고 그 사실이 어느 과세요건으로 연결되는지를 단계별로 적어야 한다. 반대 자료를 누락하거나 두 거래의 구분을 검토하지 않으면 사실오인과 심리미진 위험이 커진다.</p>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">4. 세무사 2차 연결</h2>
+<h3 id="exam-heading-1">출제될 수 있는 형태</h3>
+<p>사업양도 뒤 성과조건부 감자대금이 지급된 사례에서 과세관청은 추가 사업양도대가라고 보고, 법인은 의제배당이라고 주장하는 유형이다. 문제는 국세기본법 제14조를 쓰는 데서 끝나지 않고 개별 법인세 규정의 적용 결과까지 연결하도록 구성될 수 있다.</p>
+<h3 id="exam-heading-2">8분 답안 뼈대</h3>
+<ul>
+<li>쟁점 제시: 감자대금의 법적 형식과 경제적 실질이 다른지, 선택한 법률관계를 부인할 특별한 사정이 있는지 제시한다.</li>
+<li>법리: 제14조 제2항의 취지와 함께 동일한 경제적 목적을 위한 법률관계 선택은 특별한 사정이 없는 한 존중된다는 판례 법리를 적는다.</li>
+<li>사실 포섭: 계약의 독립성, 사업목적, 조건의 실제 달성, 최초 양도대가의 적정성, 상법 절차와 회계처리를 양쪽 사정으로 나누어 평가한다.</li>
+<li>결론: 특별한 사정이 충분한지 먼저 결론 낸 뒤, 인정되는 거래 성격에 맞추어 개별 법인세 규정의 효과를 연결한다.</li>
+</ul>
+<h3 id="exam-heading-3">짧은 답안 연습</h3>
+<p>좋은 포섭은 단순히 감자 형식이므로 배당이라고 끝내지 않는다. 성과조건이 사업양도대가의 내용이나 효력에 영향을 주지 않았고, 독립된 사업목적 아래 실제 목표 달성 후 회사법 절차대로 지급되었다면, 금액·시기의 유사성만으로 추가 양도대가라고 재구성하기 어렵다고 쓴다. 반대 사실이 제시되면 그 사실이 계약 독립성과 조건의 실제성을 어떻게 무너뜨리는지 이어 쓴다.</p>
+<h3 id="exam-heading-4">사실에 표시하는 법</h3>
+<p>사례를 읽을 때 형식, 실질 의심, 법률관계 존중의 세 칸으로 나누어 표시한다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>표시</th>
+<th>사례에서 찾을 사실</th>
+<th>답안에서의 역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="표시">형식</td>
+<td data-label="사례에서 찾을 사실">계약 명칭, 주주총회, 회계처리, 신고 내용</td>
+<td data-label="답안에서의 역할">당사자가 선택한 법률관계의 출발점</td>
+</tr>
+<tr>
+<td data-label="표시">실질 의심</td>
+<td data-label="사례에서 찾을 사실">계약 간 연동, 비정상 가격, 자금 순환, 허구 조건</td>
+<td data-label="답안에서의 역할">형식을 부인할 특별한 사정의 후보</td>
+</tr>
+<tr>
+<td data-label="표시">존중 요소</td>
+<td data-label="사례에서 찾을 사실">독립 협상, 사업목적, 적정 평가, 실제 조건 달성</td>
+<td data-label="답안에서의 역할">과세관청의 재구성을 제한하는 사정</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>5분 쓰기에서는 첫 문단에 쟁점과 법리를 쓰고, 다음 두 문단에서 불리한 사실과 유리한 사실을 각각 묶은 뒤, 마지막 문단에서 특별한 사정의 인정 여부와 개별 세법 효과를 결론 낸다. 이 순서를 지키면 사실을 나열하는 답안이 아니라 판단과정이 보이는 답안이 된다.</p>
+<h3 id="exam-heading-5">감점 방지 점검</h3>
+<ul>
+<li>제14조 제1항의 귀속 문제와 제2항의 거래내용 문제를 혼용하지 않는다.</li>
+<li>절세 결과만으로 조세회피목적을 인정하지 않는다.</li>
+<li>판례의 결론만 옮기지 말고 계약 독립성, 사업목적, 가격, 실제 이행을 사안에 대입한다.</li>
+<li>실질과세 판단 뒤 적용할 개별 세법 조문과 과세 효과를 빠뜨리지 않는다.</li>
+<li>조사 실무의 의심 기준과 법원이 처분 적법성을 판단하는 증명 기준을 같은 것으로 단정하지 않는다.</li>
+</ul>
+<p>시험에서 주의할 점은 판례 결론을 암기해 모든 감자 거래에 적용하지 않는 것이다. 사실관계가 바뀌면 결론도 바뀔 수 있으므로 법리, 판단요소, 포섭 순서가 득점의 중심이다.</p>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">5. 중요 판례 분석</h2>
+<section class="learning-block learning-block--case-story" aria-labelledby="precedent-heading-1">
+<p class="learning-block__label">판례 한눈에</p>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>한 회사가 사업을 넘긴 뒤, 별도 약정에 따라 합작회사로부터 우선주 감자대금을 받았다. 세무당국은 그 돈도 사실상 사업을 넘긴 대가라고 보았다. 회사는 약정대로 실제 감자가 이루어졌으므로 배당 성격의 돈이라고 주장했다.</p>
+</section>
+<section class="learning-block learning-block--case-dispute" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">다툼의 핵심</p>
+<h3 id="precedent-heading-2">왜 다퉜나</h3>
+<p>감자대금을 사업양도대금으로 보면 거래를 하나로 묶어 과세하게 된다. 반면 독립된 감자거래로 보면 당시 법인세법상 수입배당금과 익금불산입 규정을 검토하게 된다. 결국 두 계약을 하나의 거래로 다시 볼 특별한 사정이 증거로 확인되는지가 핵심이었다.</p>
+</section>
+<section class="learning-block learning-block--case-result" aria-labelledby="precedent-heading-3">
+<p class="learning-block__label">법원 결론</p>
+<h3 id="precedent-heading-3">법원 결론</h3>
+<p>대법원은 두 계약의 독립성, 별도 사업목적, 실제 조건 달성, 가격과 회사법 절차 등을 고려해 감자대금을 추가 사업양도대금으로 다시 보기 어렵다고 판단했다. 감자대금은 수입배당금이고 그 일부는 당시 적용 법률의 익금불산입 대상이라고 보아 원심을 파기환송했다.</p>
+</section>
+<h3 id="precedent-heading-4">대법원 2023. 11. 30. 선고 2020두37857</h3>
+<ul>
+<li>추적 ID: SC-2020DU37857-2023-11-30</li>
+<li>사건: 법인세부과처분취소, 원심 파기환송</li>
+<li>사실관계: 원고 법인은 캐나다 법인과 합작회사를 세우고 네트워크 사업부문을 이전했다. 별도의 우선주약정은 합작회사가 2년간 국내 매출 목표를 달성하면 원고 보유 우선주를 유상감자하도록 했다. 목표 달성 후 합계 약 797억 원이 감자대금으로 지급되었고, 과세관청은 그 실질을 추가 사업양도대금으로 보아 법인세를 경정했다.</li>
+<li>법적 쟁점: 우선주 감자대금의 형식을 부인하고 사업양도대금으로 재구성할 수 있는지가 문제 되었다.</li>
+<li>대법원 결론: 감자대금은 수입배당금에 해당하고 그 일부가 당시 적용되는 수입배당금 익금불산입 규정의 대상이라고 보아, 반대 전제의 원심판결을 파기환송했다.</li>
+<li>핵심 이유: 사업양도계약과 우선주약정은 별도로 체결되었고, 감자조건의 충족 여부는 사업양도대가의 내용이나 효력에 영향을 주지 않았다. 독립 당사자 사이에 사업 성과와 협력을 위한 뚜렷한 목적이 있었고 실제 매출 목표도 달성되었다. 최초 사업양도대가가 객관적으로 부당하다고 볼 사정이 부족했고, 감자와 신주발행에 필요한 절차 및 회계처리도 구분되어 있었다.</li>
+<li>판례의 선: 실질과세는 부당한 조세회피를 규제하지만, 납세자가 선택한 법률관계는 특별한 사정이 없는 한 존중한다. 따라서 비슷한 금액, 가까운 지급시기, 세 부담 감소만으로 거래 성격을 바꿀 수 없다.</li>
+<li>적용 한계: 이 판결은 모든 우선주 감자대금을 배당으로 확정한 일반 규칙이 아니다. 계약이 실제로 연동되거나 최초 대가가 비정상적이거나 성과조건이 허구라면 다른 결론이 가능하다. 또한 사건에는 과거 사업연도의 구 법인세법이 적용되므로 현재 사건의 개별 세액 효과는 현행 법인세법을 별도로 확인해야 한다.</li>
+<li>현재 학습상 의미: 판결은 종전 대법원 법리를 전제로 실질과세와 법률관계 존중 사이의 경계를 구체적 증빙 요소로 보여 준다. 2026-08-22에 확인한 공식 법령과 판례 자료 범위에서는 이 수업의 핵심 법리를 변경한 내용은 확인하지 못했다.</li>
+</ul>
+<p>조사 실무에서는 이 판결의 결론보다 판단 구조를 가져와야 한다. 계약을 한 묶음으로 볼 근거와 별개 거래로 볼 근거를 동시에 수집하고, 사업목적·가격·조건 이행·법적 절차·자금 흐름을 교차검증한다. 시험에서는 법률관계 존중이라는 제한 법리를 빠뜨리지 않는 것이 핵심이다.</p>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">6. 오늘의 학습 연결</h2>
+<p>오늘의 연결: 실질과세 판단은 거래 이름을 지우는 작업이 아니라 형식과 실제 사실을 증빙으로 대조하는 작업이다.</p>
+<ol>
+<li class="recall-question">국세기본법 제14조 제1항·제2항·제3항은 각각 어떤 판단 대상을 다루는가?</li>
+<li class="recall-question">감자대금을 추가 사업양도대금으로 보는 조사 가설을 검증하려면 어떤 반대 자료까지 확인해야 하는가?</li>
+<li class="recall-question">대법원 2020두37857 판결이 선택한 법률관계를 존중한 핵심 사실은 무엇인가?</li>
+</ol>
+<p>다음 링크: 근거과세 원칙과 장부·증빙에 의한 사실인정</p>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-22</p>
+<p><a href="https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&amp;lsJoLnkSeq=1029615893" rel="noopener noreferrer">국가법령정보센터 국세기본법 제14조 시행 2026. 8. 11. 법률 제21860호</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=238791" rel="noopener noreferrer">국가법령정보센터 대법원 2023. 11. 30. 선고 2020두37857 판결</a> <a href="https://www.scourt.go.kr/sjudge/1702288793281_185953.pdf" rel="noopener noreferrer">대법원 2023. 11. 30. 선고 2020두37857 판결문 PDF</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection =
+            sections.find((section) => visibleSections.has(section.id)) ||
+            sections[0];
+          activate(activeSection);
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>
