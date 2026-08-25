@@ -4,54 +4,1787 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>실질과세 원칙: 귀속과 거래내용의 실질 · 세법 읽기</title>
+  <title>세법 사건배당부</title>
   <style>
-    :root { color-scheme: light; --stone: #eee9dd; --stone-light: #f8f5ed; --paper: #fffdf7; --ink: #16283d; --ink-soft: #536170; --blue: #155d9c; --rule: #8d9aa5; --focus: #005fcc; }
-    * { box-sizing: border-box; scrollbar-color: var(--blue) var(--stone); scrollbar-width: thin; }
-    html { background: var(--stone); }
-    body { margin: 0; color: var(--ink); background: var(--stone); font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; line-height: 1.65; }
-    ::selection { color: var(--paper); background: var(--blue); }
-    a { color: var(--blue); text-underline-offset: .22em; }
-    a:hover { color: var(--ink); text-decoration-thickness: 2px; }
-    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-    .skip { position: absolute; top: .5rem; left: .5rem; padding: .7rem; color: var(--paper); background: var(--ink); transform: translateY(-180%); }
-    .skip:focus { transform: translateY(0); }
-    .shell { width: min(100% - 2rem, 46rem); margin-inline: auto; padding-block: clamp(2rem, 9vw, 5rem); }
-    .docket { border-top: 6px solid var(--ink); border-bottom: 1px solid var(--rule); background: var(--paper); }
-    .heading { margin: 0; padding: clamp(1.4rem, 6vw, 3rem) clamp(1rem, 5vw, 2.4rem) 1.1rem; font-size: clamp(1.48rem, 7vw, 1.8rem); line-height: 1.25; letter-spacing: -.025em; }
-    .facts { margin: 0; padding: 0 clamp(1rem, 5vw, 2.4rem); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); list-style: none; }
-    .facts li { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-    .facts li + li { border-top: 1px solid #ddd5c6; }
-    .facts span { color: var(--ink-soft); }
-    .action-wrap { padding: 1.25rem clamp(1rem, 5vw, 2.4rem) 2rem; }
-    .action { min-height: 44px; padding: .75rem 1rem; display: inline-flex; align-items: center; justify-content: center; color: var(--paper); background: var(--blue); font-weight: 800; }
-    .action:hover { color: var(--paper); background: var(--ink); }
-    .note { margin: 1rem 0 0; color: var(--ink-soft); font-size: .92rem; max-width: 68ch; }
-    @media (min-width: 42rem) { .facts { display: grid; grid-template-columns: 1fr 1fr; } .facts li + li { border-top: 0; border-left: 1px solid var(--rule); padding-left: 1.25rem; } }
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --stone-3: #b9ae9d;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --blue-soft: #dceaf5;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --coral: #a43d31;
+      --coral-soft: #f4ddd7;
+      --rule: #8d9aa5;
+      --control-rule: #687684;
+      --focus: #005fcc;
+      --measure: 72ch;
+      --page: 1240px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 1rem;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.22em;
+    }
+
+    a:hover {
+      color: #0b416f;
+      text-decoration-thickness: 2px;
+    }
+
+    button,
+    input,
+    select {
+      color: inherit;
+      font: inherit;
+    }
+
+    button,
+    select {
+      cursor: pointer;
+    }
+
+    button:disabled,
+    input:disabled,
+    select:disabled {
+      cursor: not-allowed;
+      opacity: 0.58;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 20;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.65rem 0.9rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner {
+      width: min(calc(100% - 2.5rem), var(--page));
+      min-height: 4.6rem;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .masthead h1 {
+      margin: 0;
+      font-size: 1.28rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__meta {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--ink-soft);
+      font-size: 0.82rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .read-only {
+      padding: 0.26rem 0.58rem;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-size: 0.75rem;
+      font-weight: 750;
+    }
+
+    main {
+      width: min(calc(100% - 2.5rem), var(--page));
+      margin-inline: auto;
+      padding-block: 1.4rem 5rem;
+    }
+
+    .dispatch {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 15rem;
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .dispatch__action {
+      min-height: 12rem;
+      padding: 1.35rem 1.5rem 1.5rem;
+      border-right: 1px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .dispatch h2,
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.06rem;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+    }
+
+    .action-record {
+      max-width: 55rem;
+      margin-top: 1.25rem;
+    }
+
+    .action-record__mode {
+      display: inline-block;
+      margin-bottom: 0.45rem;
+      padding: 0.2rem 0.52rem;
+      border-radius: 999px;
+      color: #fff;
+      background: var(--coral);
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .action-record h3 {
+      max-width: 30ch;
+      margin: 0;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    .action-record p {
+      max-width: var(--measure);
+      margin: 0.7rem 0 0;
+      color: var(--ink-soft);
+    }
+
+    .dispatch__schedule {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      margin: 0;
+      background: var(--stone-0);
+    }
+
+    .schedule-cell {
+      padding: 1.15rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .schedule-cell + .schedule-cell {
+      border-top: 1px solid var(--rule);
+    }
+
+    .schedule-cell dt {
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+      font-weight: 750;
+    }
+
+    .schedule-cell dd {
+      margin: 0.12rem 0 0;
+      color: var(--ink);
+      font-size: 1.55rem;
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+    }
+
+    .law-band {
+      margin-top: 1.1rem;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      background: var(--paper);
+    }
+
+    .law-band__heading {
+      padding: 0.78rem 1rem;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .law-band__heading h2 {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .law-band__heading p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+    }
+
+    .law-rails {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .law-rail {
+      min-width: 0;
+      padding: 0.85rem 1rem 0.95rem;
+    }
+
+    .law-rail + .law-rail {
+      border-left: 1px solid var(--rule);
+    }
+
+    .law-rail__top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .law-rail h3 {
+      margin: 0;
+      font-size: 0.83rem;
+    }
+
+    .law-rail__count {
+      flex: none;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.46rem;
+      margin-block: 0.58rem 0.35rem;
+      border: 0;
+      border-radius: 0;
+      background: var(--stone-2);
+      accent-color: var(--teal);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--teal);
+      transition: inline-size 180ms ease-out;
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--teal);
+    }
+
+    .law-rail__flags {
+      min-height: 1.3rem;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.7rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .section {
+      margin-top: 3rem;
+    }
+
+    .section-heading {
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--ink);
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .section-heading p {
+      max-width: 54ch;
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.82rem;
+      text-align: right;
+    }
+
+    .current-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(18rem, 0.75fr);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .current-lesson {
+      min-height: 13rem;
+      padding: 1.5rem;
+      border-right: 1px solid var(--rule);
+    }
+
+    .current-lesson h3 {
+      max-width: 40ch;
+      margin: 0.75rem 0 0;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    .record-id {
+      color: var(--ink-soft);
+      font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+      font-size: 0.72rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .status-mark,
+    .source-mark,
+    .case-tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.65rem;
+      padding: 0.18rem 0.55rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 750;
+    }
+
+    .status-unseen {
+      color: var(--ink);
+      background: var(--stone-2);
+    }
+
+    .status-delivered {
+      color: #fff;
+      background: var(--blue);
+    }
+
+    .status-completed,
+    .source-verified {
+      color: #06423f;
+      background: var(--teal-soft);
+    }
+
+    .status-needs_review,
+    .source-not_yet_verified {
+      color: #6a3a00;
+      background: var(--amber-soft);
+    }
+
+    .status-needs_source_update,
+    .source-update_required {
+      color: #742b23;
+      background: var(--coral-soft);
+    }
+
+    .current-lesson__meta,
+    .source-register {
+      margin: 1.25rem 0 0;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .current-lesson__meta div,
+    .source-register div {
+      min-width: 0;
+    }
+
+    .current-lesson__meta dt,
+    .source-register dt {
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+    }
+
+    .current-lesson__meta dd,
+    .source-register dd {
+      margin: 0.12rem 0 0;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .lesson-actions {
+      margin-top: 1.3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .lesson-actions--compact {
+      margin-top: 0;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .lesson-action {
+      display: inline-flex;
+      min-height: 2.75rem;
+      align-items: center;
+      padding: 0.45rem 0.7rem;
+      border: 1px solid var(--blue);
+      color: #fff;
+      background: var(--blue);
+      font-weight: 750;
+      line-height: 1.25;
+      text-decoration: none;
+    }
+
+    .lesson-action:hover {
+      color: #fff;
+      background: #0b416f;
+    }
+
+    .lesson-action--secondary {
+      color: var(--blue);
+      background: transparent;
+    }
+
+    .lesson-action--secondary:hover {
+      color: #0b416f;
+      background: var(--stone-0);
+    }
+
+    .source-panel {
+      padding: 1.4rem 1.3rem;
+      background: var(--stone-0);
+    }
+
+    .source-panel h3 {
+      margin: 0;
+      font-size: 0.94rem;
+    }
+
+    .source-panel > p {
+      max-width: 38ch;
+      margin: 0.42rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+    }
+
+    .source-register {
+      grid-template-columns: 1fr;
+      gap: 0;
+      border-top: 1px solid var(--rule);
+    }
+
+    .source-register div {
+      padding: 0.68rem 0;
+      border-bottom: 1px solid var(--stone-2);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .source-register dd {
+      font-size: 1.05rem;
+    }
+
+    .empty-state {
+      max-width: var(--measure);
+      margin: 0;
+      padding: 1.5rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+    }
+
+    .review-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .review-record {
+      display: grid;
+      grid-template-columns: 8.8rem 4.5rem minmax(0, 1fr) 8rem 6.5rem;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.9rem 1rem;
+    }
+
+    .review-record + .review-record {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .review-record time {
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .review-overdue time {
+      color: var(--coral);
+    }
+
+    .review-today time {
+      color: var(--amber);
+    }
+
+    .review-upcoming time {
+      color: var(--blue);
+    }
+
+    .review-record__timing {
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+
+    .review-record__topic strong {
+      display: block;
+    }
+
+    .review-record__topic span,
+    .review-record__stage,
+    .review-record__case {
+      color: var(--ink-soft);
+      font-size: 0.78rem;
+    }
+
+    .filters {
+      padding: 1rem;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+      gap: 0.75rem;
+    }
+
+    .field {
+      min-width: 0;
+    }
+
+    .field label {
+      display: block;
+      margin-bottom: 0.28rem;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 750;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      min-height: 2.75rem;
+      padding: 0.55rem 0.7rem;
+      border: 1px solid var(--control-rule);
+      border-radius: 2px;
+      background: var(--paper);
+    }
+
+    .field input:hover,
+    .field select:hover {
+      border-color: var(--ink);
+    }
+
+    .field input::placeholder {
+      color: #68727b;
+      opacity: 1;
+    }
+
+    .status-tabs {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      gap: 0.45rem;
+      overflow-x: auto;
+      background: var(--paper);
+    }
+
+    .filter-summary {
+      margin: 0;
+      padding: 0.62rem 1rem;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      color: var(--ink-soft);
+      background: var(--paper);
+      font-size: 0.76rem;
+    }
+
+    .filter-summary span:first-child {
+      flex: none;
+      color: var(--ink);
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .status-tab {
+      flex: none;
+      min-height: 2.75rem;
+      padding: 0.35rem 0.68rem;
+      border: 1px solid var(--control-rule);
+      border-radius: 999px;
+      color: var(--ink-soft);
+      background: transparent;
+      font-size: 0.74rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .status-tab:hover,
+    .status-tab[aria-pressed="true"] {
+      color: #fff;
+      border-color: var(--blue);
+      background: var(--blue);
+    }
+
+    .register-shell {
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .topic-table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    .topic-table th,
+    .topic-table td {
+      padding: 0.78rem 0.85rem;
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .topic-table th {
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .topic-table td {
+      font-size: 0.84rem;
+    }
+
+    .topic-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .topic-table th:nth-child(1) { width: 8.5rem; }
+    .topic-table th:nth-child(2) { width: auto; }
+    .topic-table th:nth-child(3) { width: 8.5rem; }
+    .topic-table th:nth-child(4) { width: 9.5rem; }
+    .topic-table th:nth-child(5) { width: 7rem; }
+
+    .topic-title {
+      display: block;
+      font-weight: 750;
+    }
+
+    .topic-subline {
+      display: block;
+      margin-top: 0.18rem;
+      color: var(--ink-soft);
+      font-size: 0.7rem;
+    }
+
+    .table-empty {
+      padding: 2rem 1rem !important;
+      color: var(--ink-soft);
+      text-align: center !important;
+    }
+
+    .case-register {
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .precedent-record {
+      display: grid;
+      grid-template-columns: minmax(12rem, 0.4fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      padding: 1.25rem 1rem 1.4rem;
+    }
+
+    .precedent-record + .precedent-record {
+      border-top: 1px solid var(--rule);
+    }
+
+    .precedent-record h3 {
+      margin: 0.2rem 0 0;
+      font-size: 1.02rem;
+    }
+
+    .precedent-record time {
+      display: block;
+      margin-top: 0.25rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .precedent-record__body p {
+      max-width: var(--measure);
+      margin: 0;
+    }
+
+    .precedent-record__body p + p {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .record-label {
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 750;
+    }
+
+    .case-tags {
+      margin: 0.75rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      list-style: none;
+    }
+
+    .case-tag {
+      color: #06423f;
+      background: var(--teal-soft);
+    }
+
+    .precedent-record .lesson-actions {
+      margin-top: 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .footer-note {
+      max-width: var(--measure);
+      margin: 3rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+    }
+
+    .noscript-note {
+      width: min(calc(100% - 2.5rem), var(--page));
+      margin: 1rem auto;
+      padding: 1rem;
+      border: 2px solid var(--coral);
+      color: #742b23;
+      background: var(--coral-soft);
+    }
+
+    @media (max-width: 900px) {
+      .law-rails {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .law-rail:nth-child(4),
+      .law-rail:nth-child(5) {
+        border-top: 1px solid var(--rule);
+      }
+
+      .law-rail:nth-child(4) {
+        border-left: 0;
+      }
+
+      .current-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .current-lesson {
+        border-right: 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .review-record {
+        grid-template-columns: 7.8rem 4rem minmax(0, 1fr) 6.5rem;
+      }
+
+      .review-record__case {
+        display: block;
+        grid-column: 3 / -1;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      main,
+      .noscript-note {
+        width: min(calc(100% - 1.25rem), var(--page));
+      }
+
+      .masthead__inner {
+        min-height: 4rem;
+      }
+
+      .masthead h1 {
+        font-size: 1.05rem;
+      }
+
+      .masthead__meta {
+        gap: 0.45rem;
+        font-size: 0.72rem;
+      }
+
+      .dispatch {
+        grid-template-columns: 1fr;
+      }
+
+      .dispatch__action {
+        min-height: 11.5rem;
+        padding: 1.1rem;
+        border-right: 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .action-record h3 {
+        font-size: 1.48rem;
+      }
+
+      .dispatch__schedule {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+      }
+
+      .schedule-cell {
+        padding: 0.75rem 1rem;
+      }
+
+      .schedule-cell + .schedule-cell {
+        border-top: 0;
+        border-left: 1px solid var(--rule);
+      }
+
+      .schedule-cell dd {
+        font-size: 1.2rem;
+      }
+
+      .law-band__heading,
+      .section-heading {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .law-band__heading p,
+      .section-heading p {
+        text-align: left;
+      }
+
+      .filter-summary {
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      .law-rails {
+        grid-template-columns: 1fr;
+      }
+
+      .law-rail + .law-rail,
+      .law-rail:nth-child(4),
+      .law-rail:nth-child(5) {
+        border-top: 1px solid var(--rule);
+        border-left: 0;
+      }
+
+      .section {
+        margin-top: 2.5rem;
+      }
+
+      .current-lesson,
+      .source-panel {
+        padding: 1.1rem;
+      }
+
+      .current-lesson__meta {
+        grid-template-columns: 1fr;
+      }
+
+      .review-record {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+
+      .review-record__case {
+        display: block;
+        grid-column: auto;
+      }
+
+      .filters,
+      .filters--cases {
+        grid-template-columns: 1fr;
+      }
+
+      .topic-table,
+      .topic-table thead,
+      .topic-table tbody,
+      .topic-table tr,
+      .topic-table th,
+      .topic-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .topic-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .topic-table tr {
+        padding: 0.72rem 0;
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .topic-table td {
+        padding: 0.38rem 1rem 0.38rem 8rem;
+        border: 0;
+        position: relative;
+      }
+
+      .topic-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        width: 6.3rem;
+        color: var(--ink-soft);
+        font-size: 0.7rem;
+        font-weight: 800;
+      }
+
+      .topic-table .table-empty {
+        padding: 1.5rem 1rem !important;
+      }
+
+      .topic-table .table-empty::before {
+        content: none;
+      }
+
+      .precedent-record {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+
+    @media print {
+      :root {
+        --stone-0: #fff;
+        --stone-1: #fff;
+        --stone-2: #ddd;
+        --paper: #fff;
+        --ink: #000;
+        --ink-soft: #333;
+        --rule: #555;
+      }
+
+      body {
+        font-size: 9.5pt;
+      }
+
+      .skip-link,
+      .read-only,
+      .filters,
+      .status-tabs {
+        display: none !important;
+      }
+
+      .masthead {
+        border-top-width: 2px;
+      }
+
+      main {
+        width: 100%;
+        padding-block: 0.6rem;
+      }
+
+      .dispatch,
+      .law-band,
+      .current-grid,
+      .review-list,
+      .register-shell,
+      .case-register {
+        break-inside: avoid;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .review-record__case {
+        display: block !important;
+      }
+
+      .action-record__mode,
+      .status-mark,
+      .source-mark,
+      .case-tag,
+      .lesson-action {
+        color: #000 !important;
+        background: #fff !important;
+        border: 1px solid #000 !important;
+      }
+    }
   </style>
 </head>
 <body>
 <!--
-THESIS: 오늘 읽을 검증된 수업 한 건을 바로 연다; 공개 화면을 진도 지표 벽으로 만들지 않는다.
-OWN-WORLD: 따뜻한 석재 배경, 종이 표면, 잉크 글자, 공식 파랑 행동, 직각 규선으로 이루어진 사건배당부다.
-STORY: 방문자는 현재 쟁점과 출처 기준일을 확인하고 검증된 읽기 화면으로 이동한다.
-FIRST VIEWPORT: 좁은 읽기 폭 안에 제목, 법률·출처 규선, 44px 행동을 한 장의 종이처럼 배치한다.
-FORM: Read mode의 단일 배당표, ordered form 1, seed key pages-read-v1.
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and the design record
+THESIS: docket/deadline control board; refuses generic metric-card wall.
+OWN-WORLD: A Korean tax examiner's morning allocation ledger rendered in warm stone, ink navy, official blue, and ruled paper.
+STORY: One controlled action leads to law progress, the active file, review deadlines, topic register, then precedent register.
+FIRST VIEWPORT: Exactly one next action with 07:00 and 30분 context, followed immediately by five law progress rails.
+FORM: grounded direction 5, seed d48951d4; sharp bands, compact status tabs, tabular numerals, amber due and coral hold/update signals.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
 -->
-  <a class="skip" href="#current-lesson">현재 수업으로 건너뛰기</a>
-  <main class="shell" id="current-lesson">
-    <article class="docket" aria-labelledby="lesson-title">
-      <h1 class="heading" id="lesson-title">실질과세 원칙: 귀속과 거래내용의 실질</h1>
-      <ul class="facts" aria-label="수업 확인 정보">
-        <li><span>적용 법률</span><strong>국세기본법</strong></li>
-        <li><span>출처 확인일</span><time datetime="2026-08-22">2026-08-22</time></li>
-      </ul>
-      <div class="action-wrap">
-        <a class="action" href="../lesson-reader/2026-08-22-ntba-substance-over-form-001.html">현재 수업 읽기</a>
-        <p class="note">공개 화면은 검증된 수업 내용만 제공합니다. 읽기 화면에서 법리와 공식 출처를 확인하세요.</p>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <h1>세법 사건배당부</h1>
+      <div class="masthead__meta">
+        <span class="read-only">읽기 전용</span>
+        <span>기준일 <time id="generated-at">2026-08-25</time></span>
       </div>
-    </article>
+    </div>
+  </header>
+
+  <noscript>
+    <p class="noscript-note">JavaScript가 꺼져 있어 학습대장을 표시할 수 없습니다. 배당 상태와 진도를 보려면 이 페이지에서 JavaScript를 허용하세요.</p>
+  </noscript>
+
+  <main id="main-content" tabindex="-1">
+    <section class="dispatch" aria-labelledby="dispatch-title">
+      <div class="dispatch__action">
+        <h2 id="dispatch-title">오늘 처리할 한 건</h2>
+        <div class="action-record" id="next-action">
+          <span class="action-record__mode" id="action-mode">원장 확인</span>
+          <h3 id="action-title">학습대장을 불러오는 중입니다</h3>
+          <p id="action-detail">JSON 원장에서 미완료·복습·신규 순서를 확인합니다.</p>
+        </div>
+      </div>
+      <dl class="dispatch__schedule" aria-label="일일 학습 설정">
+        <div class="schedule-cell">
+          <dt>아침 배당</dt>
+          <dd id="daily-time">07:00</dd>
+        </div>
+        <div class="schedule-cell">
+          <dt>학습 시간</dt>
+          <dd id="session-minutes">30분</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="law-band" aria-labelledby="law-progress-title">
+      <div class="law-band__heading">
+        <h2 id="law-progress-title">다섯 법률 진도</h2>
+        <p>완료된 쟁점 ÷ 법률별 전체 쟁점</p>
+      </div>
+      <div class="law-rails" id="law-progress-list"></div>
+    </section>
+
+    <section class="section" aria-labelledby="current-title">
+      <div class="section-heading">
+        <h2 id="current-title">현재 수업</h2>
+        <p>미완료 수업이 있으면 신규 쟁점 배당은 자동 보류됩니다.</p>
+      </div>
+      <div class="current-grid">
+        <div class="current-lesson" id="current-lesson">
+          <p class="empty-state">현재 미완료 수업이 없습니다. 예정된 복습 또는 다음 쟁점을 확인하세요.</p>
+        </div>
+        <aside class="source-panel" aria-labelledby="source-title">
+          <h3 id="source-title">출처 현황</h3>
+          <p>기간 경과로 임의 판정하지 않고 원장의 기준일과 갱신 표시만 집계합니다.</p>
+          <dl class="source-register">
+            <div>
+              <dt>출처 확인</dt>
+              <dd id="source-verified">0</dd>
+            </div>
+            <div>
+              <dt>갱신 확인 필요</dt>
+              <dd id="source-update">0</dd>
+            </div>
+            <div>
+              <dt>학습 전·미확인</dt>
+              <dd id="source-unverified">0</dd>
+            </div>
+            <div>
+              <dt>가장 최근 기준일</dt>
+              <dd id="source-latest">없음</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="review-title">
+      <div class="section-heading">
+        <h2 id="review-title">복습 기한</h2>
+        <p>연체·오늘·예정 복습을 기한순으로 보여줍니다.</p>
+      </div>
+      <ol class="review-list" id="review-list">
+        <li class="empty-state">복습 일정을 불러오는 중입니다.</li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="topics-title">
+      <div class="section-heading">
+        <h2 id="topics-title">쟁점 대장</h2>
+        <p>세목·상태·검색어로 쟁점과 연결된 수업 자료를 찾습니다.</p>
+      </div>
+      <div class="register-shell">
+        <form class="filters filter-grid" id="topic-filters" role="search" aria-label="쟁점 대장 검색 및 필터">
+          <div class="field">
+            <label for="topic-search">쟁점 검색</label>
+            <input id="topic-search" type="search" autocomplete="off" placeholder="쟁점명·별칭·ID·조문">
+          </div>
+          <div class="field">
+            <label for="topic-law-filter">법률</label>
+            <select id="topic-law-filter">
+              <option value="">전체 법률</option>
+              <option value="국세기본법">국세기본법</option>
+              <option value="국세징수법">국세징수법</option>
+              <option value="법인세법">법인세법</option>
+              <option value="소득세법">소득세법</option>
+              <option value="부가가치세법">부가가치세법</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="topic-status-filter">상태</label>
+            <select id="topic-status-filter">
+              <option value="">전체 상태</option>
+              <option value="unseen">미학습</option>
+              <option value="delivered">진행 중</option>
+              <option value="completed">완료</option>
+              <option value="needs_review">보충 필요</option>
+              <option value="needs_source_update">개정 확인 필요</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="topic-mastery-filter">이해도</label>
+            <select id="topic-mastery-filter">
+              <option value="">전체 이해도</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="topic-source-from-filter">출처 기준일 이후</label>
+            <input id="topic-source-from-filter" type="date">
+          </div>
+        </form>
+        <p class="filter-summary" id="topic-filter-summary">
+          <span id="topic-result-status" role="status" aria-live="polite">쟁점 0건</span>
+          <span id="topic-active-filters">활성 필터: 없음</span>
+        </p>
+        <div class="status-tabs" id="status-tabs" role="group" aria-label="쟁점 상태 빠른 필터"></div>
+        <table class="topic-table">
+          <thead>
+            <tr>
+              <th scope="col">법률</th>
+              <th scope="col">쟁점</th>
+              <th scope="col">상태</th>
+              <th scope="col">출처</th>
+              <th scope="col">수업</th>
+            </tr>
+          </thead>
+          <tbody id="topic-body">
+            <tr><td class="table-empty" colspan="5">조건에 맞는 쟁점이 없습니다. 검색어나 필터를 조정하세요.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cases-title">
+      <div class="section-heading">
+        <h2 id="cases-title">판례 대장</h2>
+        <p>사건번호·쟁점·연결 법률을 검색하고 후속 법리 확인 필요성을 함께 봅니다.</p>
+      </div>
+      <div class="case-register">
+        <form class="filters filter-grid filters--cases" id="case-filters" role="search" aria-label="판례 대장 검색 및 필터">
+          <div class="field">
+            <label for="case-search">판례 검색</label>
+            <input id="case-search" type="search" autocomplete="off" placeholder="사건번호·법원·쟁점·판시 요지">
+          </div>
+          <div class="field">
+            <label for="case-law-filter">연결 법률</label>
+            <select id="case-law-filter">
+              <option value="">전체 법률</option>
+              <option value="국세기본법">국세기본법</option>
+              <option value="국세징수법">국세징수법</option>
+              <option value="법인세법">법인세법</option>
+              <option value="소득세법">소득세법</option>
+              <option value="부가가치세법">부가가치세법</option>
+            </select>
+          </div>
+        </form>
+        <p class="filter-summary" id="case-filter-summary">
+          <span id="case-result-status" role="status" aria-live="polite">판례 0건</span>
+          <span id="case-active-filters">활성 필터: 없음</span>
+        </p>
+        <div id="case-list">
+          <p class="empty-state">등록된 판례가 없습니다. 검증된 판례를 수업에 연결하면 여기에 나타납니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="footer-note">HTML은 읽기 전용 조회 화면입니다. 진도·복습·출처 상태는 JSON 학습대장에서만 갱신한 뒤 이 파일을 다시 생성하세요.</p>
   </main>
+
+  <script id="study-data" type="application/json">{"cases":[{"case_id":"SC-2020DU37857-2023-11-30","case_number":"2020두37857","court":"대법원","decision_date":"2023-11-30","holding_summary":"특별한 사정 없이 독립된 사업목적 아래 선택·이행된 우선주 유상감자 관계를 사업양도대금으로 재구성할 수 없다고 보았다.","issue_tags":["실질과세","법률관계 존중","우선주 유상감자"],"last_reviewed_at":null,"later_history":"원심 파기환송. 2026-08-22 확인한 공식 자료 범위에서 핵심 법리 변경을 별도로 확인하지 못함.","markdown_path":null,"next_review_at":null,"reader_path":"../lesson-reader/2026-08-22-ntba-substance-over-form-001.html","related_laws":["국세기본법"],"related_topic_ids":["NTBA-SUBSTANCE-001"],"significance":"실질과세 원칙과 납세자가 선택한 법률관계 존중의 경계를 계약 독립성, 사업목적, 가격 적정성, 실제 이행으로 구체화했다."}],"current_action":{"covered_topic_count":0,"detail":"현재 수업의 회상 질문에 답하거나 학습 완료를 명시하기 전에는 새 쟁점을 열지 않습니다.","lesson_id":"LESSON-20260822-NTBA-SUBSTANCE-001","mode":"hold","review_count":0,"title":"미완료 수업을 먼저 마무리하세요","topic_id":"NTBA-SUBSTANCE-001","topic_title":"실질과세 원칙: 귀속과 거래내용의 실질"},"current_lesson":{"case_count":1,"completed_at":null,"covered_topics":[{"canonical_title":"실질과세 원칙: 귀속과 거래내용의 실질","primary_law":"국세기본법","topic_id":"NTBA-SUBSTANCE-001"}],"delivered_at":"2026-08-22","lesson_id":"LESSON-20260822-NTBA-SUBSTANCE-001","lesson_type":"topic","markdown_path":null,"reader_path":"../lesson-reader/2026-08-22-ntba-substance-over-form-001.html","source_as_of":"2026-08-22","status":"delivered","topic_id":"NTBA-SUBSTANCE-001"},"current_topic":{"aliases":["실질과세","명의와 실질"],"canonical_title":"실질과세 원칙: 귀속과 거래내용의 실질","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":"../lesson-reader/2026-08-22-ntba-substance-over-form-001.html","sequence":1,"source_as_of":"2026-08-22","source_label":"출처 확인","source_state":"verified","status":"delivered","status_label":"진행 중","topic_id":"NTBA-SUBSTANCE-001"},"generated_at":"2026-08-25","law_progress":[{"completed":0,"delivered":1,"law":"국세기본법","needs_review":0,"needs_source_update":0,"progress_percent":0,"source_update_required":0,"total":6,"unseen":5},{"completed":0,"delivered":0,"law":"국세징수법","needs_review":0,"needs_source_update":0,"progress_percent":0,"source_update_required":0,"total":2,"unseen":2},{"completed":0,"delivered":0,"law":"법인세법","needs_review":0,"needs_source_update":0,"progress_percent":0,"source_update_required":0,"total":4,"unseen":4},{"completed":0,"delivered":0,"law":"소득세법","needs_review":0,"needs_source_update":0,"progress_percent":0,"source_update_required":0,"total":3,"unseen":3},{"completed":0,"delivered":0,"law":"부가가치세법","needs_review":0,"needs_source_update":0,"progress_percent":0,"source_update_required":0,"total":3,"unseen":3}],"profile":{"content_ratio":{"audit_and_evidence":30,"exam":30,"law_and_cases":40},"daily_time":"07:00","session_minutes":30,"timezone":"Asia/Seoul"},"review_queue":[],"review_summary":{"overdue":0,"today":0,"upcoming":0},"source_summary":{"latest_source_as_of":"2026-08-22","not_yet_verified":17,"update_required":0,"verified":1},"status_counts":{"completed":0,"delivered":1,"needs_review":0,"needs_source_update":0,"unseen":17},"topics":[{"aliases":["실질과세","명의와 실질"],"canonical_title":"실질과세 원칙: 귀속과 거래내용의 실질","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":"../lesson-reader/2026-08-22-ntba-substance-over-form-001.html","sequence":1,"source_as_of":"2026-08-22","source_label":"출처 확인","source_state":"verified","status":"delivered","status_label":"진행 중","topic_id":"NTBA-SUBSTANCE-001"},{"aliases":["근거과세","장부와 증빙"],"canonical_title":"근거과세 원칙과 장부·증빙에 의한 사실인정","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":null,"sequence":2,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NTBA-BASIS-001"},{"aliases":["입증책임","경험칙"],"canonical_title":"과세요건사실의 입증책임과 경험칙","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":null,"sequence":3,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NTBA-BURDEN-001"},{"aliases":["제척기간","부과기간"],"canonical_title":"국세부과 제척기간의 구조","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":null,"sequence":4,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NTBA-LIMITATION-001"},{"aliases":["중복조사 제한","조사권 남용"],"canonical_title":"세무조사권 남용 금지와 중복조사 제한","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":null,"sequence":5,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NTBA-AUDIT-RIGHTS-001"},{"aliases":["가산세","정당한 사유"],"canonical_title":"가산세와 정당한 사유","last_reviewed_at":null,"laws_and_articles":["국세기본법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세기본법","reader_path":null,"sequence":6,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NTBA-PENALTY-001"},{"aliases":["재화 용역 공급","공급자 판정"],"canonical_title":"재화·용역의 공급과 실제 공급자 판정","last_reviewed_at":null,"laws_and_articles":["부가가치세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"부가가치세법","reader_path":null,"sequence":7,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"VAT-SUPPLY-001"},{"aliases":["세금계산서 공제","매입세액 공제"],"canonical_title":"사실과 다른 세금계산서와 매입세액 공제","last_reviewed_at":null,"laws_and_articles":["부가가치세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"부가가치세법","reader_path":null,"sequence":8,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"VAT-INVOICE-001"},{"aliases":["매입세액 불공제","사업관련성"],"canonical_title":"사업 관련 매입세액과 불공제","last_reviewed_at":null,"laws_and_articles":["부가가치세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"부가가치세법","reader_path":null,"sequence":9,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"VAT-BUSINESS-INPUT-001"},{"aliases":["익금 범위","수익 귀속시기"],"canonical_title":"익금의 범위와 귀속시기","last_reviewed_at":null,"laws_and_articles":["법인세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"법인세법","reader_path":null,"sequence":10,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"CTA-GROSS-INCOME-001"},{"aliases":["손금 요건","업무관련성"],"canonical_title":"손금의 요건과 업무관련성","last_reviewed_at":null,"laws_and_articles":["법인세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"법인세법","reader_path":null,"sequence":11,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"CTA-DEDUCTIBILITY-001"},{"aliases":["소득처분","익금산입"],"canonical_title":"익금산입과 소득처분","last_reviewed_at":null,"laws_and_articles":["법인세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"법인세법","reader_path":null,"sequence":12,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"CTA-INCOME-DISPOSITION-001"},{"aliases":["특수관계인 거래","부당행위"],"canonical_title":"부당행위계산 부인의 기본 구조","last_reviewed_at":null,"laws_and_articles":["법인세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"법인세법","reader_path":null,"sequence":13,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"CTA-RELATED-PARTY-001"},{"aliases":["소득 구분","기타소득 판정"],"canonical_title":"사업소득·기타소득의 구분","last_reviewed_at":null,"laws_and_articles":["소득세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"소득세법","reader_path":null,"sequence":14,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"ITA-INCOME-CLASSIFICATION-001"},{"aliases":["필요경비","경비 입증"],"canonical_title":"필요경비의 인정과 입증","last_reviewed_at":null,"laws_and_articles":["소득세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"소득세법","reader_path":null,"sequence":15,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"ITA-NECESSARY-EXPENSE-001"},{"aliases":["명의 실질 불일치","소득 귀속"],"canonical_title":"소득의 귀속자와 명의·실질 불일치","last_reviewed_at":null,"laws_and_articles":["소득세법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"소득세법","reader_path":null,"sequence":16,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"ITA-ATTRIBUTION-001"},{"aliases":["체납처분","납부기한"],"canonical_title":"납부기한·독촉·압류의 연결","last_reviewed_at":null,"laws_and_articles":["국세징수법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세징수법","reader_path":null,"sequence":17,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NCTA-DELINQUENCY-001"},{"aliases":["보충적 납세의무","제이차 납세의무"],"canonical_title":"제2차 납세의무의 기본 구조","last_reviewed_at":null,"laws_and_articles":["국세징수법"],"markdown_path":null,"mastery":0,"next_review_at":null,"primary_law":"국세징수법","reader_path":null,"sequence":18,"source_as_of":null,"source_label":"학습 전·미확인","source_state":"not_yet_verified","status":"unseen","status_label":"미학습","topic_id":"NCTA-SECONDARY-LIABILITY-001"}]}</script>
+  <script>
+    (() => {
+      "use strict";
+
+      const dataNode = document.getElementById("study-data");
+      let study;
+      try {
+        study = JSON.parse(dataNode.textContent);
+      } catch (error) {
+        document.getElementById("action-mode").textContent = "표시 오류";
+        document.getElementById("action-title").textContent = "학습대장을 읽지 못했습니다";
+        document.getElementById("action-detail").textContent = "HTML을 다시 생성하고 JSON 원장 검증 결과를 확인하세요.";
+        document.documentElement.dataset.dashboardState = "error";
+        return;
+      }
+
+      const statusLabels = {
+        unseen: "미학습",
+        delivered: "진행 중",
+        completed: "완료",
+        needs_review: "보충 필요",
+        needs_source_update: "개정 확인 필요"
+      };
+      const modeLabels = {
+        hold: "진도 보류",
+        review_only: "복습 전용",
+        new: "신규 배당",
+        integrated_case: "통합 사례",
+        source_update: "출처 갱신",
+        curriculum_complete: "진도 완료"
+      };
+      const actionCandidate = study && typeof study === "object"
+        ? study.current_action
+        : null;
+      const currentAction = actionCandidate
+        && typeof actionCandidate === "object"
+        && !Array.isArray(actionCandidate)
+        && typeof actionCandidate.mode === "string"
+        && Object.prototype.hasOwnProperty.call(modeLabels, actionCandidate.mode)
+        && typeof actionCandidate.title === "string"
+        && typeof actionCandidate.detail === "string"
+        ? actionCandidate
+        : null;
+
+      function clearNode(node) {
+        while (node.firstChild) {
+          node.removeChild(node.firstChild);
+        }
+      }
+
+      function makeNode(tagName, text, className) {
+        const node = document.createElement(tagName);
+        if (text !== undefined && text !== null) {
+          node.textContent = String(text);
+        }
+        if (className) {
+          node.className = className;
+        }
+        return node;
+      }
+
+      function normalized(value) {
+        return String(value || "").normalize("NFKC").toLocaleLowerCase("ko-KR");
+      }
+
+      function appendMeta(list, label, value) {
+        const wrapper = document.createElement("div");
+        wrapper.append(makeNode("dt", label), makeNode("dd", value || "없음"));
+        list.append(wrapper);
+      }
+
+      function makeLessonAction(label, href, secondary = false) {
+        const className = secondary
+          ? "lesson-action lesson-action--secondary"
+          : "lesson-action";
+        const link = makeNode("a", label, className);
+        link.setAttribute("href", href);
+        return link;
+      }
+
+      function setAction() {
+        const action = currentAction;
+        document.getElementById("daily-time").textContent = study.profile.daily_time;
+        document.getElementById("session-minutes").textContent = `${study.profile.session_minutes}분`;
+        if (!action) {
+          document.getElementById("action-mode").textContent = "상태 확인 불가";
+          document.getElementById("action-title").textContent = "현재 학습 순서를 확인할 수 없습니다";
+          document.getElementById("action-detail").textContent = "HTML을 다시 생성하고 JSON 학습대장을 확인하세요.";
+          return;
+        }
+        document.getElementById("action-mode").textContent = modeLabels[action.mode];
+        document.getElementById("action-title").textContent = action.title;
+        const detail = action.topic_title ? `${action.topic_title} — ${action.detail}` : action.detail;
+        document.getElementById("action-detail").textContent = detail;
+      }
+
+      function renderLawProgress() {
+        const container = document.getElementById("law-progress-list");
+        clearNode(container);
+        study.law_progress.forEach((record) => {
+          const rail = makeNode("div", null, "law-rail");
+          const top = makeNode("div", null, "law-rail__top");
+          top.append(
+            makeNode("h3", record.law),
+            makeNode("span", `${record.completed}/${record.total}`, "law-rail__count")
+          );
+          const meter = document.createElement("progress");
+          meter.max = 100;
+          meter.value = record.progress_percent;
+          meter.setAttribute("aria-label", `${record.law} 완료율 ${record.progress_percent}%`);
+          const signals = [];
+          if (record.delivered) signals.push(`진행 ${record.delivered}`);
+          if (record.needs_review) signals.push(`보충 ${record.needs_review}`);
+          if (record.source_update_required) signals.push(`갱신 ${record.source_update_required}`);
+          if (!signals.length) signals.push(`미학습 ${record.unseen}`);
+          rail.append(top, meter, makeNode("p", signals.join(" · "), "law-rail__flags"));
+          container.append(rail);
+        });
+      }
+
+      function renderCurrentLesson() {
+        const container = document.getElementById("current-lesson");
+        clearNode(container);
+        if (!study.current_topic && !study.current_lesson) {
+          container.append(makeNode(
+            "p",
+            "현재 미완료 수업이 없습니다. 예정된 복습 또는 다음 쟁점을 확인하세요.",
+            "empty-state"
+          ));
+          return;
+        }
+
+        const meta = makeNode("dl", null, "current-lesson__meta");
+        if (study.current_lesson && study.current_lesson.lesson_type === "integrated_case") {
+          const lesson = study.current_lesson;
+          container.append(
+            makeNode("span", "진행 중", "status-mark status-delivered"),
+            document.createTextNode(" "),
+            makeNode("span", lesson.lesson_id, "record-id"),
+            makeNode("h3", "통합 조사사례")
+          );
+          appendMeta(meta, "연결 쟁점", `${study.current_lesson.covered_topics.length}건`);
+          appendMeta(meta, "연결 판례", `${lesson.case_count}건`);
+          appendMeta(meta, "배당일", lesson.delivered_at);
+          container.append(
+            makeNode(
+              "p",
+              study.current_lesson.covered_topics.length
+                ? study.current_lesson.covered_topics.map((topic) => `${topic.primary_law} · ${topic.canonical_title}`).join(" / ")
+                : "연결된 쟁점 없음",
+              "lesson-summary"
+            ),
+            meta
+          );
+        } else if (study.current_topic) {
+          const topic = study.current_topic;
+          container.append(
+            makeNode("span", topic.status_label, `status-mark status-${topic.status}`),
+            document.createTextNode(" "),
+            makeNode("span", topic.topic_id, "record-id"),
+            makeNode("h3", topic.canonical_title)
+          );
+          appendMeta(meta, "법률", topic.primary_law);
+          if (study.current_lesson) {
+            appendMeta(meta, "배당일", study.current_lesson.delivered_at);
+            appendMeta(meta, "출처 기준일", study.current_lesson.source_as_of);
+          } else {
+            appendMeta(meta, "이해도", `${topic.mastery}/5`);
+            appendMeta(meta, "다음 복습", topic.next_review_at || "일정 없음");
+          }
+          container.append(meta);
+        }
+        const actions = makeNode("div", null, "lesson-actions");
+        if (study.current_lesson && study.current_lesson.reader_path) {
+          actions.append(makeLessonAction(
+            "오늘 수업 시작",
+            study.current_lesson.reader_path
+          ));
+        }
+        if (study.current_lesson && study.current_lesson.markdown_path) {
+          actions.append(makeLessonAction(
+            "Markdown 원본 보기",
+            study.current_lesson.markdown_path,
+            true
+          ));
+        }
+        if (actions.firstChild) {
+          container.append(actions);
+        }
+      }
+
+      function renderSourceSummary() {
+        document.getElementById("source-verified").textContent = String(study.source_summary.verified);
+        document.getElementById("source-update").textContent = String(study.source_summary.update_required);
+        document.getElementById("source-unverified").textContent = String(study.source_summary.not_yet_verified);
+        document.getElementById("source-latest").textContent = study.source_summary.latest_source_as_of || "없음";
+      }
+
+      function renderReviews() {
+        const list = document.getElementById("review-list");
+        clearNode(list);
+        if (!study.review_queue.length) {
+          let emptyReviewMessage;
+          if (!currentAction) {
+            emptyReviewMessage = "복습 상태를 확인할 수 없습니다.";
+          } else if (currentAction.mode === "hold") {
+            emptyReviewMessage = currentAction.lesson_id
+              ? "현재 수업의 회상 질문에 답하거나 학습 완료를 명시하세요."
+              : "현재 진행 중인 쟁점의 학습 상태를 확인하세요.";
+          } else {
+            emptyReviewMessage = "예정된 복습이 없습니다.";
+          }
+          list.append(makeNode("li", emptyReviewMessage, "empty-state"));
+          return;
+        }
+        study.review_queue.forEach((review) => {
+          const item = makeNode("li", null, `review-record review-${review.timing}`);
+          const due = makeNode("time", review.next_review_at);
+          due.setAttribute("datetime", review.next_review_at);
+          const timing = makeNode("span", review.timing_label, "review-record__timing");
+          const topicBlock = makeNode("div", null, "review-record__topic");
+          topicBlock.append(makeNode("strong", review.topic_title), makeNode("span", review.primary_law));
+          item.append(
+            due,
+            timing,
+            topicBlock,
+            makeNode("span", review.stage_label, "review-record__stage"),
+            makeNode("span", `연결 판례 ${review.case_count}건`, "review-record__case")
+          );
+          list.append(item);
+        });
+      }
+
+      function addCell(row, label, content) {
+        const cell = document.createElement("td");
+        cell.setAttribute("data-label", label);
+        if (content instanceof Node) {
+          cell.append(content);
+        } else {
+          cell.textContent = String(content ?? "");
+        }
+        row.append(cell);
+      }
+
+      function renderTopics() {
+        const query = normalized(document.getElementById("topic-search").value);
+        const law = document.getElementById("topic-law-filter").value;
+        const status = document.getElementById("topic-status-filter").value;
+        const mastery = document.getElementById("topic-mastery-filter").value;
+        const sourceFrom = document.getElementById("topic-source-from-filter").value;
+        const records = study.topics.filter((topic) => {
+          const haystack = normalized([
+            topic.topic_id,
+            topic.canonical_title,
+            ...topic.aliases,
+            ...topic.laws_and_articles
+          ].join(" "));
+          return (!query || haystack.includes(query))
+            && (!law || topic.primary_law === law)
+            && (!status || topic.status === status)
+            && (!mastery || String(topic.mastery) === mastery)
+            && (!sourceFrom || (topic.source_as_of && topic.source_as_of >= sourceFrom));
+        });
+        const activeFilters = [];
+        if (query) activeFilters.push(`검색 “${document.getElementById("topic-search").value}”`);
+        if (law) activeFilters.push(law);
+        if (status) activeFilters.push(`상태 ${statusLabels[status]}`);
+        if (mastery) activeFilters.push(`이해도 ${mastery}`);
+        if (sourceFrom) activeFilters.push(`출처 기준일 ${sourceFrom} 이후`);
+        document.getElementById("topic-result-status").textContent = `쟁점 ${records.length}/${study.topics.length}건`;
+        document.getElementById("topic-active-filters").textContent = `활성 필터: ${activeFilters.length ? activeFilters.join(" · ") : "없음"}`;
+        const body = document.getElementById("topic-body");
+        clearNode(body);
+        if (!records.length) {
+          const row = document.createElement("tr");
+          const cell = makeNode("td", "조건에 맞는 쟁점이 없습니다. 검색어나 필터를 조정하세요.", "table-empty");
+          cell.colSpan = 5;
+          row.append(cell);
+          body.append(row);
+          return;
+        }
+        records.forEach((topic) => {
+          const row = document.createElement("tr");
+          addCell(row, "법률", topic.primary_law);
+          const title = makeNode("div");
+          title.append(
+            makeNode("span", topic.canonical_title, "topic-title"),
+            makeNode("span", topic.topic_id, "topic-subline record-id")
+          );
+          addCell(row, "쟁점", title);
+          addCell(row, "상태", makeNode("span", topic.status_label, `status-mark status-${topic.status}`));
+          const source = makeNode("div");
+          source.append(
+            makeNode("span", topic.source_label, `source-mark source-${topic.source_state}`),
+            makeNode("span", topic.source_as_of || "기준일 없음", "topic-subline")
+          );
+          addCell(row, "출처", source);
+          const actions = makeNode("div", null, "lesson-actions lesson-actions--compact");
+          if (topic.reader_path) {
+            actions.append(makeLessonAction("수업 시작", topic.reader_path));
+          }
+          if (topic.markdown_path) {
+            actions.append(makeLessonAction(
+              "Markdown 원본 보기",
+              topic.markdown_path,
+              true
+            ));
+          }
+          if (actions.firstChild) {
+            addCell(row, "수업", actions);
+          } else {
+            addCell(row, "수업", "—");
+          }
+          body.append(row);
+        });
+      }
+
+      function renderStatusTabs() {
+        const container = document.getElementById("status-tabs");
+        const select = document.getElementById("topic-status-filter");
+        const query = normalized(document.getElementById("topic-search").value);
+        const law = document.getElementById("topic-law-filter").value;
+        const mastery = document.getElementById("topic-mastery-filter").value;
+        const sourceFrom = document.getElementById("topic-source-from-filter").value;
+        const countBase = study.topics.filter((topic) => {
+          const haystack = normalized([
+            topic.topic_id,
+            topic.canonical_title,
+            ...topic.aliases,
+            ...topic.laws_and_articles
+          ].join(" "));
+          return (!query || haystack.includes(query))
+            && (!law || topic.primary_law === law)
+            && (!mastery || String(topic.mastery) === mastery)
+            && (!sourceFrom || (topic.source_as_of && topic.source_as_of >= sourceFrom));
+        });
+        clearNode(container);
+        const options = [{ value: "", label: "전체", count: countBase.length }];
+        Object.keys(statusLabels).forEach((status) => {
+          options.push({
+            value: status,
+            label: statusLabels[status],
+            count: countBase.filter((topic) => topic.status === status).length
+          });
+        });
+        options.forEach((option) => {
+          const button = makeNode("button", `${option.label} ${option.count}`, "status-tab");
+          button.type = "button";
+          button.dataset.statusValue = option.value;
+          button.setAttribute("aria-pressed", String(select.value === option.value));
+          button.addEventListener("click", () => {
+            const restoreFocus = document.activeElement === button;
+            select.value = option.value;
+            renderStatusTabs();
+            renderTopics();
+            if (restoreFocus) {
+              const replacement = Array.from(container.children).find(
+                (item) => item.dataset.statusValue === option.value
+              );
+              if (replacement) {
+                replacement.focus();
+              }
+            }
+          });
+          container.append(button);
+        });
+      }
+
+      function renderCases() {
+        const query = normalized(document.getElementById("case-search").value);
+        const law = document.getElementById("case-law-filter").value;
+        const records = study.cases.filter((caseRecord) => {
+          const haystack = normalized([
+            caseRecord.case_id,
+            caseRecord.court,
+            caseRecord.case_number,
+            caseRecord.holding_summary,
+            caseRecord.significance,
+            caseRecord.later_history,
+            ...caseRecord.issue_tags,
+            ...caseRecord.related_laws
+          ].join(" "));
+          return (!query || haystack.includes(query))
+            && (!law || caseRecord.related_laws.includes(law));
+        });
+        const activeFilters = [];
+        if (query) activeFilters.push(`검색 “${document.getElementById("case-search").value}”`);
+        if (law) activeFilters.push(law);
+        document.getElementById("case-result-status").textContent = `판례 ${records.length}/${study.cases.length}건`;
+        document.getElementById("case-active-filters").textContent = `활성 필터: ${activeFilters.length ? activeFilters.join(" · ") : "없음"}`;
+        const container = document.getElementById("case-list");
+        clearNode(container);
+        if (!records.length) {
+          container.append(makeNode(
+            "p",
+            study.cases.length
+              ? "조건에 맞는 판례가 없습니다. 검색어나 연결 법률을 조정하세요."
+              : "등록된 판례가 없습니다. 검증된 판례를 수업에 연결하면 여기에 나타납니다.",
+            "empty-state"
+          ));
+          return;
+        }
+        records.forEach((caseRecord) => {
+          const article = makeNode("article", null, "precedent-record");
+          const heading = makeNode("header");
+          heading.append(
+            makeNode("span", caseRecord.court, "record-label"),
+            makeNode("h3", caseRecord.case_number)
+          );
+          const decisionDate = makeNode("time", caseRecord.decision_date);
+          decisionDate.setAttribute("datetime", caseRecord.decision_date);
+          heading.append(decisionDate, makeNode("span", caseRecord.case_id, "record-id"));
+          const tags = makeNode("ul", null, "case-tags");
+          caseRecord.issue_tags.forEach((tag) => {
+            const item = document.createElement("li");
+            item.append(makeNode("span", tag, "case-tag"));
+            tags.append(item);
+          });
+          heading.append(tags);
+          const actions = makeNode("div", null, "lesson-actions");
+          if (caseRecord.reader_path) {
+            actions.append(makeLessonAction(
+              "관련 최신 수업 시작",
+              caseRecord.reader_path
+            ));
+          }
+          if (caseRecord.markdown_path) {
+            actions.append(makeLessonAction(
+              "Markdown 원본 보기",
+              caseRecord.markdown_path,
+              true
+            ));
+          }
+          if (actions.firstChild) {
+            heading.append(actions);
+          }
+          const body = makeNode("div", null, "precedent-record__body");
+          const holding = makeNode("p");
+          holding.append(makeNode("span", "판시 요지 ", "record-label"), document.createTextNode(caseRecord.holding_summary));
+          const significance = makeNode("p");
+          significance.append(makeNode("span", "실무·학습 의의 ", "record-label"), document.createTextNode(caseRecord.significance));
+          const history = makeNode("p");
+          history.append(makeNode("span", "후속 법리 ", "record-label"), document.createTextNode(caseRecord.later_history || "기록 없음"));
+          body.append(holding, significance, history);
+          article.append(heading, body);
+          container.append(article);
+        });
+      }
+
+      document.getElementById("topic-search").addEventListener("input", () => {
+        renderStatusTabs();
+        renderTopics();
+      });
+      document.getElementById("topic-law-filter").addEventListener("change", () => {
+        renderStatusTabs();
+        renderTopics();
+      });
+      document.getElementById("topic-status-filter").addEventListener("change", () => {
+        renderStatusTabs();
+        renderTopics();
+      });
+      document.getElementById("topic-mastery-filter").addEventListener("change", () => {
+        renderStatusTabs();
+        renderTopics();
+      });
+      document.getElementById("topic-source-from-filter").addEventListener("change", () => {
+        renderStatusTabs();
+        renderTopics();
+      });
+      document.getElementById("topic-filters").addEventListener("submit", (event) => event.preventDefault());
+      document.getElementById("case-search").addEventListener("input", renderCases);
+      document.getElementById("case-law-filter").addEventListener("change", renderCases);
+      document.getElementById("case-filters").addEventListener("submit", (event) => event.preventDefault());
+
+      setAction();
+      renderLawProgress();
+      renderCurrentLesson();
+      renderSourceSummary();
+      renderReviews();
+      renderStatusTabs();
+      renderTopics();
+      renderCases();
+      document.documentElement.dataset.dashboardState = currentAction ? "ready" : "unavailable";
+    })();
+  </script>
 </body>
 </html>
