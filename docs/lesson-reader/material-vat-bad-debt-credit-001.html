@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-VAT-BAD-DEBT-CREDIT-001">
+  <title>대손세액공제 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">대손세액공제</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 부가가치세법</li>
+<li class="meta-chip">난도 고급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-28</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>외상매출이 대손되면 이미 낸 매출세액을 법정 시점에 공제하고, 나중에 받으면 변제세액을 다시 더한다. 대손과 회수는 같은 방향의 숫자가 아니라 서로 반대 신고 흐름이다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>대손세액공제의 법정 요소와 경계를 순서대로 설명한다.</li>
+<li>대손세액공제 증거축은 A=원채권 거래명세, B=폐업사실·대손사유, 미확인=은행 송금의뢰 원본이다. 이 세 축으로 대손세액공제 조사측 설명과 납세자측 설명의 강도를 비교한다.</li>
+<li>공급가액·세액·귀속 과세기간을 계산해 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제19호서식 대손세액 공제(변제)신고서의 관련 칸까지 닫는다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>대손 공제 100,000원과 회수 가산 30,000원을 서로 다른 과세기간·서식 칸에 놓자.</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>개념</th>
+<th>현재 수업의 뜻</th>
+<th>결정 증빙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="개념">대손세액</td>
+<td data-label="현재 수업의 뜻">대손금액에 포함된 부가가치세</td>
+<td data-label="결정 증빙">채권원장·대손사유</td>
+</tr>
+<tr>
+<td data-label="개념">공제시기</td>
+<td data-label="현재 수업의 뜻">영 제87조의 대손 확정 과세기간</td>
+<td data-label="결정 증빙">폐업·파산·소멸시효</td>
+</tr>
+<tr>
+<td data-label="개념">변제세액</td>
+<td data-label="현재 수업의 뜻">공제 뒤 회수한 금액의 세액</td>
+<td data-label="결정 증빙">입금·상계·회수배분</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<ol>
+<li>법 제45조는 대손세액 공제와 변제 시 가산을 대칭적으로 정하고, 영 제87조는 대손사유·범위·기한, 규칙 제60조는 별지 제19호 신고를 연결한다.</li>
+<li>적용 조문 묶음은 부가가치세법 제45조 · 부가가치세법 시행령 제87조 · 부가가치세법 시행규칙 제60조이다. 대손세액공제에서는 원채권 거래명세 사실, ‘대손공제 후 관련회사 입금 330,000원이 법 제45조 변제에 해당해 30,000원을 가산하는지가 쟁점이다.’ 요건, 별지 제21호서식 일반과세자 부가가치세 신고서 효과의 순서로 읽는다.</li>
+<li>대손세액공제 수치는 ‘대손금액 1,100,000원 × 10 ÷ 110 = 대손세액 100,000원; 회수액 330,000원 × 10 ÷ 110 = 변제세액 30,000원’으로 검산한다. 폐업사실·대손사유 금액이 부가가치세 별도인지 포함인지 먼저 확정한다.</li>
+<li>자료 A(상계합의서)의 날짜와 공백항목(전자서명 검증)을 대조한다. 귀속표시: 대손확정 2026년 제1기와 회수 2026년 제2기. 이어서 관련회사 회계 거래키를 신고 칸까지 추적한다.</li>
+</ol>
+<p>대손세액공제의 현행 기준은 [시행 2026. 1. 2.] [법률 제21065호, 2025. 10. 1., 타법개정], [시행 2026. 4. 1.] [대통령령 제36133호, 2026. 2. 27., 일부개정], [시행 2026. 4. 1.] [재정경제부령 제9호, 2026. 3. 20., 일부개정]이다. 원채권 거래명세에는 현행 문언을 쓰고, 판례의 구법은 대손공제 후 관련회사 입금 330,000원이 법 제45조 변제에 해당해 30,000원을 가산하는지가 쟁점이다. 범위에서만 전이한다.</p>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>부가가치세 포함 채권을 다시 10% 곱하지 않는다. 10/110으로 세액을 분리하고 대손 확정기와 회수기를 각각 신고한다.</p>
+<details class="reveal-block reveal-block--deepening">
+<summary>심화 펼치기</summary>
+<div class="reveal-block__body">
+<h4 id="legal-structure-heading-4">심화</h4>
+<p>대손세액공제 심화대조는 작성시각(원채권 거래명세)과 거래키(상계합의서)를 나누는 데서 시작한다. 공백항목=은행 송금의뢰 원본. 이 항목이 비면 결론을 유보하고, 반증항목=전자서명 검증 확인 뒤 대손세액공제 포섭을 갱신한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<p>연습 단계: 독립 해결형 worked example</p>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>부가가치세 포함 외상채권 1,100,000원이 2026년 제1기에 법정 대손됐고, 2026년 제2기에 330,000원을 회수했다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>대손 공제 100,000원과 회수 가산 30,000원을 서로 다른 과세기간·서식 칸에 놓자.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>대손금액 1,100,000원 × 10 ÷ 110 = 대손세액 100,000원; 회수액 330,000원 × 10 ÷ 110 = 변제세액 30,000원</p>
+<p>독립 해결형: 산식·법정사유·귀속기간·별지 제19호 갑·을·병 구분을 먼저 답한 뒤 해설을 연다. 닫힌 해설은 제1기 공제 100,000원, 제2기 변제세액 가산 30,000원이다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>원시증빙</th>
+<th>전표·장부</th>
+<th>시산표·재무제표</th>
+<th>신고서·납부자료</th>
+<th>대사 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="원시증빙">계약서·세금계산서·금융거래·원채권 거래명세·폐업사실·대손사유·상계합의서·원본</td>
+<td data-label="전표·장부">거래키별 매출·매입 보조부·부가세예수금·부가세대급금 원장</td>
+<td data-label="시산표·재무제표">합계잔액시산표·부가세예수금·부가세대급금 잔액</td>
+<td data-label="신고서·납부자료">별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제19호서식 대손세액 공제(변제)신고서·납부서·환급결정</td>
+<td data-label="대사 결과">대손세액공제 대사식 대손금액 1,100,000원 × 10 ÷ 110 = 대손세액 100,000원; 회수액 330,000원 × 10 ÷ 110 = 변제세액 30,000원; 대손확정 2026년 제1기와 회수 2026년 제2기 귀속 또는 상대계정·이사회 의사록 미확인으로 표시</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>VAT 실무 bridge: 원시증빙 → 매출·매입 보조부 → 세금계산서·대체증빙 → 부가가치세 신고서·부속명세서 → 납부·환급</p>
+<p>서식 책임선: 작성자 → 제출받는 자 → 제출시기 → 신고 위치</p>
+<p>공급자는 대손 확정 과세기간과 회수 과세기간마다 별지 제19호 갑·을·병을 작성해 관할 세무서장에게 별지 제21호와 함께 제출하며, 대손 공제란과 변제세액란을 반대 방향으로 쓴다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>감사 사건 식별자: VAT-AUDIT-109</p>
+<p>중립 관찰: 도매업자는 거래처 폐업으로 1,100,000원을 대손 신고했지만 폐업 뒤 대표자 관련회사에서 330,000원이 ‘지원금’으로 입금됐다. 상계합의서에는 원채권 번호가 있고 회계는 잡이익으로 처리했다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>조사 가설: 과세관청 가설은 330,000원이 원채권 변제로서 제2기 30,000원을 가산해야 한다는 것이다.</li>
+<li>납세자 가설: 납세자 가설은 제3자의 무상지원이고 원채무가 소멸하지 않아 변제세액이 아니라는 것이다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>자료</th>
+<th>중립 관찰</th>
+<th>조사 가설 읽기</th>
+<th>납세자 가설 읽기</th>
+<th>남은 공백</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="자료">원채권 거래명세</td>
+<td data-label="중립 관찰">입금메모와 채권번호 일치</td>
+<td data-label="조사 가설 읽기">원채권 거래명세의 입금메모와 채권번호 일치는 회수액이 원채권을 줄였다는 가설을 강하게 지지한다.</td>
+<td data-label="납세자 가설 읽기">원채권 거래명세의 참조번호 오기 가능성은 다른 채무 변제 가설을 약하게 지지하나 송금의뢰 원본이 없으면 공백이다.</td>
+<td data-label="남은 공백">은행 송금의뢰 원본</td>
+</tr>
+<tr>
+<td data-label="자료">폐업사실·대손사유</td>
+<td data-label="중립 관찰">법정 대손시점 확인</td>
+<td data-label="조사 가설 읽기">폐업사실·대손사유는 법정 대손시점만 확인하므로 후의 330,000원 입금이 원채무를 줄였는지는 단독으로는 두 가설을 구별할 수 없다. 원채무 감소 근거가 공백이므로 조사 가설을 중간 정도 이상 지지하지 않는다.</td>
+<td data-label="납세자 가설 읽기">폐업사실·대손사유는 최초 대손공제 요건을 보일 뿐 회수액 성격은 보이지 않아 단독으로는 두 가설을 구별할 수 없다. 330,000원 입금의 원채무 감소·상계 근거가 공백이므로 납세자 가설도 중간 정도 이상 지지하지 않는다.</td>
+<td data-label="남은 공백">330,000원 입금의 원채무 감소·상계 근거</td>
+</tr>
+<tr>
+<td data-label="자료">상계합의서</td>
+<td data-label="중립 관찰">원채무 감소 조항</td>
+<td data-label="조사 가설 읽기">대손세액공제 자료 상계합의서: 관찰 ‘원채무 감소 조항’. 이 관찰은 약하게 지지하되 대손세액공제 조사측 판단에 한정한다. 반증 원본: 전자서명 검증. 그 원본이 상반되면 상계합의서의 조사측 강도를 낮춘다.</td>
+<td data-label="납세자 가설 읽기">대손세액공제 자료 상계합의서: 납세자측 설명 ‘서명권자 의문’. 이 설명은 강하게 지지하되 상계합의서 판정에 한정한다. 미확인 공백: 전자서명 검증.</td>
+<td data-label="남은 공백">전자서명 검증</td>
+</tr>
+<tr>
+<td data-label="자료">관련회사 회계</td>
+<td data-label="중립 관찰">채무대납 처리</td>
+<td data-label="조사 가설 읽기">대손세액공제 자료 관련회사 회계: 관찰 ‘채무대납 처리’. 이 관찰은 중간 정도로 지지하되 대손세액공제 조사측 판단에 한정한다. 반증 원본: 상대계정·이사회 의사록. 그 원본이 상반되면 관련회사 회계의 조사측 강도를 낮춘다.</td>
+<td data-label="납세자 가설 읽기">대손세액공제 자료 관련회사 회계: 납세자측 설명 ‘기부금 처리 주장’. 이 설명은 중간 정도로 지지하되 관련회사 회계 판정에 한정한다. 미확인 공백: 상대계정·이사회 의사록.</td>
+<td data-label="남은 공백">상대계정·이사회 의사록</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>8분 조사 워크북</strong></p>
+<ul>
+<li>원본성(대손세액공제): 원채권 거래명세 메타데이터를 확인한다. 작성자·생성시각·해시의 대조대상은 은행 송금의뢰 원본이다.</li>
+<li>반증(대손세액공제): 폐업사실·대손사유 조사 설명: ‘법정 대손시점 확인’. 납세자 설명: ‘회수가능성 잔존’. 두 설명을 분리하고 반박자료(배당·강제집행 기록) 확인 뒤 대손세액공제 강도를 다시 매긴다.</li>
+<li>금액·시기(대손세액공제): 상계합의서 거래키로 대손금액 1,100,000원 × 10 ÷ 110 = 대손세액 100,000원; 회수액 330,000원 × 10 ÷ 110 = 변제세액 30,000원을 재계산한다. 귀속=대손확정 2026년 제1기와 회수 2026년 제2기; 남은 공백=전자서명 검증.</li>
+<li>신고 연결(대손세액공제): 관련회사 회계 사실을 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제19호서식 대손세액 공제(변제)신고서의 해당 칸에 옮긴다. 상대계정·이사회 의사록 미확인분은 대손세액공제 금액에서 보류한다.</li>
+<li>최종포섭(대손세액공제): 원채권 거래명세·폐업사실·대손사유·상계합의서의 거래번호·작성시각을 맞춘다. 귀속=대손확정 2026년 제1기와 회수 2026년 제2기. 쟁점=대손공제 후 관련회사 입금 330,000원이 법 제45조 변제에 해당해 30,000원을 가산하는지가 쟁점이다. 반대사실 후보=상대계정·이사회 의사록.</li>
+</ul>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<p>판정 보류: 송금의뢰와 관련회사 상대계정을 확인할 때까지 330,000원의 변제 성격을 보류한다.</p>
+<p>대손세액공제 잠정판정 접점은 작성시각=원채권 거래명세, 거래키=폐업사실·대손사유, 금액원본=상계합의서이다. 확인항목=상대계정·이사회 의사록. 이 항목이 없으면 대손세액공제 정상·부정 결론을 모두 유보한다.</p>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>대손세액 100,000원과 변제세액 30,000원을 한 과세기간에서 상계하지 않는다. 채권번호와 채무감소 효과가 제2기 회수를 입증하는지 본다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>Issue: 대손공제 후 관련회사 입금 330,000원이 법 제45조 변제에 해당해 30,000원을 가산하는지가 쟁점이다.</li>
+<li>Rule: 법 제45조는 대손세액 공제와 변제 시 가산을 대칭적으로 정하고, 영 제87조는 대손사유·범위·기한, 규칙 제60조는 별지 제19호 신고를 연결한다.</li>
+<li>Application: 은행 송금의뢰, 상계 전후 원채권잔액, 관련회사 상대계정이라는 독립 증거 3종이 원채무 감소를 보여준다. 제1기 별지 제19호 대손공제 100,000원과 제2기 변제세액 30,000원을 각각 별지 제21호에 반영한다. 독립 증거 3종: 원채권 거래명세·폐업사실·대손사유·상계합의서. 귀속 과세기간: 대손확정 2026년 제1기와 회수 2026년 제2기. 신고 위치: 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제19호서식 대손세액 공제(변제)신고서.</li>
+<li>Conclusion: 330,000원이 원채권을 줄였으므로 제2기 변제이며 30,000원을 납부세액에 가산한다.</li>
+</ul>
+<p>닫힌 해설: 적용법령: 법 제45조는 대손세액 공제와 변제 시 가산을 대칭적으로 정하고, 영 제87조는 대손사유·범위·기한, 규칙 제60조는 별지 제19호 신고를 연결한다. | 판단요건: 대손공제 후 관련회사 입금 330,000원이 법 제45조 변제에 해당해 30,000원을 가산하는지가 쟁점이다. | 구체 사실포섭: 은행 송금의뢰, 상계 전후 원채권잔액, 관련회사 상대계정이라는 독립 증거 3종이 원채무 감소를 보여준다. 제1기 별지 제19호 대손공제 100,000원과 제2기 변제세액 30,000원을 각각 별지 제21호에 반영한다. | 독립 원본 3종: 원채권 거래명세·폐업사실·대손사유·상계합의서 | 계산: 대손금액 1,100,000원 × 10 ÷ 110 = 대손세액 100,000원; 회수액 330,000원 × 10 ÷ 110 = 변제세액 30,000원 | 귀속 과세기간: 대손확정 2026년 제1기와 회수 2026년 제2기 | 신고서·칸: 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제19호서식 대손세액 공제(변제)신고서.</p>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<p>대손세액공제 검산식은 대손금액 1,100,000원 × 10 ÷ 110 = 대손세액 100,000원; 회수액 330,000원 × 10 ÷ 110 = 변제세액 30,000원이다. 단위 원본=원채권 거래명세; 귀속 원본=상계합의서. 두 원본을 별지 제21호서식 일반과세자 부가가치세 신고서에 연결하여 대손세액공제 신고 칸까지 추적한다.</p>
+<h3 id="exam-heading-3">감점 방지</h3>
+<ul>
+<li>원채권 거래명세 작성주체를 확인하고, 대손세액공제 현행조문은 사건 당시 조문과 구분한다.</li>
+<li>폐업사실·대손사유 위험신호만으로 대손세액공제 부인을 확정하지 않는다. 반증=배당·강제집행 기록; 독립자료=상계합의서.</li>
+<li>대손세액공제 계산 귀속=대손확정 2026년 제1기와 회수 2026년 제2기; 신고 위치=별지 제21호서식 일반과세자 부가가치세 신고서의 구체 칸.</li>
+</ul>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>법령근접 가상사례(법원 판결 아님): 직접 판례가 없으므로 대손사유와 회수의 채무감소 효과를 현행 조문·서식으로만 판정하는 방법</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>현행 조문의 각 요건과 증거 공백을 먼저 적고, 법원의 결론을 빌리지 않은 잠정 답안을 만든다.</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>직접 연결한 중요판례가 없는 쟁점이다. 따라서 가상사례를 판결처럼 인용하지 않고 법률·시행령·시행규칙의 역할과 사실 포섭만으로 결론을 닫는다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>다른 세목이나 인접 VAT 판례를 결론 근거로 옮기지 않는다. 실제 사건이 발견되면 주문·사건기간·구별 사실과 현행법 전이 범위를 공식 원문에서 새로 확인한다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>대손세액공제 연결판례의 주문·사건기간·후속상태는 공식 판례정보로 확인했다. 원채권 거래명세 검증표에는 파기환송 뒤 결과가 확인되지 않은 사건을 확정승소로 적지 않는다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>원채권에 실제로 귀속된 회수액 440,000원이면 440,000원 × 10 ÷ 110=변제세액 40,000원이다. 회수일이 속한 2026년 제2기 별지 제21호서식에 40,000원을 가산하고, 원채권 거래명세·송금의뢰 원본·상계합의서로 회수 귀속을 확인한다. 다른 채무 변제분은 이 금액에 포함하지 않는다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 대손공제 후 관련회사 입금 330,000원이 법 제45조 변제에 해당해 30,000원을 가산하는지를 푸는 조문 순서는 무엇인가요?</li>
+<li class="recall-question">증빙 선택: VAT-AUDIT-109의 경쟁가설을 가를 독립 원본 세 가지는 무엇인가요?</li>
+<li class="recall-question">새 사실 전이: 위 변형사실을 적용하면 대손세액공제 계산과 별지 제21호서식 일반과세자 부가가치세 신고서 신고위치는 어떻게 달라지는가?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>대손세액공제 회상답의 확신도는 0·1·2로 표시한다. 0 또는 1이면 자료 A=원채권 거래명세; 공백=은행 송금의뢰 원본. 두 항목을 대손세액공제 닫힌 해설과 다시 대조한다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 법 제45조 공제·변제의 대칭과 영 제87조 대손사유·시기를 구분한다.</li>
+<li>증빙 선택: 송금의뢰·원채권잔액·관련회사 상대계정을 선택한다.</li>
+<li>새 사실 전이: 440,000원 회수면 440,000원×10÷110=40,000원을 회수 과세기간 별지 제19호에 가산한다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-28</p>
+<p><a href="https://law.go.kr/LSW/lsInfoP.do?ancYnChk=0&amp;lsId=001571" rel="noopener noreferrer">2026년 1월 2일 시행 부가가치세법</a> <a href="https://www.law.go.kr/법령/부가가치세법시행령" rel="noopener noreferrer">2026년 4월 1일 시행 부가가치세법 시행령</a> <a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=284995" rel="noopener noreferrer">2026년 4월 1일 시행 부가가치세법 시행규칙과 별지서식</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619805" rel="noopener noreferrer">별지 제21호서식 일반과세자 부가가치세 신고서</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619789" rel="noopener noreferrer">별지 제19호서식 대손세액 공제(변제)신고서</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-NCTA-SEIZURE-LIMITS-001">
+  <title>압류금지·제한·초과압류 금지 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">압류금지·제한·초과압류 금지</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 국세징수법</li>
+<li class="meta-chip">난도 초급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-27</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>체납액이 있다고 모든 재산을 전부 묶을 수는 없다. 생활과 생업에 필요한 법정 보호재산, 급여 등 일부만 압류할 수 있는 재산, 제3자의 권리, 체납액에 비해 지나치게 큰 압류를 각각 걸러야 한다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>제32조 초과압류 금지와 제33조 제3자 권리 보호를 구별한다.</li>
+<li>제41조 압류금지재산과 제42조 급여채권 제한을 적용한다.</li>
+<li>재산목록·압류조서·생계비자료로 최소침해 대안을 비교한다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>체납 3천만 원에 대해 1억 6천만 원 토지를 압류했지만 4천5백만 원 예금이 있었다면 어떤 비교가 필요한가?</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>쉬운 뜻</th>
+<th>확인점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="용어">초과압류</td>
+<td data-label="쉬운 뜻">체납액과 비용에 비해 필요 이상 재산을 묶는 압류</td>
+<td data-label="확인점">가액·선순위권리·환가비용을 함께 계산한다.</td>
+</tr>
+<tr>
+<td data-label="용어">압류금지재산</td>
+<td data-label="쉬운 뜻">생계·직업·사회보장 등을 위해 법이 압류를 막는 재산</td>
+<td data-label="확인점">제41조 각 호 해당성을 본다.</td>
+</tr>
+<tr>
+<td data-label="용어">압류제한</td>
+<td data-label="쉬운 뜻">급여처럼 일정 부분만 압류하도록 한 제도</td>
+<td data-label="확인점">제42조와 시행령 계산을 적용한다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>결정적 사실</th>
+<th>우선 증빙</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="단계">소유·권리</td>
+<td data-label="결정적 사실">체납자 소유이며 제3자 권리가 있는가</td>
+<td data-label="우선 증빙">등기·계약·소유권증빙</td>
+<td data-label="판단">제33조 보호를 검토한다.</td>
+</tr>
+<tr>
+<td data-label="단계">금지·제한</td>
+<td data-label="결정적 사실">생계재산 또는 급여·연금 등인가</td>
+<td data-label="우선 증빙">생계비자료·급여명세</td>
+<td data-label="판단">제41조·제42조로 걸러낸다.</td>
+</tr>
+<tr>
+<td data-label="단계">필요액</td>
+<td data-label="결정적 사실">체납액·비용·선순위액은 얼마인가</td>
+<td data-label="우선 증빙">체납명세·권리분석</td>
+<td data-label="판단">실제 확보 필요액을 계산한다.</td>
+</tr>
+<tr>
+<td data-label="단계">대체재산</td>
+<td data-label="결정적 사실">덜 침해적인 충분한 재산이 있는가</td>
+<td data-label="우선 증빙">재산목록·평가서</td>
+<td data-label="판단">제32조 초과 여부를 판단한다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>제32조는 초과압류를 금지하고 제33조는 제3자의 권리를 부당하게 해치지 않도록 한다. 제41조는 압류금지 항목, 제42조는 급여채권 등의 제한을 정한다. 장부가액이 아니라 실제 환가가능액과 선순위 부담을 사용한다.</p>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>비식별 가상 사례다. I의 체납액과 예상 강제징수비 합계는 3천3백만 원이다. 순가치 1억 4천만 원 토지와 잔액 4천5백만 원의 일반 예금이 있고, 예금에는 별도 제한표시가 없다. 징수담당자는 토지 전부만 압류했다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>필요액 3천3백만 원, 예금 순가치 4천5백만 원, 토지 순가치 1억 4천만 원을 비교한다.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>일반 예금만으로 필요액을 충족할 가능성이 큰데 훨씬 큰 토지를 전부 압류했다. 선순위권리, 예금의 실제 가용성, 분할·일부해제 가능성을 확인한 뒤 제32조 위반 여부를 판단해야 하며 단순 장부가액 비교로 끝내지 않는다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>비식별 J의 체납은 2천8백만 원이다. 재산목록에는 업무용 장비, 월급 계좌, 가족 공동소유 자동차가 있고 압류조서에는 세 재산 모두 적혀 있다. 생계비자료와 공동소유 지분표시는 누락됐다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>징수 가설: 과세관청은 각 재산의 순가치가 불확실해 회수 확보를 위해 함께 압류했다고 본다.</li>
+<li>납세자 가설: 납세자는 압류금지·제한과 제3자 지분을 심사하지 않아 필요 이상으로 재산을 묶었다고 본다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>법적 요건</th>
+<th>주장 사실</th>
+<th>확인 자료</th>
+<th>지지하는 실제 가설</th>
+<th>신뢰도·공백</th>
+<th>추가 확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="법적 요건">법정보호</td>
+<td data-label="주장 사실">업무용 장비와 월급 일부가 보호 대상이다</td>
+<td data-label="확인 자료">생계비자료·급여명세서·장비 사용기록</td>
+<td data-label="지지하는 실제 가설">압류금지·제한 가설</td>
+<td data-label="신뢰도·공백">사용목적과 급여 원천은 확인되나 법정범위 계산이 비어 있다</td>
+<td data-label="추가 확인">제41조 항목과 제42조 계산표를 만든다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">제3자 권리</td>
+<td data-label="주장 사실">자동차에 가족 지분이 있다</td>
+<td data-label="확인 자료">등록원부·공동매수계약</td>
+<td data-label="지지하는 실제 가설">제3자 지분 보호 가설</td>
+<td data-label="신뢰도·공백">공시된 지분은 강하지만 실제 대금부담은 추가 확인 대상이다</td>
+<td data-label="추가 확인">금융지급 자료를 본다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">초과 여부</td>
+<td data-label="주장 사실">세 재산 모두를 압류했다</td>
+<td data-label="확인 자료">재산목록·압류조서·체납명세</td>
+<td data-label="지지하는 실제 가설">최소침해 미검토 가설</td>
+<td data-label="신뢰도·공백">압류 범위는 명확하나 각 순가치는 공백이다</td>
+<td data-label="추가 확인">선순위액·환가비용을 반영한다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>절차 단계</th>
+<th>담당 주체</th>
+<th>서류</th>
+<th>기한</th>
+<th>조사·불복상 확인점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="절차 단계">보호재산 선별→가액 비교</td>
+<td data-label="담당 주체">징수담당자와 권리자</td>
+<td data-label="서류">재산목록·압류조서·생계비자료·권리증빙</td>
+<td data-label="기한">압류 전과 해제신청 시</td>
+<td data-label="조사·불복상 확인점">보호범위와 순가치·대체재산을 표로 남긴다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<p>각 재산의 보호범위와 순가치를 계산하지 않고 압류 전부의 적법성을 단정하지 않는다.</p>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>불확실성은 무제한 압류의 근거가 아니다. 법정 보호재산을 먼저 제외·제한하고 제3자 지분과 순가치를 반영한 뒤 필요한 범위만 남겨야 한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>쟁점: 보호재산과 제3자 권리를 무시한 초과압류인지</li>
+<li>법리: 제41조·제42조로 대상을 제한하고 제33조 권리보호 후 제32조 필요범위를 본다.</li>
+<li>사실포섭: 월급·생업장비·공동지분 심사 없이 세 재산 모두 압류했다.</li>
+<li>결론: 가치·보호범위가 확인되면 일부해제 또는 압류 제한 가능성이 있다.</li>
+</ul>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>실무 기록</th>
+<th>답안 사용</th>
+<th>득점 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="실무 기록">순가치 계산표</td>
+<td data-label="답안 사용">체납액 대비 필요한 범위를 수치화</td>
+<td data-label="득점 포인트">총가액 대신 선순위 차감액을 쓴다.</td>
+</tr>
+<tr>
+<td data-label="실무 기록">보호근거 목록</td>
+<td data-label="답안 사용">제41조·제42조·제33조를 각각 포섭</td>
+<td data-label="득점 포인트">초과압류와 압류금지를 혼동하지 않는다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="exam-heading-3">감점 방지</h3>
+<p>재산가액이 크다는 사실만으로 초과압류라고 단정하지 말고 선순위권리·환가비용·다른 재산의 회수가능성을 함께 적는다.</p>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>연결된 특정 판결은 없다. 현행 보호조문과 실제 가액자료를 적용한다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>일반 예금이 압류 직전 모두 출금되어 회수 가능한 대체재산이 없었다면 토지압류 결론은 달라질까?</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>개별 판결 주문은 없다. 대체재산이 실제로 사라졌다면 토지압류 필요성은 강해지지만 여전히 토지 일부압류·일부해제 가능성과 순가치를 검토한다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>제41조의 압류금지는 필요액이 커도 침해할 수 없는 항목이고, 제32조 초과압류는 가액·대체재산 비교에 따라 달라진다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>2026년 6월 2일 시행 법률의 제41조 개정 내용을 포함해 현행 조문을 사용했다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>예금이 이미 소진되고 토지에는 큰 선순위담보가 있어 순가치가 3천5백만 원뿐이라는 자료가 확인되었다. 체납·비용과 거의 같아 필요 이상이라는 전제가 사라지므로 결론은 토지압류를 유지하는 방향으로 바뀐다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 압류금지·압류제한·제3자 보호·초과압류는 어떻게 다른가?</li>
+<li class="recall-question">증빙 선택: 재산목록·압류조서·생계비자료는 어떤 판단에 쓰는가?</li>
+<li class="recall-question">새 사실 전이: 대체예금이 없고 토지 순가치가 작아지면 결론은 어떻게 변하는가?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>각 답에 0·1·2를 기록하고 순가치 산식이 없으면 다시 계산한다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 제41조는 절대적 보호항목, 제42조는 일정 부분 제한, 제33조는 제3자 권리, 제32조는 체납액 대비 필요한 범위를 각각 심사한다.</li>
+<li>증빙 선택: 재산목록은 대체재산, 압류조서는 실제 범위, 생계비자료는 법정보호와 생활유지 필요성을 구체적으로 증명한다.</li>
+<li>새 사실 전이: 대체예금이 없고 토지 순가치가 필요액에 가까우면 초과압류 가설이 약해져 토지압류 유지 방향으로 결론이 바뀐다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-27</p>
+<p><a href="https://www.law.go.kr/법령/국세징수법" rel="noopener noreferrer">2026. 6. 2. 시행 국세징수법(법률 제21713호)</a> <a href="https://www.law.go.kr/법령/국세징수법/제41조" rel="noopener noreferrer">국세징수법 제41조 압류금지 재산</a> <a href="https://www.law.go.kr/법령/국세징수법/제42조" rel="noopener noreferrer">국세징수법 제42조 급여채권 등의 압류 제한</a> <a href="https://www.law.go.kr/법령/국세징수법시행령" rel="noopener noreferrer">2026. 2. 27. 시행 국세징수법 시행령(대통령령 제36126호)</a> <a href="https://www.law.go.kr/법령/국세징수법시행규칙" rel="noopener noreferrer">2026. 3. 20. 시행 국세징수법 시행규칙(재정경제부령 제19호)</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

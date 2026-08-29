@@ -1,0 +1,1241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-NCTA-HIDDEN-ASSET-REMEDY-001">
+  <title>은닉재산 추적·사해행위 취소·징수상 권리구제 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">은닉재산 추적·사해행위 취소·징수상 권리구제</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 국세징수법</li>
+<li class="meta-chip">난도 고급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-27</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>체납 직전 가족에게 재산을 넘겼다고 모두 사해행위는 아니다. 먼저 법정 자료로 재산을 찾고, 수색은 재산 발견이라는 목적·참여자·증표 제시를 지켜야 한다. 압류할 재산을 찾지 못한 경우에만 무재산 수색조서를 작성한다. 취소소송은 조세채권 또는 그 성립기초, 사해성·수익자 인식·민법상 기간을 입증해야 하며 위법한 징수처분은 기본법상 불복으로 다툰다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>제25조 사해행위 취소와 민법 제406조 요건을 연결한다.</li>
+<li>제35조 수색·무재산 수색조서, 제36조 소재·수량 질문·검사, 제37조 참여자, 제38조 증표·통지서 제시와 제111조 자료활용을 구별한다.</li>
+<li>금융자료·재산추적기록·사해행위계약·불복청구서로 양쪽 가설을 검증한다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>체납 고지 직전 시가 5억 원 부동산을 가족에게 4억 9천만 원에 팔았다면 저가양도라는 말만으로 취소할 수 있을까?</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>쉬운 뜻</th>
+<th>확인점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="용어">은닉재산 추적</td>
+<td data-label="쉬운 뜻">공개·법정 자료에서 체납자의 실질 재산과 이동을 찾는 분석</td>
+<td data-label="확인점">권한·목적·접근기록을 남긴다.</td>
+</tr>
+<tr>
+<td data-label="용어">사해행위 취소</td>
+<td data-label="쉬운 뜻">징수를 피하려 한 재산처분을 법원에 취소·원상회복 청구하는 제도</td>
+<td data-label="확인점">제25조·민법 제406조 요건을 본다.</td>
+</tr>
+<tr>
+<td data-label="용어">징수상 권리구제</td>
+<td data-label="쉬운 뜻">압류·매각 등 처분의 위법을 심사청구·심판청구 등으로 다투는 절차</td>
+<td data-label="확인점">국세기본법 제55조 처분·기한을 본다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>결정적 사실</th>
+<th>우선 증빙</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="단계">조세채권</td>
+<td data-label="결정적 사실">거래 당시 징수할 국세가 있었거나 성립기초가 있었는가</td>
+<td data-label="우선 증빙">신고·조사·고지자료</td>
+<td data-label="판단">피보전채권과 시간관계를 본다.</td>
+</tr>
+<tr>
+<td data-label="단계">재산처분</td>
+<td data-label="결정적 사실">시가·대가·수익자·자금흐름이 어떠한가</td>
+<td data-label="우선 증빙">사해행위계약·감정·금융</td>
+<td data-label="판단">무상·저가·정상거래를 구별한다.</td>
+</tr>
+<tr>
+<td data-label="단계">징수곤란·인식</td>
+<td data-label="결정적 사실">처분 뒤 무자력과 당사자 인식이 있는가</td>
+<td data-label="우선 증빙">재산추적기록·관계자료</td>
+<td data-label="판단">단순 친족관계 이상을 확인한다.</td>
+</tr>
+<tr>
+<td data-label="단계">조사·구제 적법</td>
+<td data-label="결정적 사실">자료·수색·불복이 권한과 기한을 지켰는가</td>
+<td data-label="우선 증빙">수색조서·접근로그·불복청구서</td>
+<td data-label="판단">본안과 절차위법을 나눈다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>제25조는 신탁법상 사해신탁을 포함해 민법 제406조·제407조를 준용한다. 제35조는 압류할 재산을 찾기 위한 수색과, 압류할 재산을 찾지 못한 경우에만 작성하는 무재산 수색조서를 정한다. 제36조는 압류재산의 소재ㆍ수량을 알아내기 위한 질문ㆍ검사를 정한다. 제37조는 참여자, 제38조는 증표와 통지서의 제시, 제111조는 법정 지급명세 등 자료 활용의 근거다. 수색은 압류할 재산을 발견·특정하기 위한 권한이지 조사 관련 계약원본을 증거로 압수하는 일반 권한이 아니다. 사해행위 취소소송과 국세기본법 제55조 불복은 목적·당사자·효과가 다르다.</p>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>비식별 가상 사례다. AG는 세금 성립기초가 생긴 뒤 유일한 토지 시가 4억 원을 특수관계 회사에 1억 8천만 원에 양도했다. 대금 중 8천만 원만 지급됐고 나머지는 근거 없는 상계로 처리됐다. 양도 뒤 AG의 남은 재산은 2천만 원이고 체납예상액은 1억 5천만 원이다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>조세채권 시간관계, 현저한 대가 차이, 미지급 대금, 처분 뒤 재산부족을 요건별로 설명한다.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>조세채권의 성립기초가 처분 전에 있고 유일재산이 현저히 낮은 실수령액으로 이전되어 징수곤란이 커졌다. 특수관계만으로 결론내린 것이 아니라 시가·대금·상계근거·잔존재산을 연결했다. 관할 세무서장은 제25조에 따라 법원에 취소와 원상회복을 청구할 요건을 검토한다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>비식별 AH는 세무조사 통지 뒤 창고재고를 형제 회사에 2억 원에 양도했다. 계약서와 시가평가는 임의 제출받았지만 대금은 여러 계좌를 거쳐 AH 대표 개인에게 돌아왔다. 징수팀은 압류할 재고를 찾기 위해 창고를 수색했으나 재고를 찾지 못했고, 수색조서에는 장소·시간·무재산 결과가 적혔지만 참여자와 증표·통지서 제시 기록이 빠졌다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>징수 가설: 과세관청은 정상가격 외관에도 대금이 되돌아와 실질적으로 재산을 빼돌린 사해행위라고 본다.</li>
+<li>납세자 가설: 납세자는 시가매매이고 조세채권 성립·무자력·수익자 인식이 부족하며 수색 절차에도 흠결이 있다고 본다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>법적 요건</th>
+<th>주장 사실</th>
+<th>확인 자료</th>
+<th>지지하는 실제 가설</th>
+<th>신뢰도·공백</th>
+<th>추가 확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="법적 요건">대가의 실질</td>
+<td data-label="주장 사실">2억 원이 순환해 대표 개인에게 돌아왔다</td>
+<td data-label="확인 자료">금융자료·사해행위계약·계좌흐름도</td>
+<td data-label="지지하는 실제 가설">가장매매·대금환류 가설</td>
+<td data-label="신뢰도·공백">금융흐름은 강하지만 반환 법률원인이 공백이다</td>
+<td data-label="추가 확인">대여·배당·상환 계약을 확인한다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">징수곤란·인식</td>
+<td data-label="주장 사실">양도 뒤 집행재산이 부족하고 형제회사가 거래를 알았다</td>
+<td data-label="확인 자료">재산추적기록·관계자료·이사회 기록</td>
+<td data-label="지지하는 실제 가설">사해성·수익자 악의 가설</td>
+<td data-label="신뢰도·공백">관계는 정황일 뿐 직접 인식자료가 더 필요하다</td>
+<td data-label="추가 확인">거래 전 메시지와 재산현황을 본다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">재산 수색</td>
+<td data-label="주장 사실">압류할 재고를 찾지 못했다</td>
+<td data-label="확인 자료">수색조서·재고실사·창고위치자료</td>
+<td data-label="지지하는 실제 가설">무재산 수색결과 가설</td>
+<td data-label="신뢰도·공백">조서는 결과에 강하지만 소재·수량 확인과정이 비어 있다</td>
+<td data-label="추가 확인">제35조 무재산 기록과 제36조 질문·검사를 대사한다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">참여·증표 제시</td>
+<td data-label="주장 사실">참여자와 증표·통지서 제시 기록이 빠졌다</td>
+<td data-label="확인 자료">수색조서·출입로그·증표 제시 확인</td>
+<td data-label="지지하는 실제 가설">수색절차 하자 가설</td>
+<td data-label="신뢰도·공백">로그는 출입을 보이나 법정 제시는 별도다</td>
+<td data-label="추가 확인">제37조 참여자와 제38조 제시 여부를 확인한다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>절차 단계</th>
+<th>담당 주체</th>
+<th>서류</th>
+<th>기한</th>
+<th>조사·불복상 확인점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="절차 단계">자료탐색→수색→취소소송·불복</td>
+<td data-label="담당 주체">징수담당자·납세자·수익자</td>
+<td data-label="서류">금융자료·재산추적기록·사해행위계약·불복청구서</td>
+<td data-label="기한">거래일·인지일·처분통지·불복기한</td>
+<td data-label="조사·불복상 확인점">민사 취소요건과 징수처분 하자를 별도 파일로 관리한다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<p>자금환류의 법률원인, 거래 전후 순재산, 수익자 인식과 수색권한 자료를 확인한 뒤 본안과 절차를 따로 결론낸다.</p>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>시가와 계약서가 정상이어도 대금이 실질적으로 돌아오면 사해성 판단이 달라질 수 있다. 반대로 수색조서 흠결이 곧 사해행위 본안의 부존재를 뜻하지는 않으며 권리구제에서 독립적으로 다툰다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>쟁점: 대금환류 거래의 사해행위성과 수색·징수처분의 절차적 구제</li>
+<li>법리: 제25조·민법 제406조 요건과 제35조 수색·무재산 기록, 제36조 소재·수량 질문·검사, 제37조 참여자, 제38조 증표·통지서 제시, 기본법 제55조 불복을 구별한다.</li>
+<li>사실포섭: 시가계약이지만 대금이 환류했고 조서와 출입로그가 불일치한다.</li>
+<li>결론: 취소요건은 자금·무자력·인식으로, 절차위법은 별도 불복으로 판단한다.</li>
+</ul>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>실무 기록</th>
+<th>답안 사용</th>
+<th>득점 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="실무 기록">순재산 전후표</td>
+<td data-label="답안 사용">징수곤란을 수치로 포섭</td>
+<td data-label="득점 포인트">거래가격만으로 끝내지 않는다.</td>
+</tr>
+<tr>
+<td data-label="실무 기록">권한·기한표</td>
+<td data-label="답안 사용">수색·민사소송·조세불복을 구별</td>
+<td data-label="득점 포인트">구제수단과 효과를 정확히 쓴다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="exam-heading-3">감점 방지</h3>
+<p>가족·특수관계, 저가라는 표지만 나열하지 말고 조세채권, 재산감소, 대가환류, 무자력, 수익자 인식, 기간을 요건별로 쓴다.</p>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>대법원 2007. 6. 29. 선고 2006다66753 사해행위취소 판결은 증여 전에 양도소득세 가산세채권이 아직 성립하지 않았더라도 장래채권이 사해행위 취소의 피보전채권이 될 수 있는 경계를 밝혔다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>부동산 양도 뒤 증여계약을 했지만 양도소득세 예정신고·확정신고가 아직 없었다면, 장래 가산세채권도 피보전채권이 될 수 있을까?</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>대법원은 원심판결 중 원고 패소 부분을 파기하고 환송했다. 채권성립의 기초가 되는 법률관계가 이미 있고 가까운 장래에 채권이 성립하리라는 고도의 개연성이 있으며 실제로 가까운 장래에 채권이 성립하면 장래채권도 피보전채권이 될 수 있다고 보았다. 채무자가 소유 부동산을 양도해 양도소득세와 가산세의 기초관계를 만든 직후 증여했고, 증여 뒤 다른 재산이 없었으며 예정신고·확정신고·자진납부를 하지 않아 실제 가산세채권이 성립한 사실을 중시했다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>판결 참조조문은 민법 제406조 제1항, 구 소득세법 제115조와 구 국세징수법 제21조ㆍ제22조다. 다만 공식 공개 판결에서 양도ㆍ증여의 사건시기 확인 불가이므로, 이 참조조문을 정확한 사건시기 적용본으로 확정하지 않는다. 원심 선고일이나 대법원 선고일을 거래일 대용으로 쓰지 않는다. 새 사건의 현행 제25조 및 민법 제406조 적용과 수색절차 판단은 별도로 한다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>파기환송 주문 뒤의 공식 후속 판단은 기준일까지 별도로 확인하지 못했다. 현재 절차에는 제25조·제35조부터 제38조·제111조, 민법 제406조, 기본법 제55조를 사용하고 당시 가산세 성립은 판결이 인용한 구법으로만 설명한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>2억 원 전액이 독립 금융기관의 체납상환 전용계좌에 남고 거래 전후 AH의 순재산도 줄지 않았으며 형제 회사가 조세위험을 몰랐다는 자료가 확인되었다. 재산감소·환류 전제가 사라지므로 결론은 사해행위 취소요건을 부정하는 방향으로 바뀐다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 은닉재산 추적·수색·사해행위 취소·조세불복은 어떻게 다른가?</li>
+<li class="recall-question">증빙 선택: 금융자료·재산추적기록·사해행위계약·불복청구서는 무엇을 각각 증명하는가?</li>
+<li class="recall-question">새 사실 전이: 정상대금이 보존되고 순재산이 줄지 않으면 결론은 어떻게 변하는가?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>각 답에 0·1·2를 표시하고 본안과 절차구제를 같은 결론으로 썼으면 다시 나눈다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 제111조 자료, 제35조 수색·무재산 조서, 제36조 소재·수량 질문·검사, 제37조 참여자, 제38조 증표·통지서 제시는 발견절차다. 제25조·민법 제406조는 민사 취소, 기본법 제55조는 징수처분에 대한 조세불복이다.</li>
+<li>증빙 선택: 금융자료는 대금흐름, 재산추적기록은 순재산 변화, 사해행위계약은 거래조건·상대방, 불복청구서는 다투는 처분·이유·기한을 구체적으로 증명한다.</li>
+<li>새 사실 전이: 정상대금이 추적 가능한 재산으로 보존되고 순재산 감소와 수익자 인식이 없으면 사해성 가설이 약해져 취소요건을 부정하는 방향으로 결론이 바뀐다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-27</p>
+<p><a href="https://www.law.go.kr/법령/국세징수법" rel="noopener noreferrer">2026. 6. 2. 시행 국세징수법(법률 제21713호)</a> <a href="https://www.law.go.kr/법령/국세징수법/제25조" rel="noopener noreferrer">국세징수법 제25조 사해행위의 취소 및 원상회복</a> <a href="https://www.law.go.kr/법령/국세징수법/제35조" rel="noopener noreferrer">국세징수법 제35조 수색</a> <a href="https://www.law.go.kr/법령/국세징수법/제36조" rel="noopener noreferrer">국세징수법 제36조 질문과 검사</a> <a href="https://www.law.go.kr/법령/국세징수법/제37조" rel="noopener noreferrer">국세징수법 제37조 수색 참여자</a> <a href="https://www.law.go.kr/법령/국세징수법/제38조" rel="noopener noreferrer">국세징수법 제38조 증표와 통지서 제시</a> <a href="https://www.law.go.kr/법령/국세징수법/제111조" rel="noopener noreferrer">국세징수법 제111조 지급명세서 등의 재산조회 활용</a> <a href="https://www.law.go.kr/법령/민법/제406조" rel="noopener noreferrer">민법 제406조 채권자취소권</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=68783" rel="noopener noreferrer">대법원 2007. 6. 29. 선고 2006다66753 사해행위취소</a> <a href="https://www.law.go.kr/법령/국세기본법/제55조" rel="noopener noreferrer">2026. 8. 11. 시행 국세기본법 제55조 불복</a> <a href="https://www.law.go.kr/법령/국세징수법시행령" rel="noopener noreferrer">2026. 2. 27. 시행 국세징수법 시행령(대통령령 제36126호)</a> <a href="https://www.law.go.kr/법령/국세징수법시행규칙" rel="noopener noreferrer">2026. 3. 20. 시행 국세징수법 시행규칙(재정경제부령 제19호)</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

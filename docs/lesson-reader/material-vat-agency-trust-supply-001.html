@@ -1,0 +1,1211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-VAT-AGENCY-TRUST-SUPPLY-001">
+  <title>대리·위탁매매·신탁과 실제 공급자 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">대리·위탁매매·신탁과 실제 공급자</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 부가가치세법</li>
+<li class="meta-chip">난도 고급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-28</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>대리·위탁·신탁은 돈이 지나간 계좌가 아니라 법이 어느 단계의 공급자로 보는지가 핵심이다. 위탁자·수탁자·대리인·신탁수익자 사이의 계산과 책임을 단계별로 그린다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>대리·위탁매매·신탁과 실제 공급자의 법정 요소와 경계를 순서대로 설명한다.</li>
+<li>대리·위탁매매·신탁과 실제 공급자 증거축은 A=신탁원부·처분지시, B=경매 약관, 미확인=최종 가격승인이다. 이 세 축으로 대리·위탁매매·신탁과 실제 공급자 조사측 설명과 납세자측 설명의 강도를 비교한다.</li>
+<li>공급가액·세액·귀속 과세기간을 계산해 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제38호서식 매출처별 세금계산서합계표 · 별지 제39호서식 매입처별 세금계산서합계표의 관련 칸까지 닫는다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>위탁자 재화 공급과 수탁자 수수료 용역을 나누고 포함대가에서 공급가액·세액을 구하자.</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>개념</th>
+<th>현재 수업의 뜻</th>
+<th>결정 증빙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="개념">위탁매매</td>
+<td data-label="현재 수업의 뜻">수탁자 명의 거래의 법정 공급의제</td>
+<td data-label="결정 증빙">위탁계약·정산</td>
+</tr>
+<tr>
+<td data-label="개념">대리</td>
+<td data-label="현재 수업의 뜻">본인 효과 귀속과 발급주체</td>
+<td data-label="결정 증빙">대리권·표시</td>
+</tr>
+<tr>
+<td data-label="개념">신탁</td>
+<td data-label="현재 수업의 뜻">법 제10조 제8항의 공급주체 특례</td>
+<td data-label="결정 증빙">신탁원부·처분지시</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<ol>
+<li>법 제10조 제7항·제8항과 영 제21조로 위탁·신탁 공급단계를 정하고, 영 제69조·규칙 제50조로 세금계산서 발급주체를 확인한다.</li>
+<li>적용 조문 묶음은 부가가치세법 제10조 제7항·제8항 · 부가가치세법 시행령 제21조·제69조 · 부가가치세법 시행규칙 제50조이다. 대리·위탁매매·신탁과 실제 공급자에서는 신탁원부·처분지시 사실, ‘신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지가 쟁점이다.’ 요건, 별지 제21호서식 일반과세자 부가가치세 신고서 효과의 순서로 읽는다.</li>
+<li>대리·위탁매매·신탁과 실제 공급자 수치는 ‘위탁판매 부가가치세 포함 대금 1,100,000원 ÷ 1.1 = 위탁자 공급가액 1,000,000원; 세액 100,000원’으로 검산한다. 경매 약관 금액이 부가가치세 별도인지 포함인지 먼저 확정한다.</li>
+<li>자료 A(하자비용 전표)의 날짜와 공백항목(최종 정산귀속)을 대조한다. 귀속표시: 2026년 제2기. 이어서 세금계산서 XML 거래키를 신고 칸까지 추적한다.</li>
+</ol>
+<p>대리·위탁매매·신탁과 실제 공급자의 현행 기준은 [시행 2026. 1. 2.] [법률 제21065호, 2025. 10. 1., 타법개정], [시행 2026. 4. 1.] [대통령령 제36133호, 2026. 2. 27., 일부개정], [시행 2026. 4. 1.] [재정경제부령 제9호, 2026. 3. 20., 일부개정]이다. 신탁원부·처분지시에는 현행 문언을 쓰고, 판례의 구법은 신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지가 쟁점이다. 범위에서만 전이한다.</p>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>수탁자 계좌에 총액이 입금됐다고 수탁자가 경제적 공급자라는 결론은 아니다. 재고소유·가격결정·하자·정산차액을 각 단계에 귀속한다.</p>
+<details class="reveal-block reveal-block--deepening">
+<summary>심화 펼치기</summary>
+<div class="reveal-block__body">
+<h4 id="legal-structure-heading-4">심화</h4>
+<p>대리·위탁매매·신탁과 실제 공급자 심화대조는 작성시각(신탁원부·처분지시)과 거래키(하자비용 전표)를 나누는 데서 시작한다. 공백항목=최종 가격승인. 이 항목이 비면 결론을 유보하고, 반증항목=최종 정산귀속 확인 뒤 대리·위탁매매·신탁과 실제 공급자 포섭을 갱신한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<p>연습 단계: 독립 해결형 worked example</p>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>위탁판매 부가가치세 포함 대금 1,100,000원을 수탁자가 수령하고 정액 수수료를 뺀다. 재고와 가격위험은 위탁자에게 남는다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>위탁자 재화 공급과 수탁자 수수료 용역을 나누고 포함대가에서 공급가액·세액을 구하자.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>위탁판매 부가가치세 포함 대금 1,100,000원 ÷ 1.1 = 위탁자 공급가액 1,000,000원; 세액 100,000원</p>
+<p>독립 해결형: 법정 공급의제, 발급주체, 수수료 별도 과세, 신고기간을 먼저 작성한다. 닫힌 위탁판매 재화 공급가액은 1,000,000원, 세액은 100,000원이다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>원시증빙</th>
+<th>전표·장부</th>
+<th>시산표·재무제표</th>
+<th>신고서·납부자료</th>
+<th>대사 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="원시증빙">계약서·세금계산서·금융거래·신탁원부·처분지시·경매 약관·하자비용 전표·원본</td>
+<td data-label="전표·장부">거래키별 매출·매입 보조부·부가세예수금·부가세대급금 원장</td>
+<td data-label="시산표·재무제표">합계잔액시산표·부가세예수금·부가세대급금 잔액</td>
+<td data-label="신고서·납부자료">별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제38호서식 매출처별 세금계산서합계표 · 별지 제39호서식 매입처별 세금계산서합계표·납부서·환급결정</td>
+<td data-label="대사 결과">대리·위탁매매·신탁과 실제 공급자 대사식 위탁판매 부가가치세 포함 대금 1,100,000원 ÷ 1.1 = 위탁자 공급가액 1,000,000원; 세액 100,000원; 2026년 제2기 귀속 또는 발급권한 로그 미확인으로 표시</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>VAT 실무 bridge: 원시증빙 → 매출·매입 보조부 → 세금계산서·대체증빙 → 부가가치세 신고서·부속명세서 → 납부·환급</p>
+<p>서식 책임선: 작성자 → 제출받는 자 → 제출시기 → 신고 위치</p>
+<p>법정 발급주체가 거래 단계별 세금계산서를 발급해 별지 제38호·제39호를 작성하고, 해당 과세기간에 관할 세무서장에게 별지 제21호와 함께 제출한다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>감사 사건 식별자: VAT-AUDIT-111</p>
+<p>중립 관찰: 미술품 신탁계약에서 수탁자가 경매가격을 정하고 매수인 대금을 받았지만 위탁자는 최저가를 지시했다. 하자분쟁 비용은 신탁재산에서 지출됐고 세금계산서는 위탁자 등록번호로 발급됐다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>조사 가설: 과세관청 가설은 수탁자가 가격·계약·대금을 통제해 법정 공급주체와 발급주체가 잘못됐다는 것이다.</li>
+<li>납세자 가설: 납세자 가설은 수탁자가 신탁사무를 집행했을 뿐 경제효과와 위험은 위탁자에게 귀속된다는 것이다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>자료</th>
+<th>중립 관찰</th>
+<th>조사 가설 읽기</th>
+<th>납세자 가설 읽기</th>
+<th>남은 공백</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="자료">신탁원부·처분지시</td>
+<td data-label="중립 관찰">최저가 지시 존재</td>
+<td data-label="조사 가설 읽기">신탁원부·처분지시의 최저가 지시는 위탁자 측이 처분조건을 통제했다는 납세자 가설을 강하게 지지하고 수탁자가 독립적으로 가격을 결정했다는 조사 가설을 반박한다. 다만 최종 가격승인이 공백이면 수탁자 재량의 범위는 남는다.</td>
+<td data-label="납세자 가설 읽기">신탁원부·처분지시는 최저가 지시를 통해 가격통제가 위탁자에게 있었다는 납세자 가설을 강하게 지지한다. 최종 가격승인자와 지시에서 벗어난 거래를 확인해야 한다.</td>
+<td data-label="남은 공백">최종 가격승인·지시에서 벗어난 거래</td>
+</tr>
+<tr>
+<td data-label="자료">경매 약관</td>
+<td data-label="중립 관찰">수탁자 계약당사자 표시</td>
+<td data-label="조사 가설 읽기">대리·위탁매매·신탁과 실제 공급자 자료 경매 약관: 관찰 ‘수탁자 계약당사자 표시’. 이 관찰은 중간 정도로 지지하되 대리·위탁매매·신탁과 실제 공급자 조사측 판단에 한정한다. 반증 원본: 매수인 인식. 그 원본이 상반되면 경매 약관의 조사측 강도를 낮춘다.</td>
+<td data-label="납세자 가설 읽기">대리·위탁매매·신탁과 실제 공급자 자료 경매 약관: 납세자측 설명 ‘대리표시 조항’. 이 설명은 약하게 지지하되 경매 약관 판정에 한정한다. 미확인 공백: 매수인 인식.</td>
+<td data-label="남은 공백">매수인 인식</td>
+</tr>
+<tr>
+<td data-label="자료">하자비용 전표</td>
+<td data-label="중립 관찰">신탁재산 부담</td>
+<td data-label="조사 가설 읽기">하자비용 전표에서 신탁재산 부담으로 처리된 사실은 경제적 위험이 수탁자에게 독립 귀속하지 않았다는 납세자 가설을 강하게 지지하고 수탁자가 실제 공급자라는 조사 가설을 반박한다. 다만 최종 정산귀속이 공백이면 선지급 가능성은 남는다.</td>
+<td data-label="납세자 가설 읽기">하자비용 전표는 하자위험이 신탁재산에 귀속했다는 납세자 가설을 강하게 지지한다. 최종 정산귀속과 수탁자 구상권을 확인해야 한다.</td>
+<td data-label="남은 공백">최종 정산귀속·수탁자 구상권</td>
+</tr>
+<tr>
+<td data-label="자료">세금계산서 XML</td>
+<td data-label="중립 관찰">위탁자 등록번호</td>
+<td data-label="조사 가설 읽기">세금계산서 XML의 위탁자 등록번호는 법정 대리발급 구조와 잘못된 공급자 표시 모두와 양립해 단독으로는 두 가설을 구별할 수 없다. 발급권한 로그가 공백이므로 조사 가설을 중간 정도 이상 지지하지 않는다.</td>
+<td data-label="납세자 가설 읽기">세금계산서 XML은 위탁자 등록번호를 보여주지만 실제 가격·위험 통제자는 보여주지 않아 단독으로는 두 가설을 구별할 수 없다. 발급권한 로그와 영 제69조 요건이 공백이므로 납세자 가설도 중간 정도 이상 지지하지 않는다.</td>
+<td data-label="남은 공백">발급권한 로그·영 제69조 요건</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>8분 조사 워크북</strong></p>
+<ul>
+<li>원본성(대리·위탁매매·신탁과 실제 공급자): 신탁원부·처분지시 메타데이터를 확인한다. 작성자·생성시각·해시의 대조대상은 최종 가격승인이다.</li>
+<li>반증(대리·위탁매매·신탁과 실제 공급자): 경매 약관 조사 설명: ‘수탁자 계약당사자 표시’. 납세자 설명: ‘대리표시 조항’. 두 설명을 분리하고 반박자료(매수인 인식) 확인 뒤 대리·위탁매매·신탁과 실제 공급자 강도를 다시 매긴다.</li>
+<li>금액·시기(대리·위탁매매·신탁과 실제 공급자): 하자비용 전표 거래키로 위탁판매 부가가치세 포함 대금 1,100,000원 ÷ 1.1 = 위탁자 공급가액 1,000,000원; 세액 100,000원을 재계산한다. 귀속=2026년 제2기; 남은 공백=최종 정산귀속.</li>
+<li>신고 연결(대리·위탁매매·신탁과 실제 공급자): 세금계산서 XML 사실을 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제38호서식 매출처별 세금계산서합계표 · 별지 제39호서식 매입처별 세금계산서합계표의 해당 칸에 옮긴다. 발급권한 로그 미확인분은 대리·위탁매매·신탁과 실제 공급자 금액에서 보류한다.</li>
+<li>최종포섭(대리·위탁매매·신탁과 실제 공급자): 신탁원부·처분지시·경매 약관·하자비용 전표의 거래번호·작성시각을 맞춘다. 귀속=2026년 제2기. 쟁점=신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지가 쟁점이다. 반대사실 후보=발급권한 로그.</li>
+</ul>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<p>판정 보류: 최종 가격승인과 하자비용 정산귀속을 확인할 때까지 공급단계·발급주체를 보류한다.</p>
+<p>대리·위탁매매·신탁과 실제 공급자 잠정판정 접점은 작성시각=신탁원부·처분지시, 거래키=경매 약관, 금액원본=하자비용 전표이다. 확인항목=발급권한 로그. 이 항목이 없으면 대리·위탁매매·신탁과 실제 공급자 정상·부정 결론을 모두 유보한다.</p>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>법 제10조의 법정 공급의제와 계약상 실제 계산책임을 함께 쓴다. 총대금 1,100,000원과 수탁자 수수료를 같은 공급가액으로 중복 신고하지 않는다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>Issue: 신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지가 쟁점이다.</li>
+<li>Rule: 법 제10조 제7항·제8항과 영 제21조로 위탁·신탁 공급단계를 정하고, 영 제69조·규칙 제50조로 세금계산서 발급주체를 확인한다.</li>
+<li>Application: 신탁원부 지시, 경매가격 승인로그, 하자비용 최종정산이라는 독립 증거 3종으로 단계별 책임을 확정한다. 위탁자 재화 공급가액 1,000,000원·세액 100,000원을 제2기 별지 제38호와 별지 제21호에 신고하고 수탁자 수수료는 별도 용역으로 둔다. 독립 증거 3종: 신탁원부·처분지시·경매 약관·하자비용 전표. 귀속 과세기간: 2026년 제2기. 신고 위치: 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제38호서식 매출처별 세금계산서합계표 · 별지 제39호서식 매입처별 세금계산서합계표.</li>
+<li>Conclusion: 재고·가격위험이 위탁자에게 남아 위탁자 재화 공급 1,000,000원이 성립하고 수탁자는 수수료 용역만 별도 신고한다.</li>
+</ul>
+<p>닫힌 해설: 적용법령: 법 제10조 제7항·제8항과 영 제21조로 위탁·신탁 공급단계를 정하고, 영 제69조·규칙 제50조로 세금계산서 발급주체를 확인한다. | 판단요건: 신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지가 쟁점이다. | 구체 사실포섭: 신탁원부 지시, 경매가격 승인로그, 하자비용 최종정산이라는 독립 증거 3종으로 단계별 책임을 확정한다. 위탁자 재화 공급가액 1,000,000원·세액 100,000원을 제2기 별지 제38호와 별지 제21호에 신고하고 수탁자 수수료는 별도 용역으로 둔다. | 독립 원본 3종: 신탁원부·처분지시·경매 약관·하자비용 전표 | 계산: 위탁판매 부가가치세 포함 대금 1,100,000원 ÷ 1.1 = 위탁자 공급가액 1,000,000원; 세액 100,000원 | 귀속 과세기간: 2026년 제2기 | 신고서·칸: 별지 제21호서식 일반과세자 부가가치세 신고서 · 별지 제38호서식 매출처별 세금계산서합계표 · 별지 제39호서식 매입처별 세금계산서합계표.</p>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<p>대리·위탁매매·신탁과 실제 공급자 검산식은 위탁판매 부가가치세 포함 대금 1,100,000원 ÷ 1.1 = 위탁자 공급가액 1,000,000원; 세액 100,000원이다. 단위 원본=신탁원부·처분지시; 귀속 원본=하자비용 전표. 두 원본을 별지 제21호서식 일반과세자 부가가치세 신고서에 연결하여 대리·위탁매매·신탁과 실제 공급자 신고 칸까지 추적한다.</p>
+<h3 id="exam-heading-3">감점 방지</h3>
+<ul>
+<li>신탁원부·처분지시 작성주체를 확인하고, 대리·위탁매매·신탁과 실제 공급자 현행조문은 사건 당시 조문과 구분한다.</li>
+<li>경매 약관 위험신호만으로 대리·위탁매매·신탁과 실제 공급자 부인을 확정하지 않는다. 반증=매수인 인식; 독립자료=하자비용 전표.</li>
+<li>대리·위탁매매·신탁과 실제 공급자 계산 귀속=2026년 제2기; 신고 위치=별지 제21호서식 일반과세자 부가가치세 신고서의 구체 칸.</li>
+</ul>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>대법원 2025-05-29 선고 2023두41314</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>단일판례 예측: 자회사 명의를 이용한 독립 거래와 단순 명의차용을 공급단계 관점에서 어떻게 구별할지</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p><strong>대법원 2025-05-29 선고 2023두41314</strong> 원심판결의 피고 원주세무서장 패소 부분 중 일부 부가가치세·세금계산서미발급가산세·법인세·부가가치세 가산세 처분 부분을 파기환송하고, 원고들의 상고와 피고 성북세무서장의 상고를 기각했다. 제3자의 위임 아래 그 등록을 이용한 거래와 실제 운영자가 형식적 명의만 빌린 하나의 사업을 구별하고, 등록 동기·사업내용·자금관리·명의자 관여·세원포착 곤란을 종합해 실제 세금계산서 주체를 신중히 판단해야 한다고 판시했다.</p>
+<p>사건의 구별 사실: 2011년 제1기부터 2017년 제2기까지 자회사 명의 거래와 세금계산서가 문제되었다. / 명의 이용, 내부거래, 자금관리와 독립 사업 수행 여부가 서로 충돌했다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>판시 범위 밖: 2011년 제1기부터 2017년 제2기까지의 구법 사건이다. 현행법 전이는 법 제10조·제32조·제39조의 공급주체와 필요적 기재를 현재 거래에 재포섭한다. 대리·위탁매매·신탁과 실제 공급자에는 판결 이유를 다음 쟁점에 한정해 옮긴다: 신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지가 쟁점이다. 판례와 현재 사건의 차이는 신탁원부·처분지시 계약구조 및 경매 약관 자금·기록으로 표시한다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>대리·위탁매매·신탁과 실제 공급자 연결판례의 주문·사건기간·후속상태는 공식 판례정보로 확인했다. 신탁원부·처분지시 검증표에는 파기환송 뒤 결과가 확인되지 않은 사건을 확정승소로 적지 않는다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>수탁자가 재고를 확정매입하고 가격하락·하자를 자기 부담하면 수탁자가 독립 매수·재판매를 한 것이다. 고객 대금 1,100,000원÷1.1로 수탁자 공급가액 1,000,000원과 수탁자 매출세액 100,000원을 구한다. 2026년 제2기 세금계산서와 별지 제21호서식의 공급자를 수탁자로 정정하고, 위탁자→수탁자 매매는 별도 단계로 검증한다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 신탁·위탁 판매에서 재화 공급자와 세금계산서 발급주체가 누구인지를 푸는 조문 순서는 무엇인가요?</li>
+<li class="recall-question">증빙 선택: VAT-AUDIT-111의 경쟁가설을 가를 독립 원본 세 가지는 무엇인가요?</li>
+<li class="recall-question">새 사실 전이: 위 변형사실을 적용하면 대리·위탁매매·신탁과 실제 공급자 계산과 별지 제21호서식 일반과세자 부가가치세 신고서 신고위치는 어떻게 달라지는가?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>대리·위탁매매·신탁과 실제 공급자 회상답의 확신도는 0·1·2로 표시한다. 0 또는 1이면 자료 A=신탁원부·처분지시; 공백=최종 가격승인. 두 항목을 대리·위탁매매·신탁과 실제 공급자 닫힌 해설과 다시 대조한다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 법 제10조 제7·8항과 영 제21조의 위탁·신탁 공급의제를 적용한다.</li>
+<li>증빙 선택: 신탁원부·가격승인로그·하자비용 정산을 독립 증거로 고른다.</li>
+<li>새 사실 전이: 확정매입이면 위탁자→수탁자와 수탁자→고객 두 공급의 공급가액·세액을 각각 재계산한다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-28</p>
+<p><a href="https://law.go.kr/LSW/lsInfoP.do?ancYnChk=0&amp;lsId=001571" rel="noopener noreferrer">2026년 1월 2일 시행 부가가치세법</a> <a href="https://www.law.go.kr/법령/부가가치세법시행령" rel="noopener noreferrer">2026년 4월 1일 시행 부가가치세법 시행령</a> <a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=284995" rel="noopener noreferrer">2026년 4월 1일 시행 부가가치세법 시행규칙과 별지서식</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619805" rel="noopener noreferrer">별지 제21호서식 일반과세자 부가가치세 신고서</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619955" rel="noopener noreferrer">별지 제38호서식 매출처별 세금계산서합계표</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619965" rel="noopener noreferrer">별지 제39호서식 매입처별 세금계산서합계표</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=606533" rel="noopener noreferrer">2023두41314 공식 판례정보</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

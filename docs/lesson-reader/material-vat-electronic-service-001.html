@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-VAT-ELECTRONIC-SERVICE-001">
+  <title>국외사업자 전자적 용역과 대리납부 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">국외사업자 전자적 용역과 대리납부</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 부가가치세법</li>
+<li class="meta-chip">난도 고급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-28</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>국외사업자 용역은 두 제도를 섞기 쉽다. 국내 지급자가 세금을 대신 내는 법 제52조 대리납부와, 국외 전자적 용역 공급자가 간편등록해 신고하는 제53조의2는 납세 주체·서식·중복방지가 다르다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>국외사업자 전자적 용역과 대리납부의 법정 요소와 경계를 순서대로 설명한다.</li>
+<li>국외사업자 전자적 용역과 대리납부 증거축은 A=국외 공급자 청구서, B=국내 송금 SWIFT, 미확인=서비스별 계약번호이다. 이 세 축으로 국외사업자 전자적 용역과 대리납부 조사측 설명과 납세자측 설명의 강도를 비교한다.</li>
+<li>공급가액·세액·귀속 과세기간을 계산해 별지 제21호서식과 별지 제37호서식 대리납부 경로를 닫고, 별지 제37호의3서식은 국세청장의 거래명세 제출요구가 있는 별도 분기에서만 연결한다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>공급 성격·국내 사용·공급받는 자의 공제 여부를 판단하고 제37호 대리납부세액을 계산하자.</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>개념</th>
+<th>현재 수업의 뜻</th>
+<th>결정 증빙</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="개념">대리납부</td>
+<td data-label="현재 수업의 뜻">국내 공급받는 자가 징수·납부</td>
+<td data-label="결정 증빙">지급계약·별지 제37호</td>
+</tr>
+<tr>
+<td data-label="개념">간편사업자등록</td>
+<td data-label="현재 수업의 뜻">국외 전자적 용역 공급자의 등록·자기 신고</td>
+<td data-label="결정 증빙">간편사업자등록번호·기간별 신고자료</td>
+</tr>
+<tr>
+<td data-label="개념">거래명세 제출요구</td>
+<td data-label="현재 수업의 뜻">국세청장이 간편사업자등록 국외 공급자에게 별도로 요구</td>
+<td data-label="결정 증빙">별지 제37호의3·요구서 수령일</td>
+</tr>
+<tr>
+<td data-label="개념">중복방지</td>
+<td data-label="현재 수업의 뜻">같은 공급을 두 경로에 이중 계상 금지</td>
+<td data-label="결정 증빙">거래키·납부확인</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<ol>
+<li>대리납부는 법 제52조→영 제95조→규칙 제66조→별지 제37호다. 법 제52조 제1항에 따라 대가를 지급할 때 부가가치세를 징수하고, 법 제52조 제2항에 따라 별지 제37호를 제출하여 법 제48조 제2항·제49조 제2항의 예정·확정신고 납부기한에 납부한다. 법 제53조는 국외사업자의 용역등 공급 특례로서 대리납부의 직접 근거가 아니다.</li>
+<li>전자적 용역의 간편사업자등록·자기 신고는 법 제53조의2·영 제96조의2의 별개 경로다. 국세청장이 법 제53조의2 제7항에 따라 제출을 요구한 경우에만, 간편사업자등록 국외 공급자가 요구받은 날부터 60일 이내 국세청장에게 규칙 제66조의2 제2항의 별지 제37호의3을 제출한다. 이 서식은 국외 공급자가 자기 신고기한마다 자동으로 붙이는 첨부서류가 아니다.</li>
+<li>적용 조문 묶음은 부가가치세법 제52조·제53조·제53조의2, 시행령 제95조·제96조의2, 시행규칙 제66조·제66조의2이다. 국외 공급자 청구서와 서비스별 계약번호로 500,000원 국외 용역이 제52조 대리납부인지 제53조의2 전자적 용역인지 먼저 나눈다.</li>
+<li>국외 용역 공급가액 500,000원×10%=대리납부세액 50,000원을 검산한다. 제37호 접수증의 공급자·계약번호를 SWIFT와 맞추고, 제37호의3이 있다면 국세청장 제출요구서와 요구받은 날을 먼저 확인한다.</li>
+</ol>
+<p>국외사업자 전자적 용역과 대리납부의 현행 기준은 [시행 2026. 1. 2.] [법률 제21065호, 2025. 10. 1., 타법개정], [시행 2026. 4. 1.] [대통령령 제36133호, 2026. 2. 27., 일부개정], [시행 2026. 4. 1.] [재정경제부령 제9호, 2026. 3. 20., 일부개정]이다. 국외 공급자 청구서에는 현행 문언을 쓰고, 판례의 구법은 500,000원 국외 용역이 제52조 대리납부인지 제53조의2 간편등록 전자적 용역인지가 쟁점이다. 범위에서만 전이한다.</p>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>영 제96조 일반 국외사업자 규정과 제96조의2 전자적 용역을 합치지 않는다. 국내 지급자가 대리납부한 거래를 국외 공급자의 간편신고 매출에 다시 더하지 않는다.</p>
+<details class="reveal-block reveal-block--deepening">
+<summary>심화 펼치기</summary>
+<div class="reveal-block__body">
+<h4 id="legal-structure-heading-4">심화</h4>
+<p>국외사업자 전자적 용역과 대리납부 심화대조는 작성시각(국외 공급자 청구서)과 거래키(제37호 접수증)를 나누는 데서 시작한다. 공백항목=서비스별 계약번호. 이 항목이 비면 결론을 유보하고, 반증항목=공급자·계약번호 확인 뒤 국외사업자 전자적 용역과 대리납부 포섭을 갱신한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<p>연습 단계: 독립 해결형 worked example</p>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>국내 면세사업자가 국외 컨설팅 용역 공급가액 500,000원을 부가가치세 별도로 지급한다. 같은 거래키는 간편등록 전자적 용역 목록에는 없다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>공급 성격·국내 사용·공급받는 자의 공제 여부를 판단하고 제37호 대리납부세액을 계산하자.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>국외 용역 공급가액 500,000원 × 10% = 대리납부세액 50,000원; 간편등록 전자적 용역과 중복 합산 0원</p>
+<p>독립 해결형: 두 법적 경로의 납세자와 시기를 먼저 정한다. 국내 지급자는 대가 지급 때 50,000원을 징수하고, 예정·확정신고 경로의 납부기한에 별지 제37호로 신고·납부한다. 제37호의3은 국세청장의 별도 요구가 있을 때만 국외 공급자가 제출한다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>원시증빙</th>
+<th>전표·장부</th>
+<th>시산표·재무제표</th>
+<th>신고서·납부자료</th>
+<th>대사 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="원시증빙">계약서·세금계산서·금융거래·국외 공급자 청구서·국내 송금 SWIFT·제37호 접수증·원본</td>
+<td data-label="전표·장부">거래키별 매출·매입 보조부·부가세예수금·부가세대급금 원장</td>
+<td data-label="시산표·재무제표">합계잔액시산표·부가세예수금·부가세대급금 잔액</td>
+<td data-label="신고서·납부자료">별지 제37호서식 대리납부신고서·납부서; 별지 제37호의3서식은 국세청장 요구 시만 제출</td>
+<td data-label="대사 결과">공급가액 500,000원·세액 50,000원·제2기 귀속시기가 제37호 접수증과 일치; 제37호의3은 요구받은 날부터 60일 납부기한이 아닌 제출기한으로 별도 확인</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>VAT 실무 bridge: 원시증빙 → 매출·매입 보조부 → 세금계산서·대체증빙 → 부가가치세 신고서·부속명세서 → 납부·환급</p>
+<p>서식 책임선: 작성자 → 제출받는 자 → 제출시기 → 신고 위치</p>
+<p>국내 공급받는 자는 법 제52조 제1항에 따라 대가를 지급할 때 부가가치세를 징수한다. 그 후 법 제52조 제2항에 따라 별지 제37호를 관할 세무서장에게 제출하고 법 제48조 제2항·제49조 제2항의 예정·확정신고 납부기한에 납부한다. 반면 국세청장이 법 제53조의2 제7항에 따라 제출을 요구한 경우, 간편사업자등록 국외 공급자는 요구받은 날부터 60일 이내 국세청장에게 규칙 제66조의2 제2항의 별지 제37호의3을 제출한다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>감사 사건 식별자: VAT-AUDIT-114</p>
+<p>중립 관찰: 해외 소프트웨어사의 결제목록에는 국내 소비자 구독과 국내 병원의 맞춤 컨설팅이 섞여 있다. 병원은 제37호로 50,000원을 냈다고 주장하고 플랫폼도 같은 결제를 전자적 용역 매출로 신고했다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>조사 가설: 과세관청 가설은 동일 결제가 대리납부와 간편등록에 중복 포함되어 조정이 필요하다는 것이다.</li>
+<li>납세자 가설: 납세자 가설은 플랫폼 구독과 별도 컨설팅이 서로 다른 공급이라 거래키가 우연히 비슷하다는 것이다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>자료</th>
+<th>중립 관찰</th>
+<th>조사 가설 읽기</th>
+<th>납세자 가설 읽기</th>
+<th>남은 공백</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="자료">국외 공급자 청구서</td>
+<td data-label="중립 관찰">구독·컨설팅 품목 혼재</td>
+<td data-label="조사 가설 읽기">국외 공급자 청구서의 품목 혼재는 하나의 거래 중복과 별도 용역 묶음청구 모두와 양립해 단독으로는 두 가설을 구별할 수 없다. 서비스별 계약번호가 공백이므로 조사 가설을 중간 정도 이상 지지하지 않는다.</td>
+<td data-label="납세자 가설 읽기">국외 공급자 청구서는 구독과 컨설팅을 함께 청구했다는 사실만 보여 단독으로는 두 가설을 구별할 수 없다. 서비스별 계약번호·이용자·사용내역이 공백이므로 납세자 가설도 중간 정도 이상 지지하지 않는다.</td>
+<td data-label="남은 공백">서비스별 계약번호·이용자·사용내역</td>
+</tr>
+<tr>
+<td data-label="자료">국내 송금 SWIFT</td>
+<td data-label="중립 관찰">500,000원 컨설팅 메모</td>
+<td data-label="조사 가설 읽기">국내 송금 SWIFT의 컨설팅 메모는 소비자 구독과 별도인 맞춤 컨설팅 지급이라는 납세자 가설을 중간 정도로 지지하고 동일 거래 중복이라는 조사 가설을 반박한다. 다만 수취계좌와 서비스별 계약번호가 공백이면 메모만으로 거래를 나눌 수 없다.</td>
+<td data-label="납세자 가설 읽기">국내 송금 SWIFT는 500,000원이 별도 컨설팅의 대가라는 납세자 가설을 중간 정도로 지지한다. 수취계좌·송금일·계약번호를 청구서와 맞춰야 한다.</td>
+<td data-label="남은 공백">수취계좌·송금일·계약번호</td>
+</tr>
+<tr>
+<td data-label="자료">제37호 접수증</td>
+<td data-label="중립 관찰">국내 지급자 50,000원 납부</td>
+<td data-label="조사 가설 읽기">제37호 접수증의 50,000원 대리납부는 별도 컨설팅에 대해 국내 지급자가 납부했다는 납세자 가설을 중간 정도로 지지하고 소비자 구독과 동일 거래라는 조사 가설을 반박한다. 다만 공급자·계약번호가 공백이면 다른 계약의 접수증일 수 있다.</td>
+<td data-label="납세자 가설 읽기">제37호 접수증은 50,000원이 실제 대리납부됐다는 납세자 가설을 중간 정도로 지지한다. 공급자·계약번호·송금건을 연결해야 별도 컨설팅임을 확정한다.</td>
+<td data-label="남은 공백">공급자·계약번호·송금건</td>
+</tr>
+<tr>
+<td data-label="자료">제37호의3 거래명세</td>
+<td data-label="중립 관찰">같은 결제키 포함</td>
+<td data-label="조사 가설 읽기">국외사업자 전자적 용역과 대리납부 자료 제37호의3 거래명세: 관찰 ‘같은 결제키 포함’. 이 관찰은 중간 정도로 지지하되 국외사업자 전자적 용역과 대리납부 조사측 판단에 한정한다. 반증 원본: IP·사용자·서비스코드. 그 원본이 상반되면 제37호의3 거래명세의 조사측 강도를 낮춘다.</td>
+<td data-label="납세자 가설 읽기">국외사업자 전자적 용역과 대리납부 자료 제37호의3 거래명세: 납세자측 설명 ‘소비자 구독 주장’. 이 설명은 중간 정도로 지지하되 제37호의3 거래명세 판정에 한정한다. 미확인 공백: IP·사용자·서비스코드.</td>
+<td data-label="남은 공백">IP·사용자·서비스코드</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>8분 조사 워크북</strong></p>
+<ul>
+<li>원본성(국외사업자 전자적 용역과 대리납부): 국외 공급자 청구서 메타데이터를 확인한다. 작성자·생성시각·해시의 대조대상은 서비스별 계약번호이다.</li>
+<li>반증(국외사업자 전자적 용역과 대리납부): 국내 송금 SWIFT 조사 설명: ‘500,000원 컨설팅 메모’. 납세자 설명: ‘총액배분 필요’. 두 설명을 분리하고 반박자료(수취계좌·송금일) 확인 뒤 국외사업자 전자적 용역과 대리납부 강도를 다시 매긴다.</li>
+<li>금액·시기(국외사업자 전자적 용역과 대리납부): 제37호 접수증 거래키로 국외 용역 공급가액 500,000원 × 10% = 대리납부세액 50,000원; 간편등록 전자적 용역과 중복 합산 0원을 재계산한다. 귀속=2026년 제2기; 남은 공백=공급자·계약번호.</li>
+<li>신고 연결(국외사업자 전자적 용역과 대리납부): 국내 지급자의 제37호 접수증·납부서를 예정·확정신고 납부기한 별로 대사한다. 제37호의3은 국세청장의 제출요구서가 있는 경우에만 요구받은 날과 60일 기한을 확인하고, IP·사용자·서비스코드가 미확인된 거래는 보류한다.</li>
+<li>최종포섭(국외사업자 전자적 용역과 대리납부): 국외 공급자 청구서·국내 송금 SWIFT·제37호 접수증의 거래번호·작성시각을 맞춘다. 귀속=2026년 제2기. 쟁점=500,000원 국외 용역이 제52조 대리납부인지 제53조의2 간편등록 전자적 용역인지가 쟁점이다. 반대사실 후보=IP·사용자·서비스코드.</li>
+</ul>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<p>판정 보류: 서비스별 계약번호와 제37호의3 서비스코드를 맞출 때까지 중복납부 결론을 보류한다.</p>
+<p>국외사업자 전자적 용역과 대리납부 잠정판정 접점은 작성시각=국외 공급자 청구서, 거래키=국내 송금 SWIFT, 금액원본=제37호 접수증이다. 확인항목=IP·사용자·서비스코드. 이 항목이 없으면 국외사업자 전자적 용역과 대리납부 정상·부정 결론을 모두 유보한다.</p>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>payer와 foreign supplier를 분리해 화살표를 그린다. 제37호는 국내 공급받는 자의 대리납부 신고서이고, 제37호의3은 국세청장의 제출요구를 받은 간편사업자등록 국외 공급자가 60일 이내 제출하는 거래명세서다. 국외 공급자의 자기 기간별 신고와 제37호의3 제출요구를 같은 절차로 쓰지 않는다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>Issue: 500,000원 국외 용역이 제52조 대리납부인지 제53조의2 간편등록 전자적 용역인지가 쟁점이다.</li>
+<li>Rule: 대리납부는 법 제52조→영 제95조→규칙 제66조→별지 제37호다. 법 제52조 제1항에 따라 대가를 지급할 때 부가가치세를 징수하고, 법 제52조 제2항에 따라 별지 제37호를 제출하여 법 제48조 제2항·제49조 제2항의 예정·확정신고 납부기한에 납부한다. 법 제53조는 국외사업자의 용역등 공급 특례로서 대리납부의 직접 근거가 아니다. 국세청장이 법 제53조의2 제7항에 따라 제출을 요구한 경우에만 간편사업자등록 국외 공급자가 요구받은 날부터 60일 이내 국세청장에게 규칙 제66조의2 제2항의 별지 제37호의3을 제출한다.</li>
+<li>Application: 서비스별 계약번호, SWIFT 송금메모, 제37호 접수증의 공급자·계약번호를 독립 대조한다. 컨설팅 대가를 지급할 때 국내 지급자가 50,000원을 징수하고 2026년 제2기 예정·확정신고 경로의 납부기한에 별지 제37호로 신고·납부한다. 제37호의3은 국세청장의 요구서와 요구받은 날을 확인한 경우에만 제출기한을 검사한다. 독립 증거 3종: 국외 공급자 청구서·국내 송금 SWIFT·제37호 접수증. 귀속 과세기간: 2026년 제2기. 신고 위치: 별지 제37호서식 대리납부신고서; 제37호의3은 요구 시 국세청장 제출.</li>
+<li>Conclusion: 맞춤 컨설팅은 제52조 대리납부 50,000원이고 간편등록 전자적 용역과 중복 합산할 금액은 0원이다.</li>
+</ul>
+<p>닫힌 해설: 적용법령: 법 제52조 제1항에 따라 대가를 지급할 때 부가가치세를 징수하고, 법 제52조 제2항에 따라 별지 제37호를 제출하여 법 제48조 제2항·제49조 제2항의 예정·확정신고 납부기한에 납부한다. 국세청장이 법 제53조의2 제7항에 따라 제출을 요구한 경우에만 간편사업자등록 국외 공급자가 요구받은 날부터 60일 이내 국세청장에게 규칙 제66조의2 제2항의 별지 제37호의3을 제출한다. | 판단요건: 국외 용역의 내용·공급받는 자·대금 지급건을 나누고 대리납부와 간편사업자등록 경로의 중복을 배제한다. | 구체 사실포섭: SWIFT 컨설팅 메모와 제37호 공급자·계약번호가 일치하므로 국내 지급자가 지급 때 50,000원을 징수하고 제2기 예정·확정신고 납부기한에 신고·납부한다. 제37호의3은 요구서가 있을 때만 60일 기한을 검사한다. | 독립 원본 3종: 국외 공급자 청구서·국내 송금 SWIFT·제37호 접수증 | 계산: 500,000원×10%=대리납부세액 50,000원, 중복 합산 0원 | 귀속 과세기간: 2026년 제2기 | 신고서·칸: 별지 제37호서식 대리납부신고서; 별지 제37호의3서식은 국세청장 요구 시 제출.</p>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<p>국외사업자 전자적 용역과 대리납부 검산식은 500,000원×10%=50,000원이다. 다만 지급시점의 징수기록과 예정·확정신고 납부기한의 제37호 접수·납부기록을 나누어 대사한다. 제37호의3은 국세청장의 요구서와 요구받은 날이 있을 때만 60일 기한을 계산한다.</p>
+<h3 id="exam-heading-3">감점 방지</h3>
+<ul>
+<li>국외 공급자 청구서 작성주체를 확인하고, 국외사업자 전자적 용역과 대리납부 현행조문은 사건 당시 조문과 구분한다.</li>
+<li>국내 송금 SWIFT 위험신호만으로 국외사업자 전자적 용역과 대리납부 부인을 확정하지 않는다. 반증=수취계좌·송금일; 독립자료=제37호 접수증.</li>
+<li>국외사업자 전자적 용역과 대리납부 계산 귀속=2026년 제2기; 신고 위치=별지 제21호서식 일반과세자 부가가치세 신고서의 구체 칸.</li>
+</ul>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>법령근접 가상사례(법원 판결 아님): 판례 없이 납세주체·제출자·시기·서식이 다른 두 국외용역 제도를 비교하는 방법</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>현행 조문의 각 요건과 증거 공백을 먼저 적고, 법원의 결론을 빌리지 않은 잠정 답안을 만든다.</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>직접 연결한 중요판례가 없는 쟁점이다. 따라서 가상사례를 판결처럼 인용하지 않고 법률·시행령·시행규칙의 역할과 사실 포섭만으로 결론을 닫는다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>다른 세목이나 인접 VAT 판례를 결론 근거로 옮기지 않는다. 실제 사건이 발견되면 주문·사건기간·구별 사실과 현행법 전이 범위를 공식 원문에서 새로 확인한다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>국외사업자 전자적 용역과 대리납부 연결판례의 주문·사건기간·후속상태는 공식 판례정보로 확인했다. 국외 공급자 청구서 검증표에는 파기환송 뒤 결과가 확인되지 않은 사건을 확정승소로 적지 않는다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>거래가 자동 다운로드 구독이고 국외 공급자가 간편사업자등록했다면 법 제53조의2 전자적 용역 분기만 남는다. 국내 지급자의 제37호 대리납부세액 0원으로 바꾸고, 국외 공급자가 자기의 간편신고 경로에서 500,000원과 세액 50,000원을 처리한다. 제37호의3은 제출 요구가 있을 때만 국외 공급자가 60일 이내 국세청장에게 내는 거래명세서이며 자기 신고의 정기 첨부서류가 아니다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 500,000원 국외 용역이 제52조 대리납부인지 제53조의2 간편등록 전자적 용역인지를 푸는 조문 순서는 무엇인가요?</li>
+<li class="recall-question">증빙 선택: VAT-AUDIT-114의 경쟁가설을 가를 독립 원본 세 가지는 무엇인가요?</li>
+<li class="recall-question">새 사실 전이: 위 변형사실을 적용하면 국외사업자 전자적 용역과 대리납부 계산과 별지 제21호서식 일반과세자 부가가치세 신고서 신고위치는 어떻게 달라지는가?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>국외사업자 전자적 용역과 대리납부 회상답의 확신도는 0·1·2로 표시한다. 0 또는 1이면 자료 A=국외 공급자 청구서; 공백=서비스별 계약번호. 두 항목을 국외사업자 전자적 용역과 대리납부 닫힌 해설과 다시 대조한다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 법 제52조·영 제95조·규칙 제66조·제37호의 대리납부와 법 제53조의2·영 제96조의2의 간편사업자등록 경로를 분리한다. 제37호의3은 법 제53조의2 제7항·제8항에 따른 제출요구 전용 거래명세서다.</li>
+<li>증빙 선택: 계약번호·SWIFT 메모·두 서식 거래키를 독립 증거로 고른다.</li>
+<li>새 사실 전이: 자동 구독이면 국내 대리납부 50,000원을 제거하고 국외 공급자의 간편신고 거래로만 남긴다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-28</p>
+<p><a href="https://law.go.kr/LSW/lsInfoP.do?ancYnChk=0&amp;lsId=001571" rel="noopener noreferrer">2026년 1월 2일 시행 부가가치세법</a> <a href="https://www.law.go.kr/법령/부가가치세법시행령" rel="noopener noreferrer">2026년 4월 1일 시행 부가가치세법 시행령</a> <a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=284995" rel="noopener noreferrer">2026년 4월 1일 시행 부가가치세법 시행규칙과 별지서식</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619805" rel="noopener noreferrer">별지 제21호서식 일반과세자 부가가치세 신고서</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619935" rel="noopener noreferrer">별지 제37호서식 부가가치세 대리납부신고서</a> <a href="https://law.go.kr/LSW/flDownload.do?flSeq=162619947" rel="noopener noreferrer">별지 제37호의3서식 전자적 용역 거래명세서</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

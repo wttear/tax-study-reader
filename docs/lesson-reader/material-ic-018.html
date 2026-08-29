@@ -1,0 +1,1431 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-IC-018">
+  <title>계열사 상표권·경영자문료·이익분여 통합사례 레슨 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">계열사 상표권·경영자문료·이익분여 통합사례 레슨</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 법인세법</li>
+<li class="meta-chip">난도 고급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-28</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>계열사 상표권·경영자문료·이익분여는 결론을 먼저 외우는 주제가 아니다. EVIDENCE-IC-018의 observed fact를 보기 전 두 가능성을 예측하고, 이후 원자료·장부·신고·지급의 차이를 잡아 상반된 설명을 검증한다. 이 레슨의 모든 자료는 KRW_SYNTHETIC 표시가 붙은 교육용 합성자료다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>CTA-AFFILIATE-SUPPORT-001 · CTA-RELATED-PARTY-001 선수주제를 현재 observed fact와 연결한다.</li>
+<li>CTA-AFFILIATE-SUPPORT-001 · CTA-RELATED-PARTY-001 covered topic의 법률효과를 주체·세목·시기별로 나눈다.</li>
+<li>CALC-IC-018-01의 계산을 operand fact에서 독립적으로 재현한다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>아직 법령·판례·원자료를 열지 말고 예측한다. 한 가능성은 “실제 지급 15,000,000원 중 4,000,000원은 계열사 이익분여다.”이고 다른 가능성은 “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.”이다. 어느 설명이 더 강할지와 그 설명을 깨뜨릴 자료를 한 문장으로 적는다.</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<p>recorded는 현재 장부에 적힌 상태, reported는 신고서에 제출된 상태, expected는 법령·계약·원자료에서 재계산한 상태, proposed는 조정후보다. 이 네 상태를 합치면 누락장부와 잘못된 장부를 모두 정상 분개로 위장하게 된다. fact_id는 숫자·일자·횟수의 출처를, transaction_key는 원자료에서 지급까지의 거래 정체성을 고정한다.</p>
+<p>이 단계에서는 아직 법령·판례 결론을 열지 않는다. 적용할 covered topic과 서로 분리할 법률효과의 목록만 준비하고, 실제 판단지도는 원자료·불일치·경쟁 가설·추가 요청자료를 먼저 확인한 뒤 작성한다.</p>
+</section>
+<h3 id="legal-structure-heading-2">적용 범위와 경계</h3>
+<p>상표 사용대가와 관리용역 원가배분을 분리한 뒤 합산한다. 실제 invoice 회계비용과 정상가격 초과액 세무조정을 같은 분개로 만들지 않는다.</p>
+<p>requested 문서의 내용은 아직 확인된 fact로 쓰지 않는다.</p>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>원자료와 불일치를 결론 없이 먼저 펼친다. 현재 연결 키는 TX-IC-018-01이다. 아래 표의 모든 숫자·일자·횟수는 pack의 nested observation에 있고, requested 상태의 문서는 표에서 제외했다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>fact_id</th>
+<th>관찰키</th>
+<th>관찰값</th>
+<th>상태</th>
+<th>출처</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="fact_id">FACT-IC-018-01</td>
+<td data-label="관찰키">trademark_sales_base</td>
+<td data-label="관찰값">200,000,000원</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-001#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-02</td>
+<td data-label="관찰키">trademark_fee</td>
+<td data-label="관찰값">2,000,000원</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-002#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-03</td>
+<td data-label="관찰키">s1_management_hours</td>
+<td data-label="관찰값">300시간</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-003#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-04</td>
+<td data-label="관찰키">allocation_key_bp</td>
+<td data-label="관찰값">7500bp</td>
+<td data-label="상태">expected</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-004#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-05</td>
+<td data-label="관찰키">charged_fee</td>
+<td data-label="관찰값">15,000,000원</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-005#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-06</td>
+<td data-label="관찰키">proposed_adjustment</td>
+<td data-label="관찰값">4,000,000원</td>
+<td data-label="상태">expected</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-006#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-07</td>
+<td data-label="관찰키">comparable_contract_fee</td>
+<td data-label="관찰값">15,000,000원</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-007#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-08</td>
+<td data-label="관찰키">accounting_standard_reference</td>
+<td data-label="관찰값">K-IFRS 1024 문단 9·18~24·K-IFRS 1038·K-IFRS 1115 문단 B52~B63B</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-01 SYNTHETIC:row-008#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-09</td>
+<td data-label="관찰키">comparable_rate_bp</td>
+<td data-label="관찰값">100bp</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-009#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-10</td>
+<td data-label="관찰키">cost_pool</td>
+<td data-label="관찰값">12,000,000원</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-010#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-11</td>
+<td data-label="관찰키">s2_management_hours</td>
+<td data-label="관찰값">100시간</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-011#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-12</td>
+<td data-label="관찰키">allocated_cost</td>
+<td data-label="관찰값">9,000,000원</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-012#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-13</td>
+<td data-label="관찰키">arm_length_fee</td>
+<td data-label="관찰값">11,000,000원</td>
+<td data-label="상태">expected</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-013#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-14</td>
+<td data-label="관찰키">documented_deliverables</td>
+<td data-label="관찰값">8건</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-014#value</td>
+</tr>
+<tr>
+<td data-label="fact_id">FACT-IC-018-15</td>
+<td data-label="관찰키">accounting_framework_basis</td>
+<td data-label="관찰값">ENTITY-A는 상장법인으로 2026 K-IFRS를 의무 적용한다.</td>
+<td data-label="상태">observed</td>
+<td data-label="출처">DOC-IC-018-02 SYNTHETIC:row-015#value</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>CALC-IC-018-01 200,000,000 × 1% = 2,000,000 / CALC-IC-018-02 12,000,000 × 300 / 400 = 9,000,000 / CALC-IC-018-03 2,000,000 + 9,000,000 = 11,000,000 / CALC-IC-018-04 15,000,000 - 11,000,000 = 4,000,000. 각 계산은 operand_fact_ids와 result_fact_id를 서로 분리하고, 결과 fact의 단위까지 일치하는지 재검산한다. 계산값이 맞아도 거래의 주체·시기·목적이 틀리면 법률 결론은 달라진다.</p>
+</section>
+<h3 id="worked-example-heading-3">결론을 가린 사건</h3>
+<p>현재 observed 문서는 조사 가설을 지지하는 자료와 반대가설을 지지하는 자료를 모두 포함한다. 그러나 known gap은 “편익·기능/자산/위험·비교가능성과 8건 산출물”이다. 따라서 입증추정이나 자동 과세로 넘어가지 않고, 교차확인 가능성·생성시각·완전성을 먼저 표시한다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="worked-example-heading-4">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="worked-example-heading-4">경쟁 가설</h3>
+<ul>
+<li>조사 가설: 실제 지급 15,000,000원 중 4,000,000원은 계열사 이익분여다.</li>
+<li>반대가설: 추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.</li>
+</ul>
+<p>조사 가설의 구체 지원값은 DOC-IC-018-01 FACT-IC-018-05 charged_fee=15,000,000원 · DOC-IC-018-02 FACT-IC-018-09 comparable_rate_bp=100bp · DOC-IC-018-02 FACT-IC-018-10 cost_pool=12,000,000원 · DOC-IC-018-01 FACT-IC-018-01 trademark_sales_base=200,000,000원이다. 반대가설의 구체 지원값은 DOC-IC-018-01 FACT-IC-018-07 comparable_contract_fee=15,000,000원 · DOC-IC-018-02 FACT-IC-018-14 documented_deliverables=8건이다. 두 목록은 pack의 승인된 support fact ID와 일치하며, 문서 역할만 바꾸거나 첫 행을 대신 고르는 방식으로 변경할 수 없다.</p>
+</section>
+<h3 id="worked-example-heading-5">추가 요청자료</h3>
+<p>DOC-IC-018-03는 “편익·기능/자산/위험·비교가능성과 8건 산출물”의 사실관계를 닫기 위한 requested 문서다. 이 문서가 어느 가설을 강화하거나 약화하는지, 수령 전·후 어느 fact와 계산 operand가 달라지는지를 요청 범위에 적는다.</p>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="worked-example-heading-6">전문가 피드백</h3>
+<p>추가 요청자료: DOC-IC-018-03. 편익·기능/자산/위험·비교가능성과 8건 산출물의 사실관계가 닫히기 전에는 조사 가설과 반대가설을 함께 유지한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>검증 순서</th>
+<th>observed 근거</th>
+<th>조사 분기</th>
+<th>반대 분기</th>
+<th>남은 gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="검증 순서">원자료</td>
+<td data-label="observed 근거">FACT-IC-018-01 200,000,000원</td>
+<td data-label="조사 분기">실제 지급 15,000,000원 중 4,000,000원은 계열사 이익분여다.</td>
+<td data-label="반대 분기">추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.</td>
+<td data-label="남은 gap">편익·기능/자산/위험·비교가능성과 8건 산출물</td>
+</tr>
+<tr>
+<td data-label="검증 순서">장부·신고</td>
+<td data-label="observed 근거">FACT-IC-018-15 ENTITY-A는 상장법인으로 2026 K-IFRS를 의무 적용한다.</td>
+<td data-label="조사 분기">recorded·reported 상태 오류 검증</td>
+<td data-label="반대 분기">expected·proposed 계산의 전제 검증</td>
+<td data-label="남은 gap">같은 fact를 순환인용하지 않음</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>관련 자료를 신청할 때 범위를 지나치게 넓히지 않고, 각 요청문서가 어느 fact·가설·법률요건을 검증하는지를 적는다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-2">학습자 잠정 결론</h3>
+<p>원자료와 불일치를 본 뒤, 조사 가설과 반대가설 중 현재 더 강한 쪽을 적는다. 다만 결론을 바꾸는 증빙이 DOC-IC-018-03임을 반드시 붙이고, requested 상태를 observed 사실처럼 써서는 안 된다.</p>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="audit-evidence-heading-3">
+<p class="learning-block__label">판단지도</p>
+<h3 id="audit-evidence-heading-3">법적 판단지도</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>covered topic</th>
+<th>쟁점</th>
+<th>현재 사실 연결</th>
+<th>분리할 효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="covered topic">CTA-AFFILIATE-SUPPORT-001</td>
+<td data-label="쟁점">계열사 지원·지급보증·상표권·경영자문료</td>
+<td data-label="현재 사실 연결">FACT-IC-018-01</td>
+<td data-label="분리할 효과">법인세법 효과를 다른 신고·귀속·절차 효과와 분리</td>
+</tr>
+<tr>
+<td data-label="covered topic">CTA-RELATED-PARTY-001</td>
+<td data-label="쟁점">부당행위계산 부인의 요건과 경제적 합리성</td>
+<td data-label="현재 사실 연결">FACT-IC-018-02</td>
+<td data-label="분리할 효과">법인세법 효과를 다른 신고·귀속·절차 효과와 분리</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>CTA-AFFILIATE-SUPPORT-001: 계열사 지원·지급보증·상표권·경영자문료 쟁점은 계약, 상표권사용내역, 경영자문산출물 증빙으로 사실을 확정한 뒤 법인세법; 법인세법 제52조; 법인세법 시행령 제88조·제89조를 적용한다. 답안에서는 쟁점포착, 법리서술, 사실포섭, 반대논리, 결론, 계산 순서로 법률효과를 분리한다.</li>
+<li>CTA-RELATED-PARTY-001: 부당행위계산 부인의 요건과 경제적 합리성 쟁점은 계약, 비교가능거래자료, 거래처 증빙으로 사실을 확정한 뒤 법인세법; 법인세법 제52조; 법인세법 시행령 제87조·제88조·제89조를 적용한다. 답안에서는 쟁점포착, 법리서술, 사실포섭, 반대논리, 결론, 계산 순서로 법률효과를 분리한다.</li>
+</ul>
+<p>현재 결정적 사실에 적용할 판례 부분집합은 다음과 같다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>판례</th>
+<th>직접 관련 법리</th>
+<th>결정적 사실</th>
+<th>현재 사례 전이 한계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="판례">2018두33005</td>
+<td data-label="직접 관련 법리">특수관계 회사의 상표 사용료 거래가 경제적 합리성을 결여했는지는 상표권의 법적·계약상 귀속뿐 아니라 상표 가치 형성에 수행한 기능, 사용한 자산, 부담한 위험과 각 당사자의 기여를 종합해 판단해야 한다. 이 사건 상표권 무상사용에는 경제적 합리성이 없어 법인세 부당행위계산 부인이 가능하다고 보았다.</td>
+<td data-label="결정적 사실">원고의 자회사는 2007년부터 2011년까지 원고가 등록한 상표의 일부 또는 유사 상표를 문화사업·방송교육사업 등에 사용하고 제3자로부터 상호사용료를 받았지만 원고에게 사용료를 지급하지 않았다.</td>
+<td data-label="현재 사례 전이 한계">FACT-IC-018-01 및 known gap으로 전이 범위 제한</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>적용 법령</strong></p>
+<ul>
+<li>법인세법</li>
+<li>법인세법 제52조</li>
+<li>법인세법 시행령 제88조·제89조</li>
+<li>법인세법 시행령 제87조·제88조·제89조</li>
+</ul>
+<p>2026년 회계기준 가정: ENTITY-A는 상장법인으로 2026 K-IFRS를 의무 적용한다. pack에서 확인한 공식 기준 위치는 K-IFRS 1024 문단 9·18~24·K-IFRS 1038·K-IFRS 1115 문단 B52~B63B이다. 회계 인식·측정과 세법상 익금·손금·세액공제를 별도로 조정한다.</p>
+<p>구법 판례의 조문번호가 현행법과 같아도 사건시기 문언을 먼저 읽고, 현재 합성사례에는 2026-08-28 현행법을 다시 포섭한다.</p>
+<p><strong>모범 workpaper</strong></p>
+<p>원자료 fact_id → 거래·절차 연결키 → recorded·reported 상태 → expected 재계산 → proposed 정정 순으로 적는다. 계산은 CALC-IC-018-01 200,000,000 × 1% = 2,000,000 / CALC-IC-018-02 12,000,000 × 300 / 400 = 9,000,000 / CALC-IC-018-03 2,000,000 + 9,000,000 = 11,000,000 / CALC-IC-018-04 15,000,000 - 11,000,000 = 4,000,000이며, 각 결과의 근거 fact와 단위를 독립 대조한다. 조사 가설 “실제 지급 15,000,000원 중 4,000,000원은 계열사 이익분여다.”와 반대가설 “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.”을 같은 증거표의 별도 행에 배치한다. 실제 현금 이동이 없는 tax-only 효과를 회계분개로 만들지 않는다.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="audit-evidence-heading-4">전문가 판단 과정</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>차변 계정</th>
+<th>차변 금액</th>
+<th>대변 계정</th>
+<th>대변 금액</th>
+<th>전제</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="차변 계정">지급수수료</td>
+<td data-label="차변 금액">15000000</td>
+<td data-label="대변 계정">보통예금</td>
+<td data-label="대변 금액">15000000</td>
+<td data-label="전제">JE-IC-018-01 book_as_recorded FACT-IC-018-05</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>장부금액</th>
+<th>세법상 금액</th>
+<th>차이</th>
+<th>조정 방향</th>
+<th>소득처분·후속관리</th>
+<th>신고서 반영</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="장부금액">15000000</td>
+<td data-label="세법상 금액">11000000</td>
+<td data-label="차이">4000000</td>
+<td data-label="조정 방향">가산</td>
+<td data-label="소득처분·후속관리">정상가격 11,000,000원 초과 4,000,000원을 손금불산입하고 실질 귀속을 별도 검토</td>
+<td data-label="신고서 반영">법인세 신고서 CTA-AFFILIATE-FEE 조정란에 4000000원 가산 반영</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>세무조정은 회계오류를 바로잡는 correcting_entry와 신고서에서만 반영할 tax-only 효과를 분리한다. 특히 실제 현금 이동이 없는 조정을 현금지급 분개로 만들지 않는다.</p>
+<p>신고서 대사는 다음 표와 같다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>return</th>
+<th>신고주체</th>
+<th>세목·행</th>
+<th>신고액</th>
+<th>기대액</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="return">RETURN-IC-018-01</td>
+<td data-label="신고주체">ENTITY-A</td>
+<td data-label="세목·행">법인세 CTA-AFFILIATE-FEE</td>
+<td data-label="신고액">신고 15,000,000원</td>
+<td data-label="기대액">기대 11,000,000원</td>
+<td data-label="효과">정상가격 11,000,000원 초과 4,000,000원 손금불산입</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>지급·수납과 세금납부를 혼동하지 않는다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>payment</th>
+<th>지급자 → 수령자</th>
+<th>결제수단 소유자</th>
+<th>금액</th>
+<th>목적</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="payment">PAY-IC-018-01</td>
+<td data-label="지급자 → 수령자">ENTITY-A → ENTITY-B</td>
+<td data-label="결제수단 소유자">ENTITY-B</td>
+<td data-label="금액">15,000,000원</td>
+<td data-label="목적">상표·관리용역 통합 대가</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<p>문제: IC-018 합성 사건에서 observed fact와 requested fact를 구별하고, CALC-IC-018-01 200,000,000 × 1% = 2,000,000을 재현한 뒤 법률효과·반대가설·추가자료·신고 또는 절차 반영을 논하시오.</p>
+<p>답안 순서는 쟁점, 규칙, 계산, 사실포섭, 반대가설, 결론 한계이다. 법령 문구만 열거하지 말고 각 규정에 fact_id와 회계처리·세무조정·신고행을 연결한다.</p>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<p>먼저 CALC-IC-018-01의 operand와 result_fact_id를 구별해 200,000,000 × 1% = 2,000,000을 재현한다. 그런 다음 조사 분기 “실제 지급 15,000,000원 중 4,000,000원은 계열사 이익분여다.”와 반대 분기 “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.”를 같은 증거표에 배치한다. 마지막에 DOC-IC-018-03 문서의 미수령 상태가 결론을 제한하는 범위를 적는다.</p>
+<h3 id="exam-heading-3">감점 방지</h3>
+<ul>
+<li>reported 금액과 expected 금액을 바꾸어 쓰지 않는다.</li>
+<li>tax-only 조정을 현금이 움직인 회계분개로 위조하지 않는다.</li>
+<li>판례의 요약이 아니라 결정적 사실과 현재 fact의 같은 점·다른 점을 쓴다.</li>
+<li>납세의무자·신고주체·과세표준·세액·절차 효과를 한 문장에서 자동 결론내지 않는다.</li>
+</ul>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>현재 사실과 판례의 결정적 사실을 먼저 비교한 뒤 결론을 예측한다. 판례 설명과 직접 관련 사실은 아래 법원 결론과 이유에서 펼친다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>DOC-IC-018-03 문서에서 “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.”가 확인된다면 적용할 법률요건, 바뀌는 fact, 재계산할 금액·시간·순서, 결론 한계를 먼저 예측한다. requested 상태를 현재 observed 사실처럼 써서는 안 된다.</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>현재 결정적 사실에 직접 관련된 판례만 선별했다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>판례</th>
+<th>직접 관련 법리</th>
+<th>결정적 사실</th>
+<th>현재 사례 전이 한계</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="판례">2018두33005</td>
+<td data-label="직접 관련 법리">특수관계 회사의 상표 사용료 거래가 경제적 합리성을 결여했는지는 상표권의 법적·계약상 귀속뿐 아니라 상표 가치 형성에 수행한 기능, 사용한 자산, 부담한 위험과 각 당사자의 기여를 종합해 판단해야 한다. 이 사건 상표권 무상사용에는 경제적 합리성이 없어 법인세 부당행위계산 부인이 가능하다고 보았다.</td>
+<td data-label="결정적 사실">원고의 자회사는 2007년부터 2011년까지 원고가 등록한 상표의 일부 또는 유사 상표를 문화사업·방송교육사업 등에 사용하고 제3자로부터 상호사용료를 받았지만 원고에게 사용료를 지급하지 않았다.</td>
+<td data-label="현재 사례 전이 한계">FACT-IC-018-01 및 known gap으로 전이 범위 제한</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>판례의 connected union을 모두 가져오지 않고 현재 사례의 결정적 사실을 직접 판단하는 부분집합만 쓴다. 판례가 없는 사례는 가상사례임을 명시하고 판결번호를 만들지 않는다.</p>
+<ul>
+<li>2018두33005: 특수관계 회사의 상표 사용료 거래가 경제적 합리성을 결여했는지는 상표권의 법적·계약상 귀속뿐 아니라 상표 가치 형성에 수행한 기능, 사용한 자산, 부담한 위험과 각 당사자의 기여를 종합해 판단해야 한다. 이 사건 상표권 무상사용에는 경제적 합리성이 없어 법인세 부당행위계산 부인이 가능하다고 보았다. 후속상태: 법인세 부당행위계산 부인 부분에 관한 원고의 상고는 기각되었다. 다만 2009년 제1기 부가가치세 부분은 파기환송되어 세목별 결론을 구분해야 한다.</li>
+</ul>
+<p>법원의 결론은 현재 합성자료에 대한 사실인정이 아니다. 판결의 사건시기 법령, 결정적 사실, 입증정도를 현재 사례와 비교한 후에만 법리를 전이한다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>조사 가설은 FACT-IC-018-05, FACT-IC-018-09, FACT-IC-018-10, FACT-IC-018-01 근거가 각 법률요건을 충족하는 범위에서만 유지된다. 반대가설은 FACT-IC-018-07, FACT-IC-018-14과 DOC-IC-018-03 문서를 대조해 판단한다. 반대가설이 확인되면 계산·주체·시기·신고 또는 절차 workpaper를 재작성하며, 판례 문구를 남겨 둔 채 숫자만 바꾸지 않는다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<ul>
+<li>2018두33005 사건법: 구 법인세법 제52조; 법률 제11128호로 2011년 12월 31일 개정되기 전, 쟁점 2007~2011 사업연도의 부당행위계산 부인 규정이다. 현재 합성사례에는 현행법 문언을 다시 포섭한다.</li>
+<li>2018두33005 사건법: 구 법인세법 시행령 제88조 제1항·제89조; 2012년 2월 2일 개정 전, 상표 무상사용의 부인 유형과 시가 산정에 적용된 규정이다. 현재 합성사례에는 현행법 문언을 다시 포섭한다.</li>
+<li>2018두33005 사건법: 구 상표법 제1조·제2조 제1항 제1호·제2조 제1항 제6호; 2011년 12월 2일 법률 제11113호 개정 전, 상표의 목적과 정의에 관한 공식 판결 참조 규정이다. 현재 합성사례에는 현행법 문언을 다시 포섭한다.</li>
+</ul>
+<p>현행법 포섭 지도:</p>
+<ul>
+<li>법인세법</li>
+<li>법인세법 제52조</li>
+<li>법인세법 시행령 제88조·제89조</li>
+<li>법인세법 시행령 제87조·제88조·제89조</li>
+</ul>
+<p>공식 판결문과 국가법령정보센터 법령만 사용했고, 실제 사업자·원문 조사자료·내부 문구는 사용하지 않았다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>DOC-IC-018-03 문서가 제출되어 “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.”가 확인된다고 가정한다. CALC-IC-018-01 200,000,000 × 1% = 2,000,000의 operand 중 어느 값을 바꾸고, 어느 주체·시기·신고 또는 절차 행을 재작성할지 표시한다. 반대로 조사 가설이 추가 원본으로 확정되면 과세표준·손금·세액·귀속·절차 효과를 각각 닫힌 결론으로 쓴다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 계열사 상표권·경영자문료·이익분여에서 자동으로 합치면 안 되는 법률효과와 주체를 설명해 보세요?</li>
+<li class="recall-question">증빙 선택: 조사 가설과 반대가설을 각각 지지하는 observed fact_id와 결론을 바꾸는 requested 문서를 골라 보세요?</li>
+<li class="recall-question">새 사실 전이: “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다.”가 확인되면 계산·분개·세무조정·신고행을 어떻게 바꾸어야 하나요?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>각 답안에 모르겠다·불확실·확실 중 하나를 표시한다. 불확실이면 해당 요건에 연결된 fact_id와 requested 문서를 다시 찾아본다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<p><strong>1) 법리 구분 해설</strong> 규칙: 법인세법·법인세법 제52조·법인세법 시행령 제88조·제89조의 각 법률효과를 별도로 판단한다. 사실: FACT-IC-018-05의 관찰값은 charged_fee=15,000,000원이다. 이 사실이 “실제 지급 15,000,000원 중 4,000,000원은 계열사 이익분여다”라는 조사 분기를 뒷받침하는지 검토한다. 계산: CALC-IC-018-01 200,000,000 × 1% = 2,000,000을 독립 재현한다. 분기: 반대사실이 확인되면 회계정정·세무조정·신고행을 다시 작성한다. 한계: DOC-IC-018-03 문서가 미수령이므로 현재 결론은 예비적이다.</p>
+<p><strong>2) 증빙 선택 해설</strong> 규칙: 원자료와 장부·신고·지급을 같은 transaction_key와 fact_id로 연결한다. 사실: 조사 근거 FACT-IC-018-05과 반대 근거 FACT-IC-018-07 comparable_contract_fee=15,000,000원을 서로 바꾸지 않는다. 계산: CALC-IC-018-01 operand와 result_fact_id를 구별하고 2,000,000의 단위를 재확인한다. 분기: “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다”라는 반대 사실이 강화되면 증빙표의 판단열을 수정한다. 한계: requested 문서는 수령 전에 observed fact로 쓸 수 없다.</p>
+<p><strong>3) 새 사실 전이 해설</strong> 규칙: 새 사실은 관련 요건과 연결된 계산·주체·시기 행만 변경한다. 사실: FACT-IC-018-01과 연결해 DOC-IC-018-03 문서에서 “추가 산출물과 비교계약이 15,000,000원 전액을 정당화한다”라는 사실이 확인된다고 가정한다. 계산: CALC-IC-018-01 200,000,000 × 1% = 2,000,000의 operand 중 새 원본으로 바뀌는 값만 표시한다. 분기: 조사 가설이 유지되면 회계정정·세무조정·신고행을 유지하고, 반대가설이 확인되면 해당 행을 취소하거나 재계산한다. 한계: 가산세·소득처분·불복 결론은 자체 요건 증빙 없이 자동 파생시키지 않는다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-28</p>
+<p><a href="https://www.law.go.kr/법령/법인세법" rel="noopener noreferrer">법인세법 국가법령정보센터 현행본문</a> <a href="https://www.law.go.kr/법령/법인세법시행령" rel="noopener noreferrer">법인세법 시행령 국가법령정보센터 현행본문</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=234783" rel="noopener noreferrer">대법원 2018두33005 공식 판결문</a> <a href="https://www.kasb.or.kr/front/board/ingAccountingList.do" rel="noopener noreferrer">2026 K-IFRS 공식 현행기준 목록</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

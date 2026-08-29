@@ -1,0 +1,1265 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-NCTA-INSOLVENCY-SECONDARY-001">
+  <title>회생·파산과 제2차 납세의무의 징수 연결 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">회생·파산과 제2차 납세의무의 징수 연결</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 국세징수법</li>
+<li class="meta-chip">난도 고급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-27</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>회생·파산이 시작됐다고 곧바로 주주에게 세금을 옮길 수는 없다. 먼저 주된 납세자의 재산 부족, 납세의무 성립일의 과점주주 지위와 실질적 권리행사 가능성, 회생계획의 승계 문언, 관리인의 권한을 확인한 뒤 제2차 납세의무 고지와 징수를 연결한다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>회생·파산의 절차효과와 기본법 제39조 책임요건을 구별한다.</li>
+<li>2016두41781과 2025두33121의 서로 다른 사실·당시법을 비교한다.</li>
+<li>회생계획안·파산채권신고서·제2차납세의무고지서로 시점·책임한도를 대사한다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>주식 100%를 보유해도 회생절차 중 관리인이 모든 권리를 행사했다면 과점주주 책임이 자동 성립할까?</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>쉬운 뜻</th>
+<th>확인점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="용어">주된 납세의무</td>
+<td data-label="쉬운 뜻">회생·파산회사 자체가 부담하는 국세</td>
+<td data-label="확인점">성립일·확정액·재산부족을 본다.</td>
+</tr>
+<tr>
+<td data-label="용어">제2차 납세의무</td>
+<td data-label="쉬운 뜻">주된 납세자에게서 못 거둘 때 법정 관계자에게 제한적으로 지우는 책임</td>
+<td data-label="확인점">성립일의 제39조 적용본과 한도를 본다.</td>
+</tr>
+<tr>
+<td data-label="용어">관리처분권</td>
+<td data-label="쉬운 뜻">회생절차 중 회사 재산과 주주권 행사에 영향을 주는 관리인의 법적 권한</td>
+<td data-label="확인점">개시·폐지·인가일과 실제 권한을 본다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>결정적 사실</th>
+<th>우선 증빙</th>
+<th>판단</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="단계">주된 의무·부족</td>
+<td data-label="결정적 사실">세액이 언제 성립했고 얼마가 부족한가</td>
+<td data-label="우선 증빙">신고·고지·재산조사</td>
+<td data-label="판단">보충적 책임의 출발점을 정한다.</td>
+</tr>
+<tr>
+<td data-label="단계">절차 상태</td>
+<td data-label="결정적 사실">회생개시·인가·폐지 또는 파산선고가 언제인가</td>
+<td data-label="우선 증빙">법원결정·회생계획안·파산채권신고서</td>
+<td data-label="판단">당시 관리처분권을 본다.</td>
+</tr>
+<tr>
+<td data-label="단계">책임 지위</td>
+<td data-label="결정적 사실">성립일에 주식을 실질 행사하거나 지위를 승계했는가</td>
+<td data-label="우선 증빙">주주명부·관리인 권한·계획 문언</td>
+<td data-label="판단">제39조 요건을 적용한다.</td>
+</tr>
+<tr>
+<td data-label="단계">고지·징수</td>
+<td data-label="결정적 사실">책임자·세액·한도가 고지됐는가</td>
+<td data-label="우선 증빙">제2차납세의무고지서·국세징수법 제7조 통지</td>
+<td data-label="판단">절차와 실체를 연결한다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>국세징수법 제7조는 제2차 납세의무자에 대한 납부고지 절차를 연결하지만 책임 자체는 국세기본법 제39조가 정한다. 회생법 제56조의 관리처분권과 제272조·제280조의 회생계획상 분할승계를 사건별로 적용한다. 파산채권 신고와 회생계획 승계를 같은 절차로 쓰지 않는다.</p>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>비식별 가상 사례다. 원래 납세자 AE법인의 법인세 납세의무는 2026년 6월 30일 성립했다. AE법인 주식 100%를 보유한 원고 주주법인에 대한 회생절차는 그 전 3월 10일 개시되어 관리인이 원고 주주법인이 보유한 AE법인 주식의 주주권을 행사했고, 9월 1일 절차가 폐지되었다. 과세관청은 원고 주주법인에 10월 제2차납세의무고지서를 발급했다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>원래 납세자, 100% 주주인 제2차 납세의무 후보, 회생채무자가 서로 다른 주체임을 먼저 고정한 뒤 납세의무 성립일, 회생개시·폐지일, 관리인의 권한과 고지일을 시간순으로 말한다.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>책임요건은 9월 폐지 뒤가 아니라 원래 납세자 AE법인의 납세의무가 성립한 6월 30일을 기준으로 본다. 당시 원고 주주법인의 회생관리인이 AE법인 주식의 주주권을 행사해 원고가 실질적으로 행사할 지위에 없었다면 지분 100%만으로 과점주주 책임을 인정하기 어렵다. 폐지의 효과를 소급해 당시 지위를 다시 만들지 않는다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>비식별 AF그룹의 회생계획은 사업부를 신설회사로 분할하면서 ‘관련 권리·의무’를 승계한다고 적었지만 조세채무와 과점주주 지위를 별표에 명시하지 않았다. 별도 회사는 주된 납세법인 주식 78%를 보유했고, 과세관청은 신설회사에 제2차 납세의무를 고지했다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>징수 가설: 과세관청은 회생계획 전체 구조상 과점주주 지위와 그에 따른 제2차 납세의무까지 신설회사에 승계됐다고 본다.</li>
+<li>납세자 가설: 납세자는 계획 문언에 조세책임이 없고 관리인 통제 아래 실질적 권리행사도 없어 책임승계를 인정할 수 없다고 본다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>법적 요건</th>
+<th>주장 사실</th>
+<th>확인 자료</th>
+<th>지지하는 실제 가설</th>
+<th>신뢰도·공백</th>
+<th>추가 확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="법적 요건">계획상 승계</td>
+<td data-label="주장 사실">관련 권리·의무라는 일반문언만 있다</td>
+<td data-label="확인 자료">회생계획안·분할별표·인가결정</td>
+<td data-label="지지하는 실제 가설">포괄승계 또는 제외 가설</td>
+<td data-label="신뢰도·공백">원문은 강하지만 전체 구조 해석이 필요하다</td>
+<td data-label="추가 확인">주식·조세 항목과 채권자 설명을 본다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">과점주주 지위</td>
+<td data-label="주장 사실">분할 전 지분은 78%였다</td>
+<td data-label="확인 자료">주주명부·의결기록</td>
+<td data-label="지지하는 실제 가설">형식 과점주주 가설</td>
+<td data-label="신뢰도·공백">비율은 명확하지만 실질 행사자는 공백이다</td>
+<td data-label="추가 확인">관리인 권한·의결 위임을 확인한다</td>
+</tr>
+<tr>
+<td data-label="법적 요건">고지·부족액</td>
+<td data-label="주장 사실">주된 재산 부족 뒤 신설회사에 고지됐다</td>
+<td data-label="확인 자료">재산조사서·제2차납세의무고지서</td>
+<td data-label="지지하는 실제 가설">보충책임 고지 가설</td>
+<td data-label="신뢰도·공백">부족액 산정은 확인되나 적용본·한도가 남는다</td>
+<td data-label="추가 확인">성립일 제39조와 책임한도를 계산한다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>절차 단계</th>
+<th>담당 주체</th>
+<th>서류</th>
+<th>기한</th>
+<th>조사·불복상 확인점</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="절차 단계">주된 의무→절차상 지위→책임→고지</td>
+<td data-label="담당 주체">관리인·징수담당자·책임주장자</td>
+<td data-label="서류">회생계획안·파산채권신고서·제2차납세의무고지서</td>
+<td data-label="기한">납세의무 성립일·개시·인가·폐지·고지일</td>
+<td data-label="조사·불복상 확인점">당시법과 현재 징수절차를 두 시간축으로 표시한다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<p>회생계획 전체의 주식·채무 승계 문언과 성립일의 관리인 권한을 확인한 뒤 책임승계와 권리행사 가능성을 각각 결론낸다.</p>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>‘관련 권리·의무’ 한 문구만 떼어 승계 또는 제외를 단정하지 않는다. 계획 전체의 객관적 의미, 납세의무 성립일, 주된 재산 부족과 책임한도를 함께 적용한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>쟁점: 회생계획상 과점주주 지위 승계와 회생 중 실질적 권리행사</li>
+<li>법리: 성립일 당시법 제39조, 회생법상 관리처분권·계획승계, 징수법 제7조 고지를 순차 적용한다.</li>
+<li>사실포섭: 지분비율은 높지만 계획 문언과 관리인 권한이 불명확하다.</li>
+<li>결론: 계획 전체와 성립일 권한자료에 따라 책임 여부를 달리 판단한다.</li>
+</ul>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>실무 기록</th>
+<th>답안 사용</th>
+<th>득점 포인트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="실무 기록">이중 시간표</td>
+<td data-label="답안 사용">당시법·절차일·고지일을 포섭</td>
+<td data-label="득점 포인트">현행 제39조를 과거 사건에 소급하지 않는다.</td>
+</tr>
+<tr>
+<td data-label="실무 기록">책임한도 계산</td>
+<td data-label="답안 사용">부족액과 지분한도를 비교</td>
+<td data-label="득점 포인트">주식비율만으로 전액책임을 쓰지 않는다.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="exam-heading-3">감점 방지</h3>
+<p>회생개시, 회생계획인가, 절차폐지, 파산선고를 같은 상태로 합치거나 절차폐지의 효과를 과거 성립일에 소급시키지 않는다.</p>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>대법원 2016두41781은 회생계획 전체에서 신설회사가 제2차 납세의무의 기초 지위까지 승계하는지 객관적으로 해석했다. 대법원 2025두33121에서 원래 납세자는 체납법인이고, 그 주식 100%를 보유한 원고 주주법인이 제2차 납세의무 후보이자 회생채무자였다. 판결의 표현으로는 채무자가 보유한 주식에 관한 주주권이 관리인에게 전속한다. 여기서 채무자는 원고 주주법인이고 그 주식은 원고가 보유한 체납법인 주식이므로, 원고가 실질적으로 권리를 행사할 지위에 있는지를 납세의무 성립일 기준으로 판단했다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>회생절차가 뒤에 폐지되면 폐지 전에 성립한 세금에 관해 주주의 권리행사 가능성이 소급해 되살아날까?</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>두 사건 모두 상고를 기각했다. 2016두41781은 회생계획의 객관적 문언·구조가 책임의 기초 지위 승계를 나타내면 승계를 인정할 수 있다고 보았다. 2025두33121은 원고 주주법인이 보유한 체납법인 주식에 관한 주주권이 원고의 회생관리인에게 전속하므로 2019년 12월 31일 원고에 대한 회생절차 중에는 원고가 일반적으로 실질 행사 지위에 있다고 볼 수 없고, 2020년 절차폐지는 소급하지 않는다고 보았다. 체납법인에 대한 원래 법인세 717,120,660원과 원고에 대한 제2차 납세의무 고지액 749,391,070원은 서로 다른 금액이므로 하나로 합치지 않는다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>공통 법리</th>
+<th>결정적 사실</th>
+<th>결정적 증빙</th>
+<th>결론</th>
+<th>징수자료</th>
+<th>시험 적용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="공통 법리">2016두41781</td>
+<td data-label="결정적 사실">2010년 6월 1일 성립 세금과 80.46% 지분, 회생계획상 분할이 있었다</td>
+<td data-label="결정적 증빙">회생계획 원문·주주명부·분할별표</td>
+<td data-label="결론">객관적 계획해석으로 책임기초 지위 승계 가능</td>
+<td data-label="징수자료">회생계획안·고지자료</td>
+<td data-label="시험 적용">문언 한 줄이 아니라 계획 전체를 포섭한다</td>
+</tr>
+<tr>
+<td data-label="공통 법리">2025두33121</td>
+<td data-label="결정적 사실">원고 주주법인에 대한 회생절차가 2019년 2월 13일 신청, 3월 18일 개시되었고, 12월 31일 체납법인의 세금이 성립한 뒤 2020년 3월 11일 원고의 절차가 폐지되었다. 원래 법인세 717,120,660원과 제2차 납세의무 고지액 749,391,070원이 구별됐다</td>
+<td data-label="결정적 증빙">개시·폐지결정·관리인 권한·주주권 기록·두 세액 문서</td>
+<td data-label="결론">원고가 보유한 체납법인 주식에 관한 주주권이 원고의 관리인에게 전속하여 회생 중 원고의 실질 행사 지위를 부정하고 폐지 비소급</td>
+<td data-label="징수자료">제2차납세의무고지서·재산조사</td>
+<td data-label="시험 적용">체납법인·원고 주주법인·원고의 회생관리인과 두 세액을 따로 고정한다</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>2016두41781은 2010년 6월 1일 기준 구 제39조와 회생법 제272조·제280조, 2025두33121은 2019년 12월 31일 기준 구 제39조와 회생법 제56조 등이 적용됐다. 기준일 현재 제39조와 징수법 제7조는 새 사건에 별도로 적용한다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>두 상고기각 판결의 결론은 확정되었다. 2025두33121은 절차폐지 뒤 새로 성립한 납세의무는 폐지 뒤 권리행사 가능성을 기준으로 별도 판단해야 한다고 경계를 제시한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>쟁점 세금의 납세의무가 회생절차 폐지 뒤 성립했고 주주회사가 의결권을 직접 행사한 회의록도 확인되었다. 회생 중 관리인 통제 전제가 사라지므로 결론은 성립일의 과점주주 실질 행사 지위를 인정하는 방향으로 바뀐다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 회생절차효과·제2차 납세의무 성립·납부고지는 어떻게 나뉘는가?</li>
+<li class="recall-question">증빙 선택: 회생계획안·파산채권신고서·제2차납세의무고지서는 무엇을 각각 증명하는가?</li>
+<li class="recall-question">새 사실 전이: 세금이 폐지 뒤 성립하고 주주가 직접 의결하면 결론은 어떻게 변하는가?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>각 답에 0·1·2를 적고 두 판결의 성립일·절차상태를 바꾸어 말했다면 다시 본다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 회생법은 관리처분권과 계획승계를, 기본법 제39조는 성립일의 보충책임을, 징수법 제7조는 책임자에 대한 납부고지 절차를 각각 정한다.</li>
+<li>증빙 선택: 회생계획안은 승계범위, 파산채권신고서는 파산절차에서 신고한 조세채권, 제2차납세의무고지서는 책임자·세액·한도와 통지를 구체적으로 증명한다.</li>
+<li>새 사실 전이: 폐지 뒤 세금이 성립하고 주주가 의결권을 직접 행사했다면 관리인 통제 법리가 적용되지 않아 과점주주 책임을 인정하는 방향으로 결론이 바뀐다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-27</p>
+<p><a href="https://www.law.go.kr/법령/국세징수법" rel="noopener noreferrer">2026. 6. 2. 시행 국세징수법(법률 제21713호)</a> <a href="https://www.law.go.kr/법령/국세징수법/제7조" rel="noopener noreferrer">국세징수법 제7조 제2차 납세의무자에 대한 납부고지</a> <a href="https://www.law.go.kr/법령/국세기본법/제39조" rel="noopener noreferrer">2026. 8. 11. 시행 국세기본법 제39조</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=185419" rel="noopener noreferrer">대법원 2017. 7. 18. 선고 2016두41781 종합부동산세등부과처분취소</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=609567" rel="noopener noreferrer">대법원 2025. 9. 25. 선고 2025두33121 2차납세의무자지정및납세고지처분취소</a> <a href="https://www.law.go.kr/법령/채무자회생및파산에관한법률/제56조" rel="noopener noreferrer">채무자 회생 및 파산에 관한 법률 제56조</a> <a href="https://www.law.go.kr/법령/국세징수법시행령" rel="noopener noreferrer">2026. 2. 27. 시행 국세징수법 시행령(대통령령 제36126호)</a> <a href="https://www.law.go.kr/법령/국세징수법시행규칙" rel="noopener noreferrer">2026. 3. 20. 시행 국세징수법 시행규칙(재정경제부령 제19호)</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>

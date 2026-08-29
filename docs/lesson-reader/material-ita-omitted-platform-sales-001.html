@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="tax-study-material-id" content="MATERIAL-ITA-OMITTED-PLATFORM-SALES-001">
+  <title>개인계좌·현금·PG·플랫폼 매출누락 · 아침 사건배당부</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --ink: #16283d;
+      --ink-soft: #536170;
+      --paper: #fffdf7;
+      --blue: #155d9c;
+      --teal: #0b6f69;
+      --teal-soft: #d9ece8;
+      --rule: #8d9aa5;
+      --focus: #005fcc;
+      --measure: 68ch;
+      --page: 1120px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      scrollbar-color: var(--blue) var(--stone-1);
+      scrollbar-width: thin;
+    }
+
+    html {
+      background: var(--stone-1);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-1);
+      font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    ::selection {
+      color: var(--paper);
+      background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--stone-1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 2px solid var(--stone-1);
+      background: var(--blue);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+
+    a:hover {
+      color: var(--ink);
+      text-decoration-thickness: 2px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link,
+    .dashboard-link,
+    .lesson-toc summary,
+    .lesson-toc__link {
+      min-width: 44px;
+      min-height: 44px;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 30;
+      top: 0.5rem;
+      left: 0.5rem;
+      padding: 0.55rem 0.8rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .masthead {
+      border-top: 6px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .masthead__inner,
+    .progress-strip__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding-inline: 1rem;
+    }
+
+    .masthead__inner {
+      min-height: 4.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .docket-name {
+      margin: 0;
+      font-size: 1.08rem;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .masthead__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .mode-chip,
+    .meta-chip {
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mode-chip,
+    .meta-chip--verified {
+      white-space: nowrap;
+    }
+
+    .mode-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .dashboard-link {
+      padding-inline: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 750;
+    }
+
+    .progress-strip {
+      position: sticky;
+      z-index: 10;
+      top: 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .progress-strip__inner {
+      min-height: 3.25rem;
+      display: grid;
+      grid-template-columns: auto minmax(8rem, 1fr) auto;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--ink-soft);
+      font-size: 0.76rem;
+      font-weight: 750;
+      font-variant-numeric: tabular-nums;
+    }
+
+    progress {
+      width: 100%;
+      height: 0.7rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-2);
+      accent-color: var(--blue);
+    }
+
+    progress::-webkit-progress-bar {
+      background: var(--stone-2);
+    }
+
+    progress::-webkit-progress-value {
+      background: var(--blue);
+    }
+
+    progress::-moz-progress-bar {
+      background: var(--blue);
+    }
+
+    .reader-layout {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 2rem 1rem 5rem;
+      display: grid;
+      grid-template-columns: minmax(13rem, 16rem) minmax(0, var(--measure));
+      justify-content: center;
+      align-items: start;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .reader-rail {
+      position: sticky;
+      top: 5rem;
+      min-width: 0;
+    }
+
+    .lesson-toc {
+      border-top: 3px solid var(--ink);
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .lesson-toc summary {
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      color: var(--ink);
+      font-size: 0.8rem;
+      font-weight: 850;
+      list-style: none;
+    }
+
+    .lesson-toc > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .lesson-toc > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .lesson-toc[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .lesson-toc__list {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+      list-style: none;
+    }
+
+    .lesson-toc__list li + li {
+      border-top: 1px solid var(--stone-2);
+    }
+
+    .lesson-toc__link {
+      padding: 0.55rem 0.8rem;
+      display: flex;
+      align-items: center;
+      color: var(--ink-soft);
+      font-size: 0.77rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .lesson-toc__link:hover,
+    .lesson-toc__link[aria-current="location"] {
+      color: var(--blue);
+      background: var(--stone-0);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    .lesson {
+      max-width: var(--measure);
+      margin-inline: auto;
+      background: var(--paper);
+    }
+
+    .lesson-header {
+      padding: clamp(1.35rem, 4vw, 2.8rem);
+      border-top: 4px solid var(--blue);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .lesson-kicker {
+      margin: 0 0 0.55rem;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--ink);
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 24ch;
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 3.1rem);
+      font-weight: 900;
+    }
+
+    .lesson-meta {
+      margin: 1.25rem 0 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.42rem;
+      list-style: none;
+    }
+
+    .meta-chip {
+      padding: 0.18rem 0.55rem;
+      color: var(--ink-soft);
+      background: var(--stone-0);
+      font-size: 0.74rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .meta-chip--verified {
+      color: var(--teal);
+      border-color: var(--teal);
+      background: var(--teal-soft);
+    }
+
+    .lesson-lead {
+      margin: 1.35rem 0 0;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--rule);
+      color: var(--ink-soft);
+      font-size: 1.04rem;
+    }
+
+    .lesson-section {
+      margin-inline: clamp(1.25rem, 4vw, 2.8rem);
+      padding-top: 4.5rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section:last-child {
+      padding-bottom: 4rem;
+    }
+
+    .lesson-section > h2 {
+      margin: 0 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--ink);
+      font-size: clamp(1.55rem, 4vw, 2rem);
+      font-weight: 900;
+    }
+
+    .lesson-section h3 {
+      margin: 3.2rem 0 0.75rem;
+      font-size: 1.28rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section h4 {
+      margin: 2.5rem 0 0.65rem;
+      font-size: 1.08rem;
+      font-weight: 850;
+      scroll-margin-top: 5rem;
+    }
+
+    .lesson-section p {
+      margin: 0.85rem 0 0;
+    }
+
+    .lesson-section ul,
+    .lesson-section ol {
+      margin: 0.9rem 0 0;
+      padding-left: 1.45rem;
+    }
+
+    .lesson-section li + li {
+      margin-top: 0.55rem;
+    }
+
+    .lesson a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .learning-block {
+      margin: 2.5rem 0 0;
+      padding: 1.15rem 1.2rem 1.35rem;
+      border: 1px solid var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block > h3 {
+      margin-top: 0.32rem;
+    }
+
+    .learning-block__label {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .learning-block--easy {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--easy .learning-block__label {
+      color: var(--blue);
+    }
+
+    .learning-block--glossary {
+      border-color: var(--rule);
+      background: var(--stone-0);
+    }
+
+    .learning-block--prompt {
+      border-color: var(--blue);
+      background: var(--paper);
+    }
+
+    .learning-block--prompt .learning-block__label {
+      color: var(--blue);
+    }
+
+    .reveal-block {
+      margin-block: 1rem;
+      border: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .reveal-block > summary {
+      min-height: 44px;
+      padding: .75rem 1rem;
+      display: flex;
+      align-items: center;
+      color: var(--blue);
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .reveal-block > summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .reveal-block > summary::after {
+      content: "";
+      width: .55rem;
+      height: .55rem;
+      margin-left: auto;
+      border-right: 2px solid currentColor;
+      border-bottom: 2px solid currentColor;
+      transform: rotate(45deg);
+      flex: 0 0 auto;
+    }
+
+    .reveal-block[open] > summary {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .reveal-block[open] > summary::after {
+      transform: rotate(225deg);
+    }
+
+    .reveal-block__body {
+      padding: 1rem;
+    }
+
+    .reveal-block--deepening {
+      background: var(--stone-0);
+    }
+
+    .table-wrap {
+      width: 100%;
+      margin-top: 1.25rem;
+      border: 1px solid var(--rule);
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      font-variant-numeric: tabular-nums;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border-right: 1px solid var(--stone-2);
+      border-bottom: 1px solid var(--stone-2);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th:last-child,
+    td:last-child {
+      border-right: 0;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    th {
+      color: var(--ink);
+      background: var(--stone-0);
+      font-weight: 850;
+    }
+
+    .recall-question {
+      padding: 0.65rem 0.2rem;
+      border-bottom: 1px solid var(--stone-2);
+      font-weight: 700;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--rule);
+      background: var(--paper);
+    }
+
+    .site-footer__inner {
+      width: min(100%, var(--page));
+      margin-inline: auto;
+      padding: 1.2rem 1rem 2rem;
+      color: var(--ink-soft);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 760px) {
+      .masthead__inner,
+      .progress-strip__inner,
+      .reader-layout,
+      .site-footer__inner {
+        width: 100%;
+        padding-inline: 1rem;
+      }
+
+      .masthead__inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-block: 0.8rem;
+      }
+
+      .masthead__tools {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .progress-strip__inner {
+        grid-template-columns: auto minmax(0, 1fr) auto;
+      }
+
+      .reader-layout {
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+
+      .lesson {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 1rem;
+      }
+
+      .lesson-section {
+        padding-top: 3.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.85rem, 9vw, 2.5rem);
+      }
+
+      .table-wrap {
+        border: 0;
+        overflow: visible;
+      }
+
+      table,
+      tbody,
+      tr,
+      td {
+        width: 100%;
+        display: block;
+      }
+
+      thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        border: 0;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+
+      tbody {
+        display: grid;
+        gap: 1rem;
+      }
+
+      tr {
+        border: 1px solid var(--rule);
+        background: var(--paper);
+      }
+
+      td {
+        padding: 0.75rem;
+        border-right: 0;
+        display: grid;
+        grid-template-columns: minmax(7rem, 0.42fr) minmax(0, 1fr);
+        gap: 0.8rem;
+      }
+
+      td::before {
+        content: attr(data-label);
+        color: var(--ink-soft);
+        font-size: 0.76rem;
+        font-weight: 850;
+      }
+
+      tbody tr:last-child td,
+      td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      td {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.25rem;
+      }
+    }
+
+    @media (min-width: 761px) and (max-height: 520px) {
+      .reader-layout {
+        grid-template-columns: minmax(0, var(--measure));
+        gap: 1.25rem;
+      }
+
+      .reader-rail {
+        position: static;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    @media print {
+      @page {
+        margin: 16mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        font-size: 11pt;
+      }
+
+      .skip-link,
+      .progress-strip,
+      .dashboard-link,
+      .mode-chip,
+      .reader-rail {
+        display: none !important;
+      }
+
+      .reader-layout {
+        width: auto;
+        padding: 0;
+        display: block;
+      }
+
+      .reader-rail,
+      .progress-strip {
+        position: static;
+      }
+
+      main,
+      .lesson {
+        width: auto;
+        max-width: none;
+      }
+
+      .lesson-header,
+      .lesson-section {
+        margin-inline: 0;
+        padding-inline: 0;
+      }
+
+      .lesson-section {
+        padding-top: 2rem;
+      }
+
+      .reveal-block > summary {
+        display: none;
+      }
+
+      .reveal-block > .reveal-block__body {
+        display: block !important;
+      }
+
+      .reveal-block::details-content {
+        content-visibility: visible !important;
+      }
+
+      .learning-block,
+      .table-wrap,
+      tr {
+        break-inside: avoid;
+      }
+
+      .learning-block,
+      .meta-chip,
+      th,
+      td {
+        color: #000;
+        border-color: #000;
+        background: #fff;
+      }
+
+      .table-wrap {
+        overflow: visible;
+      }
+
+      a {
+        color: #000;
+      }
+
+      a[href^="https://"]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.78em;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--
+  THESIS: 초보자의 이해를 최우선으로, 한 건의 세법 수업을 판례와 증빙의 순서로 끝까지 읽게 한다.
+  OWN-WORLD: 아침 사건배당부의 잉크, 돌빛 종이, 공식 청색과 검증 청록을 잇는다.
+  STORY: 배당된 쟁점에서 법리, 조사 증빙, 답안, 판례, 회상, 출처로 내려간다.
+  FIRST VIEWPORT: 사건 제목, 전달 메타, 수업 읽기 위치와 여덟 구간 목차가 방향을 잡는다.
+  FORM: Read; 좁은 본문과 고정 목차를 가진 승인된 정밀 수업 열람면이다.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip-link" href="#main-content">수업 본문으로 건너뛰기</a>
+  <header class="masthead">
+    <div class="masthead__inner">
+      <p class="docket-name">아침 사건배당부</p>
+      <div class="masthead__tools">
+        <span class="mode-chip">Read · 전달본</span>
+        <a class="dashboard-link" href="../dashboard/index.html">대시보드로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+  <div class="progress-strip" aria-label="수업 읽기 위치">
+    <div class="progress-strip__inner">
+      <label for="reading-progress">수업 읽기 위치</label>
+      <progress id="reading-progress" value="1" max="8">1 / 8</progress>
+      <span>8구간</span>
+    </div>
+  </div>
+  <div class="reader-layout">
+    <aside class="reader-rail">
+      <nav aria-label="수업 구간 목차">
+        <details class="lesson-toc" open>
+<summary>일곱 학습 단계와 공식 출처</summary>
+<ol class="lesson-toc__list">
+<li><a class="lesson-toc__link" href="#concept">1. 오늘의 목표와 30초 쉬운 설명 — 2분</a></li>
+<li><a class="lesson-toc__link" href="#legal-structure">2. 핵심 용어와 법적 판단지도 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#worked-example">3. 완성된 쉬운 예제 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#audit-evidence">4. 세무조사 증빙 실습 — 8분</a></li>
+<li><a class="lesson-toc__link" href="#exam">5. 세무사 2차 연결 — 3분</a></li>
+<li><a class="lesson-toc__link" href="#precedent">6. 중요 판례 예측과 해설 — 5분</a></li>
+<li><a class="lesson-toc__link" href="#recall">7. 변형사례와 오늘의 회상 — 4분</a></li>
+<li><a class="lesson-toc__link" href="#sources">공식 출처와 기준일</a></li>
+</ol>
+</details>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <article class="lesson" aria-labelledby="lesson-title">
+        <header class="lesson-header">
+          <p class="lesson-kicker">Morning tax docket · lesson brief</p>
+          <h1 id="lesson-title">개인계좌·현금·PG·플랫폼 매출누락</h1>
+          <ul class="lesson-meta" aria-label="수업 메타데이터">
+<li class="meta-chip">세목 소득세법</li>
+<li class="meta-chip">난도 초급</li>
+<li class="meta-chip">예상 30분</li>
+<li class="meta-chip">출처 2026-08-28</li>
+<li class="meta-chip meta-chip--verified">자유열람 자료</li>
+</ul>
+          <p class="lesson-lead">비중: 법과 판례 55% · 조사와 증빙 25% · 세무사 2차 20%</p>
+        </header>
+        <section class="lesson-section" id="concept" aria-labelledby="concept-title">
+<h2 id="concept-title">1. 오늘의 목표와 30초 쉬운 설명 — 2분</h2>
+<section class="learning-block learning-block--easy" aria-labelledby="concept-heading-1">
+<p class="learning-block__label">쉬운 설명</p>
+<h3 id="concept-heading-1">30초 쉬운 설명</h3>
+<p>플랫폼에서 100을 결제받아 수수료 10을 뺀 90만 입금되었다고 해서 매출이 90인 것은 아니다. 총결제액에서 실제 취소·환불을 빼 총수입금액을 복원하고, 플랫폼 수수료는 별도 필요경비로 검토한다. 개인계좌 입금액도 전액 매출이라고 단정하지 않고 대여금 회수·계좌 간 이체·환불 같은 비매출을 구별한다.</p>
+<p>조사는 PG 승인, 플랫폼 주문, 취소·환불, 정산, 계좌 입금, 장부, 신고서를 같은 거래키와 날짜로 잇는 작업이다.</p>
+</section>
+<section class="learning-block learning-block--objectives" aria-labelledby="concept-heading-2">
+<p class="learning-block__label">오늘의 목표</p>
+<h3 id="concept-heading-2">오늘 할 수 있어야 하는 것</h3>
+<ul>
+<li>PG·플랫폼정산서에서 총결제액과 순입금액을 구별한다.</li>
+<li>개인계좌·현금 입금의 매출 가설과 비매출 가설을 증거로 비교한다.</li>
+<li>2002두12786의 계좌조사 법리와 추가 필요경비 입증을 현행 신고에 연결한다.</li>
+</ul>
+</section>
+<section class="learning-block learning-block--prompt" aria-labelledby="concept-heading-3">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="concept-heading-3">시작 전 판단</h3>
+<p>플랫폼 총결제액이 110000, 취소·환불액이 10000, 수수료 차감 뒤 계좌입금액이 93000이다. 총수입금액을 93000으로 신고하는 것이 맞는지 예측하자.</p>
+</section>
+</section>
+<section class="lesson-section" id="legal-structure" aria-labelledby="legal-structure-title">
+<h2 id="legal-structure-title">2. 핵심 용어와 법적 판단지도 — 4분</h2>
+<section class="learning-block learning-block--glossary" aria-labelledby="legal-structure-heading-1">
+<p class="learning-block__label">핵심 용어</p>
+<h3 id="legal-structure-heading-1">핵심 용어</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>용어</th>
+<th>의미</th>
+<th>오해하기 쉬운 점</th>
+<th>검증 자료</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="용어">총결제액</td>
+<td data-label="의미">고객이 승인한 거래 총액</td>
+<td data-label="오해하기 쉬운 점">순입금액과 다름</td>
+<td data-label="검증 자료">PG 승인·주문 원장</td>
+</tr>
+<tr>
+<td data-label="용어">취소·환불</td>
+<td data-label="의미">성립 뒤 취소된 거래</td>
+<td data-label="오해하기 쉬운 점">수수료와 다름</td>
+<td data-label="검증 자료">환불 로그·고객 지급</td>
+</tr>
+<tr>
+<td data-label="용어">플랫폼 수수료</td>
+<td data-label="의미">중개·결제 서비스 대가</td>
+<td data-label="오해하기 쉬운 점">매출 차감으로 숨기지 않음</td>
+<td data-label="검증 자료">정산서·계약</td>
+</tr>
+<tr>
+<td data-label="용어">개인계좌 입금</td>
+<td data-label="의미">매출 후보가 포함된 금융흐름</td>
+<td data-label="오해하기 쉬운 점">전액 매출 확정이 아님</td>
+<td data-label="검증 자료">송금인·메모·반대계좌</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="learning-block learning-block--decision-map" aria-labelledby="legal-structure-heading-2">
+<p class="learning-block__label">판단지도</p>
+<h3 id="legal-structure-heading-2">법적 판단지도</h3>
+<ol>
+<li>소득세법 제24조와 시행령 제48조로 총수입금액과 수입시기를 정한다.</li>
+<li>제70조의 신고금액과 제80조의 경정 근거를 구분한다.</li>
+<li>제160조·제160조의5와 시행령 제208조의5에 따른 장부·사업용계좌 자료를 수집한다.</li>
+<li>시행령 제142조의 실지조사와 제143조의 추계결정 경계를 지킨다.</li>
+<li>시행규칙 제65조·제101조의 별지 제40호서식(1) 종합소득세 신고에 복원 총수입금액과 인정 필요경비를 각각 반영한다.</li>
+</ol>
+<ol start="2026">
+<li>7. 1. 시행 소득세법(법률 제21221호), 2026. 7. 1. 시행 소득세법 시행령(대통령령 제36343호), 2026. 7. 1. 시행 소득세법 시행규칙(재정경제부령 제33호)을 현행 자료분석의 기준으로 사용한다.</li>
+</ol>
+</section>
+<h3 id="legal-structure-heading-3">적용 범위와 경계</h3>
+<p>계좌입금 합계는 객관적 실지조사의 출발점이 될 수 있지만 곧바로 과세표준은 아니다. 거래별 송금인, 주문키, 취소, 자기계좌 이체, 차입, 보증금 반환을 구별해야 한다. 추가 필요경비도 매출누락액에 임의 비율을 곱하지 않고 실제 지출 증거를 확인한다.</p>
+<details class="reveal-block reveal-block--deepening">
+<summary>심화 펼치기</summary>
+<div class="reveal-block__body">
+<h4 id="legal-structure-heading-4">심화</h4>
+<p>현금매출은 포스·예약·출고·재고·근무기록과 비교하고, 해외플랫폼은 통화·정산주기·수수료·환율 적용일을 분리한다. 여러 자료의 기준시점이 다르면 월별 브리지 표를 만든다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="worked-example" aria-labelledby="worked-example-title">
+<h2 id="worked-example-title">3. 완성된 쉬운 예제 — 4분</h2>
+<h3 id="worked-example-heading-1">사실</h3>
+<p>갑의 2026년 플랫폼 자료에는 총결제 110000, 정상 취소·환불 10000, 플랫폼 수수료 7000, 순입금 93000이 표시되어 있다. 취소는 고객 환불 로그와 일치한다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="worked-example-heading-2">
+<p class="learning-block__label">먼저 설명하기</p>
+<h3 id="worked-example-heading-2">자기설명</h3>
+<p>총수입금액, 취소·환불, 수수료, 순입금액을 각기 어느 단계에서 다루는지 말해 보자.</p>
+</section>
+<details class="reveal-block reveal-block--model-explanation">
+<summary>모범 판단 과정 펼치기</summary>
+<div class="reveal-block__body">
+<section class="learning-block learning-block--worked-reasoning" aria-labelledby="worked-example-heading-3">
+<p class="learning-block__label">전문가 판단 과정</p>
+<h3 id="worked-example-heading-3">전문가 판단 과정</h3>
+<p>플랫폼 총결제액 110000 - 취소·환불액 10000 = 총수입금액 100000</p>
+<p>수수료 7000은 총수입금액을 93000으로 줄이는 항목이 아니라 사업 관련성과 증빙을 갖춘 필요경비 후보로 별도 검토한다. 총수입금액 100000에서 인정 필요경비를 빼 사업소득금액을 계산한다.</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>원시증빙</th>
+<th>전표·장부</th>
+<th>시산표·재무제표</th>
+<th>신고서·납부자료</th>
+<th>대사 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="원시증빙">PG정산서·플랫폼정산서·계좌입금자료</td>
+<td data-label="전표·장부">매출전표·매출보조원장</td>
+<td data-label="시산표·재무제표">합계잔액시산표·손익계산서</td>
+<td data-label="신고서·납부자료">종합소득세 과세표준확정신고서 별지 제40호서식(1)·납부서</td>
+<td data-label="대사 결과">승인·환불·총수입금액이 일치하는지 확인하고 순입금 차이는 수수료로 조정</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>분개를 억지로 만들지 않고 PG 승인에서 취소·환불, 플랫폼 정산, 금융 입금, 원장, 종합소득세 신고로 이어지는 거래를 대사한다.</p>
+</section>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="audit-evidence" aria-labelledby="audit-evidence-title">
+<h2 id="audit-evidence-title">4. 세무조사 증빙 실습 — 8분</h2>
+<h3 id="audit-evidence-heading-1">결론을 가린 사건</h3>
+<p>을의 개인계좌에 신고 매출보다 60000 많은 입금이 있다. 입금 메모 일부는 주문번호와 일치하지만 일부는 가족 송금, 자기계좌 이체, 대여금 회수라고 주장한다. PG 자료는 10개월분만 있고 현금매출 장부도 일부 누락되었다.</p>
+<section class="learning-block learning-block--hypotheses" aria-labelledby="audit-evidence-heading-2">
+<p class="learning-block__label">경쟁 가설</p>
+<h3 id="audit-evidence-heading-2">경쟁 가설</h3>
+<ul>
+<li>조사 가설: 과세관청은 반복되는 고객명·주문번호와 플랫폼 판매기간이 일치하므로 60000이 매출누락이라고 본다.</li>
+<li>납세자 가설: 납세자는 계좌 간 이체·대여금 회수·오입금이 섞여 있어 입금 합계 전액을 매출로 볼 수 없다고 본다.</li>
+</ul>
+</section>
+<h3 id="audit-evidence-heading-3">증빙 판단표</h3>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>자료군</th>
+<th>조사 가설 지지</th>
+<th>납세자 가설 지지</th>
+<th>신뢰도 공백</th>
+<th>추가 확인</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td data-label="자료군">금융 거래내역</td>
+<td data-label="조사 가설 지지">고객 송금명·반복 금액</td>
+<td data-label="납세자 가설 지지">동일인 자기계좌 이체</td>
+<td data-label="신뢰도 공백">송금 목적 미상</td>
+<td data-label="추가 확인">반대계좌·송금메모</td>
+</tr>
+<tr>
+<td data-label="자료군">PG 승인자료</td>
+<td data-label="조사 가설 지지">주문번호와 입금 일치</td>
+<td data-label="납세자 가설 지지">승인취소 누락</td>
+<td data-label="신뢰도 공백">두 달 자료 공백</td>
+<td data-label="추가 확인">PG 원본 재수집</td>
+</tr>
+<tr>
+<td data-label="자료군">플랫폼정산서</td>
+<td data-label="조사 가설 지지">판매건·수수료 연결</td>
+<td data-label="납세자 가설 지지">환불·보류 정산</td>
+<td data-label="신뢰도 공백">정산주기 차이</td>
+<td data-label="추가 확인">주문별 상태로그</td>
+</tr>
+<tr>
+<td data-label="자료군">현금·물류자료</td>
+<td data-label="조사 가설 지지">출고수량이 신고 초과</td>
+<td data-label="납세자 가설 지지">반품·샘플 제공</td>
+<td data-label="신뢰도 공백">재고수불 공백</td>
+<td data-label="추가 확인">출고·환불 대사</td>
+</tr>
+</tbody>
+</table>
+</div>
+<section class="learning-block learning-block--prompt" aria-labelledby="audit-evidence-heading-4">
+<p class="learning-block__label">먼저 판단하기</p>
+<h3 id="audit-evidence-heading-4">학습자 잠정 결론</h3>
+<ul>
+<li>잠정 결론: 입금액별 추가 확인 필요</li>
+<li>결정적 사실: 주문키와 입금의 대응, 비매출 송금의 반대계좌와 법률원인</li>
+<li>추가 증빙: 전체 PG 원본, 플랫폼 주문·환불 로그, 금융 반대계좌, 대여계약, 출고자료</li>
+</ul>
+</section>
+<details class="reveal-block reveal-block--feedback">
+<summary>전문가 피드백 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="audit-evidence-heading-5">전문가 피드백</h3>
+<p>입금 합계를 한 줄로 과세하거나 납세자의 설명만으로 빼지 않는다. 거래단위로 매출·비매출·미확인을 표시하고, 취소·환불과 수수료를 서로 다른 칸에 둔다. 누락 매출에 대응하는 추가 필요경비는 별도 증명이 있을 때만 반영한다.</p>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="exam" aria-labelledby="exam-title">
+<h2 id="exam-title">5. 세무사 2차 연결 — 3분</h2>
+<h3 id="exam-heading-1">답안 뼈대</h3>
+<ul>
+<li>Issue: PG·계좌자료로 확인한 금액이 총수입금액 누락인지와 추가 필요경비 인정 여부가 쟁점이다.</li>
+<li>Rule: 객관적인 계좌자료에 의한 실지조사는 가능하지만 비매출 입금과 추가 경비는 증거로 별도 판단한다.</li>
+<li>Application: 주문번호·송금인·환불·자기계좌 이체를 거래별로 포섭한다.</li>
+<li>Conclusion: 확인 매출만 총수입금액에 더하고 증명된 대응 경비만 차감한다.</li>
+</ul>
+<h3 id="exam-heading-2">실무 판단을 답안으로</h3>
+<p>총결제 110000에서 취소·환불 10000을 빼 총수입금액 100000을 재계산한다. 수수료는 필요경비 후보로 분리하고, 별지 제40호서식(1)의 총수입금액과 필요경비 명세를 원장과 각각 대사한다.</p>
+<h3 id="exam-heading-3">감점 방지</h3>
+<ul>
+<li>순입금액을 총수입금액으로 쓰지 않는다.</li>
+<li>개인계좌 입금 전액을 설명 없이 매출로 확정하지 않는다.</li>
+<li>플랫폼 수수료와 고객 환불을 같은 항목으로 처리하지 않는다.</li>
+<li>매출누락이 확인되었다고 대응 필요경비를 자동 추정하지 않는다.</li>
+</ul>
+</section>
+<section class="lesson-section" id="precedent" aria-labelledby="precedent-title">
+<h2 id="precedent-title">6. 중요 판례 예측과 해설 — 5분</h2>
+<h3 id="precedent-heading-1">판례를 먼저 쉽게</h3>
+<p>대법원 2003. 12. 12. 선고 2002두12786은 1998년 귀속 소득을 다뤘다. 과세관청은 사업자의 예금계좌에서 본인이 인정한 70000000 외에 50960157을 더 확인해 매출누락 합계 120960157을 산정했다. 납세자는 계좌 실제 입금액 자체는 인정했다.</p>
+<section class="learning-block learning-block--prompt" aria-labelledby="precedent-heading-2">
+<p class="learning-block__label">먼저 예측하기</p>
+<h3 id="precedent-heading-2">결론 전 예측</h3>
+<p>계좌입금액으로 매출을 복원한 실지조사가 허용되는지, 추가 필요경비 주장을 이유로 전체 소득을 추계결정으로 바꿔야 하는지 먼저 예측하자.</p>
+</section>
+<details class="reveal-block reveal-block--precedent">
+<summary>판례 결론과 이유 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="precedent-heading-3">법원 결론과 이유</h3>
+<p>대법원은 원심을 파기하고 서울고등법원에 환송했다. 신고 오류·탈루가 있고 실제 수입을 포착하는 객관적 방법이라면 금융계좌 입금액 조사도 실지조사에 해당한다. 매출누락에 대응하는 별도 필요경비는 납세자가 입증해야 하며, 그 공제를 위해 전체 소득을 곧바로 추계로 바꿀 수 없다고 보았다.</p>
+<h3 id="precedent-heading-4">구별 사실과 한계</h3>
+<p>이 사건에는 1998년 귀속 소득세법 제80조, 당시 시행령 제142조·제143조, 국세기본법 제16조의 역사법이 적용되었다. 현행 플랫폼 자료에 결론을 적용할 때도 계좌입금이 실제 수입을 포착하는 객관적 방법인지와 비매출 입금 반증을 따로 확인한다.</p>
+<h3 id="precedent-heading-5">후속 상태</h3>
+<p>대법원 파기환송 사건이며 2026-08-28 확인한 공식 판결문에서 환송 후 결과는 확인하지 않았다. 파기환송 사실을 최종 확정금액으로 오해하지 않는다.</p>
+<details class="reveal-block reveal-block--deepening">
+<summary>심화 펼치기</summary>
+<div class="reveal-block__body">
+<h4 id="precedent-heading-6">심화</h4>
+<p>판결은 계좌입금액이 언제나 전액 매출이라는 규칙이 아니다. 사건의 계좌 입금 자체가 인정되고 반기별 매출을 재구성할 수 있었던 사실이 중요하다.</p>
+</div>
+</details>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="recall" aria-labelledby="recall-title">
+<h2 id="recall-title">7. 변형사례와 오늘의 회상 — 4분</h2>
+<section class="learning-block learning-block--transfer" aria-labelledby="recall-heading-1">
+<p class="learning-block__label">새 사실에 적용하기</p>
+<h3 id="recall-heading-1">변형사례</h3>
+<p>초과 입금 60000 중 40000이 동일인 자기계좌에서 이동한 사실과 나머지 20000만 주문번호에 대응한다는 원본자료가 확인되면 전액 매출누락이라는 결론은 20000만 매출 후보로 보는 쪽으로 바뀐다.</p>
+</section>
+<h3 id="recall-heading-2">오늘의 회상 3문항</h3>
+<ol>
+<li class="recall-question">법리 구분: 계좌입금 실지조사와 전체 소득의 추계결정을 어떻게 구별하나요?</li>
+<li class="recall-question">증빙 선택: PG·플랫폼·금융 자료에서 매출과 비매출을 나눌 핵심 키를 무엇으로 정하나요?</li>
+<li class="recall-question">새 사실 전이: 자기계좌 이체가 확인되면 매출누락 계산과 신고서 조정은 어떻게 바뀌나요?</li>
+</ol>
+<section class="learning-block learning-block--confidence" aria-labelledby="recall-heading-3">
+<p class="learning-block__label">확신도 점검</p>
+<h3 id="recall-heading-3">확신도</h3>
+<p>각 답을 0 모르겠다, 1 불확실, 2 확실로 표시하고 총결제·환불·수수료·입금을 각각 설명했는지 확인한다.</p>
+</section>
+<details class="reveal-block reveal-block--answer-key">
+<summary>답안 핵심요소 펼치기</summary>
+<div class="reveal-block__body">
+<h3 id="recall-heading-4">답안 핵심요소</h3>
+<ul>
+<li>법리 구분: 객관적 계좌자료를 이용한 실지조사와 장부의 중요한 부분이 없어 필요한 추계결정을 별개의 법정 단계로 설명해야 한다.</li>
+<li>증빙 선택: PG 승인과 플랫폼 주문키로 거래를 연결하고 금융 반대계좌·송금메모로 자기이체와 대여금 회수를 검증해야 한다.</li>
+<li>새 사실 전이: 비매출 40000이 확인되면 해당 금액을 매출 후보에서 제외하고 나머지 20000만 장부·종합소득세 신고서와 대사해야 한다.</li>
+</ul>
+</div>
+</details>
+</section>
+<section class="lesson-section" id="sources" aria-labelledby="sources-title">
+<h2 id="sources-title">공식 출처와 기준일</h2>
+<p>기준일: 2026-08-28</p>
+<p><a href="https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=280405&amp;efYd=20260701" rel="noopener noreferrer">2026년 7월 1일 시행 소득세법</a> <a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%86%8C%EB%93%9D%EC%84%B8%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9" rel="noopener noreferrer">현행 소득세법 시행령</a> <a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EC%86%8C%EB%93%9D%EC%84%B8%EB%B2%95%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99" rel="noopener noreferrer">현행 소득세법 시행규칙과 별지서식</a> <a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=67169" rel="noopener noreferrer">대법원 2002두12786 공식 판례정보</a></p>
+</section>
+      </article>
+    </main>
+  </div>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      공식 출처와 기준일을 포함한 읽기 전용 전달본 · 아침 사건배당부
+    </div>
+  </footer>
+  <script>
+    (() => {
+      "use strict";
+
+      const sections = Array.from(
+        document.querySelectorAll(".lesson-section[id]")
+      );
+      const tocLinks = Array.from(
+        document.querySelectorAll(".lesson-toc__link")
+      );
+      const progress = document.querySelector("#reading-progress");
+
+      if (!progress || sections.length === 0) {
+        return;
+      }
+
+      progress.max = sections.length;
+      const linksByAnchor = new Map();
+      tocLinks.forEach((link) => {
+        const destination = link.getAttribute("href");
+        if (destination && destination.charAt(0) === "#") {
+          linksByAnchor.set(destination.slice(1), link);
+        }
+      });
+
+      const activate = (section) => {
+        tocLinks.forEach((link) => link.removeAttribute("aria-current"));
+        const activeLink = linksByAnchor.get(section.id);
+        if (activeLink) {
+          activeLink.setAttribute("aria-current", "location");
+        }
+        const sectionIndex = sections.indexOf(section);
+        progress.value = sectionIndex >= 0 ? sectionIndex + 1 : 1;
+      };
+
+      activate(sections[0]);
+
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
+
+      const visibleSections = new Set();
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              visibleSections.add(entry.target.id);
+            } else {
+              visibleSections.delete(entry.target.id);
+            }
+          });
+          const activeSection = sections.find((section) =>
+            visibleSections.has(section.id)
+          );
+          if (activeSection) {
+            activate(activeSection);
+          }
+        },
+        {
+          rootMargin: "-18% 0px -68% 0px",
+          threshold: [0, 0.2, 0.6],
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>
