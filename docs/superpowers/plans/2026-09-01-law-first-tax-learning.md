@@ -425,4 +425,3 @@ Expected: both URLs return HTTP 200 and the article contains the required marker
 - [ ] **Step 4: 인수 보고에 경로·범위·검증 결과를 기록한다**
 
 Report the five-law scope, total article rows, number of core readers, public URLs, remote commit SHA, mobile capture paths, scoped test count, and any full-suite limitation. Do not describe an unverified law version or case as current.
-
