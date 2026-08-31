@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2021년 제58회 세법학 1부 문제 3-2 · 무상 상표사용권 자산수증익과 감가상각: 무상 취득 상표사용권을 무형자산·자산수증익으로 익금산입한 경우 신고조정으로 감가상각비를 손금산입할 수 있는지 논한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>무상 상표사용권 자산수증익과 감가상각: 무상 취득 상표사용권을 무형자산·자산수증익으로 익금산입한 경우 신고조정으로 감가상각비를 손금산입할 수 있는지 논한다.</h1><p>2021년 제58회 세법학 1부 문제 3-2</p><p class="question-progress">194 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2021년 제58회 세법학 1부 문제 3-2</span><span>10점</span></div><p class="source-paragraph">【문제 3】다음 각 사례를 읽고 물음에 답하시오. (30점) &lt;사례 1&gt; A주식회사(이하 [A회사]라 함)는 부동산매매업을 영위하는 내국법인이다. A회사는 분양사업을 위하여 X건물의 건설자금을 조달하는 과정에서 발생한 대출실행수수료, 청약금 관리 대리사무 보수 및 금융자문ㆍ주선업무수수료 등(이하 “쟁점수수료”라 함)을 손금산입하였다. 그러나 과세관청은 쟁점수수료를 X건물의 취득가액에 포함 되는 것으로 보아 익금산입하여 A회사에게 법인세를 부과ㆍ고지하였다. &lt;사례 2&gt; 2019년 10월 1일 내국상장법인 B주식회사(이하 [B회사]라 함, 사업연도는 1월 1일 부터 12월 31일까지임)와 내국법인 C주식회사(이하 [C회사]라 함)간에 C회사가 보 유한 Y상표권을 B회사가 국내에 한정하여 영구무상 사용할 수 있는 상표권 사용 계약(이하 [쟁점상표사용권]이라 함)을 체결하였다. B회사의 쟁점상표사용권과 관련한 한국회계기준원의 회신내용에 따르면, [쟁점상표사용권은 라이선스 계약으로서 한국 채택국제회계기준 제1038호 무형자산 기준서 문단 10의 식별가능성, 자원에 대한 통제, 미래 경제적 효익의 존재를 모두 충족하는 무형자산에 해당된다]고 회신 받 았으나, B회사는 쟁점상표사용권을 취득하면서 장부상 아무런 회계처리를 하지 않았다. 과세관청은 2020년 10월 중 B회사에 대한 세무조사 결과, B회사가 상표사용계약을 통해 C회사로부터 무형자산(쟁점상표사용권)을 무상으로 취득한 것으로 보아 쟁점 상표사용권을 ｢상속세 및 증여세법｣에 따라 평가하고, 자산수증이익으로 익금산입 하여 2020년 12월 5일에 B회사에게 2019사업연도 법인세를 부과ㆍ고지하였다. &lt;사례 3&gt; 내국법인 D주식회사(이하 [D회사]라 함)는 체육시설업, 스포츠용품 대여 및 판매업을 주업으로 영위하다 2011년 1월 15일 부동산매매업을 법인등기부에 사업목적으로 추가등록하였다. 이후 2015년 6월 22일 Z토지(이하 [쟁점토지]라 함)를 취득[쟁점토지 취득시 재무상태표에 유형자산(토지계정)으로 계상]하여 2017년 8월 15일에 양도하고 손익계산서상 유형자산처분이익으로 계상하였다. D회사는 쟁점토지를 보유당시 업 무용부동산으로 보아 관련 이자비용, 재산세 등을 손금산입하여 법인세 과세표준을 신고하였다. 그러나 과세관청은 2019년 12월 중 D회사에 대한 세무조사 결과, 쟁점 토지를 업무와 관련 없는 자산으로 보아 관련비용을 손금불산입하고, 2020년 2월 15일 D회사에게 법인세를 부과ㆍ고지하였다. (단, 쟁점토지 양도일이 속하는 사업 연도 이전에는 부동산매매업의 매출액이 없으며, 쟁점토지의 양도금액은 해당 사업 연도 매출액의 5% 미만임)</p>
+<p class="source-paragraph">물음 2) &lt;사례 2&gt;에서 과세관청의 부과처분이 적법하다고 볼 경우 ｢법인세법｣상 쟁점 상표사용권에 대한 2019사업연도 감가상각비를 손금산입할 수 있는지에 대해 논하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2200274&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8(2021).zip&amp;fileSeq=2200274&amp;artlSeq=5209054&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2021-09-04</p><p>기준일 확인 상태: 상태 미기재</p><p>2021-09-04 적용 출처: 법인세법 LAWREF-CTA-2021-09-04 (https://www.law.go.kr/법령/법인세법/(20210701,17924,20210316)). 시험일 적용 규정: 법인세법 제23조·제41조 및 당시 시행령 제24조·제26조. 보충 시행령 출처 LAWREF-CTA-DECREE-2021-09-04 (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=233865&amp;efYd=20210713, 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>무상 상표사용권 자산수증익과 감가상각 — 시험일 기준: LAWREF-CTA-2021-09-04; 법인세법 제23조·제41조 및 당시 시행령 제24조·제26조. 2026-08-29 현재 확인 항목: 무형자산 내용연수·결산조정과 경정 시 감가상각 인정범위의 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 신고 결론은 해당 최신 시행본 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>법인세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20210701,17924,20210316)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20260701,21217,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>무상 취득 상표사용권을 무형자산,자산수증익으로 익금산입한 경우 신고조정으로 감가상각비를 손금산입할 수 있는지 논한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>과세관청은 2020년 10월 중 B회사에 대한 세무조사 결과, B회사가 상표사용계약을 통해 C회사로부터 무형자산(쟁점상표사용권)을 무상으로 취득한 것으로 보아 쟁점 상표사용권을 ｢상속세 및 증여세법｣에 따라 평가하고, 자산수증이익으로 익금산입 하여 2020년 12월 5일에 B회사에게 2019사업연도 법인세를 부과,고지하였다.</li><li>2019년 10월 1일 내국상장법인 B주식회사, 사업연도는 1월 1일 부터 12월 31일까지임)와 내국법인 C주식회사간에 C회사가 보 유한 Y상표권을 B회사가 국내에 한정하여 영구무상 사용할 수 있는 상표권 사용 계약을 체결하였다.</li><li>B회사의 쟁점상표사용권과 관련한 한국회계기준원의 회신내용에 따르면, “쟁점상표사용권은 라이선스 계약으로서 한국 채택국제회계기준 제1038호 무형자산 기준서 문단 10의 식별가능성, 자원에 대한 통제, 미래 경제적 효익의 존재를 모두 충족하는 무형자산에 해당된다”고 회신 받 았으나, B회사는 쟁점상표사용권을 취득하면서 장부상 아무런 회계처리를 하지 않았다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 법인세법 제23조이다.</li><li>무상 취득 상표사용권이 세무상 무형자산이면 시가를 취득가액과 자산수증이익으로 반영한다.</li><li>조사 워크페이퍼: 상표사용계약, K-IFRS 1038 회신, 세무상 평가액, 장부 미계상과 상각계산을 대사한다.</li><li>사실포섭,소결: 2019년 10월 1일 영구무상 사용권을 장부에 전혀 기록하지 않았으므로 세무상 취득가액,내용연수를 확정하더라도 2019 결산에 상각비가 없다.</li><li>증빙,세무조사 활용: 상표사용계약, K-IFRS 1038 회신, 세무상 평가액, 장부 미계상과 상각계산을 대사한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 과세관청은 2020년 10월 중 B회사에 대한 세무조사 결과, B회사가 상표사용계약을 통해 C회사로부터 무형자산(쟁점상표사용권)을 무상으로 취득한 것으로 보아 쟁점 상표사용권을 ｢상속세 및 증여세법｣에 따라 평가하고, 자산수증이익으로 익금산입 하여 2020년 12월 5일에 B회사에게 2019사업연도 법인세를 부과,고지하였다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 2019년 10월 1일 내국상장법인 B주식회사, 사업연도는 1월 1일 부터 12월 31일까지임)와 내국법인 C주식회사간에 C회사가 보 유한 Y상표권을 B회사가 국내에 한정하여 영구무상 사용할 수 있는 상표권 사용 계약을 체결하였다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 무상 상표사용권 자산수증익과 감가상각 — 시험일 기준: ; 법인세법 제23조,제41조 및 당시 시행령 제24조,제26조. 2026-08-29 현재 확인 항목: 무형자산 내용연수,결산조정과 경정 시 감가상각 인정범위의 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 신고 결론은 해당 최신 시행본 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>무상 취득 상표사용권이 세무상 무형자산이면 시가를 취득가액과 자산수증이익으로 반영한다.</li><li>조사 워크페이퍼: 상표사용계약, K-IFRS 1038 회신, 세무상 평가액, 장부 미계상과 상각계산을 대사한다.</li><li>사실포섭,소결: 2019년 10월 1일 영구무상 사용권을 장부에 전혀 기록하지 않았으므로 세무상 취득가액,내용연수를 확정하더라도 2019 결산에 상각비가 없다.</li><li>증빙,세무조사 활용: 상표사용계약, K-IFRS 1038 회신, 세무상 평가액, 장부 미계상과 상각계산을 대사한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 무상 상표사용권 자산수증익과 감가상각: 무상 취득 상표사용권을 무형자산·자산수증익으로 익금산입한 경우 신고조정으로 감가상각비를 손금산입할 수 있는지 논한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법리·법정요건: 무상 취득 상표사용권이 세무상 무형자산이면 시가를 취득가액과 자산수증이익으로 반영한다. 감가상각비는 원칙적으로 결산조정 사항이므로 장부에 상각비를 계상하지 않은 금액을 신고조정으로 새로 손금산입할 수 없다. 시험연도 적용근거는 법인세법 제23조·제41조 및 당시 시행령 제24조·제26조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>상표사용계약, K-IFRS 1038 회신, 세무상 평가액, 장부 미계상과 상각계산을 대사한다. 무상 상표사용권 자산수증익과 감가상각 검토에서는 무상 상표사용권의 세무상 시가를 자산 취득가액과 자산수증익에 함께 반영하고, 장부 미계상 상태의 내용연수별 상각범위액을 신고조정으로 손금산입할 수 있는지 검산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>증빙·세무조사 활용: 상표사용계약, K-IFRS 1038 회신, 세무상 평가액, 장부 미계상과 상각계산을 대사한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>사실포섭·소결: 2019년 10월 1일 영구무상 사용권을 장부에 전혀 기록하지 않았으므로 세무상 취득가액·내용연수를 확정하더라도 2019 결산에 상각비가 없다. 부과처분이 적법하다는 전제에서도 2019사업연도 감가상각비의 신고조정 손금산입은 허용되지 않는다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>공제 판단 “과세관청의 법리칸”라는 사실을 법리칸으로 잡는다. 법인세법 제23조의 요건은 수치표에서 확인한다. 무상 상표사용권 자산수증익과 감가상각의 효과를 원칙표로 확정한다.</p><h3>쉬운 말로</h3><p>두 번째 무상 상표사용권 자산수증익과 감가상각의 계산표를 법리칸으로 만든다. “2019년의 수치표”에서 수치를 수치표로 옮긴다. 법인세법 제23조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>우선 법인세법 제23조가 정한 세율표를 먼저 본다. 무상 상표사용권 자산수증익과 감가상각에 “2019년의 세율표” 자료를 증빙칸으로 옮긴다. 사실칸에서 결론은 법인세법 제23조를 근거로 잡는다.</p><h3>쉬운 말로</h3><p>시험 답안 무상 상표사용권 자산수증익과 감가상각을 세율표로 기억한다. 법인세법 제23조에서 증빙칸을 찾는다. “B회사의 증빙칸” 자료를 사실칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>문단 구분 무상 상표사용권 자산수증익과 감가상각을 대응표로 추적한다. 법인세법 제23조에서 답안칸을 읽는다. 세무조사에서는 “B회사의 대응표” 자료를 조문표로 교차한다.</p><h3>쉬운 말로</h3><p>세무조사 무상 상표사용권 자산수증익과 감가상각의 계산표를 대응표로 만든다. “과세관청의 답안칸”에서 수치를 답안칸으로 옮긴다. 법인세법 제23조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>이 문제 무상 상표사용권 자산수증익과 감가상각과 “과세관청의 요건표”의 연결을 요건표로 좁힌다. 법인세법 제23조와 기간표를 읽는다. 조사자료는 순서표로 교차한다.</p><h3>쉬운 말로</h3><p>귀속 판단 무상 상표사용권 자산수증익과 감가상각을 요건표로 기억한다. 법인세법 제23조에서 기간표를 찾는다. “2019년의 기간표” 자료를 순서표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>서류 수령 무상 상표사용권 자산수증익과 감가상각의 판단 질문을 검산표로 만든다. “2019년의 검산표” 자료를 세율표로 확인한다. 법인세법 제23조 근거는 답안에 증빙칸으로 남긴다.</p><h3>쉬운 말로</h3><p>처음에는 세무조사에서는 “B회사의 세율표” 증빙을 검산표로 찾는다. 무상 상표사용권 자산수증익과 감가상각이 법인세법 제23조 선에서 정한다. 증빙칸에서 결론은 세율표로 기록한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-cta-depreciation-001.html">감가상각 범위·시부인·내용연수</a></h3><p class="law-name">법인세법</p><p>법인세법 제23조 기준은 순서표로 옮겨 적는다. 무상 상표사용권 자산수증익과 감가상각의 범위는 주체선으로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-cta-affiliate-support-001.html">계열사 지원·지급보증·상표권·경영자문료</a></h3><p class="law-name">법인세법</p><p>세무조사에서는 “2019년의 자료표” 증빙을 자료표로 찾는다. 무상 상표사용권 자산수증익과 감가상각의 효과는 법인세법 제23조와 연결한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-cta-tax-adjustment-map-001.html">재무제표에서 세무조정으로 가는 기본 지도</a></h3><p class="law-name">법인세법</p><p>법인세법 제23조의 기준을 소득표로 적는다. 무상 상표사용권 자산수증익과 감가상각의 판단은 원가표에서 본다. 세무조사에서는 “B회사의 소득표” 자료를 연결표로 대조한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [무상 상표사용권 자산수증익과 감가상각에서 법인세법 제23조,제41조 및 당시 시행령 제24조,제26조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 법인세법 제23조의 요건과 무상 상표사용권 자산수증익과 감가상각의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [무상 상표사용권 자산수증익과 감가상각의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 법인세법 제23조의 요건과 무상 상표사용권 자산수증익과 감가상각의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>사용기간이 5년으로 제한되고 장부에 무형자산을 계상한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2021-P1-Q3-S1/"><span>이전</span><small>2021년 제58회 세법학 1부 문제 3-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2021-P1-Q3-S3/"><span>다음</span><small>2021년 제58회 세법학 1부 문제 3-3</small></a></nav></main>
+</body>
+</html>

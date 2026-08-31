@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2024년 제61회 세법학 2부 문제 2-1 · 천연가스 혼합의 제조·과세와 누락세액: 혼합행위의 제조 해당성, 혼합가스 반출과세, 천연가스·프로판 세율 및 원재료 기납부세액을 적용한 신고누락세액을 계산한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>천연가스 혼합의 제조·과세와 누락세액: 혼합행위의 제조 해당성, 혼합가스 반출과세, 천연가스·프로판 세율 및 원재료 기납부세액을 적용한 신고누락세액을 계산한다.</h1><p>2024년 제61회 세법학 2부 문제 2-1</p><p class="question-progress">296 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2024년 제61회 세법학 2부 문제 2-1</span><span>10점</span></div><p class="source-paragraph">【문제 2】 개별소비세와 관련하여 다음 물음에 답하시오. (20점)</p>
+<p class="source-paragraph">&lt;사례&gt;</p>
+<p class="source-paragraph">A법인은 천연가스 생산국으로부터 수입한 저열량의 천연가스(생산국에서 수입할 때 프로판 등 고열량 가스를 분리하여 별도 판매한 천연가스)를 국내 도시가스 사업자에게 도시가스로 공급하였다. 천연가스 공급규정의 표준열량기준을 충족시키기 위해 국내 생산기지의 열량조절설비에서 저열량 천연가스에 프로판을 혼합한 뒤 혼합가스를 공급하였다. A법인은 천연가스를 수입할 때 천연가스 세율에 따른 개별소비세를 kg당 납부하였고, 프로판은 프로판 세율에 따른 개별소비세가 포함된 가격으로 kg당 매입하였다. 그 밖의 개별소비세 신고·납부 내역은 없었다. 과세관청은 혼합된 프로판 부분의 개별소비세 신고·납부가 누락되었다고 보아 부과처분하였다.</p>
+<p class="source-paragraph">물음 1) 다음 &lt;사례&gt;를 읽고 과세관청의 개별소비세 부과처분이 타당하다고 할 때, 이에 대한 논거를 [과세대상]과 [제조] 측면에서 제시하고, 신고ㆍ납부가 누락된 부분을 세율을 이용하여 구체적으로 설명하시오. (단, 세율은 기본세율을 적용하며, 천연 가스는 발전용 외의 것이다.) (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2210415&amp;fileName=2024%EB%85%84%20%EC%A0%9C61%ED%9A%8C%20%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%97%98%EC%A7%80%20%EC%9B%90%EB%B3%B8.zip&amp;fileSeq=2210415&amp;artlSeq=5213627&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2024-08-10</p><p>기준일 확인 상태: 상태 미기재</p><p>2024-08-10 시행 개별소비세법 제1조·제3조·제5조·제20조와 개별소비세법 시행령 제34조를 적용한다. 개별소비세법 제1조·제3조·제5조에 따라 저열량 천연가스에 프로판을 섞어 표준열량의 도시가스를 만드는 행위는 과세물품의 제조이고 제조장 반출 시 혼합가스가 과세된다. 같은 법 제20조 제1항과 시행령 제34조에 따라 과세물품 제조에 직접 사용한 원재료에 이미 납부되었거나 납부될 개별소비세는 납부세액에서 공제한다. 발전용 외 천연가스 기본세율 42원/kg을 프로판 혼합분에도 적용하되, 그 프로판 가격에 포함된 기납부세액 20원/kg을 원재료 세액공제로 뺀다. 따라서 프로판 1kg당 누락세액은 42원 - 20원 = 22원이고, 총 누락본세는 프로판 혼합중량 × 22원/kg이다. 결론은 다음과 같다. 과세관청의 부과 논거는 새로운 과세물품의 제조·반출이며, 누락본세는 프로판 혼합중량 × 22원/kg이다.</p><h3>현행법과의 차이</h3><p>2026-08-29 현행 개별소비세법 제1조·제5조·제20조와 시행령 제34조 대조: 제조·반출 과세와 과세 원재료 기납부세액 공제 구조가 유지된다. 42원/kg·20원/kg·차액 22원/kg은 2024-08-10 시험 적용본과 사례의 계산값이다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>개별소비세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2024-08-10 · 시행일 2023-01-01) <a href="https://www.law.go.kr/법령/개별소비세법/(20230101,19185,20221231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-04-24) <a href="https://www.law.go.kr/법령/개별소비세법/(20260424,21216,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>저열량 천연가스에 프로판을 혼합한 행위가 제조·반출 과세에 해당하는지 판단하고, 프로판 혼합분의 누락 개별소비세를 계산한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>A법인은 수입한 저열량 천연가스에 프로판을 혼합해 표준열량의 도시가스로 국내 도시가스 사업자에게 공급했다.</li><li>천연가스에는 수입 단계에서 세금을 냈지만 프로판 혼합분의 제조장 반출 신고·납부 내역은 없었다.</li><li>발전용 외 천연가스 기본세율 42원/kg에서 프로판에 이미 포함된 기납부세액 20원/kg을 빼면 누락세액은 22원/kg이다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>개별소비세법 제1조·제3조·제5조의 과세물품·납세의무자·제조·반출 요건을 구분한다.</li><li>개별소비세법 제20조 제1항과 시행령 제34조의 원재료 기납부세액 공제 구조를 확인한다.</li><li>프로판 혼합중량에 42원/kg과 20원/kg을 각각 대입해 22원/kg 누락세액을 검산한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 발전용 외 천연가스 기본세율 42원/kg을 프로판 혼합분에도 적용하되, 그 프로판 가격에 포함된 기납부세액 20원/kg을 원재료 세액공제로 뺀다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 혼합행위의 제조 해당성, 혼합가스 반출과세, 천연가스,프로판 세율 및 원재료 기납부세액을 적용한 신고누락세액을 계산한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 개별소비세법 제1조·제3조·제5조·제20조와 시행령 제34조의 혼합 제조·반출 및 원재료 세액공제를 시험 당시 시행본과 대조한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>제조: 저열량 천연가스와 프로판을 혼합해 표준열량의 새로운 도시가스를 만든 행위는 과세물품 제조다.</li><li>과세시기: 제조장 반출 때 혼합가스가 과세되고, 프로판 혼합분의 신고·납부 누락이 부과대상이 된다.</li><li>계산: 프로판 1kg당 42원 − 기납부세액 20원 = 22원, 총 누락본세 = 프로판 혼합중량 × 22원/kg이다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>혼합행위가 단순한 저장·운송인지 과세물품의 제조인지, 제조장 반출 때 어떤 부분에 세금이 붙는지, 원재료 세액공제를 반영한 누락세액이 얼마인지 순서대로 판단한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>개별소비세법 제1조·제3조·제5조에 따르면 저열량 천연가스에 프로판을 섞어 표준열량의 도시가스를 만드는 것은 과세물품의 제조이고, 제조장 밖으로 반출하면 납세의무가 성립한다. 개별소비세법 제20조 제1항과 시행령 제34조는 제조에 직접 사용한 원재료의 기납부세액을 공제하도록 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>사례에서 발전용 외 천연가스 기본세율은 42원/kg이고, 프로판 가격에는 이미 납부한 개별소비세 20원/kg이 포함되어 있다. 따라서 프로판 혼합분 1kg당 누락세액은 42원−20원=22원이며, 총 누락본세는 프로판 혼합중량×22원/kg이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>따라서 과세관청은 프로판 혼합으로 새로운 과세물품을 제조·반출했다는 근거로 부과할 수 있고, 천연가스 수입세액을 다시 과세하는 것이 아니라 프로판 혼합분의 22원/kg 차액만 추가로 산정한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>이 문단은 혼합의 법적 성격, 과세시기, 계산이라는 세 단계의 출발점을 세운다. 제조인지부터 정해야 세액 계산이 의미를 갖는다.</p><h3>쉬운 말로</h3><p>먼저 섞은 일이 새 물품을 만든 것인지 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>제조·반출 규정과 원재료 세액공제 규정은 서로 다른 역할을 한다. 과세 근거와 중복 부담 조정을 나누어 써야 한다.</p><h3>쉬운 말로</h3><p>새로 만든 혼합가스에는 세금을 매기되, 프로판에 이미 낸 세금은 빼 준다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>42원과 20원을 같은 단위로 맞춘 차액이 실제 누락세액이다. 혼합중량을 곱하는 마지막 단계를 빠뜨리면 총세액이 되지 않는다.</p><h3>쉬운 말로</h3><p>1kg당 22원에 실제 섞은 프로판 kg을 곱한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>결론에서 추가 과세 범위가 프로판 혼합분의 차액임을 명확히 해야 이중과세 오해를 막는다.</p><h3>쉬운 말로</h3><p>천연가스 전체를 다시 과세하는 것이 아니라 부족한 차액만 더 낸다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-vat-tax-base-adjustment-001.html">과세표준·에누리·환입·보조금·위약금</a></h3><p class="law-name">부가가치세법</p><p>개별소비세법 제1조 기준은 소득표로 옮겨 적는다. 천연가스 혼합의 제조 과세와 누락세액의 범위는 세율표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>혼합을 단순 운송으로 보아 제조·반출 과세를 누락하지 않는다.</li><li>천연가스에 이미 낸 세액과 프로판에 포함된 세액을 구분해 프로판 혼합분에만 계산한다.</li><li>42원/kg을 그대로 누락세액으로 쓰지 말고 20원/kg 원재료 세액공제를 차감한다.</li></ul></article><article><h3>변형 연습문제</h3><p>혼합이 저장탱크가 아닌 운송 중 이뤄진 경우 제조장과 납세의무를 다시 검토한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2024-P2-Q1-S5/"><span>이전</span><small>2024년 제61회 세법학 2부 문제 1-5</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2024-P2-Q2-S2/"><span>다음</span><small>2024년 제61회 세법학 2부 문제 2-2</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2015년 제52회 세법학 2부 문제 4-2 · 수정신고 증액분에 대한 중소기업 통합 이월과세 | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>수정신고 증액분에 대한 중소기업 통합 이월과세</h1><p>2015년 제52회 세법학 2부 문제 4-2</p><p class="question-progress">57 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2015년 제52회 세법학 2부 문제 4-2</span><span>15점</span></div><p class="source-paragraph">【문제 4】다음 사례와 관련 조문을 읽고 물음에 답하시오. (25점)</p>
+<p class="source-paragraph">&lt;사례&gt; 개인사업자 甲은 내국법인 A와 통합하기 위하여 자신이 영위하고 있는 사업에 사용하고 있는 사업용 고정자산인 부동산을 A에게 현물출자 하고, A의 출자자가 되었다. 한편 甲은 현물출자로 발생한 양도소득세를 1억 원으로 예정신고 하고, A와 함께 납세지 관할세무서장 乙에게 이월과세적용신청을 하였다. 그 이후 甲은 현물출자한 부동산의 취득가액에 대한 오류를 발견하고 양도소득세를 3억 원으로 증액하여 수정신고 하였다. 이에 乙은 甲이 당초 예정신고한 양도소득세액 1억 원에 한하여 이월과세를 적용하고, 수정신고로 증액된 양도소득세액 2억 원에 대하여는 甲에게 양도소득세 부과처분을 하였다. (단, 甲과 A는「중소기업기본법」상 중소기업자에 해당하고, 甲과 A의 사업은 동일한 제조업종임)</p>
+<p class="source-paragraph">&lt;관련 조문&gt; 조세특례제한법 제2조 제1항 제6호: “이월과세(移越課稅)”란 개인이 해당 사업에 사용되는 사업용 고정자산 등(이하 “종전 사업용 고정자산 등”이라 함)을 현물출자(現物出資) 등을 통하여 법인에 양도하는 경우 이를 양도하는 개인에 대해서는「소득세법」제94조에 따른 양도소득에 대한 소득세를 과세하지 아니하고, 그 대신 이를 양수한 법인이 그 사업용 고정자산 등을 양도하는 경우 개인이 종전 사업용 고정자산 등을 그 법인에 양도한 날이 속하는 과세기간에 다른 양도자산이 없다고 보아 계산한 같은 법 제104조에 따른 양도소득 산출세액 상당액을 법인세로 납부하는 것을 말한다. 제31조 제1항: 대통령령으로 정하는 업종을 경영하는 중소기업 간의 통합으로 인하여 소멸되는 중소기업이 대통령령으로 정하는 사업용 고정자산을 통합에 의하여 설립된 법인 또는 통합 후 존속하는 법인에 양도하는 경우 그 사업용 고정자산에 대해서는 이월과세를 적용받을 수 있다.</p>
+<p class="source-paragraph">2. 위 사례에서 乙이 A에게 이월과세되는 양도소득세액을 甲이 당초 예정신고한 양도소득세액으로 한정하고, 수정신고로 증액된 양도소득세액에 대하여는 이월과세를 부인하여 甲에게 양도소득세 부과처분을 하는 것이 적법한지에 관하여 설명하시오. (15점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2126758&amp;fileName=4%EA%B5%90%EC%8B%9C(%EC%84%B8%EB%B2%95%ED%95%992%EB%B6%80)%20%EC%8B%9C%ED%97%98%EB%AC%B8%EC%A0%9C.hwp&amp;fileSeq=2126758&amp;artlSeq=5143405&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2015-08-08</p><p>기준일 확인 상태: 상태 미기재</p><p>2015-08-08 Q-Net 공식 일정의 제52회 시험 기준. 국가법령정보센터 시행본(20150101, 20150429)의 조세특례제한법 제2조·제31조, 국세기본법 제45조와 관련 부칙을 적용했다.</p><h3>현행법과의 차이</h3><p>수정신고 증액분에 대한 중소기업 통합 이월과세: 중소기업 통합 이월과세는 현행 조세특례제한법 제31조에 유지되지만 적용기한·업종·통합법인 요건과 사후관리는 현행 규정으로 다시 확인한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>국세기본법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2015-08-08 · 시행일 2015-01-01) <a href="https://www.law.go.kr/법령/국세기본법/(20150101,12848,20141223)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-08-11) <a href="https://www.law.go.kr/법령/국세기본법/(20260811,21860,20260811)">국가법령정보센터 원문</a></li></ul></li><li><strong>조세특례제한법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2015-08-08 · 시행일 2015-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20150701,12853,20141223)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>예정신고 1억원 뒤 취득가액 오류를 바로잡아 3억원으로 수정신고한 경우 이월과세를 최초 신고액에만 제한할 수 있는지 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>갑과 A가 최초에 공동 적용신청했고 취득가액 오류만 뒤늦게 발견했다는 사실을 신규 특례신청과 구별한다.</li><li>정당한 양도소득세 3억원에서 예정신고 1억원을 차감한 증액 2억원을 이월세액에 포함할지 구분한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 제2조, 국세기본법 제45조, 조세특례제한법 제31조이다.</li><li>조세특례제한법 제2조,제31조, 국세기본법 제45조.</li><li>정당한 양도소득세 3억원에서 예정신고 1억원을 차감한 증액 2억원을 이월세액에 포함할지 구분한다.</li><li>갑과 A가 최초에 공동 적용신청했고 취득가액 오류만 뒤늦게 발견했다는 사실을 신규 특례신청과 구별한다.</li><li>법정 통합요건과 이월과세 신청을 갖춘 거래라면 최초 신고 누락액을 수정신고했다는 이유만으로 실체적 이월과세를 배제할 수 없고, 증액된 양도차익에도 제31조를 적용한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 갑과 A가 최초에 공동 적용신청했고 취득가액 오류만 뒤늦게 발견했다는 사실을 신규 특례신청과 구별한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 정당한 양도소득세 3억원에서 예정신고 1억원을 차감한 증액 2억원을 이월세액에 포함할지 구분한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 수정신고 증액분에 대한 중소기업 통합 이월과세: 중소기업 통합 이월과세는 현행 조세특례제한법 제31조에 유지되지만 적용기한,업종,통합법인 요건과 사후관리는 현행 규정으로 다시 확인한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>조세특례제한법 제2조,제31조, 국세기본법 제45조.</li><li>정당한 양도소득세 3억원에서 예정신고 1억원을 차감한 증액 2억원을 이월세액에 포함할지 구분한다.</li><li>갑과 A가 최초에 공동 적용신청했고 취득가액 오류만 뒤늦게 발견했다는 사실을 신규 특례신청과 구별한다.</li><li>법정 통합요건과 이월과세 신청을 갖춘 거래라면 최초 신고 누락액을 수정신고했다는 이유만으로 실체적 이월과세를 배제할 수 없고, 증액된 양도차익에도 제31조를 적용한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>이 문항은 수정신고 증액분에 대한 중소기업 통합 이월과세를 묻는다. 출발 사실은 갑과 A가 최초에 공동 적용신청했고 취득가액 오류만 뒤늦게 발견했다는 사실을 신규 특례신청과 구별한다고 보아야 한다. 답안에서는 Ⅰ 이월과세 적용신청 요건, Ⅱ 예정·수정신고 관계, Ⅲ 실체적 양도세액, Ⅳ 증액 2억원 처분 적법성 순서로 각 판단단위를 나눈다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>조세특례제한법 제2조·제31조, 국세기본법 제45조. 이월과세의 실체요건과 공동 신청을 충족했다면 단순 신고금액 오류의 수정이 특례대상 세액을 최초 예정신고액으로 고정하는지 법문·취지에 따라 판단한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>사례에 적용하면 갑과 A가 최초에 공동 적용신청했고 취득가액 오류만 뒤늦게 발견했다는 사실을 신규 특례신청과 구별한다. 이어서 정당한 양도소득세 3억원에서 예정신고 1억원을 차감한 증액 2억원을 이월세액에 포함할지 구분한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>법정 통합요건과 이월과세 신청을 갖춘 거래라면 최초 신고 누락액을 수정신고했다는 이유만으로 실체적 이월과세를 배제할 수 없고, 증액된 양도차익에도 제31조를 적용한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>공제 판단 수정신고 증액분에 대한 중소기업 통합 이월과세의 계산축을 검토선으로 세운다. 수치는 “갑의 검토선”에서 읽는다. 조세특례제한법 제2조를 대입해 연결한다.</p><h3>쉬운 말로</h3><p>기억할 때 수정신고 증액분에 대한 중소기업 통합 이월과세를 검토선으로 복습한다. 법령은 조세특례제한법 제2조로 확인하고, “정당한의 사실축”에서 핵심을 사실축으로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>판정 시작 수정신고 증액분에 대한 중소기업 통합 이월과세를 판례표로 좁힌다. 국세기본법 제45조에서 정리축을 읽는다. 세무조사에서는 “정당한의 판례표” 자료를 수치표로 추적한다.</p><h3>쉬운 말로</h3><p>실무에서는 수정신고 증액분에 대한 중소기업 통합 이월과세의 원칙과 예외를 판례표로 가른다. “갑의 정리축” 자료를 정리축으로 살핀다. 국세기본법 제45조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>우선 조세특례제한법 제31조가 정한 대조축을 먼저 본다. 수정신고 증액분에 대한 중소기업 통합 이월과세에 “갑의 대조축” 자료를 세율표로 옮긴다. 첫 단서에서 결론은 조세특례제한법 제31조를 근거로 세운다.</p><h3>쉬운 말로</h3><p>귀속 판단 수정신고 증액분에 대한 중소기업 통합 이월과세의 계산표를 대조축으로 만든다. “정당한의 세율표”에서 수치를 세율표로 옮긴다. 조세특례제한법 제31조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>기초부터 조세특례제한법 제2조의 원칙을 공제표로 적는다. 예외는 “정당한의 공제표”에서 찾는다. 수정신고 증액분에 대한 중소기업 통합 이월과세의 결론은 자료칸으로 연결한다.</p><h3>쉬운 말로</h3><p>문장 풀이 세무조사에서는 “갑의 자료칸” 증빙을 공제표로 찾는다. 수정신고 증액분에 대한 중소기업 통합 이월과세가 조세특례제한법 제2조 선에서 정한다. 사실칸에서 결론은 자료칸으로 기록한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ntba-amended-late-filing-001.html">수정신고와 기한후신고</a></h3><p class="law-name">국세기본법</p><p>조세특례제한법 제2조 기준은 연결표로 옮겨 적는다. 수정신고 증액분에 대한 중소기업 통합 이월과세의 범위는 거래표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [수정신고는 언제나 새로운 신청이라고 보는 것]이다. 관련 법령인 조세특례제한법 제2조의 요건과 수정신고 증액분에 대한 중소기업 통합 이월과세의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [실체요건 충족과 신고절차 하자를 분리]이다. 관련 법령인 조세특례제한법 제2조의 요건과 수정신고 증액분에 대한 중소기업 통합 이월과세의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>최초 예정신고 때 이월과세 신청 자체를 하지 않았다면 수정신고로 특례를 소급 신청할 수 있는지 검토한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2015-P2-Q4-S1/"><span>이전</span><small>2015년 제52회 세법학 2부 문제 4-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2016-P1-Q1-S1/"><span>다음</span><small>2016년 제53회 세법학 1부 문제 1-1</small></a></nav></main>
+</body>
+</html>

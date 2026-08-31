@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2021년 제58회 세법학 1부 문제 4-2 · 부담부증여 주택의 증여재산가액·과세가액 계산: 자녀가 금융채무와 임대보증금을 인수한 주택에서 평가액과 인수채무를 빼고 증여공제를 적용한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>부담부증여 주택의 증여재산가액·과세가액 계산: 자녀가 금융채무와 임대보증금을 인수한 주택에서 평가액과 인수채무를 빼고 증여공제를 적용한다.</h1><p>2021년 제58회 세법학 1부 문제 4-2</p><p class="question-progress">198 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2021년 제58회 세법학 1부 문제 4-2</span><span>10점</span></div><p class="source-paragraph">【문제 4】 다음 사례를 읽고 물음에 답하시오. (20점) &lt;사례&gt; 2020년 10월 1일에 거주자 甲(57세)은 별도로 세대를 구성하는 직계비속인 자녀 乙(27세, 회사원)에게 시가가 불분명한 X단독주택(이하 [쟁점주택]라 함)을 금융채무와 임대보증금을 모두 부담하는 조건(모든 채무의 인수사실이 입증됨)으로 부담부증여를 하였다. 乙은 증여일 이전 10년 동안 그 누구에게서도 증여받은 적이 없다. 또한 거주자 甲은 쟁점주택 증여일 현재 쟁점주택 외에는 보유한 주택이 없으며 쟁점주택과 관련된 사항은 아래와 같다. (단, 쟁점주택은 조정대상지역 외의 지역에 소재하고, 주어진 자료 이외에는 고려하지 않음)</p>
+<div class="table-scroll" tabindex="0" aria-label="증여일 현재 쟁점주택 관련 사항 표 가로 스크롤"><table class="source-table"><caption>증여일 현재 쟁점주택 관련 사항</caption><thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead><tbody><tr><td data-label="항목">증여당시 「부동산 가격공시에 관한 법률」에 따른 개별주택가격</td><td data-label="내용">4억 원</td></tr><tr><td data-label="항목">임대계약 현황</td><td data-label="내용">임대보증금 3억 원, 임대료 월 150만 원(부가가치세 별도)</td></tr><tr><td data-label="항목">근저당권이 설정된 금융채무</td><td data-label="내용">2억 원(평가기준일 현재 채무액을 말함)</td></tr></tbody></table></div>
+<p class="source-paragraph">물음 2) &lt;사례&gt;에 대하여 증여재산가액 및 증여세 과세가액의 계산과정을 각각 설명하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2200274&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8(2021).zip&amp;fileSeq=2200274&amp;artlSeq=5209054&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2021-09-04</p><p>기준일 확인 상태: 상태 미기재</p><p>2021-09-04 적용 출처: 상속세 및 증여세법 LAWREF-IGTA-2021-09-04 (https://www.law.go.kr/법령/상속세 및 증여세법/(20210101,17758,20201229)). 시험일 적용 규정: 상속세 및 증여세법 제47조·제53조·제66조.</p><h3>현행법과의 차이</h3><p>부담부증여 주택의 증여재산가액·과세가액 계산 — 시험일 기준: LAWREF-IGTA-2021-09-04; 상속세 및 증여세법 제47조·제53조·제66조. 2026-08-29 현재 확인 항목: 부담부증여 채무인정·다주택 양도세와 증여재산공제의 현행 규정. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율·한도 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>상속세 및 증여세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-01-01) <a href="https://www.law.go.kr/법령/상속세 및 증여세법/(20210101,17758,20201229)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-01-02) <a href="https://www.law.go.kr/법령/상속세 및 증여세법/(20260102,21065,20251001)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>자녀가 금융채무와 임대보증금을 인수한 주택에서 평가액과 인수채무를 빼고 증여공제를 적용한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>쟁점주택의 특례평가액은 4억 5천만 원이다.</li><li>수증자 乙은 금융채무 2억 원과 임대보증금 3억 원, 합계 5억 원을 실제로 인수했다.</li><li>증여재산가액은 주택의 특례평가액인 4억 5천만 원이고, 제47조에 따라 인수채무 5억 원을 차감한 증여세 과세가액은 0원이다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 상속세 및 증여세법 제47조, 상속세 및 증여세법 제66조이다.</li><li>부담부증여에서 수증자가 실제 인수한 담보채무,임대보증금은 증여재산가액에서 차감하고 그 채무부분은 증여자의 유상양도로 본다.</li><li>산식: 인수채무=2억+3억=5억 원, 증여재산가액=max=0원, 증여세 과세가액=0원.</li><li>사실포섭,소결: 평가액은 4.5억 원, 인수채무는 금융채무 2억+보증금 3억=5억 원이다.</li><li>증빙,세무조사 활용: 채무인수 계약,상환능력, 임대보증금 승계, 최근 10년 증여와 직계비속 공제를 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 쟁점주택의 특례평가액은 4억 5천만 원이다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 수증자 乙은 금융채무 2억 원과 임대보증금 3억 원, 합계 5억 원을 실제로 인수했다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 부담부증여 주택의 증여재산가액,과세가액 계산 — 시험일 기준: ; 상속세 및 증여세법 제47조,제53조,제66조. 2026-08-29 현재 확인 항목: 부담부증여 채무인정,다주택 양도세와 증여재산공제의 현행 규정. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율,한도 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>부담부증여에서 수증자가 실제 인수한 담보채무,임대보증금은 증여재산가액에서 차감하고 그 채무부분은 증여자의 유상양도로 본다.</li><li>산식: 인수채무=2억+3억=5억 원, 증여재산가액=max=0원, 증여세 과세가액=0원.</li><li>사실포섭,소결: 평가액은 4.5억 원, 인수채무는 금융채무 2억+보증금 3억=5억 원이다.</li><li>증빙,세무조사 활용: 채무인수 계약,상환능력, 임대보증금 승계, 최근 10년 증여와 직계비속 공제를 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 주택 자체의 증여재산가액과 수증자가 채무를 인수한 뒤의 증여세 과세가액을 구별하는 것이다. 전자는 4억 5천만 원이고, 후자는 인수채무 5억 원을 반영해 계산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2021년 시행 상속세 및 증여세법 제66조에 따라 저당권 등이 설정된 재산의 평가액을 정하고, 그 금액이 증여재산가액이 된다. 같은 법 제47조 제1항은 증여재산가액의 합계에서 수증자가 인수한 담보채무를 빼 증여세 과세가액을 계산하도록 한다. 제53조의 증여재산공제는 그 과세가액에서 과세표준을 계산할 때 적용한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>근저당권 자료와 임대차계약서로 확인한 주택 평가액은 4억 5천만 원이다. 이 금액은 인수채무를 차감하기 전 증여재산가액이므로 그대로 유지한다. 금융채무 2억 원과 임대보증금 3억 원은 금융기관 채무확인서, 임대차계약 및 보증금 승계자료와 대사하여 乙이 실제 인수했는지 확인한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>乙이 인수한 채무는 2억 원+3억 원=5억 원이다. 상속세 및 증여세법 제47조의 과세가액 단계에서 4억 5천만 원-5억 원을 계산하되 과세가액은 0원 미만으로 두지 않으므로 증여세 과세가액은 0원이다. 제53조의 직계비속 증여재산공제는 그 다음 단계이므로 이 사례의 과세표준을 음수로 만들지 않는다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>증여재산가액은 주택 평가액 4억 5천만 원이고, 인수채무 5억 원을 제47조에서 차감한 증여세 과세가액은 0원이다. 채무인수 부분은 증여자 甲의 유상양도로 보아 양도소득세를 별도로 검토한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>먼저 상속·증여세법 제47조의 원칙을 기준표로 적는다. 예외는 “대상주택의 기준표”에서 찾는다. 부담부증여 주택의 증여재산가액 과세가액 계산의 결론은 증빙칸으로 추적한다.</p><h3>쉬운 말로</h3><p>메모할 때 “수증자의 증빙칸”라는 사실을 기준표로 표시한다. 부담부증여 주택의 증여재산가액 과세가액 계산이 상속·증여세법 제47조의 범위에서 판단한다. 검산표에서 증빙은 증빙칸으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>문단 구분 부담부증여 주택의 증여재산가액 과세가액 계산의 판단 질문을 검산표로 만든다. “수증자의 검산표” 자료를 공제표로 확인한다. 상속·증여세법 제66조 근거는 답안에 확인축으로 남긴다.</p><h3>쉬운 말로</h3><p>결론 메모 부담부증여 주택의 증여재산가액 과세가액 계산을 검산표로 기억한다. 상속·증여세법 제66조에서 공제표를 찾는다. “증여재산가액의 공제표” 자료를 확인축으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>법률효과 “증여재산가액의 법리축”라는 사실을 법리축으로 잡는다. 상속·증여세법 제47조의 요건은 주체선에서 확인한다. 부담부증여 주택의 증여재산가액 과세가액 계산의 효과를 법리칸으로 추적한다.</p><h3>쉬운 말로</h3><p>메모할 때 부담부증여 주택의 증여재산가액 과세가액 계산을 법리축으로 기억한다. 상속·증여세법 제47조에서 주체선을 찾는다. “대상주택의 주체선” 자료를 법리칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>계산 시작 부담부증여 주택의 증여재산가액 과세가액 계산을 예외표로 선별한다. 상속·증여세법 제66조에서 원칙표를 읽는다. 세무조사에서는 “대상주택의 예외표” 자료를 검산표로 확인한다.</p><h3>쉬운 말로</h3><p>수치 확인 부담부증여 주택의 증여재산가액 과세가액 계산의 원칙과 예외를 예외표로 가른다. “수증자의 원칙표” 자료를 원칙표로 살핀다. 상속·증여세법 제66조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>자료 대조 상속·증여세법 제47조가 정한 대사표를 먼저 본다. 부담부증여 주택의 증여재산가액 과세가액 계산에 “수증자의 대사표” 자료를 판정선으로 옮긴다. 주체표에서 결론은 상속·증여세법 제47조를 근거로 분리한다.</p><h3>쉬운 말로</h3><p>숫자를 만나면 세무조사에서는 “증여재산가액의 판정선” 증빙을 대사표로 찾는다. 부담부증여 주택의 증여재산가액 과세가액 계산이 상속·증여세법 제47조 선에서 정한다. 주체표에서 결론은 판정선으로 기록한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>부담부증여 주택의 증여재산가액 과세가액 계산을 검토할 때 상속세 및 증여세법 제66조, 상속세 및 증여세법 제47조 문언과 계약표 사례를 비교한다. “대상주택의 기간선” 자료는 기간선으로 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [부담부증여 주택의 증여재산가액,과세가액 계산에서 상속세 및 증여세법 제47조,제53조,제66조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 상속세 및 증여세법 제47조의 요건과 부담부증여 주택의 증여재산가액,과세가액 계산의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [부담부증여 주택의 증여재산가액,과세가액 계산의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 상속세 및 증여세법 제47조의 요건과 부담부증여 주택의 증여재산가액,과세가액 계산의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>수증자가 금융채무를 실제 상환하지 않고 증여자가 계속 이자를 낸 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2021-P1-Q4-S1/"><span>이전</span><small>2021년 제58회 세법학 1부 문제 4-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2021-P1-Q4-S3/"><span>다음</span><small>2021년 제58회 세법학 1부 문제 4-3</small></a></nav></main>
+</body>
+</html>

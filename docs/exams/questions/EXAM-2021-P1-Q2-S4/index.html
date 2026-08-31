@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2021년 제58회 세법학 1부 문제 2-4 · 수입금액 추계와 실제 필요경비의 혼합 사용: 비용관계비율로 매출만 추계하면서 확인된 실제 원재료비·기타 경비를 공제한 처분의 적법성을 판단한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>수입금액 추계와 실제 필요경비의 혼합 사용: 비용관계비율로 매출만 추계하면서 확인된 실제 원재료비·기타 경비를 공제한 처분의 적법성을 판단한다.</h1><p>2021년 제58회 세법학 1부 문제 2-4</p><p class="question-progress">192 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2021년 제58회 세법학 1부 문제 2-4</span><span>10점</span></div><p class="source-paragraph">【문제 2】다음 사례를 읽고 물음에 답하시오. (30점) &lt;사례&gt; 거주자인 甲은 2010년에 서울시 종로구에서 [A가든]이라는 상호로 고급음식점을 개업 하여 경영하고 있다. 甲은 2021년 5월 31일에 2020년 귀속 종합소득세를 신고ㆍ납부 하였으나 甲이 제출한 서류에는 월별 수입금액만 기록되어 있을 뿐 이를 뒷받침할 만한 일일 수입금액에 관한 장부나 증빙이 없다. 또한 2020년 5월 1일부터 같은 해 8월 31일까지의 수입금액에 관한 원시기록 장부상의 실제 수입금액은 15억 원인데 반해 甲이 제출한 서류상의 수입금액은 6억 원에 불과하였고 그 이외의 기간에 대한 실제 수입금액을 확인할 증빙이 없다. 한편 甲이 신고한 장부상의 원ㆍ부재료비 지 출액은 원시기록 장부상의 실제 지출액의 50%에 불과하였다. 이에 과세관청은 2020년 5월 1일부터 같은 해 8월 31일까지의 甲의 원시기록 장부상의 실제 수입금액 (15억 원)과 해당 기간 동안의 실제 원ㆍ부재료비 지출액(6억 원)을 기초로 비용관계 비율(2.5)을 적용하여 해당 사업연도의 수입금액을 추계하여 산출하는 한편, 원시장 부상의 실제 원ㆍ부재료 지출액 및 기타 증빙서류에 의하여 인정되는 실제 금액을 필요경비로 보아 2020년 귀속 종합소득세를 경정하는 처분을 하였다.</p>
+<p class="source-paragraph">물음 4) ｢소득세법 시행령｣상 추계 결정ㆍ경정시 수입금액의 계산방법을 설명하고, &lt;사례&gt; 에서 과세관청이 수입금액을 추계로 경정하였음을 이유로 필요경비도 추계 방법으로 경정하여야 한다고 甲이 주장하는 경우 이 주장이 적법한지를 논하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2200274&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8(2021).zip&amp;fileSeq=2200274&amp;artlSeq=5209054&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2021-09-04</p><p>기준일 확인 상태: 상태 미기재</p><p>2021-09-04 적용 출처: 국세기본법 LAWREF-NTBA-2021-09-04 (https://www.law.go.kr/법령/국세기본법/(20210101,17758,20201229)); 소득세법 LAWREF-ITA-2021-09-04 (https://www.law.go.kr/법령/소득세법/(20210701,17925,20210316)). 시험일 적용 규정: 소득세법 시행령 제144조. 보충 시행령 출처 LAWREF-ITA-DECREE-2021-09-04 (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=231965&amp;efYd=20210701, 확인상태 official_history_version_checked). 보충 시행령 출처 LAWREF-NTBA-DECREE-2021-09-04 (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=229483&amp;efYd=20210401, 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>수입금액 추계와 실제 필요경비의 혼합 사용 — 시험일 기준: LAWREF-ITA-2021-09-04, LAWREF-NTBA-2021-09-04; 소득세법 시행령 제144조. 2026-08-29 현재 확인 항목: 수입·경비 병용추계의 허용범위와 비용관계비율 산정 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>소득세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20210701,17925,20210316)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li><li><strong>국세기본법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-01-01) <a href="https://www.law.go.kr/법령/국세기본법/(20210101,17758,20201229)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-08-11) <a href="https://www.law.go.kr/법령/국세기본법/(20260811,21860,20260811)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>비용관계비율로 매출만 추계하면서 확인된 실제 원재료비,기타 경비를 공제한 처분의 적법성을 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>이에 과세관청은 2020년 5월 1일부터 같은 해 8월 31일까지의 甲의 원시기록 장부상의 실제 수입금액 (15억 원)과 해당 기간 동안의 실제 원,부재료비 지출액(6억 원)을 기초로 비용관계 비율(2.5)을 적용하여 해당 사업연도의 수입금액을 추계하여 산출하는 한편, 원시장 부상의 실제 원라는 사실이다.</li><li>또한 2020년 5월 1일부터 같은 해 8월 31일까지의 수입금액에 관한 원시기록 장부상의 실제 수입금액은 15억 원인데 반해 甲이 제출한 서류상의 수입금액은 6억 원에 불과하였고 그 이외의 기간에 대한 실제 수입금액을 확인할 증빙이 없다.</li><li>거주자인 甲은 2010년에 서울시 종로구에서 “A가든”이라는 상호로 고급음식점을 개업 하여 경영하고 있다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 소득세법 시행령 제144조, 소득세법 제70조이다.</li><li>수입금액을 비용관계비율로 추계할 수 있어도 실제로 확인되는 필요경비까지 반드시 추계해야 하는 것은 아니다.</li><li>산식: 확인기간 매출 추계=실제 원재료비 6억 원×비용관계비율 2.5=15억 원; 신고매출 6억 원과 차이=9억 원.</li><li>사실포섭,소결: 매출 추계는 실제 원재료비 6억 원×비용관계비율 2.5=15억 원으로 확인기간의 대응관계를 검산한다.</li><li>증빙,세무조사 활용: 15억 매출,6억 원재료비, 비용관계비율 2.5, 연간 실제경비 증빙과 추계산식을 재계산한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 이에 과세관청은 2020년 5월 1일부터 같은 해 8월 31일까지의 甲의 원시기록 장부상의 실제 수입금액 (15억 원)과 해당 기간 동안의 실제 원,부재료비 지출액(6억 원)을 기초로 비용관계 비율(2.5)을 적용하여 해당 사업연도의 수입금액을 추계하여 산출하는 한편, 원시장 부상의 실제 원라는 사실이다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 또한 2020년 5월 1일부터 같은 해 8월 31일까지의 수입금액에 관한 원시기록 장부상의 실제 수입금액은 15억 원인데 반해 甲이 제출한 서류상의 수입금액은 6억 원에 불과하였고 그 이외의 기간에 대한 실제 수입금액을 확인할 증빙이 없다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 수입금액 추계와 실제 필요경비의 혼합 사용 — 시험일 기준: , ; 소득세법 시행령 제144조. 2026-08-29 현재 확인 항목: 수입,경비 병용추계의 허용범위와 비용관계비율 산정 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>수입금액을 비용관계비율로 추계할 수 있어도 실제로 확인되는 필요경비까지 반드시 추계해야 하는 것은 아니다.</li><li>산식: 확인기간 매출 추계=실제 원재료비 6억 원×비용관계비율 2.5=15억 원; 신고매출 6억 원과 차이=9억 원.</li><li>사실포섭,소결: 매출 추계는 실제 원재료비 6억 원×비용관계비율 2.5=15억 원으로 확인기간의 대응관계를 검산한다.</li><li>증빙,세무조사 활용: 15억 매출,6억 원재료비, 비용관계비율 2.5, 연간 실제경비 증빙과 추계산식을 재계산한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 수입금액 추계와 실제 필요경비의 혼합 사용: 비용관계비율로 매출만 추계하면서 확인된 실제 원재료비·기타 경비를 공제한 처분의 적법성을 판단한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법리·법정요건: 수입금액을 비용관계비율로 추계할 수 있어도 실제로 확인되는 필요경비까지 반드시 추계해야 하는 것은 아니다. 추계와 실액을 각 항목에 병용할 수 있고 이중공제만 막으면 된다. 시험연도 적용근거는 소득세법 시행령 제144조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>확인기간 매출 추계=실제 원재료비 6억 원×비용관계비율 2.5=15억 원; 신고매출 6억 원과 차이=9억 원. 소결: 매출은 추계하되 입증된 원재료비 6억 원 등은 실제 필요경비로 공제할 수 있다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>증빙·세무조사 활용: 15억 매출·6억 원재료비, 비용관계비율 2.5, 연간 실제경비 증빙과 추계산식을 재계산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>사실포섭·소결: 매출 추계는 실제 원재료비 6억 원×비용관계비율 2.5=15억 원으로 확인기간의 대응관계를 검산한다. 연간 추계액과 별도로 원시장부상 원재료비 6억 원 및 객관적 기타경비를 실제액으로 공제한다. 수입금액을 추계했다는 이유만으로 필요경비도 추계해야 한다는 甲의 주장은 타당하지 않다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>수치 검산 소득세령 제144조가 정한 대응표를 먼저 본다. 수입금액 추계와 실제 필요경비의 혼합 사용에 “과세관청의 대응표” 자료를 문언표로 옮긴다. 대사표에서 결론은 소득세령 제144조를 근거로 연결한다.</p><h3>쉬운 말로</h3><p>첫 복습 수입금액 추계와 실제 필요경비의 혼합 사용의 계산표를 대응표로 만든다. “또한의 문언표”에서 수치를 문언표로 옮긴다. 소득세령 제144조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>질문 풀이 소득세법 제70조의 원칙을 예외표로 적는다. 예외는 “또한의 예외표”에서 찾는다. 수입금액 추계와 실제 필요경비의 혼합 사용의 결론은 확인축으로 대조한다.</p><h3>쉬운 말로</h3><p>자료 정리 세무조사에서는 “거주자인의 확인축” 증빙을 예외표로 찾는다. 수입금액 추계와 실제 필요경비의 혼합 사용이 소득세법 제70조 선에서 정한다. 답안칸에서 결론은 확인축으로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>결론 전 수입금액 추계와 실제 필요경비의 혼합 사용의 계산축을 사실축으로 세운다. 수치는 “거주자인의 사실축”에서 읽는다. 소득세령 제144조를 대입해 잡는다.</p><h3>쉬운 말로</h3><p>처음에는 “과세관청의 조문표”라는 사실을 사실축으로 표시한다. 수입금액 추계와 실제 필요경비의 혼합 사용이 소득세령 제144조의 범위에서 판단한다. 답안칸에서 증빙은 조문표로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>자료 대조 수입금액 추계와 실제 필요경비의 혼합 사용과 “과세관청의 사례표”의 연결을 사례표로 확정한다. 소득세법 제70조와 판례표를 읽는다. 조사자료는 기준표로 추적한다.</p><h3>쉬운 말로</h3><p>두 번째 수입금액 추계와 실제 필요경비의 혼합 사용의 원칙과 예외를 사례표로 가른다. “또한의 판례표” 자료를 판례표로 살핀다. 소득세법 제70조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>계산 시작 수입금액 추계와 실제 필요경비의 혼합 사용을 사실칸으로 선별한다. 소득세령 제144조에서 수치표를 읽는다. 세무조사에서는 “또한의 사실칸” 자료를 사례표로 추적한다.</p><h3>쉬운 말로</h3><p>계산 전 수입금액 추계와 실제 필요경비의 혼합 사용을 사실칸으로 기억한다. 소득세령 제144조에서 수치표를 찾는다. “거주자인의 수치표” 자료를 사례표로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-books-estimation-001.html">장부비치·기장과 추계결정</a></h3><p class="law-name">소득세법</p><p>소득세법 제70조 기준은 경계표로 옮겨 적는다. 수입금액 추계와 실제 필요경비의 혼합 사용의 범위는 귀속선으로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-necessary-expense-001.html">필요경비의 요건과 증빙</a></h3><p class="law-name">소득세법</p><p>세무조사에서는 “또한의 법리표” 증빙을 법리표로 찾는다. 수입금액 추계와 실제 필요경비의 혼합 사용의 효과는 소득세령 제144조와 연결한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ntba-basis-001.html">근거과세 원칙과 장부·증빙에 의한 사실인정</a></h3><p class="law-name">국세기본법</p><p>수입금액 추계와 실제 필요경비의 혼합 사용을 검토할 때 소득세령 제144조 문언과 계산축 사례를 비교한다. “거주자인의 거래표” 자료는 거래표로 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [수입금액 추계와 실제 필요경비의 혼합 사용에서 소득세법 시행령 제144조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 소득세법 시행령 제144조의 요건과 수입금액 추계와 실제 필요경비의 혼합 사용의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [수입금액 추계와 실제 필요경비의 혼합 사용의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 소득세법 시행령 제144조의 요건과 수입금액 추계와 실제 필요경비의 혼합 사용의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>원재료비도 신뢰할 원시증빙이 없는 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2021-P1-Q2-S3/"><span>이전</span><small>2021년 제58회 세법학 1부 문제 2-3</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2021-P1-Q3-S1/"><span>다음</span><small>2021년 제58회 세법학 1부 문제 3-1</small></a></nav></main>
+</body>
+</html>

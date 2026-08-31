@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2014년 제51회 세법학 2부 문제 4-2 · 근로장려금 신청자격 | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>근로장려금 신청자격</h1><p>2014년 제51회 세법학 2부 문제 4-2</p><p class="question-progress">28 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2014년 제51회 세법학 2부 문제 4-2</span><span>배점 미확인</span></div><p class="source-paragraph">【 문제 4 】「조세특례제한법」상 근로장려를 위한 조세특례에 관하여 다음 물음에 답하시오. (25점)</p>
+<p class="source-paragraph">2. 근로장려금의 신청자격에 대하여 설명하시오.</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2093351&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%992%EB%B6%80.hwp&amp;fileSeq=2093351&amp;artlSeq=5104409&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 공식 정확한 날짜 확인 불가(시험일 시행본 표기)</p><p>기준일 확인 상태: official_exact_date_unavailable</p><p>2014년 제51회 Q-Net 표지는 정확한 시험일을 인쇄하지 않았다. 문제의 현행법 지시와 사례 귀속·거래일을 기준으로 국가법령정보센터 시행본(20140514)의 조세특례제한법 제100조의2·제100조의3·제100조의5 및 각 부칙을 대조했으며, 임의 시험일은 사용하지 않았다.</p><h3>현행법과의 차이</h3><p>근로장려금 신청자격: 근로장려세제는 현행 제100조의2 이하에 유지되지만 가구유형, 소득·재산 기준과 최대지급액이 크게 확대·변경됐다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>조세특례제한법</strong><ul><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>가구유형,부양자녀,연령,총소득,재산,주택,국적 등 신청요건을 판단시점별로 정리한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>구체 신청자가 없는 이론문제이므로 각 요건의 판단기준일과 예외를 표로 제시한다.</li><li>가구원별 근로,사업소득을 합산해 총소득기준금액과 비교하고 재산가액을 합계한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 제100조의2, 조세특례제한법 제100조의3이다.</li><li>조세특례제한법 제100조의2,제100조의3,제100조의5.</li><li>가구원별 근로,사업소득을 합산해 총소득기준금액과 비교하고 재산가액을 합계한다.</li><li>구체 신청자가 없는 이론문제이므로 각 요건의 판단기준일과 예외를 표로 제시한다.</li><li>거주자와 배우자의 근로,사업소득, 가구유형별 총소득, 주택,재산, 대한민국 국적,부양자녀 등 제100조의3의 요건을 모두 갖춰야 신청할 수 있다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 구체 신청자가 없는 이론문제이므로 각 요건의 판단기준일과 예외를 표로 제시한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 가구원별 근로,사업소득을 합산해 총소득기준금액과 비교하고 재산가액을 합계한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 근로장려금 신청자격: 근로장려세제는 현행 제100조의2 이하에 유지되지만 가구유형, 소득,재산 기준과 최대지급액이 크게 확대,변경됐다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>조세특례제한법 제100조의2,제100조의3,제100조의5.</li><li>가구원별 근로,사업소득을 합산해 총소득기준금액과 비교하고 재산가액을 합계한다.</li><li>구체 신청자가 없는 이론문제이므로 각 요건의 판단기준일과 예외를 표로 제시한다.</li><li>거주자와 배우자의 근로,사업소득, 가구유형별 총소득, 주택,재산, 대한민국 국적,부양자녀 등 제100조의3의 요건을 모두 갖춰야 신청할 수 있다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>2014년 당시 근로장려금 신청자격은 소득만 보는 제도가 아니라 소득세 과세기간의 근로·일정 사업소득, 가구형태, 연령, 주택, 재산과 배제사유를 모두 충족해야 하는 결합요건이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2014년 조세특례제한법 제100조의3은 근로장려금 신청자격으로 소득세 과세기간의 근로소득 또는 법정 사업소득, 배우자·부양자녀 또는 연령, 가구별 총소득, 주택과 재산 및 국적·부양자녀 배제사유를 함께 요구한다. 배우자 또는 부양자녀가 없으면 2014년 과세기간 종료일 현재 60세 이상이어야 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>연간 총소득 합계액은 가구유형별로 단독가구 1,300만 원 미만, 홑벌이 가족가구 2,100만 원 미만, 맞벌이 가족가구 2,500만 원 미만이어야 한다. 배우자의 총급여액 등이 300만 원 이상이면 맞벌이 가족가구이고, 그보다 적으면 배우자·부양자녀가 있는 홑벌이 가족가구로 구분한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>가구원은 무주택이거나 1세대 1주택이어야 하고, 토지·건물·자동차·예금 등 가구원 재산 합계액은 1억 4천만 원 미만이어야 한다. 소득세 과세기간 중 대한민국 국적이 없는 사람은 원칙적으로 제외하지만 대한민국 국적자와 혼인한 경우는 예외이며, 다른 거주자의 부양자녀인 사람도 신청할 수 없다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>따라서 신청자는 근로소득 또는 법정 사업소득이 있는 거주자로서 2014년의 60세·가구요건, 가구별 총소득 한도, 1주택 이하, 재산 1억 4천만 원 미만 및 국적·부양자녀 배제사유를 모두 통과해야 한다. 소득 기준연도와 주택·재산의 법정 소유기준일은 섞지 않는다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>재검토 근로장려금 신청자격을 금액표로 확정한다. 조세특례제한법 제100조의2에서 사례표를 읽는다. 세무조사에서는 “구체의 금액표” 자료를 기록선으로 살핀다.</p><h3>쉬운 말로</h3><p>수치 확인 근로장려금 신청자격을 금액표로 복습한다. 법령은 조세특례제한법 제100조의2로 확인하고, “가구원별의 사례표”에서 핵심을 사례표로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>초보자 근로장려금 신청자격을 요건표로 확정한다. 조세특례제한법 제100조의3에서 금액표를 읽는다. 세무조사에서는 “가구원별의 요건표” 자료를 대사표로 연결한다.</p><h3>쉬운 말로</h3><p>자료 정리 근로장려금 신청자격을 요건표로 기억한다. 조세특례제한법 제100조의3에서 금액표를 찾는다. “구체의 금액표” 자료를 대사표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>근로장려금은 단독가구 1,300만원, 홑벌이 2,100만원, 맞벌이 2,500만원의 총소득 기준과 재산 2억4천만원 미만 요건을 함께 본다.</p><h3>쉬운 말로</h3><p>맞벌이·홑벌이·단독가구를 먼저 나누고, 총급여가 1,300·2,100·2,500만원 구간에 들어오는지와 재산 300만원이 아니라 2억4천만원 기준을 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>서류 수령 근로장려금 신청자격을 적용축으로 대조한다. 조세특례제한법 제100조의3에서 판정선을 읽는다. 세무조사에서는 “가구원별의 적용축” 자료를 사례표로 교차한다.</p><h3>쉬운 말로</h3><p>문장 풀이 “구체의 판정선”라는 사실을 적용축으로 표시한다. 근로장려금 신청자격이 조세특례제한법 제100조의3의 범위에서 판단한다. 사례표에서 증빙은 판정선으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>답안 압축 근로장려금 신청자격의 판단 질문을 수치표로 만든다. “구체의 수치표” 자료를 사례표로 확인한다. 조세특례제한법 제100조의2 근거는 답안에 문언표로 남긴다.</p><h3>쉬운 말로</h3><p>기준 설정 근로장려금 신청자격을 수치표로 기억한다. 조세특례제한법 제100조의2에서 사례표를 찾는다. “가구원별의 사례표” 자료를 문언표로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ita-taxation-map-001.html">종합과세·분리과세·분류과세의 기본 지도</a></h3><p class="law-name">소득세법</p><p>세무조사에서는 “구체의 경계표” 증빙을 경계표로 찾는다. 근로장려금 신청자격의 효과는 조세특례제한법 제100조의2와 연결한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [신청자 개인소득만 보고 배우자 소득을 빼는 것]이다. 관련 법령인 조세특례제한법 제100조의2의 요건과 근로장려금 신청자격의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [소득기준연도와 재산기준일을 혼동]이다. 관련 법령인 조세특례제한법 제100조의2의 요건과 근로장려금 신청자격의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>배우자와 주소가 다르지만 법률혼이 유지되는 경우 가구·소득 합산을 판단한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2014-P2-Q4-S1/"><span>이전</span><small>2014년 제51회 세법학 2부 문제 4-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2014-P2-Q4-S3/"><span>다음</span><small>2014년 제51회 세법학 2부 문제 4-3</small></a></nav></main>
+</body>
+</html>

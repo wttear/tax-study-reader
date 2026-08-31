@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2025년 제62회 세법학 1부 문제 3-2 · 은행의 원화예수금이자 등 차입금이자 포함 처분: 원화예수금·금융채권·환매조건부채권·신탁계정 미지급이자가 수입배당금 익금불산입 계산의 차감 차입금이자인지 판정하여 증액경정의 적법성을 논한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>은행의 원화예수금이자 등 차입금이자 포함 처분: 원화예수금·금융채권·환매조건부채권·신탁계정 미지급이자가 수입배당금 익금불산입 계산의 차감 차입금이자인지 판정하여 증액경정의 적법성을 논한다.</h1><p>2025년 제62회 세법학 1부 문제 3-2</p><p class="question-progress">312 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2025년 제62회 세법학 1부 문제 3-2</span><span>5점</span></div><p class="source-paragraph">【문제 3】다음 각 사례를 읽고 물음에 답하시오. (사례는 현행 법령이 적용되는 것으로 가정 한다. 기간의 산정이나 기일의 특정에 법정휴일 등은 고려하지 아니한다.) (30점)</p>
+<p class="source-paragraph">&lt;사례 1&gt; 주식회사 A은행(영리내국법인이며, 사업연도는 매년 1월 1일부터 12월 31일까지이다. 이하 [A은행]이라 한다)은 금융업을 영위하는 법인으로서 2024 사업연도 법인세 과세표준 및 세액을 신고할 때 수입배당금액 중 익금불산입 금액을 계산하면서, 원화예수금이자, 발행 금융채권이자, 환매조건부채권매도이자, 신탁계정미지급이자(이하 [원화예수금이자 등]이라 한다)를 수입배당금 익금불산입 금액 계산시 차감되는 차입금 이자에서 제외하였다. A은행의 2024 사업연도 수입배당금액은 A은행이 2020 사업연도에 발행주식 총수의 90%를 출자한 영리내국법인 B로부터 받은 것으로「상법」제461조의2에 따라 자본준비금을 감액하여 받는 배당금액과「법인세법」제16조에 따라 배당금 또는 분배금으로 보는 금액이 포함되어 있다. 관할 세무서장은 2025년 7월 6일 원화예수금이자 등을 모두 차입금의 이자에 포함시켜 익금불산입 금액을 다시 계산하여, A은행에게 2024 각 사업연도 법인세를 증액경정하는 부과처분(이하 [이 사건 처분]이라 한다)을 하였다.</p>
+<p class="source-paragraph">물음 2) &lt;사례 1&gt;에서 이 사건 처분이 적법한지에 관하여 논하시오. (5점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2240015&amp;fileName=2025%EB%85%84%20%EC%A0%9C62%ED%9A%8C%20%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%EC%8B%9C%ED%97%98%20%EB%AC%B8%EC%A0%9C%EC%A7%80%20%EC%9B%90%EB%B3%B8.zip&amp;fileSeq=2240015&amp;artlSeq=5241124&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2025-08-02</p><p>기준일 확인 상태: 상태 미기재</p><p>2025-08-02 시행 법인세법 제18조의2와 법인세법 시행령 제17조의2를 적용한다. 수입배당금 익금불산입액에서 차감하는 차입금 이자는 명칭보다 타인자금 사용의 대가인지로 판단한다. 금융기관의 예수금과 채권성 조달도 원금 반환의무와 이자 지급의무가 있으면 차입금에 포함된다. 원화예수금, 발행 금융채권, 환매조건부 매도와 신탁계정 미지급액은 모두 은행이 조달해 운용하는 반환의무 있는 자금의 대가다. 이를 전부 제외한 신고를 바로잡은 증액경정은 적법하다. 결론은 다음과 같다. 금융업 고유 조달이라는 반론은 차입금의 경제적 실질을 바꾸지 않는다.</p><h3>현행법과의 차이</h3><p>2026-08-29 현행 법인세법 제18조의2 제1항 제2호와 시행령 제17조의2 제2항·제3항도 제55조에 따라 이미 손금불산입된 금액을 차입금·이자에서 제외하고, 차감금액을 차입금이자 × 피출자법인 주식 장부가액 적수 ÷ 자산총액 적수 × 익금불산입률로 계산한다. 반환의무 있는 예수금·금융채권 등 타인자금의 이자를 차입금이자로 판정하는 기준도 시험일과 같다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>법인세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2025-08-02 · 시행일 2025-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20250701,20613,20241231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20260701,21217,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>은행의 원화예수금이자 등 차입금이자 포함 처분: 원화예수금,금융채권,환매조건부채권,신탁계정 미지급이자가 수입배당금 익금불산입 계산의 차감 차입금이자인지 판정하여 증액경정의 적법성을 논한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>원화예수금 이자는 예금 유치,관리 영업비용이다.</li><li>발행금융채권과 환매조건부채권매도 이자는 운영자금 조달 대가다.</li><li>신탁계정 미지급 이자도 운영자금 차입 대가인지 약정과 원장으로 확인한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 법인세법 제18조의2, 법인세법 시행령 제17조의2, 법인세법 제18조의2 제1항 제2호이다.</li><li>쟁점: 은행 예수금,금융채권,환매조건부채권,신탁계정 미지급이자가 차감 차입금이자인지 판단한다.</li><li>수입배당금 익금불산입액에서 차감하는 차입금 이자는 명칭보다 타인자금 사용의 대가인지로 판단한다.</li><li>원화예수금, 발행 금융채권, 환매조건부 매도와 신탁계정 미지급액은 모두 은행이 조달해 운용하는 반환의무 있는 자금의 대가다.</li><li>상품약관, 원금 반환조건, 계정별 이자원장, 자산 적수와 익금불산입 계산명세.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 원화예수금 이자는 예금 유치,관리 영업비용이다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 발행금융채권과 환매조건부채권매도 이자는 운영자금 조달 대가다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 2026-08-29 현행 법인세법 제18조의2 제1항 제2호와 시행령 제17조의2 제2항,제3항도 제55조에 따라 이미 손금불산입된 금액을 차입금,이자에서 제외하고, 차감금액을 차입금이자 × 피출자법인 주식 장부가액 적수 ÷ 자산총액 적수 × 익금불산입률로 계산한다. 반환의무 있는 예수금,금융채권 등 타인자금의 이자를 차입금이자로 판정하는 기준도 시험일과 같다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>쟁점: 은행 예수금,금융채권,환매조건부채권,신탁계정 미지급이자가 차감 차입금이자인지 판단한다.</li><li>수입배당금 익금불산입액에서 차감하는 차입금 이자는 명칭보다 타인자금 사용의 대가인지로 판단한다.</li><li>원화예수금, 발행 금융채권, 환매조건부 매도와 신탁계정 미지급액은 모두 은행이 조달해 운용하는 반환의무 있는 자금의 대가다.</li><li>상품약관, 원금 반환조건, 계정별 이자원장, 자산 적수와 익금불산입 계산명세.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>네 이자비용을 각각 분류해 처분의 적법 범위를 나눈다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2025-08-02 시행 법인세법 제18조의2 제1항 제2호와 법인세법 시행령 제17조의2 제2항은 수입배당금 익금불산입액에서 차감할 차입금 이자를 정한다. 같은 시행령 제55조에 따라 이미 손금불산입된 지급이자는 차입금과 그 이자에서 제외한다. 원화예수금 이자는 고객 예금을 유치하고 관리하는 영업비용이므로 차감 대상 차입금 이자에 포함되지 않는다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 판례</div><p>대법원 2015두49115 판결은 원화예수금 이자를 영업비용으로 보아 제외했다. 반면 발행금융채권, 환매조건부채권매도와 신탁계정 차입 등으로 운영자금을 조달하면서 부담한 비용은 다른 손금불산입 사유가 없는 한 시행령 제19조 제7호의 차입금 이자에 해당한다고 판시했다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>원화예수금 이자는 제외한다. 발행금융채권과 환매조건부채권매도 이자는 포함한다. 신탁계정 미지급 이자도 운영자금 차입 대가라면 포함하되 약관·자금흐름·계정원장으로 확인한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 세무조정</div><p>회계상 모두 이자비용이어도 세법상 분류는 다르다. 원화예수금 이자는 차감 차입금 이자 풀에서 빼고, 나머지 세 비용 중 세법상 손금인 금액만 넣어 익금불산입 차감액을 재계산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 6 · 결론</div><p>원화예수금 이자를 포함한 과세처분은 그 범위에서 위법하고, 나머지 세 조달비용을 포함한 부분은 다른 손금불산입 사유가 없는 한 적법하다.</p></article><aside class="precedent-box"><h3>이 답안에 연결되는 중요판례</h3><ul><li><a href="https://www.law.go.kr/LSW/precInfoP.do?precSeq=185369">2015두49115</a><p>원화예수금 이자는 영업비용이므로 차입금 이자가 아니지만, 금융채 발행·환매조건부채권매도·신탁계정 차입 등 운영자금 조달비용은 원칙적으로 차입금 이자다.</p><p class="connection-reason">연결 이유: 네 이자 항목을 구분해 처분 범위를 나누는 직접 판례다.</p></li></ul></aside></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>결론 전 은행의 원화예수금이자 등 차입금이자 포함 처분을 순서표로 고정한다. 법인세법 제18조의2에서 계산축을 읽는다. 세무조사에서는 “원화예수금의 순서표” 자료를 계산축으로 연결한다.</p><h3>쉬운 말로</h3><p>사례를 보면 은행의 원화예수금이자 등 차입금이자 포함 처분의 계산표를 순서표로 만든다. “발행금융채권의 계산축”에서 수치를 계산축으로 옮긴다. 법인세법 제18조의2를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>초보자 “발행금융채권의 문언표”라는 사실을 문언표로 잡는다. 법인세령 제17조의2의 요건은 정리축에서 확인한다. 은행의 원화예수금이자 등 차입금이자 포함 처분의 효과를 대사표로 세운다.</p><h3>쉬운 말로</h3><p>사례를 보면 세무조사에서는 “신탁계정의 정리축” 증빙을 문언표로 찾는다. 은행의 원화예수금이자 등 차입금이자 포함 처분이 법인세령 제17조의2 선에서 정한다. 대사표에서 결론은 정리축으로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 판례</div><h3>왜 필요한가요?</h3><p>초보자 은행의 원화예수금이자 등 차입금이자 포함 처분을 검산표로 설명한다. 법인세법 제18조의2제1항 제2호에서 공제표를 읽는다. 세무조사에서는 “신탁계정의 검산표” 자료를 대응표로 대조한다.</p><h3>쉬운 말로</h3><p>한 줄 세무조사에서는 “원화예수금의 공제표” 증빙을 검산표로 찾는다. 은행의 원화예수금이자 등 차입금이자 포함 처분이 법인세법 제18조의2제1항 제2호 선에서 정한다. 대응표에서 결론은 공제표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>증빙 확인 법인세령 제17조의2제2항의 원칙을 귀속칸으로 적는다. 예외는 “원화예수금의 귀속칸”에서 찾는다. 은행의 원화예수금이자 등 차입금이자 포함 처분의 결론은 연결고리로 좁힌다.</p><h3>쉬운 말로</h3><p>소득 구분 은행의 원화예수금이자 등 차입금이자 포함 처분의 원칙과 예외를 귀속칸으로 가른다. “발행금융채권의 연결고리” 자료를 연결고리로 살핀다. 법인세령 제17조의2제2항으로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 세무조정</div><h3>왜 필요한가요?</h3><p>판단 전 은행의 원화예수금이자 등 차입금이자 포함 처분의 판단 질문을 결론축으로 만든다. “발행금융채권의 결론축” 자료를 확인표로 확인한다. 법인세법 제18조의2 근거는 답안에 사실축으로 남긴다.</p><h3>쉬운 말로</h3><p>기간 점검 “신탁계정의 확인표”라는 사실을 결론축으로 표시한다. 은행의 원화예수금이자 등 차입금이자 포함 처분이 법인세법 제18조의2의 범위에서 판단한다. 사실축에서 증빙은 확인표로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 6 · 결론</div><h3>왜 필요한가요?</h3><p>공제 판단 은행의 원화예수금이자 등 차입금이자 포함 처분을 문장축으로 정리한다. 법인세령 제17조의2에서 계산칸을 읽는다. 세무조사에서는 “신탁계정의 문장축” 자료를 조문표로 비교한다.</p><h3>쉬운 말로</h3><p>문장 풀이 은행의 원화예수금이자 등 차입금이자 포함 처분을 문장축으로 복습한다. 법령은 법인세령 제17조의2로 확인하고, “원화예수금의 계산칸”에서 핵심을 계산칸으로 다시 본다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-cta-gross-income-001.html">익금의 범위와 귀속시기</a></h3><p class="law-name">법인세법</p><p>법인세법 제18조의2 기준은 판례표로 옮겨 적는다. 은행의 원화예수금이자 등 차입금이자 포함 처분의 범위는 검토축으로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-cta-tax-adjustment-map-001.html">재무제표에서 세무조정으로 가는 기본 지도</a></h3><p class="law-name">법인세법</p><p>세무조사에서는 “발행금융채권의 계약표” 증빙을 계약표로 찾는다. 은행의 원화예수금이자 등 차입금이자 포함 처분의 효과는 법인세법 제18조의2와 연결한다.</p></article><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-cta-interest-nonbusiness-asset-001.html">지급이자 손금불산입과 업무무관자산</a></h3><p class="law-name">법인세법</p><p>법인세법 제18조의2와 은행의 원화예수금이자 등 차입금이자 포함 처분의 판단선은 금액표에서 적는다. 사실이 다르면 계산축으로 다시 계산한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [법인세법 제18조의2에 따른 [수입배당금 익금불산입액에서 차감하는 차입금 이자는 명칭보다 타인자금 사용의 대가인지로 판단한다]의 주체,요건,효과 중 하나를 빠뜨리는]이다. 관련 법령인 법인세법 제18조의2의 요건과 은행의 원화예수금이자 등 차입금이자 포함 처분의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [다음 사실포섭을 법인세법 제18조의2의 요건과 연결하지 않는 오류: 원화예수금, 발행 금융채권, 환매조건부 매도와 신탁계정 미지급액은 모두 은행이 조달해 운용하는 반환의무 있는 자금의 대가다]이다. 관련 법령인 법인세법 제18조의2의 요건과 은행의 원화예수금이자 등 차입금이자 포함 처분의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [과세관청 조사절차에서 앞 자료 중 하나를 빠뜨려 은행의 원화예수금이자 등 차입금이자 포함 처분 관련 거래일,당사자,금액,실제 사용용도를 서로 대사하여 법인세법 제18조의2의 성립요건과 법률효과를 판정하지 못하는]이다. 관련 법령인 법인세법 제18조의2의 요건과 은행의 원화예수금이자 등 차입금이자 포함 처분의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>나머지 세 조달비용이 업무무관자산 취득에 사용된 경우 별도 지급이자 손금불산입을 검토한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2025-P1-Q3-S1/"><span>이전</span><small>2025년 제62회 세법학 1부 문제 3-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2025-P1-Q3-S3/"><span>다음</span><small>2025년 제62회 세법학 1부 문제 3-3</small></a></nav></main>
+</body>
+</html>

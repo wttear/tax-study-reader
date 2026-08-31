@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2019년 제56회 세법학 1부 문제 2-2 · 구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부: 장기간 신변지원 후 받은 70억과 특허분쟁 종결 대가 15억을 각각 사례금·사업소득 등으로 분류한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부: 장기간 신변지원 후 받은 70억과 특허분쟁 종결 대가 15억을 각각 사례금·사업소득 등으로 분류한다.</h1><p>2019년 제56회 세법학 1부 문제 2-2</p><p class="question-progress">144 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2019년 제56회 세법학 1부 문제 2-2</span><span>18점</span></div><p class="source-paragraph">【문제 2】 다음 각 사례를 읽고 물음에 답하시오. (30점) &lt;사례1&gt; 거주자 甲은 내국법인 A주식회사에서 1998년경부터 근무하였다. 그러던 중 2013년 3월경부터 2014년 6월경까지 A주식회사의 실질적인 최대주주인 거주자 乙에 대한 구속수사 및 형사재판이 진행되는 동안 甲은 장기간 근무에 따른 오랜 친분관계가 있어 제반 사정을 잘 알고 있었던 관계로 乙 및 乙의 가족들과 변호인 사이의 연락 담당, 형사재판에 필요한 자료수집, 乙의 구치소 및 병원생활 지원 등의 일을 도맡아 수행하였다. 甲은 乙이 법원의 집행유예 판결에 따라 석방된 이후인 2014년 7월 12일 乙로부터 A주식회사의 주식을 양수받기로 하였다가 乙이 이를 이행하지 않아 민사소송을 거쳐 2018년 1월 30일에 70억원을 지급받았다. 甲은 乙로부터 받은 위 금원을 「소득세법」상 일시적 인적 용역에 대한 대가로 보아 2018년 귀속 종합소득세신고를 하였으나, 관할 세무서장은 이 금원이 사례금에 해당한다고 보아 관련 세법규정을 적용하여 甲에게 2018년 귀속 종합소득세 경정부과처분을 하였다. &lt;사례2&gt; 거주자 丙과 거주자 丁은 2004년경 봉제완구 제조ㆍ판매에 관한 동업을 하기로 하고 홍콩과 국내에 각각 법인을 설립하여 영업을 하였다. 그런데 국제금융불안과 국내경기 부진으로 2016년 2월 27일 동업을 청산하기로 하면서 丙과 丁은 동업관계 청산에 있어서 서로 이해관계가 대립하는 당사자의 지위에서 각자의 지분에 상응하는 몫을 정하기 위하여 합의에 이르렀는바, 이에 따라 丙이 丁으로부터 청산의 대가로 15억원을 지급받되, 丙은 홍콩 관련 고객들의 진행 제품에 대한 원본 패턴과 견본을, 丁은 나머지 고객들의 진행 제품에 대한 원본 패턴과 견본을 각각 소지하고 일방이 갖고 있는 원본 패턴에 대해 상대방은 복사본을 요구할 수 있으며, 위 15억원의 지급이 완료되는 때에 패턴의 공유의무를 종결하기로 하였다. 丙은 이 합의에 따라 丁으로부터 2016년 10월 15일 현금 15억원을 지급받았다. 관할 세무서장은 丙이 丁으로부터 받은 이 금원이 「소득세법」상 사례금에 해당한다고 보아 관련 세법규정을 적용하여 丙에게 종합소득세 부과처분을 하였다.</p>
+<p class="source-paragraph">물음 2) &lt;사례1&gt;과 &lt;사례2&gt;에서 관할 세무서장의 각 판단 및 그에 따른 각 종합소득세 부과처분이 적법한지에 대하여 설명하시오. (18점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2191434&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%20%EC%A0%84%EA%B3%BC%EB%AA%A9.pdf&amp;fileSeq=2191434&amp;artlSeq=5205972&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2019-08-17</p><p>기준일 확인 상태: 상태 미기재</p><p>2019-08-17 적용 출처: 소득세법 LAWREF-ITA-2019-08-17 (https://www.law.go.kr/법령/소득세법/(20190101,16104,20181231)). 시험일 적용 규정: 소득세법 제19조·제21조 제1항 제17호.</p><h3>현행법과의 차이</h3><p>구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부 — 시험일 기준: LAWREF-ITA-2019-08-17; 소득세법 제19조·제21조 제1항 제17호. 2026-08-29 현재 확인 항목: 사례금과 사업소득·산업재산권 대가를 구별하는 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 조사 결론은 해당 최신 조문 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>소득세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2019-08-17 · 시행일 2019-01-01) <a href="https://www.law.go.kr/법령/소득세법/(20190101,16104,20181231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>장기간 신변지원 후 받은 70억과 특허분쟁 종결 대가 15억을 각각 사례금,사업소득 등으로 분류한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>의 甲은 乙의 형사재판 자료수집,연락,구치소와 병원생활 지원을 한 뒤 소송을 거쳐 70억 원을 받았다.</li><li>의 丙과 丁은 봉제완구 동업을 청산하며 지분에 맞는 몫을 정해 丙이 15억 원을 받기로 했다.</li><li>丙과 丁은 각자 고객의 원본 패턴,견본을 보유하고 복사본을 요구할 수 있게 하되, 15억 원 완납 시 공유의무를 끝내기로 했다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 소득세법 제19조이다.</li><li>계속,반복적으로 독립된 인력과 조직을 사용해 신변지원,분쟁해결을 제공한 대가는 사업소득이고, 특정 사무처리에 대한 일회성 보답은 사례금 기타소득이 될 수 있다.</li><li>회계,세무조정 적용: 주식양수 약정,판결이행 자료, 동업청산 합의서, 특허권 귀속과 70억,15억 지급흐름을 분리한다.</li><li>사실포섭,소결: 70억 원은 장기간 신변지원의 계약,업무범위와 계속성을, 15억 원은 특허분쟁 종결 및 권리포기의 대가관계를 각각 분석하여 한 묶음으로 분류하지 않는다.</li><li>증빙,세무조사 활용: 주식양수 약정,판결이행 자료, 동업청산 합의서, 특허권 귀속과 70억,15억 지급흐름을 분리한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 의 甲은 乙의 형사재판 자료수집,연락,구치소와 병원생활 지원을 한 뒤 소송을 거쳐 70억 원을 받았다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 의 丙과 丁은 봉제완구 동업을 청산하며 지분에 맞는 몫을 정해 丙이 15억 원을 받기로 했다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부 — 시험일 기준: ; 소득세법 제19조,제21조 제1항 제17호. 2026-08-29 현재 확인 항목: 사례금과 사업소득,산업재산권 대가를 구별하는 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 조사 결론은 해당 최신 조문 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>계속,반복적으로 독립된 인력과 조직을 사용해 신변지원,분쟁해결을 제공한 대가는 사업소득이고, 특정 사무처리에 대한 일회성 보답은 사례금 기타소득이 될 수 있다.</li><li>회계,세무조정 적용: 주식양수 약정,판결이행 자료, 동업청산 합의서, 특허권 귀속과 70억,15억 지급흐름을 분리한다.</li><li>사실포섭,소결: 70억 원은 장기간 신변지원의 계약,업무범위와 계속성을, 15억 원은 특허분쟁 종결 및 권리포기의 대가관계를 각각 분석하여 한 묶음으로 분류하지 않는다.</li><li>증빙,세무조사 활용: 주식양수 약정,판결이행 자료, 동업청산 합의서, 특허권 귀속과 70억,15억 지급흐름을 분리한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>&lt;사례1&gt;의 70억 원은 乙의 형사사건·구금생활을 도운 데 대한 보답인지, &lt;사례2&gt;의 15억 원은 봉제완구 동업을 청산하면서 각자의 몫을 나눈 대가인지 각각 판단해야 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>사례금은 사무처리나 편의 제공에 대한 감사·보답으로 주는 금품이다. 명칭보다 수수 동기, 당사자 관계, 제공한 일의 내용과 기간, 금액을 종합하며, 계속·반복되는 독립 사업활동의 대가와 자산·권리의 양도대가는 먼저 그 본래 소득유형을 따진다. 시험연도 적용근거는 소득세법 제19조·제21조 제1항 제17호이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>&lt;사례1&gt;에서 甲은 오랜 친분 때문에 1년여 동안 연락, 형사재판 자료수집, 구치소·병원생활 지원을 도맡았고, 석방 후 乙이 약속한 주식을 주지 않아 소송 끝에 70억 원을 받았다. 민사판결문과 금융거래내역을 당시 지원기록과 대사하면 독립된 사업조직으로 반복해 용역을 판 것이 아니라 특정 사무처리에 대한 보답으로 지급된 것이므로 사례금에 해당한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>&lt;사례2&gt;에서 丙과 丁은 홍콩과 국내 법인을 통해 봉제완구 사업을 함께 하다가 2016년 2월 27일 동업을 청산했다. 15억 원은 이해가 대립하는 동업자들이 지분에 상응하는 청산 몫을 정한 결과이고, 원본 패턴·견본의 보유와 복사본 요구, 대금 완납 시 공유의무 종료는 그 청산조건이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>&lt;사례1&gt;의 70억 원을 사례금으로 본 처분은 적법하다. 반면 &lt;사례2&gt;의 15억 원은 동업청산대금이고 패턴·견본 공유조건이 그 본질을 사무처리에 대한 보답으로 바꾸지 않으므로, 사례금을 이유로 한 丙에 대한 처분은 위법하다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>판례 연결 소득세법 제19조의 원칙을 경계선으로 적는다. 예외는 “형사재판의 경계선”에서 찾는다. 구속자 지원 보수와 특허분쟁 합의금의 사례금의 결론은 수치표로 추적한다.</p><h3>쉬운 말로</h3><p>장부 확인 구속자 지원 보수와 특허분쟁 합의금의 사례금의 원칙과 예외를 경계선으로 가른다. “봉제완구의 수치표” 자료를 수치표로 살핀다. 소득세법 제19조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>요건 기록 구속자 지원 보수와 특허분쟁 합의금의 사례금의 계산축을 판정선으로 세운다. 수치는 “봉제완구의 판정선”에서 읽는다. 소득세법 제19조를 대입해 세운다.</p><h3>쉬운 말로</h3><p>조문을 읽고 세무조사에서는 “각자의 첫 단서” 증빙을 판정선으로 찾는다. 구속자 지원 보수와 특허분쟁 합의금의 사례금이 소득세법 제19조 선에서 정한다. 기록표에서 결론은 첫 단서로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>메모 시작 소득세법 제19조가 정한 검토선을 먼저 본다. 구속자 지원 보수와 특허분쟁 합의금의 사례금에 “각자의 검토선” 자료를 대조축으로 옮긴다. 정리축에서 결론은 소득세법 제19조를 근거로 대조한다.</p><h3>쉬운 말로</h3><p>세무조사 구속자 지원 보수와 특허분쟁 합의금의 사례금을 검토선으로 기억한다. 소득세법 제19조에서 대조축을 찾는다. “형사재판의 대조축” 자료를 정리축으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>숫자 확인 구속자 지원 보수와 특허분쟁 합의금의 사례금과 “형사재판의 세율표”의 연결을 세율표로 정리한다. 소득세법 제19조와 기간선을 읽는다. 조사자료는 증빙칸으로 확인한다.</p><h3>쉬운 말로</h3><p>결론 메모 소득세법 제19조가 정한 세율표를 읽는다. 구속자 지원 보수와 특허분쟁 합의금의 사례금에 “봉제완구의 기간선” 자료를 기간선으로 대입한다. 결과는 증빙칸으로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>기간 계산 구속자 지원 보수와 특허분쟁 합의금의 사례금의 판단 질문을 증빙표로 만든다. “봉제완구의 증빙표” 자료를 주체선으로 확인한다. 소득세법 제19조 근거는 답안에 기간표로 남긴다.</p><h3>쉬운 말로</h3><p>거래 추적 구속자 지원 보수와 특허분쟁 합의금의 사례금을 증빙표로 기억한다. 소득세법 제19조에서 주체선을 찾는다. “각자의 주체선” 자료를 기간표로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-income-classification-001.html">사업소득과 기타소득의 구분</a></h3><p class="law-name">소득세법</p><p>소득세법 제19조의 기준을 귀속선으로 적는다. 구속자 지원 보수와 특허분쟁 합의금의 사례금 해당의 판단은 답안표에서 본다. 세무조사에서는 “형사재판의 귀속선” 자료를 검산표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-compensation-goodwill-001.html">위약금·배상금·사례금·영업권 대가의 소득구분</a></h3><p class="law-name">소득세법</p><p>세무조사에서는 “봉제완구의 경계표” 증빙을 경계표로 찾는다. 구속자 지원 보수와 특허분쟁 합의금의 사례금 해당의 효과는 소득세법 제19조와 연결한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-withholding-statement-001.html">원천징수와 지급명세서</a></h3><p class="law-name">소득세법</p><p>구속자 지원 보수와 특허분쟁 합의금의 사례금 해당을 검토할 때 소득세법 제19조 문언과 문언표 사례를 비교한다. “각자의 금액표” 자료는 금액표로 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부에서 소득세법 제19조,제21조 제1항 제17호 및 관련 사례금 법해석의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 소득세법 제19조의 요건과 구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 소득세법 제19조의 요건과 구속자 지원 보수와 특허분쟁 합의금의 사례금 해당 여부의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>丙이 동업청산과 별도로 자신이 단독 보유한 패턴을 丁에게 양도하고 별도 금액을 받았다면 그 추가 대가의 소득종류를 판단한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2019-P1-Q2-S1/"><span>이전</span><small>2019년 제56회 세법학 1부 문제 2-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2019-P1-Q3-S1/"><span>다음</span><small>2019년 제56회 세법학 1부 문제 3-1</small></a></nav></main>
+</body>
+</html>

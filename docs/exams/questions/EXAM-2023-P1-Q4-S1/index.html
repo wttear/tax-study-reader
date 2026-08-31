@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2023년 제60회 세법학 1부 문제 4-1 · 상속의 세법상 범위: 민법상 상속 외 포괄유증 등 포함 범위를 설명한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>상속의 세법상 범위: 민법상 상속 외 포괄유증 등 포함 범위를 설명한다.</h1><p>2023년 제60회 세법학 1부 문제 4-1</p><p class="question-progress">261 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2023년 제60회 세법학 1부 문제 4-1</span><span>6점</span></div><p class="source-paragraph">【문제 4】다음 사례를 읽고 물음에 답하시오. (20점)</p>
+<p class="source-paragraph">&lt;사례&gt; 중소기업을 오랫동안 운영하던 거주자 甲의 사망으로 2023년 중 상속이 개시되었 다. 甲의 직계비속으로서 상속인인 거주자 乙은 피상속인이 영위하던 사업을 승계 하여 기업 경영을 계속하고자 하지만, 상속세 부담에 대한 걱정으로 담당 세무사인 당신에게 자문을 의뢰하였다. 이에 「상속세 및 증여세법」상 가업상속공제의 적용 을 통해 상속세 부담을 경감할 수 있는 규정이 있음을 乙에게 알려주고, 동 상속이 가업상속공제 적용 대상이 될 수 있는지 검토하고자 한다.</p>
+<p class="source-paragraph">물음 1) 상속세 과세대상이 되는 상속의 정의 및 상속에 포함되는 것에 대하여 「상속세 및 증여세법」제2조의 규정을 근거로 설명하시오. (6점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2207695&amp;fileName=2023%EB%85%84%20%EC%A0%9C60%ED%9A%8C%20%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%EC%8B%9C%ED%97%98%20%EB%AC%B8%EC%A0%9C%EC%A7%80%20%EC%9B%90%EB%B3%B8.zip&amp;fileSeq=2207695&amp;artlSeq=5212243&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2023-08-12</p><p>기준일 확인 상태: 상태 미기재</p><p>2023-08-12 시행 상속세 및 증여세법 제2조를 적용한다. 상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다. 형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다. 결론은 다음과 같다. 포괄유증과 특정유증도 상증세법상 상속 범위에 포함된다.</p><h3>현행법과의 차이</h3><p>2026-08-29 현행 상속세 및 증여세법 제2조 대조: 상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다. 상속의 세법상 범위에 관한 이 적용 주체·성립요건·법률효과는 2023-08-12 시험일 조문과 동일하다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>상속세 및 증여세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2023-08-12 · 시행일 2023-01-01) <a href="https://www.law.go.kr/법령/상속세 및 증여세법/(20230101,19195,20221231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-01-02) <a href="https://www.law.go.kr/법령/상속세 및 증여세법/(20260102,21065,20251001)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>상속의 세법상 범위: 민법상 상속 외 포괄유증 등 포함 범위를 설명한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다.</li><li>민법상 상속 외 포괄유증 등 포함 범위를 설명한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 상속세 및 증여세법 제2조이다.</li><li>민법상 상속 외 포괄유증 등 포함 범위를 설명한다.</li><li>상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다.</li><li>형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다.</li><li>가족관계, 유언,사인증여계약, 상속재산 분여 심판, 재산이전일.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 민법상 상속 외 포괄유증 등 포함 범위를 설명한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 2026-08-29 현행 상속세 및 증여세법 제2조 대조: 상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다. 상속의 세법상 범위에 관한 이 적용 주체,성립요건,법률효과는 2023-08-12 시험일 조문과 동일하다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>민법상 상속 외 포괄유증 등 포함 범위를 설명한다.</li><li>상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다.</li><li>형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다.</li><li>가족관계, 유언,사인증여계약, 상속재산 분여 심판, 재산이전일.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>출제요구: 민법상 상속 외 포괄유증 등 포함 범위를 설명한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2023-08-12 시행 상속세 및 증여세법 제2조를 적용한다. 시험일 규범: 상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>사례 적용·계산: 형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>결론: 포괄유증과 특정유증도 상증세법상 상속 범위에 포함된다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>실무 검토 상속·증여세법 제2조의 원칙을 문장축으로 적는다. 예외는 “형식상의 문장축”에서 찾는다. 상속의 세법상 범위의 결론은 문언표로 설명한다.</p><h3>쉬운 말로</h3><p>공제 판단 상속의 세법상 범위와 “민법상의 문언표”의 관계를 문장축으로 본다. 상속·증여세법 제2조와 문언표를 함께 읽는다. 연결고리에서 세무조사에서는 장부를 연결고리로 대조한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>실무 검토 상속·증여세법 제2조의 원칙을 사례표로 적는다. 예외는 “민법상의 사례표”에서 찾는다. 상속의 세법상 범위의 결론은 주체선으로 확정한다.</p><h3>쉬운 말로</h3><p>기준 설정 상속의 세법상 범위의 계산표를 사례표로 만든다. “형식상의 주체선”에서 수치를 주체선으로 옮긴다. 상속·증여세법 제2조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>먼저 상속·증여세법 제2조가 정한 사실칸을 먼저 본다. 상속의 세법상 범위에 “형식상의 사실칸” 자료를 조문표로 옮긴다. 검토선에서 결론은 상속·증여세법 제2조를 근거로 설명한다.</p><h3>쉬운 말로</h3><p>두 번째 상속·증여세법 제2조가 정한 사실칸을 읽는다. 상속의 세법상 범위에 “민법상의 조문표” 자료를 조문표로 대입한다. 결과는 검토선으로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>마지막 점검 상속의 세법상 범위를 연결고리로 분해한다. 상속·증여세법 제2조에서 원칙표를 읽는다. 세무조사에서는 “민법상의 연결고리” 자료를 효과표로 살핀다.</p><h3>쉬운 말로</h3><p>한 줄 상속의 세법상 범위를 연결고리로 기억한다. 상속·증여세법 제2조에서 원칙표를 찾는다. “형식상의 원칙표” 자료를 효과표로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ncta-dissolution-inheritance-001.html">법인 해산·상속과 강제징수</a></h3><p class="law-name">국세징수법</p><p>상속·증여세법 제2조 기준은 증빙표로 옮겨 적는다. 상속의 세법상 범위의 범위는 사실표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [상속세 및 증여세법 제2조에 따른 [상증세법상 상속은 민법상 상속뿐 아니라 유증, 사인증여와 특별연고자에 대한 상속재산 분여를 포함한다]의 주체,요건,효과 중 하나를 빠뜨리는]이다. 관련 법령인 상속세 및 증여세법 제2조의 요건과 상속의 세법상 범위의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [다음 사실포섭을 상속세 및 증여세법 제2조의 요건과 연결하지 않는 오류: 형식상 계약 명칭이 아니라 사망을 원인으로 무상 이전되는 재산인지에 따라 상속세 과세범위에 넣는다]이다. 관련 법령인 상속세 및 증여세법 제2조의 요건과 상속의 세법상 범위의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [과세관청 조사절차에서 앞 자료 중 하나를 빠뜨려 상속의 세법상 범위 관련 거래일,당사자,금액,실제 사용용도를 서로 대사하여 상속세 및 증여세법 제2조의 성립요건과 법률효과를 판정하지 못하는]이다. 관련 법령인 상속세 및 증여세법 제2조의 요건과 상속의 세법상 범위의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>유증 대상이 특정재산에서 잔여재산 전부로 바뀐 경우 상속 범위를 판단한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2023-P1-Q3-S4/"><span>이전</span><small>2023년 제60회 세법학 1부 문제 3-4</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2023-P1-Q4-S2-C1/"><span>다음</span><small>2023년 제60회 세법학 1부 문제 4-2-①</small></a></nav></main>
+</body>
+</html>

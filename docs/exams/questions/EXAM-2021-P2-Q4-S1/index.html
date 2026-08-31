@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2021년 제58회 세법학 2부 문제 4-1 · 가업승계 주식 증여세 과세특례: 부모가 배우자 주식을 받은 다음 날 아들에게 합쳐 증여한 사례에서 증여자 보유·경영기간과 수증자 요건을 판정한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>가업승계 주식 증여세 과세특례: 부모가 배우자 주식을 받은 다음 날 아들에게 합쳐 증여한 사례에서 증여자 보유·경영기간과 수증자 요건을 판정한다.</h1><p>2021년 제58회 세법학 2부 문제 4-1</p><p class="question-progress">211 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2021년 제58회 세법학 2부 문제 4-1</span><span>15점</span></div><p class="source-paragraph">【문제 4】다음 사례를 읽고 물음에 답하시오. (25점) &lt;사례&gt; ○ 2021년 현재 甲(65세)의 가족관계는 배우자 乙(61세), 장남 丙(30세), 차남 丁(28세) 이다. 이들은 모두 ｢소득세법｣상 거주자이다. (1) 甲은 2007년 8월경부터 중소기업(상속세 및 증여세법령상 가업상속공제요건을 갖춤)인 A주식회사(이하 [A회사]라 함)의 대표이사이며 발행주식총수의 100분의 40에 해당하는 주식을 소유한 최대주주로 10년 이상 계속하여 A회사를 경영해 왔고, 丙에게 가업을 승계시키려고 하였다. 이에 甲은 2021년 5월 30일 乙이 10년 이상 보유하던 A회사 발행주식총수의 100분의 20에 해당하는 주식을 증여받고, 그 다음 날 자신이 보유하던 주식과 乙로부터 받은 주식을 丙에게 모두 증여 하였다. 2021년 8월 20일 丙은 증여세과세표준신고와 함께 주식등 특례신청서를 관할 세무서장에게 제출하였다. (2) 丁은 평소 소프트웨어와 앱 개발에 관심을 가지고 사업을 준비하던 중 2021년 6월 15일 甲에게 중소기업(제조업) 창업을 위한 자금을 부탁하였다. 2021년 6월 20일 甲은 丁에게 창업자금으로 현금 10억 원을 증여하였다. 2021년 8월 25일 丁은 증여세과세표준신고와 함께 창업자금 특례신청서 및 사용내역서를 관할 세무서장에게 제출하였다.</p>
+<p class="source-paragraph">물음 1) 지문 (1)에서 ｢조세특례제한법｣상 [가업의 승계에 대한 증여세 과세특례]의 취지, 증여자, 수증자, 특례내용을 설명하고, 丙이 과세특례를 적용받을 수 있는지에 대하여 판단하시오. (15점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2200274&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8(2021).zip&amp;fileSeq=2200274&amp;artlSeq=5209054&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2021-09-04</p><p>기준일 확인 상태: 상태 미기재</p><p>2021-09-04 적용 출처: 조세특례제한법 LAWREF-RSTA-2021-09-04 (https://www.law.go.kr/법령/조세특례제한법/(20210701,17926,20210316)). 시험일 적용 규정: 조세특례제한법 제30조의6(2021년 시행본).</p><h3>현행법과의 차이</h3><p>가업승계 주식 증여세 과세특례 — 시험일 기준: LAWREF-RSTA-2021-09-04; 조세특례제한법 제30조의6(2021년 시행본). 2026-08-29 현재 확인 항목: 가업승계 증여 한도·세율·보유기간과 통합 가업승계 제도의 현행 확대. 이 기록은 시험일 시행본을 고정하며, 2026 세무조정 결론은 해당 최신 개정문 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>조세특례제한법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20210701,17926,20210316)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>부모가 배우자 주식을 받은 다음 날 아들에게 합쳐 증여한 사례에서 증여자 보유,경영기간과 수증자 요건을 판정한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>甲은 65세이고 A회사를 2007년부터 대표이사로 10년 이상 경영했으며 자기 주식 40%를 보유한 최대주주였다.</li><li>배우자 乙도 A회사 주식 20%를 10년 이상 보유했고, 甲은 그 주식을 받은 다음 날 자기 지분과 합쳐 丙에게 60% 전부를 증여했다.</li><li>丙은 30세 거주자로 2021년 8월 20일 증여세 신고와 특례신청서를 제출했지만, 지문은 신고기한까지 가업에 종사했는지와 5년 이내 대표이사 취임 여부를 밝히지 않았다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 제30조의6이다.</li><li>가업승계 증여세 특례는 10년 이상 경영한 중소,중견 가업의 주식을 60세 이상 부모가 18세 이상 거주자 자녀에게 증여하고 자녀가 경영에 참여하는 경우 신청,사후관리 아래 적용한다.</li><li>증빙 대사와 소결: 갑,을의 주식보유기간 10년, 경영기간, 주주명부, 증여일과 특례신청서를 확인한다.</li><li>사실포섭,소결: 甲의 기존 40%는 10년 이상 보유,경영 요건을 충족하지만 乙에게서 전날 받은 20%는 甲의 보유기간을 충족하지 않는다.</li><li>증빙,세무조사 활용: 갑,을의 주식보유기간 10년, 경영기간, 주주명부, 증여일과 특례신청서를 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 甲은 65세이고 A회사를 2007년부터 대표이사로 10년 이상 경영했으며 자기 주식 40%를 보유한 최대주주였다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 배우자 乙도 A회사 주식 20%를 10년 이상 보유했고, 甲은 그 주식을 받은 다음 날 자기 지분과 합쳐 丙에게 60% 전부를 증여했다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 가업승계 주식 증여세 과세특례 — 시험일 기준: ; 조세특례제한법 제30조의6(2021년 시행본). 2026-08-29 현재 확인 항목: 가업승계 증여 한도,세율,보유기간과 통합 가업승계 제도의 현행 확대. 이 기록은 시험일 시행본을 고정하며, 2026 세무조정 결론은 해당 최신 개정문 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>가업승계 증여세 특례는 10년 이상 경영한 중소,중견 가업의 주식을 60세 이상 부모가 18세 이상 거주자 자녀에게 증여하고 자녀가 경영에 참여하는 경우 신청,사후관리 아래 적용한다.</li><li>증빙 대사와 소결: 갑,을의 주식보유기간 10년, 경영기간, 주주명부, 증여일과 특례신청서를 확인한다.</li><li>사실포섭,소결: 甲의 기존 40%는 10년 이상 보유,경영 요건을 충족하지만 乙에게서 전날 받은 20%는 甲의 보유기간을 충족하지 않는다.</li><li>증빙,세무조사 활용: 갑,을의 주식보유기간 10년, 경영기간, 주주명부, 증여일과 특례신청서를 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 중소기업 경영자의 고령화에 대비해 생전에 자녀에게 가업을 계획적으로 넘기도록 지원하는 2021년 가업승계 증여세 특례의 요건과 세액구조, 그리고 甲이 丙에게 증여한 A회사 주식 60%의 적용 여부이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2021년 조세특례제한법 제30조의6과 당시 시행령 제27조의6에 따르면, 18세 이상 거주자가 10년 이상 계속 경영한 가업의 60세 이상 부모로부터 가업승계 목적으로 주식을 받고 신고기한까지 가업에 종사하며 증여일부터 5년 이내 대표이사에 취임해야 한다. 증여자는 최대주주 등으로서 특수관계인 지분과 합쳐 가업의 지분요건을 10년 이상 충족해야 한다. 특례는 가업자산상당액의 증여세 과세가액을 100억 원까지 인정해 5억 원을 공제하고 10%를 적용하되, 과세표준 30억 원 초과분에는 20%를 적용한다. 신고기한 내 신청과 증여 뒤 7년간 가업종사·휴폐업·지분감소에 관한 사후관리도 요구된다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>법인등기부로 甲이 2007년부터 A회사를 경영한 기간을, 주주명부로 甲 40%와 특수관계인 乙 20%가 각 10년 이상 유지되어 합산 지분이 60%였음을 확인한다. 甲이 전날 乙 주식을 받았더라도 가업 지분요건은 두 사람의 장기 합산 보유내역과 대조한다. 증여세 계산명세서에서는 가업자산상당액 100억 원 한도에서 5억 원을 공제하고, 30억 원 이하 부분 10%와 초과부분 20%를 나누어 적용한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>甲은 65세이고 10년 이상 A회사를 경영했으며 甲·乙 합산 60%를 10년 이상 보유했으므로 증여자와 가업 요건을 충족한다. 丙은 30세 거주자이고 신고기한 안에 특례신청서를 냈다. 다만 신고기한까지 실제로 A회사에 종사했는지와 증여일부터 5년 안에 대표이사에 취임하는지는 지문에 없으므로, 그 요건을 충족하는 것을 전제로 60% 주식의 가업자산상당액에 특례를 적용한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>甲이 전날 乙에게서 받은 20%를 포함한 60% 주식은 특수관계인 합산 지분의 10년 보유사실이 확인되므로 취득일만을 이유로 20%를 제외하지 않는다. 丙이 신고기한까지 가업에 종사하고 5년 이내 대표이사가 되는 조건 아래, 100억 원 한도에서 5억 원을 공제한 뒤 30억 원 이하 10%, 초과분 20%로 과세하며 7년 사후관리를 따른다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>시험장 조세특례제한법 제30조의6의 원칙을 계산칸으로 적는다. 예외는 “65세이고의 계산칸”에서 찾는다. 가업승계 주식 증여세 과세특례의 결론은 적용축으로 잡는다.</p><h3>쉬운 말로</h3><p>쉽게 세무조사에서는 “배우자의 적용축” 증빙을 계산칸으로 찾는다. 가업승계 주식 증여세 과세특례가 조세특례제한법 제30조의6 선에서 정한다. 기준표에서 결론은 적용축으로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>결론 정리 가업승계 주식 증여세 과세특례와 “배우자의 검토선”의 연결을 검토선으로 가른다. 조세특례제한법 제30조의6와 결론축을 읽는다. 조사자료는 법리칸으로 교차한다.</p><h3>쉬운 말로</h3><p>계산 전 “30세의 결론축”라는 사실을 검토선으로 표시한다. 가업승계 주식 증여세 과세특례가 조세특례제한법 제30조의6의 범위에서 판단한다. 법리칸에서 증빙은 결론축으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>재검토 가업승계 주식 증여세 과세특례를 법리축으로 대조한다. 조세특례제한법 제30조의6에서 검산표를 읽는다. 세무조사에서는 “30세의 법리축” 자료를 대조축으로 교차한다.</p><h3>쉬운 말로</h3><p>공부 순서 가업승계 주식 증여세 과세특례를 법리축으로 기억한다. 조세특례제한법 제30조의6에서 검산표를 찾는다. “65세이고의 검산표” 자료를 대조축으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>공제 판단 “65세이고의 확인축”라는 사실을 확인축으로 잡는다. 조세특례제한법 제30조의6의 요건은 수치표에서 확인한다. 가업승계 주식 증여세 과세특례의 효과를 경계선으로 설명한다.</p><h3>쉬운 말로</h3><p>판정 마무리 가업승계 주식 증여세 과세특례를 확인축으로 기억한다. 조세특례제한법 제30조의6에서 수치표를 찾는다. “배우자의 수치표” 자료를 경계선으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>소득 귀속 가업승계 주식 증여세 과세특례의 판단 질문을 법리칸으로 만든다. “배우자의 법리칸” 자료를 검토선으로 확인한다. 조세특례제한법 제30조의6 근거는 답안에 증빙칸으로 남긴다.</p><h3>쉬운 말로</h3><p>과세 확인 가업승계 주식 증여세 과세특례와 “30세의 검토선”의 관계를 법리칸으로 본다. 조세특례제한법 제30조의6와 검토선을 함께 읽는다. 증빙칸에서 세무조사에서는 장부를 증빙칸으로 대조한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>가업승계 주식 증여세 과세특례를 검토할 때 조세특례제한법 제30조의6 문언과 공제표 사례를 비교한다. “65세이고의 귀속표” 자료는 귀속표로 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [가업승계 주식 증여세 과세특례에서 조세특례제한법 제30조의6(2021년 시행본)의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 조세특례제한법 제30조의6의 요건과 가업승계 주식 증여세 과세특례의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [가업승계 주식 증여세 과세특례의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 조세특례제한법 제30조의6의 요건과 가업승계 주식 증여세 과세특례의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>배우자에게서 받은 20% 주식을 5년 보유한 뒤 증여한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2021-P2-Q3-S3/"><span>이전</span><small>2021년 제58회 세법학 2부 문제 3-3</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2021-P2-Q4-S2/"><span>다음</span><small>2021년 제58회 세법학 2부 문제 4-2</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2024년 제61회 세법학 2부 문제 4-1 · 영농조합법인의 소득을 식량작물재배업, 그 밖의 작물재배업, 작물재배업 외 사업으로 구분하여 면제소득을 먼저 계산한 뒤 법인세 감면세액을 산출한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>영농조합법인의 소득을 식량작물재배업, 그 밖의 작물재배업, 작물재배업 외 사업으로 구분하여 면제소득을 먼저 계산한 뒤 법인세 감면세액을 산출한다.</h1><p>2024년 제61회 세법학 2부 문제 4-1</p><p class="question-progress">301 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2024년 제61회 세법학 2부 문제 4-1</span><span>5점</span></div><p class="source-paragraph">【문제 4】「조세특례제한법」과 관련하여 다음 &lt;사례&gt;를 읽고 물음에 답하시오. (25점)</p>
+<p class="source-paragraph">&lt;사례&gt;</p>
+<p class="source-paragraph">○ A는 「농어업경영체 육성 및 지원에 관한 법률」 제4조에 따라 농어업경영정보를 등록한 영농조합법인이다. A의 소득은 식량작물재배업소득과 식량작물재배업소득 외의 소득 으로 이루어진다. ○ 법령으로 정하는 농업인에 해당하는 甲은 농작물재배업 등에 직접 사용되는 부동산을 A에 현물출자하였다. 당해 부동산은 관련법에 따른 주거지역 등에 편입되거나 환지예정지 지정을 받은 바 없고, 현물출자와 관련하여 A가 인수한 채무가액은 없다. ○ 조합원인 乙은 A로부터 받은 배당소득이 있다.</p>
+<p class="source-paragraph">물음 1) 위 &lt;사례&gt;에서 A의 법인세 면제에 대하여 서술하시오. (5점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2210415&amp;fileName=2024%EB%85%84%20%EC%A0%9C61%ED%9A%8C%20%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%97%98%EC%A7%80%20%EC%9B%90%EB%B3%B8.zip&amp;fileSeq=2210415&amp;artlSeq=5213627&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2024-08-10</p><p>기준일 확인 상태: 상태 미기재</p><p>2024-08-10 시행 조세특례제한법 제66조와 조세특례제한법 시행령 제63조를 적용한다. 식량작물재배업소득은 전액 면제소득이다. 식량작물 외 작물재배업 면제소득은 해당 소득금액 × {6억원 × 조합원 수 × 사업연도 월수/12 ÷ 해당 작물재배업 수입금액}으로 계산하되 해당 소득금액을 넘을 수 없다. 작물재배업 외 사업의 면제소득 한도는 1,200만원 × 조합원 수 × 사업연도 월수/12이다. 먼저 구분경리와 공통경비 안분으로 세 소득을 계산하고 각 면제소득을 합한 뒤, 법인세 과세표준과 산출세액에서 그 면제소득에 대응하는 법인세를 계산한다. 면제소득 산식을 곧바로 면제세액 산식으로 쓰면 안 된다.</p><h3>현행법과의 차이</h3><p>2026-08-29 현행 조세특례제한법 제66조와 시행령 제63조도 식량작물재배업소득 전액, 식량작물 외 작물재배업의 6억원 × 조합원 수 × 월수/12 비율한도, 작물재배업 외 사업의 1,200만원 × 조합원 수 × 월수/12 소득한도를 유지한다. 면제소득을 먼저 구한 뒤 대응 법인세를 계산하는 순서도 시험일과 같다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>조세특례제한법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2024-08-10 · 시행일 2024-07-10) <a href="https://www.law.go.kr/법령/조세특례제한법/(20240710,19990,20240109)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>영농조합법인의 소득을 식량작물재배업, 그 밖의 작물재배업, 작물재배업 외 사업으로 구분하여 면제소득을 먼저 계산한 뒤 법인세 감면세액을 산출한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>계산: 식량작물재배업 면제소득 = 해당 소득 전액.</li><li>법정 한도가 면제소득 한도인지 면제세액 한도인지 구분하고 세 유형별 면제소득을 계산한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 제66조, 조세특례제한법 시행령 제63조이다.</li><li>쟁점: 법정 한도가 면제소득 한도인지 면제세액 한도인지 구분하고 세 유형별 면제소득을 계산한다.</li><li>조세특례제한법 제66조와 시행령 제63조는 식량작물, 그 밖의 작물, 작물재배업 외 사업에 서로 다른 면제소득 범위를 둔다.</li><li>계산: 식량작물재배업 면제소득 = 해당 소득 전액.</li><li>작물별 매출,원가, 공통경비 안분표, 조합원 명부와 사업연도 월수, 면제소득 명세 및 법인세 신고서를 대조해 소득단계와 세액단계를 각각 검산한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 계산: 식량작물재배업 면제소득 = 해당 소득 전액. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 법정 한도가 면제소득 한도인지 면제세액 한도인지 구분하고 세 유형별 면제소득을 계산한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 2026-08-29 현행 조세특례제한법 제66조와 시행령 제63조도 식량작물재배업소득 전액, 식량작물 외 작물재배업의 6억원 × 조합원 수 × 월수/12 비율한도, 작물재배업 외 사업의 1,200만원 × 조합원 수 × 월수/12 소득한도를 유지한다. 면제소득을 먼저 구한 뒤 대응 법인세를 계산하는 순서도 시험일과 같다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>쟁점: 법정 한도가 면제소득 한도인지 면제세액 한도인지 구분하고 세 유형별 면제소득을 계산한다.</li><li>조세특례제한법 제66조와 시행령 제63조는 식량작물, 그 밖의 작물, 작물재배업 외 사업에 서로 다른 면제소득 범위를 둔다.</li><li>계산: 식량작물재배업 면제소득 = 해당 소득 전액.</li><li>작물별 매출,원가, 공통경비 안분표, 조합원 명부와 사업연도 월수, 면제소득 명세 및 법인세 신고서를 대조해 소득단계와 세액단계를 각각 검산한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점: 법정 한도가 면제소득 한도인지 면제세액 한도인지 구분하고 세 유형별 면제소득을 계산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2024-08-10 시행 기준. 규범: 조세특례제한법 제66조와 시행령 제63조는 식량작물, 그 밖의 작물, 작물재배업 외 사업에 서로 다른 면제소득 범위를 둔다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>계산: 식량작물재배업 면제소득 = 해당 소득 전액. 식량작물 외 작물재배업 면제소득 = min[해당 소득금액, 해당 소득금액 × {6억원 × 조합원 수 × 사업연도 월수/12 ÷ 해당 작물재배업 수입금액}]. 작물재배업 외 사업 면제소득 = min[해당 소득금액, 1,200만원 × 조합원 수 × 사업연도 월수/12]. 합산 면제소득을 구한 뒤 그 소득에 대응하는 법인세를 산출한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>결론: 세 소득별 법정 한도로 면제소득을 확정한 후 그에 대응하는 법인세만 면제한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>공제 판단 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업의 계산축을 법리축으로 세운다. 수치는 “작물재배업의 법리축”에서 읽는다. 조세특례제한법 제66조를 대입해 세운다.</p><h3>쉬운 말로</h3><p>세무조사 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업을 법리축으로 기억한다. 조세특례제한법 제66조에서 첫 단서를 찾는다. “법정의 첫 단서” 자료를 판례표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>서류 수령 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업의 판단 질문을 조문표로 만든다. “법정의 조문표” 자료를 귀속표로 확인한다. 조특령 제63조 근거는 답안에 공제표로 남긴다.</p><h3>쉬운 말로</h3><p>소득 구분 “작물재배업의 귀속표”라는 사실을 조문표로 표시한다. 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업이 조특령 제63조의 범위에서 판단한다. 공제표에서 증빙은 귀속표로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>먼저 조세특례제한법 제66조가 정한 사실표를 먼저 본다. 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업에 “작물재배업의 사실표” 자료를 정리축으로 옮긴다. 사실축에서 결론은 조세특례제한법 제66조를 근거로 연결한다.</p><h3>쉬운 말로</h3><p>문장 풀이 세무조사에서는 “법정의 정리축” 증빙을 사실표로 찾는다. 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업이 조세특례제한법 제66조 선에서 정한다. 사실축에서 결론은 정리축으로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>판정 시작 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업을 대사표로 선별한다. 조특령 제63조에서 주체선을 읽는다. 세무조사에서는 “법정의 대사표” 자료를 기준점으로 추적한다.</p><h3>쉬운 말로</h3><p>증빙 정리 영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업을 대사표로 기억한다. 조특령 제63조에서 주체선을 찾는다. “작물재배업의 주체선” 자료를 기준점으로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-cta-tax-adjustment-map-001.html">재무제표에서 세무조정으로 가는 기본 지도</a></h3><p class="law-name">법인세법</p><p>영농조합법인의 소득을 식량작물재배업 그 밖의 작물재배업 작물재배업을 검토할 때 조세특례제한법 제66조 문언과 판례표 사례를 비교한다. “작물재배업의 주체표” 자료는 주체표로 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [6억원 또는 1,200만원 한도를 면제세액으로 직접 취급하는]이다. 관련 법령인 조세특례제한법 제66조의 요건과 영농조합법인의 소득을 식량작물재배업, 그 밖의 작물재배업, 작물재배업 외 사의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [식량작물 외 작물재배업 산식의 해당 소득금액, 해당 작물재배업 수입금액, 조합원 수 또는 월수 환산을 누락하는]이다. 관련 법령인 조세특례제한법 제66조의 요건과 영농조합법인의 소득을 식량작물재배업, 그 밖의 작물재배업, 작물재배업 외 사의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [구분경리,공통경비 안분 없이 총소득에 한도를 적용하거나 면제소득에서 법인세를 계산하는 단계를 생략하는]이다. 관련 법령인 조세특례제한법 제66조의 요건과 영농조합법인의 소득을 식량작물재배업, 그 밖의 작물재배업, 작물재배업 외 사의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>농업 외 유통용역 매출이 추가된 경우 감면소득을 다시 구분한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2024-P2-Q3-S2/"><span>이전</span><small>2024년 제61회 세법학 2부 문제 3-2</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2024-P2-Q4-S2/"><span>다음</span><small>2024년 제61회 세법학 2부 문제 4-2</small></a></nav></main>
+</body>
+</html>

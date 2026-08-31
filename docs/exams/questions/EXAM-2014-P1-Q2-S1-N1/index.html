@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2014년 제51회 세법학 1부 문제 2-1-(1) · 퇴직소득 분류과세의 이유 | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>퇴직소득 분류과세의 이유</h1><p>2014년 제51회 세법학 1부 문제 2-1-(1)</p><p class="question-progress">5 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2014년 제51회 세법학 1부 문제 2-1-(1)</span><span>배점 미확인</span></div><p class="source-paragraph">【 문제 2 】국가는 연금제도의 확대를 촉진하여 국민들의 은퇴 후 생활에 대한 경제적 안정을 확보하고자 노력하고 있다. 이를 위해 퇴직금이 연금계좌로 이체된 후 인출되는 경우 「소득세법」상 별도의 과세 체계를 적용하고 있다. 이와 관련된 다음 물음에 답하시오. (30점)</p>
+<p class="source-paragraph">1. 퇴직소득 또는 이연퇴직소득과 관련된 다음의 물음에 답하시오.</p>
+<p class="source-paragraph">(1) 퇴직소득이 종합소득과 구분되어 과세되는 이유를 기술하시오.</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2093350&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%991%EB%B6%80.hwp&amp;fileSeq=2093350&amp;artlSeq=5104408&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 공식 정확한 날짜 확인 불가(시험일 시행본 표기)</p><p>기준일 확인 상태: official_exact_date_unavailable</p><p>2014년 제51회 Q-Net 표지는 정확한 시험일을 인쇄하지 않았다. 문제의 현행법 지시와 사례 귀속·거래일을 기준으로 국가법령정보센터 시행본(20140101, 20140729)의 소득세법 제20조의3·제22조·제129조, 소득세법 시행령 제40조의2·제42조의2 및 각 부칙을 대조했으며, 임의 시험일은 사용하지 않았다.</p><h3>현행법과의 차이</h3><p>퇴직소득 분류과세의 이유: 퇴직소득의 연금계좌 이연과 연금수령 과세구조는 유지되지만 현행 퇴직소득세 감면비율·연금수령한도와 장기수령 우대가 개정됐다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>소득세법</strong><ul><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>장기간 형성된 퇴직급여를 수령연도 종합소득과 분리해 과세하는 이유를 결집효과,노후보장 관점에서 설명한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>일시금 수령과 연금계좌 이체를 구분해 분류과세와 과세이연의 관계를 연결한다.</li><li>퇴직급여를 근속연수로 환산,연분한 뒤 세율을 적용하는 당시 계산구조의 경제적 의미를 설명한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 소득세법 제20조의3, 소득세법 시행령 제40조의2, 소득세법 제12조이다.</li><li>소득세법 제20조의3,제22조,제129조, 소득세법 시행령 제40조의2,제42조의2.</li><li>퇴직급여를 근속연수로 환산,연분한 뒤 세율을 적용하는 당시 계산구조의 경제적 의미를 설명한다.</li><li>일시금 수령과 연금계좌 이체를 구분해 분류과세와 과세이연의 관계를 연결한다.</li><li>장기간 누적된 근로의 대가가 일시에 실현되는 퇴직소득을 종합과세하면 누진세 부담이 과도해지므로 근속연수공제,연분연승 구조의 분류과세로 세부담을 평준화한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 일시금 수령과 연금계좌 이체를 구분해 분류과세와 과세이연의 관계를 연결한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 퇴직급여를 근속연수로 환산,연분한 뒤 세율을 적용하는 당시 계산구조의 경제적 의미를 설명한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 퇴직소득 분류과세의 이유: 퇴직소득의 연금계좌 이연과 연금수령 과세구조는 유지되지만 현행 퇴직소득세 감면비율,연금수령한도와 장기수령 우대가 개정됐다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>소득세법 제20조의3,제22조,제129조, 소득세법 시행령 제40조의2,제42조의2.</li><li>퇴직급여를 근속연수로 환산,연분한 뒤 세율을 적용하는 당시 계산구조의 경제적 의미를 설명한다.</li><li>일시금 수령과 연금계좌 이체를 구분해 분류과세와 과세이연의 관계를 연결한다.</li><li>장기간 누적된 근로의 대가가 일시에 실현되는 퇴직소득을 종합과세하면 누진세 부담이 과도해지므로 근속연수공제,연분연승 구조의 분류과세로 세부담을 평준화한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>이 문항은 퇴직소득 분류과세의 이유를 묻는다. 출발 사실은 일시금 수령과 연금계좌 이체를 구분해 분류과세와 과세이연의 관계를 연결한다고 보아야 한다. 답안에서는 Ⅰ 퇴직소득의 성격, Ⅱ 장기누적소득의 결집효과, Ⅲ 종합과세 왜곡, Ⅳ 분류과세 장치 순서로 각 판단단위를 나눈다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>따라서 사례의 거래일·귀속연도와 문제의 법 상태 지시를 기준으로 적용 시행본을 정한다. 소득세법 제20조의3·제22조·제129조, 소득세법 시행령 제40조의2·제42조의2. 여러 근속연도에 걸쳐 형성된 소득이 한 해에 집중되어 누진세 부담이 왜곡되는 것을 완화하고 노후소득을 보호하기 위해 별도 과세체계를 둔다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>이 기준에 따르면 일시금 수령과 연금계좌 이체를 구분해 분류과세와 과세이연의 관계를 연결한다. 퇴직급여를 근속연수로 환산·연분한 뒤 세율을 적용하는 당시 계산구조의 경제적 의미를 설명한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>장기간 누적된 근로의 대가가 일시에 실현되는 퇴직소득을 종합과세하면 누진세 부담이 과도해지므로 근속연수공제·연분연승 구조의 분류과세로 세부담을 평준화한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>이 문제 퇴직소득 분류과세의 이유를 사례표로 분리한다. 소득세법 제20조의3에서 자료칸을 읽는다. 세무조사에서는 “일시금의 사례표” 자료를 사실칸으로 확정한다.</p><h3>쉬운 말로</h3><p>요건표 작성 퇴직소득 분류과세의 이유를 사례표로 기억한다. 소득세법 제20조의3에서 자료칸을 찾는다. “퇴직급여의 자료칸” 자료를 사실칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>공제 판단 소득세령 제40조의2가 정한 문장축을 먼저 본다. 퇴직소득 분류과세의 이유에 “퇴직급여의 문장축” 자료를 주체선으로 옮긴다. 계산칸에서 결론은 소득세령 제40조의2를 근거로 연결한다.</p><h3>쉬운 말로</h3><p>쉽게 “일시금의 주체선”라는 사실을 문장축으로 표시한다. 퇴직소득 분류과세의 이유가 소득세령 제40조의2의 범위에서 판단한다. 계산칸에서 증빙은 주체선으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>핵심은 “일시금의 순서표”라는 사실을 순서표로 잡는다. 소득세법 제12조의 요건은 사례표에서 확인한다. 퇴직소득 분류과세의 이유의 효과를 예외표로 가른다.</p><h3>쉬운 말로</h3><p>핵심만 소득세법 제12조가 정한 순서표를 읽는다. 퇴직소득 분류과세의 이유에 “퇴직급여의 사례표” 자료를 사례표로 대입한다. 결과는 예외표로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>판례 연결 퇴직소득 분류과세의 이유를 사실칸으로 정리한다. 소득세법 제20조에서 순서표를 읽는다. 세무조사에서는 “퇴직급여의 사실칸” 자료를 정리축으로 확인한다.</p><h3>쉬운 말로</h3><p>신고 전 퇴직소득 분류과세의 이유와 “일시금의 순서표”의 관계를 사실칸으로 본다. 소득세법 제20조와 순서표를 함께 읽는다. 정리축에서 세무조사에서는 장부를 정리축으로 대조한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-employment-retirement-001.html">근로소득·복리후생·퇴직소득 구분</a></h3><p class="law-name">소득세법</p><p>퇴직소득 분류과세의 이유를 검토할 때 소득세법 제12조 문언과 사실축 사례를 비교한다. “일시금의 기간선” 자료는 기간선으로 확인한다.</p></article><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-taxation-map-001.html">종합과세·분리과세·분류과세의 기본 지도</a></h3><p class="law-name">소득세법</p><p>소득세법 제4조의 기준을 범위표로 적는다. 퇴직소득 분류과세의 이유의 판단은 세율표에서 본다. 세무조사에서는 “퇴직급여의 범위표” 자료를 환급표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-income-timing-001.html">소득의 귀속시기</a></h3><p class="law-name">소득세법</p><p>소득세법 제20조의3 기준은 요건표로 옮겨 적는다. 퇴직소득 분류과세의 이유의 범위는 계산표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [퇴직소득을 단순 분리과세 금융소득처럼 설명]이다. 관련 법령인 소득세법 제20조의3의 요건과 퇴직소득 분류과세의 이유의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [근속기간에 따른 결집효과를 누락]이다. 관련 법령인 소득세법 제20조의3의 요건과 퇴직소득 분류과세의 이유의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>근속기간이 1년 미만인 임원 퇴직급여라면 분류과세 취지와 계산효과를 비교한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2014-P1-Q1-S4/"><span>이전</span><small>2014년 제51회 세법학 1부 문제 1-4</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2014-P1-Q2-S1-N2/"><span>다음</span><small>2014년 제51회 세법학 1부 문제 2-1-(2)</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2019년 제56회 세법학 1부 문제 1-1 · 명의자가 아닌 실질 양도자의 증권거래세 납세의무: 대표가 직원 명의를 거쳐 주식을 전매한 거래에서 증권거래세의 실질 납세의무자를 판정한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>명의자가 아닌 실질 양도자의 증권거래세 납세의무: 대표가 직원 명의를 거쳐 주식을 전매한 거래에서 증권거래세의 실질 납세의무자를 판정한다.</h1><p>2019년 제56회 세법학 1부 문제 1-1</p><p class="question-progress">141 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2019년 제56회 세법학 1부 문제 1-1</span><span>12점</span></div><p class="source-paragraph">【문제 1】 다음 사례를 읽고 물음에 답하시오. (20점) &lt;사례&gt; A주식회사의 대표이사 甲은 2011년 10월경 A주식회사의 재정팀장으로 근무하던 乙에게 甲 소유의 B주식회사(비상장법인) 주식을 매도하라고 지시하면서, 매도할 수 있는 주식의 대략적인 수량만 정하여 준 채 매도가격, 매도상대방, 매도시점 등에 관한 일체의 권한을 위임하였다. 이에 따라 乙은 2011년 11월경 甲 소유의 B주식회사 주식 50만 주를 C주식회사에 대금 100억원에 매도하는 계약을 체결하였다. 그런데 乙은 위 주식 50만주의 매도과정에서 C주식회사의 과장 丙에게 형식상의 중간거래인을 세워줄 것을 부탁한 다음, 위 주식 50만주를 丙이 내세운 D주식회사에 대금 80억원에 매도하였다가 D주식회사가 다시 C주식회사에 대금 100억원에 매도하는 것처럼 2단계의 계약서를 작성하였다. 특별한 재산이 없고 신용불량자인 乙은 2011년 12월 15일에 C주식회사로부터 대금 100억원을 지급받은 후 80억원과의 차액 20억원을 자신이 취하여 개인 빚을 갚는데 모두 소진하였는바, 그 무렵 다른 채권자들과의 민사재판 결과에 따르면 乙은 특별한 지불능력이 없는 것으로 나타난다. 乙은 甲으로부터 위 주식거래에 대한 양도소득세 및 증권거래세 신고를 지시받고는 2012년 2월경 甲과 D주식회사 사이의 매매계약서를 기초로 위 주식의 양도가액을 80억원으로 하는 양도소득세 및 증권거래세 신고를 하였다. 관할 세무서장은 甲이 위 주식을 C주식회사에 대금 100억원에 매도하였음에도 실제 계약 내용과 달리 D주식회사에 대금 80억원에 양도한 것처럼 양도소득세 및 증권거래세 신고를 한 것은 신고내용의 탈루에 해당한다고 보아 2018년 5월 4일 甲에게 그 차액 20억원에 관하여 2011년 귀속 양도소득세 및 증권거래세를 증액경정하는 처분을 하였다. (단, 甲, 乙, 丙은 모두 거주자이고, A, B, C, D는 모두 내국법인으로 전제하며, 가산세는 논외로 함)</p>
+<p class="source-paragraph">물음 1) 위 처분 중 증권거래세와 관련하여 甲이 위 증권거래세 증액경정처분은 국세의 부과제척기간이 도과된 후 이루어진 것으로서 무효라고 주장하는 것이 타당한지 여부를 설명하시오. (단, 이 사례에서 증권거래세의 부과제척기간의 기산일은 2012년 3월 1일이라고 전제한다.) (12점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2191434&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%20%EC%A0%84%EA%B3%BC%EB%AA%A9.pdf&amp;fileSeq=2191434&amp;artlSeq=5205972&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2019-08-17</p><p>기준일 확인 상태: 상태 미기재</p><p>2019-08-17 적용 출처: 국세기본법 LAWREF-NTBA-2019-08-17 (https://www.law.go.kr/법령/국세기본법/(20190101,16097,20181231)). 시험일 적용 규정: 국세기본법 제14조·제26조의2 및 2019년 당시 증권거래세법 제3조. 보충 공식 역사본 LAWREF-STT-2019-08-17 (https://www.law.go.kr/법령/증권거래세법/(20181231,16111,20181231), 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>명의자가 아닌 실질 양도자의 증권거래세 납세의무 — 시험일 기준: LAWREF-NTBA-2019-08-17, LAWREF-STT-2019-08-17; 국세기본법 제14조·제26조의2 및 2019년 당시 증권거래세법 제3조. 2026-08-29 현재 확인 항목: 증권거래세 세율·납세의무자와 국세 부과제척기간의 현행 개정. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>국세기본법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2019-08-17 · 시행일 2019-01-01) <a href="https://www.law.go.kr/법령/국세기본법/(20190101,16097,20181231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-08-11) <a href="https://www.law.go.kr/법령/국세기본법/(20260811,21860,20260811)">국가법령정보센터 원문</a></li></ul></li><li><strong>소득세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2019-08-17 · 시행일 2019-01-01) <a href="https://www.law.go.kr/법령/소득세법/(20190101,16104,20181231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>대표가 직원 명의를 거쳐 주식을 전매한 거래에서 증권거래세의 실질 납세의무자를 판정한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>甲은 자신 소유 B사 주식 50만 주의 매도가격,상대방,시점과 세무신고를 임직원 乙에게 위임했다.</li><li>乙은 C사에 100억 원으로 매도하고도 D사에 80억 원으로 매도한 뒤 재매도한 것처럼 계약서를 만들어 20억 원을 횡령했다.</li><li>乙은 80억 원 계약서로 2012년 2월 신고했고, 과세관청은 2018년 5월 4일 20억 원을 증액경정했다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 국세기본법 제14조이다.</li><li>증권거래세를 법정기한에 신고하지 않으면 국세기본법상 7년의 부과제척기간을 적용한다.</li><li>기간계산,소결: 무신고 제척기간의 기산일은 2012-03-01이고 처분일은 2018-05-04이다.</li><li>사실포섭,소결: 乙이 50만 주 거래의 처분권과 대금 흐름을 지배했는지, 甲 명의 신고가 乙의 신고로 볼 수 있는지를 구분한다.</li><li>증빙,세무조사 활용: C,D사 주식매매계약, 80억,100억 대금흐름, 명의자 지시관계와 신고일을 추적한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 甲은 자신 소유 B사 주식 50만 주의 매도가격,상대방,시점과 세무신고를 임직원 乙에게 위임했다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 乙은 C사에 100억 원으로 매도하고도 D사에 80억 원으로 매도한 뒤 재매도한 것처럼 계약서를 만들어 20억 원을 횡령했다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 명의자가 아닌 실질 양도자의 증권거래세 납세의무 — 시험일 기준: , ; 국세기본법 제14조,제26조의2 및 2019년 당시 증권거래세법 제3조. 2026-08-29 현재 확인 항목: 증권거래세 세율,납세의무자와 국세 부과제척기간의 현행 개정. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>증권거래세를 법정기한에 신고하지 않으면 국세기본법상 7년의 부과제척기간을 적용한다.</li><li>기간계산,소결: 무신고 제척기간의 기산일은 2012-03-01이고 처분일은 2018-05-04이다.</li><li>사실포섭,소결: 乙이 50만 주 거래의 처분권과 대금 흐름을 지배했는지, 甲 명의 신고가 乙의 신고로 볼 수 있는지를 구분한다.</li><li>증빙,세무조사 활용: C,D사 주식매매계약, 80억,100억 대금흐름, 명의자 지시관계와 신고일을 추적한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>甲이 소유한 B사 주식의 매도와 세무신고를 임직원 乙에게 위임했고, 乙이 20억 원을 횡령하려고 허위 중간거래를 만든 경우 그 부정행위를 甲의 증권거래세 신고에 귀속시켜 장기 부과제척기간을 적용할지가 쟁점이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>사기나 그 밖의 부정한 행위로 국세를 포탈한 경우에는 당시 국세기본법의 10년 제척기간이 적용된다. 납세자가 처분·신고 권한을 넘긴 대리인과 사용인이 권한 범위 안에서 허위계약서를 작성하고 허위신고한 행위도 원칙적으로 납세자의 부정행위에 포함된다. 다만 납세자가 방지에 상당한 주의·감독을 다했다는 특별한 사정은 별도로 심리한다. 시험연도 적용근거는 국세기본법 제14조·제26조의2 및 2019년 당시 증권거래세법 제3조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>甲은 乙에게 매도가격·상대방·시점을 정할 전권과 양도소득세·증권거래세 신고 업무를 넘겼다. C사와의 100억 원 계약·대금지급 내역을 D사와의 80억 원 중간계약·신고서와 비교하면, 乙이 실제 양도대금 20억 원을 빼돌리기 위해 2단계 거래를 꾸미고 80억 원만 신고한 불일치가 드러난다. 이 허위계약·과소신고는 과세표준을 은폐한 적극적 수단이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 계산</div><p>문제가 전제한 기산일은 2012년 3월 1일이다. 10년 제척기간이 적용되면 2018년 5월 4일 증액경정은 기간 안에 있고, 5년 일반기간이라면 이미 기간이 지났다. 따라서 乙의 부정행위가 신고 대리권한 안에서 행해졌는지가 결정적이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>乙이 자신의 횡령을 숨기려는 동기도 있었지만, 甲에게 위임받은 주식 매도와 세무신고 범위에서 허위계약서로 과소표준을 숨겼다. 甲이 상당한 주의·감독을 다했다는 특별한 사정도 제시되지 않았으므로 10년 기간을 적용하고, 甲의 제척기간 도과 주장은 타당하지 않다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>공제 판단 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 판단 질문을 판정선으로 만든다. “자신의 판정선” 자료를 조문표로 확인한다. 국세기본법 제14조 근거는 답안에 원칙표로 남긴다.</p><h3>쉬운 말로</h3><p>계산 전 명의자가 아닌 실질 양도자의 증권거래세 납세의무를 판정선으로 기억한다. 국세기본법 제14조에서 조문표를 찾는다. “C사의 조문표” 자료를 원칙표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>메모 시작 국세기본법 제14조의 원칙을 검산표로 적는다. 예외는 “C사의 검산표”에서 찾는다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 결론은 효과표로 분해한다.</p><h3>쉬운 말로</h3><p>규범부터 명의자가 아닌 실질 양도자의 증권거래세 납세의무를 검산표로 기억한다. 국세기본법 제14조에서 효과표를 찾는다. “80억의 효과표” 자료를 사례표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>사례 메모 명의자가 아닌 실질 양도자의 증권거래세 납세의무를 계산축으로 연결한다. 국세기본법 제14조에서 예외표를 읽는다. 세무조사에서는 “80억의 계산축” 자료를 예외표로 연결한다.</p><h3>쉬운 말로</h3><p>시험 답안 “자신의 예외표”라는 사실을 계산축으로 표시한다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무가 국세기본법 제14조의 범위에서 판단한다. 예외표에서 증빙은 예외표로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 계산</div><h3>왜 필요한가요?</h3><p>답안 시작 명의자가 아닌 실질 양도자의 증권거래세 납세의무를 확인축으로 선별한다. 국세기본법 제14조에서 확인표를 읽는다. 세무조사에서는 “자신의 확인축” 자료를 대사표로 확정한다.</p><h3>쉬운 말로</h3><p>판정 마무리 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 원칙과 예외를 확인축으로 가른다. “C사의 확인표” 자료를 확인표로 살핀다. 국세기본법 제14조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>주체 확인 “C사의 주체표”라는 사실을 주체표로 잡는다. 국세기본법 제14조의 요건은 주체선에서 확인한다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 효과를 법리칸으로 정리한다.</p><h3>쉬운 말로</h3><p>시험 답안 국세기본법 제14조가 정한 주체표를 읽는다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무에 “80억의 주체선” 자료를 주체선으로 대입한다. 결과는 법리칸으로 적는다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/2026-08-22-ntba-substance-over-form-001.html">실질과세 원칙: 귀속과 거래내용의 실질</a></h3><p class="law-name">국세기본법</p><p>세무조사에서는 “자신의 기간표” 증빙을 기간표로 찾는다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 효과는 국세기본법 제14조와 연결한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-attribution-001.html">명의와 실제 소득귀속의 불일치</a></h3><p class="law-name">소득세법</p><p>국세기본법 제14조의 기준을 공제표로 적는다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 판단은 결론축에서 본다. 세무조사에서는 “C사의 공제표” 자료를 계약표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ntba-limitation-001.html">국세부과 제척기간의 구조</a></h3><p class="law-name">국세기본법</p><p>국세기본법 제14조 기준은 기록표로 옮겨 적는다. 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 범위는 증빙표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [명의자가 아닌 실질 양도자의 증권거래세 납세의무에서 국세기본법 제14조,제26조의2 및 2019년 당시 증권거래세법의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 국세기본법 제14조의 요건과 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [명의자가 아닌 실질 양도자의 증권거래세 납세의무의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 국세기본법 제14조의 요건과 명의자가 아닌 실질 양도자의 증권거래세 납세의무의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>乙이 실제 매매가격을 甲에게 숨겼지만 과소신고용 허위 중간계약은 만들지 않은 경우, 장기 제척기간의 적용 여부를 다시 판단한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2018-P2-Q4-S3/"><span>이전</span><small>2018년 제55회 세법학 2부 문제 4-3</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2019-P1-Q1-S2/"><span>다음</span><small>2019년 제56회 세법학 1부 문제 1-2</small></a></nav></main>
+</body>
+</html>

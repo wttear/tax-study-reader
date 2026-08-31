@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2020년 제57회 세법학 1부 문제 2-1 · 예금유치 소개수수료의 이자소득·사업소득 구분: 자금중개업자가 예금 유치 대가로 받은 1억 원을 이자소득으로 신고한 사례의 사업소득 해당 여부를 판단한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>예금유치 소개수수료의 이자소득·사업소득 구분: 자금중개업자가 예금 유치 대가로 받은 1억 원을 이자소득으로 신고한 사례의 사업소득 해당 여부를 판단한다.</h1><p>2020년 제57회 세법학 1부 문제 2-1</p><p class="question-progress">165 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2020년 제57회 세법학 1부 문제 2-1</span><span>15점</span></div><p class="source-paragraph">【문제 2】 다음 각 사례를 읽고 물음에 답하시오. (30점) &lt;사례 1&gt; [우주사]라는 상호로 대금업을 영위하는 거주자 甲은 2018년 3월 4일부터 2018년 12월 15일까지 자금주들에게 A상호신용금고(이하 [A금고]라 함)를 소개하여 합계 60억 원의 예금을 A금고에 유치하여 주었다. 甲은 위 기간 동안 A금고로부터 예금유치 관련 수수료(이하 [이 사건 수수료]라 함) 1억 원을 지급받았다. 이 때 A금고는 甲에게 지급한 이 사건 수수료에 대해 이자소득으로 원천징수하였다. 2019년 5월 20일 甲은 이 사건 수수료 1억 원을 이자소득으로 종합소득세 신고납부하였다. 이에 과세관청은 이 사건 수수료가 사업소득에 해당한다고 보아 2020년 7월 11일 甲에게 2018년도 귀속 종합소득세 증액경정처분(이하 [이 사건 처분]이라 함)을 하였다. &lt;사례 2&gt; 거주자 甲은 거주자 乙과 함께 부동산매매업을 공동으로 영위하기로 계약을 체결하고, 2015년 6월 지분의 1/2인 2억 원을 출자하였다. 甲과 乙은 경매 등을 통한 부동산의 취득과 양도를 여러 차례 함께 영위하여 왔고, 약정된 손익분배비율에 따라 공동사업에서 발생한 소득금액을 분배하였다. 그런데 甲과 乙은 2017년 4월 30일 공동사업을 하지 않기로 하였다. 이 때 乙은 甲의 출자금의 반환에 갈음하여 乙 소유의 과수원(이하 [이 사건 과수원]이라 함)을 2017년 9월까지 이전하기로 약정하였다. 하지만 甲과 乙 간의 분쟁으로 그에 관한 소유권이전등기가 지체되던 중 한국토지주택공사가 이 사건 과수원을 수용하면서 피공탁자를 乙로 하여 수용보상금을 공탁하였고, 甲은 乙을 상대로 공탁금출급청구권 양도를 구하는 소를 제기하여 승소판결을 받아 2018년 9월 23일 乙이 받은 수용보상금 3억 원을 수령하였다. 이에 과세관청은 甲이 받은 수용보상금 3억 원에서 출자금 2억 원을 공제한 1억 원을 동업관계 탈퇴에 따른 배당소득으로 보아 2020년 7월 30일 甲에게 2018년도 귀속 종합소득세 증액경정처분(이하 [이 사건 처분]이라 함)을 하였다.</p>
+<p class="source-paragraph">물음 1) &lt;사례 1&gt;에서 「소득세법」상 이자소득과 사업소득의 판단기준에 대해 설명하고, 이 사건 처분이 적법한지를 설명하시오. (15점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2197071&amp;fileName=2%EC%B0%A8%EC%8B%9C%ED%97%98%20%EB%AC%B8%EC%A0%9C%EC%A7%80.pdf&amp;fileSeq=2197071&amp;artlSeq=5207934&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2020-12-05</p><p>기준일 확인 상태: 상태 미기재</p><p>2020-12-05 적용 출처: 소득세법 LAWREF-ITA-2020-12-05 (https://www.law.go.kr/법령/소득세법/(20200828,16568,20190827)). 시험일 적용 규정: 소득세법 제16조·제19조.</p><h3>현행법과의 차이</h3><p>예금유치 소개수수료의 이자소득·사업소득 구분 — 시험일 기준: LAWREF-ITA-2020-12-05; 소득세법 제16조·제19조. 2026-08-29 현재 확인 항목: 금융중개 수수료의 사업소득 분류와 금융소득 범위의 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 조사 결론은 해당 최신 조문 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>소득세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2020-12-05 · 시행일 2020-08-28) <a href="https://www.law.go.kr/법령/소득세법/(20200828,16568,20190827)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>자금중개업자가 예금 유치 대가로 받은 1억 원을 이자소득으로 신고한 사례의 사업소득 해당 여부를 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>甲은 위 기간 동안 A금고로부터 예금유치 관련 수수료 1억 원을 지급받았다.</li><li>2019년 5월 20일 甲은 이 사건 수수료 1억 원을 이자소득으로 종합소득세 신고납부하였다.</li><li>A금고는 甲에게 지급한 예금유치 수수료 1억 원을 이자소득으로 원천징수했지만, 과세관청은 독립적,반복적 중개용역의 대가인 사업소득으로 경정하였다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 소득세법 제16조, 소득세법 제19조이다.</li><li>이자소득은 금전 사용의 대가이고, 독립된 지위에서 계속,반복적으로 예금 유치,자금중개 용역을 제공해 받은 수수료는 사업소득이다.</li><li>사실별 처리: 소개계약, 예금자 모집 횟수, 수수료 산식, 인적,물적 조직과 원천징수 내역을 확인한다.</li><li>사실포섭,소결: 중개계약, 고객 모집 횟수, 사업장,인력, 수수료 산정방식과 원천징수 내역을 확인한다.</li><li>증빙,세무조사 활용: 소개계약, 예금자 모집 횟수, 수수료 산식, 인적,물적 조직과 원천징수 내역을 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 甲은 위 기간 동안 A금고로부터 예금유치 관련 수수료 1억 원을 지급받았다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 2019년 5월 20일 甲은 이 사건 수수료 1억 원을 이자소득으로 종합소득세 신고납부하였다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 예금유치 소개수수료의 이자소득,사업소득 구분 — 시험일 기준: ; 소득세법 제16조,제19조. 2026-08-29 현재 확인 항목: 금융중개 수수료의 사업소득 분류와 금융소득 범위의 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 조사 결론은 해당 최신 조문 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>이자소득은 금전 사용의 대가이고, 독립된 지위에서 계속,반복적으로 예금 유치,자금중개 용역을 제공해 받은 수수료는 사업소득이다.</li><li>사실별 처리: 소개계약, 예금자 모집 횟수, 수수료 산식, 인적,물적 조직과 원천징수 내역을 확인한다.</li><li>사실포섭,소결: 중개계약, 고객 모집 횟수, 사업장,인력, 수수료 산정방식과 원천징수 내역을 확인한다.</li><li>증빙,세무조사 활용: 소개계약, 예금자 모집 횟수, 수수료 산식, 인적,물적 조직과 원천징수 내역을 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 예금유치 소개수수료의 이자소득·사업소득 구분: 자금중개업자가 예금 유치 대가로 받은 1억 원을 이자소득으로 신고한 사례의 사업소득 해당 여부를 판단한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법리·법정요건: 이자소득은 금전 사용의 대가이고, 독립된 지위에서 계속·반복적으로 예금 유치·자금중개 용역을 제공해 받은 수수료는 사업소득이다. 지급자가 금융기관이고 금액이 예금에 연동된다는 이유만으로 이자가 되지 않는다. 시험연도 적용근거는 소득세법 제16조·제19조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>소개계약, 예금자 모집 횟수, 수수료 산식, 인적·물적 조직과 원천징수 내역을 확인한다. 예금유치 소개수수료의 이자소득·사업소득 구분 검토에서는 예금액 자체의 사용대가가 아니라 반복적인 고객 소개·중개활동의 보수이므로, 조직·횟수·영리성을 종합해 1억원을 사업소득 총수입금액으로 분류한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>증빙·세무조사 활용: 소개계약, 예금자 모집 횟수, 수수료 산식, 인적·물적 조직과 원천징수 내역을 확인한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>사실포섭·소결: 중개계약, 고객 모집 횟수, 사업장·인력, 수수료 산정방식과 원천징수 내역을 확인한다. 자금중개업자가 용역대가로 받은 1억 원은 이자소득이 아니라 사업소득으로 보는 것이 타당하다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>신고 전 소득세법 제16조의 원칙을 결론축으로 적는다. 예외는 “위의 결론축”에서 찾는다. 예금유치 소개수수료의 이자소득 사업소득 구분의 결론은 대조축으로 선별한다.</p><h3>쉬운 말로</h3><p>핵심만 예금유치 소개수수료의 이자소득 사업소득 구분의 계산표를 결론축으로 만든다. “2019년의 대조축”에서 수치를 대조축으로 옮긴다. 소득세법 제16조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>법률효과 “2019년의 기록표”라는 사실을 기록표로 잡는다. 소득세법 제19조의 요건은 기록선에서 확인한다. 예금유치 소개수수료의 이자소득 사업소득 구분의 효과를 금액표로 좁힌다.</p><h3>쉬운 말로</h3><p>시험 답안 예금유치 소개수수료의 이자소득 사업소득 구분의 계산표를 기록표로 만든다. “A금고의 기록선”에서 수치를 기록선으로 옮긴다. 소득세법 제19조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>읽기 출발 예금유치 소개수수료의 이자소득 사업소득 구분의 판단 질문을 답안칸으로 만든다. “A금고의 답안칸” 자료를 증빙표로 확인한다. 소득세법 제16조 근거는 답안에 요건표로 남긴다.</p><h3>쉬운 말로</h3><p>두 번째 세무조사에서는 “위의 증빙표” 증빙을 답안칸으로 찾는다. 예금유치 소개수수료의 이자소득 사업소득 구분이 소득세법 제16조 선에서 정한다. 요건표에서 결론은 증빙표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>핵심은 예금유치 소개수수료의 이자소득 사업소득 구분을 자료칸으로 설명한다. 소득세법 제19조에서 조사표를 읽는다. 세무조사에서는 “위의 자료칸” 자료를 세율표로 교차한다.</p><h3>쉬운 말로</h3><p>사례 대입 예금유치 소개수수료의 이자소득 사업소득 구분을 자료칸으로 기억한다. 소득세법 제19조에서 조사표를 찾는다. “2019년의 조사표” 자료를 세율표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>재확인 소득세법 제16조가 정한 조사표를 먼저 본다. 예금유치 소개수수료의 이자소득 사업소득 구분에 “2019년의 조사표” 자료를 연결고리로 옮긴다. 판례표에서 결론은 소득세법 제16조를 근거로 좁힌다.</p><h3>쉬운 말로</h3><p>숫자를 만나면 예금유치 소개수수료의 이자소득 사업소득 구분을 조사표로 기억한다. 소득세법 제16조에서 연결고리를 찾는다. “A금고의 연결고리” 자료를 판례표로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-income-classification-001.html">사업소득과 기타소득의 구분</a></h3><p class="law-name">소득세법</p><p>소득세법 제19조의 기준을 적용표로 적는다. 예금유치 소개수수료의 이자소득 사업소득 구분의 판단은 자료표에서 본다. 세무조사에서는 “위의 적용표” 자료를 자료표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-financial-income-001.html">이자·배당소득과 금융소득 종합과세</a></h3><p class="law-name">소득세법</p><p>소득세법 제16조 기준은 환급표로 옮겨 적는다. 예금유치 소개수수료의 이자소득 사업소득 구분의 범위는 환급표로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-withholding-statement-001.html">원천징수와 지급명세서</a></h3><p class="law-name">소득세법</p><p>세무조사에서는 “A금고의 세율표” 증빙을 세율표로 찾는다. 예금유치 소개수수료의 이자소득 사업소득 구분의 효과는 소득세법 제16조와 연결한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [예금유치 소개수수료의 이자소득,사업소득 구분에서 소득세법 제16조,제19조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 소득세법 제16조의 요건과 예금유치 소개수수료의 이자소득,사업소득 구분의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [예금유치 소개수수료의 이자소득,사업소득 구분의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 소득세법 제16조의 요건과 예금유치 소개수수료의 이자소득,사업소득 구분의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>본인 예금의 이자로 동일 금액을 받은 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2020-P1-Q1-S2/"><span>이전</span><small>2020년 제57회 세법학 1부 문제 1-2</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2020-P1-Q2-S2/"><span>다음</span><small>2020년 제57회 세법학 1부 문제 2-2</small></a></nav></main>
+</body>
+</html>

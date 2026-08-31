@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2024년 제61회 세법학 1부 문제 4-2-(2) · 초과배당 증여일과 두 신고기한: 당초 증여재산가액의 증여일·신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>초과배당 증여일과 두 신고기한: 당초 증여재산가액의 증여일·신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다.</h1><p>2024년 제61회 세법학 1부 문제 4-2-(2)</p><p class="question-progress">290 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2024년 제61회 세법학 1부 문제 4-2-(2)</span><span>배점 미확인</span></div><p class="source-paragraph">【문제 4】다음 사례를 읽고 물음에 답하시오. (20점)</p>
+<p class="source-paragraph">&lt;사례&gt;</p>
+<p class="source-paragraph">비상장법인 X는 2024년 3월 5일 2023 사업연도(1.1. ∼ 12.31.)의 이익처분에 의한 현금배당 10억원을 지급하기로 주주총회에서 결의하고, 2024년 4월 10일 지급하였다. X의 주주는 거주자 甲(지분율 50 %), 乙(지분율 30 %), 丙(지분율 20 %)이며 甲 1억원, 乙 8억원, 丙 1억원의 배당금을 지급받았다. 甲과 乙은「상속세 및 증여세법령」상 특수관계인에 해당 하며, 甲, 乙, 丙은「소득세법령」상 성실신고확인대상사업자에 해당하지 않는다.</p>
+<p class="source-paragraph">물음 2) &lt;사례&gt;와 관련하여 다음 (1), (2)에 대하여 답하시오. (11점)</p>
+<p class="source-paragraph">(2) 「상속세 및 증여세법령」상 乙의 당초 증여재산가액에 대한 증여일 및 증여세 과세 표준 신고기한, 정산 증여재산가액에 대한 증여세 과세표준 신고기한을 다음 (예시)와 같이 각각 제시하시오.</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2210415&amp;fileName=2024%EB%85%84%20%EC%A0%9C61%ED%9A%8C%20%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%EC%8B%9C%ED%97%98%20%EC%8B%9C%ED%97%98%EC%A7%80%20%EC%9B%90%EB%B3%B8.zip&amp;fileSeq=2210415&amp;artlSeq=5213627&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2024-08-10</p><p>기준일 확인 상태: 상태 미기재</p><p>2024-08-10 시행 상속세 및 증여세법 제41조의2·제68조와 상속세 및 증여세법 시행령 제31조의2, 국세기본법 제5조를 적용한다. 상속세 및 증여세법 제41조의2에 따라 초과배당의 증여일은 배당금을 지급받은 날이다. 당초 증여세 신고는 같은 법 제68조에 따라 증여일이 속하는 달의 말일부터 3개월 이내이고, 정산증여재산가액 신고는 제41조의2 제3항에 따라 초과배당 발생연도의 다음 연도 5월 1일부터 5월 31일까지다. 기한 말일이 토요일이면 국세기본법 제5조에 따라 다음 날 중 휴일이 아닌 날로 미뤄진다. 배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다. 2025년 5월 31일은 토요일이므로 정산 증여세 신고기한은 2025년 6월 2일이다. 사례는 성실신고확인대상자가 아니므로 6월 30일 특례를 적용하지 않는다. 결론은 다음과 같다. 증여일 2024년 4월 10일, 당초 신고기한 2024년 7월 31일, 정산 신고기한 2025년 6월 2일이다.</p><h3>현행법과의 차이</h3><p>2026-08-29 현행 상속세 및 증여세법 제41조의2·제68조 대조: 배당 수령일을 증여일로 보고 당초 신고는 증여월 말일부터 3개월, 정산 신고는 다음 연도 5월로 나누는 기준이 유지된다. 제시한 세 날짜는 2024년 사례 달력에 따른 결론이다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>상속세 및 증여세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2024-08-10 · 시행일 2024-07-19) <a href="https://www.law.go.kr/법령/상속세 및 증여세법/(20240719,19563,20230718)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-01-02) <a href="https://www.law.go.kr/법령/상속세 및 증여세법/(20260102,21065,20251001)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>초과배당 증여일과 두 신고기한: 당초 증여재산가액의 증여일,신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다.</li><li>당초 증여재산가액의 증여일,신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 상속세 및 증여세법 제41조의2, 상속세 및 증여세법 시행령 제31조의2, 국세기본법 제5조이다.</li><li>당초 증여재산가액의 증여일,신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다.</li><li>상속세 및 증여세법 제41조의2에 따라 초과배당의 증여일은 배당금을 지급받은 날이다.</li><li>배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다.</li><li>배당지급일, 증여세 당초 신고, 2024년 소득세 확정신고, 정산신고 접수.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 당초 증여재산가액의 증여일,신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 2026-08-29 현행 상속세 및 증여세법 제41조의2,제68조 대조: 배당 수령일을 증여일로 보고 당초 신고는 증여월 말일부터 3개월, 정산 신고는 다음 연도 5월로 나누는 기준이 유지된다. 제시한 세 날짜는 2024년 사례 달력에 따른 결론이다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>당초 증여재산가액의 증여일,신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다.</li><li>상속세 및 증여세법 제41조의2에 따라 초과배당의 증여일은 배당금을 지급받은 날이다.</li><li>배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다.</li><li>배당지급일, 증여세 당초 신고, 2024년 소득세 확정신고, 정산신고 접수.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>출제요구: 당초 증여재산가액의 증여일·신고기한과 정산 증여재산가액의 신고기한을 실제 날짜 형식으로 각각 계산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2024-08-10 시행 기준. 시험일 규범: 상속세 및 증여세법 제41조의2에 따라 초과배당의 증여일은 배당금을 지급받은 날이다. 당초 증여세 신고는 같은 법 제68조에 따라 증여일이 속하는 달의 말일부터 3개월 이내이고, 정산증여재산가액 신고는 제41조의2 제3항에 따라 초과배당 발생연도의 다음 연도 5월 1일부터 5월 31일까지다. 기한 말일이 토요일이면 국세기본법 제5조에 따라 다음 날 중 휴일이 아닌 날로 미뤄진다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>사례 적용·계산: 배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다. 2025년 5월 31일은 토요일이므로 정산 증여세 신고기한은 2025년 6월 2일이다. 사례는 성실신고확인대상자가 아니므로 6월 30일 특례를 적용하지 않는다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>결론: 증여일 2024년 4월 10일, 당초 신고기한 2024년 7월 31일, 정산 신고기한 2025년 6월 2일이다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>먼저 초과배당 증여일과 두를 귀속칸으로 검산한다. 상속·증여세법 제41조의2에서 문언표를 읽는다. 세무조사에서는 “배당의 귀속칸” 자료를 법리칸으로 확정한다.</p><h3>쉬운 말로</h3><p>사실 표시 초과배당 증여일과 두의 계산표를 귀속칸으로 만든다. “당초의 문언표”에서 수치를 문언표로 옮긴다. 상속·증여세법 제41조의2를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>법률효과 상속·증여세법 시행령 제31조의2가 정한 공제표를 먼저 본다. 초과배당 증여일과 두에 “당초의 공제표” 자료를 기록선으로 옮긴다. 법리축에서 결론은 상속·증여세법 시행령 제31조의2를 근거로 분해한다.</p><h3>쉬운 말로</h3><p>계산 전 초과배당 증여일과 두를 공제표로 기억한다. 상속·증여세법 시행령 제31조의2에서 기록선을 찾는다. “배당의 기록선” 자료를 법리축으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>결론 정리 “배당의 수치표”라는 사실을 수치표로 잡는다. 국세기본법 제5조의 요건은 효과표에서 확인한다. 초과배당 증여일과 두의 효과를 계산칸으로 분리한다.</p><h3>쉬운 말로</h3><p>증빙 정리 “당초의 효과표”라는 사실을 수치표로 표시한다. 초과배당 증여일과 두가 국세기본법 제5조의 범위에서 판단한다. 계산칸에서 증빙은 효과표로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>숫자 확인 상속·증여세법 제41조의2의 원칙을 대조축으로 적는다. 예외는 “당초의 대조축”에서 찾는다. 초과배당 증여일과 두의 결론은 사례표로 검산한다.</p><h3>쉬운 말로</h3><p>조문을 읽고 초과배당 증여일과 두를 대조축으로 기억한다. 상속·증여세법 제41조의2에서 사례표를 찾는다. “배당의 사례표” 자료를 적용축으로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/2026-08-22-ntba-substance-over-form-001.html">실질과세 원칙: 귀속과 거래내용의 실질</a></h3><p class="law-name">국세기본법</p><p>상속·증여세법 제41조의2의 기준을 기간표로 적는다. 초과배당 증여일과 두의 판단은 계약표에서 본다. 세무조사에서는 “배당의 기간표” 자료를 검산표로 대조한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [국세기본법 제5조의 기한,주체,효과를 다른 절차의 기준과 바꾸어 쓰는]이다. 관련 법령인 상속세 및 증여세법 제41조의2의 요건과 초과배당 증여일과 두 신고기한의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [배당 지급일 2024년 4월 10일이 증여일이고, 당초 증여세 신고기한은 2024년 7월 31일이다 계산 또는 사실포섭의 중간단계를 생략하는]이다. 관련 법령인 상속세 및 증여세법 제41조의2의 요건과 초과배당 증여일과 두 신고기한의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [과세관청 조사절차에서 앞 자료 중 하나를 빠뜨려 초과배당 증여일과 두 신고기한의 접수,발송,도달 시점과 작성,수령 주체를 순서대로 재구성하여 국세기본법 제5조의 절차요건 충족 여부를 판정하지 못하는]이다. 관련 법령인 상속세 및 증여세법 제41조의2의 요건과 초과배당 증여일과 두 신고기한의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>배당결의일과 실제 지급일이 다른 사업연도에 속한 경우 증여일을 다시 판단한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2024-P1-Q4-S2-N1/"><span>이전</span><small>2024년 제61회 세법학 1부 문제 4-2-(1)</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2024-P2-Q1-S1/"><span>다음</span><small>2024년 제61회 세법학 2부 문제 1-1</small></a></nav></main>
+</body>
+</html>

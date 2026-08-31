@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2017년 제54회 세법학 1부 문제 2-3 · 공동사업장 무상사용 부동산의 임대소득 과세: 공동사업자 을이 자기 지분의 토지·건물을 무상 제공한 경우 임대료 상당액 과세 여부를 검토한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>공동사업장 무상사용 부동산의 임대소득 과세: 공동사업자 을이 자기 지분의 토지·건물을 무상 제공한 경우 임대료 상당액 과세 여부를 검토한다.</h1><p>2017년 제54회 세법학 1부 문제 2-3</p><p class="question-progress">83 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2017년 제54회 세법학 1부 문제 2-3</span><span>8점</span></div><p class="source-paragraph">【문제 2】 다음 사례를 읽고 물음에 답하시오. (30점) &lt;사례&gt; 甲, 乙, 丙, 丁(모두 거주자임)이 공동사업자인 A기업은 2014년 7월 1일 사업자등록증을 발급받아 제조업을 영위하고 있다. 甲과 乙은 부부이고, 丙과 丁은 甲과 乙의 자녀이다. 사업장의 건물과 토지는 甲과 乙의 공동명의(지분율 50:50)로 되어 있으나, 乙은 사업장으로 사용하고 있는 건물과 토지의 임대료를 전혀 수령하지 않고 있다. 乙은 실질적으로 경영에 관여하지 않고 전업주부로 일하고 있는 반면, 丙은 실질적으로 경영에 관여하고 있다. 丁은 대학생으로 경영에는 관여하지 않고 수업이 없는 날 가끔씩 사업장에 들러 경리업무를 보고 있다. 甲, 乙, 丁은 사업자등록일로부터 현재까지 동거하고 있으나, 丙은 결혼하여 별도세대를 구성하고 있다. 사업자등록 당시 세무서에 신고된 공동사업자들의 손익분배비율과 출자비율은 다음과 같다. (단, 丙을 제외한 나머지 공동사업자들의 손익분배비율 및 출자비율은 사실에 의하지 아니하고 임의로 정한 것으로 확인되었다.)</p>
+<div class="table-scroll" tabindex="0" aria-label="공동사업자들의 손익분배비율과 출자비율 표 가로 스크롤"><table class="source-table"><caption>공동사업자들의 손익분배비율과 출자비율</caption><thead><tr><th scope="col">공동사업자</th><th scope="col">손익분배비율</th><th scope="col">출자비율</th></tr></thead><tbody><tr><td data-label="공동사업자">甲(부)</td><td data-label="손익분배비율">30%</td><td data-label="출자비율">45%</td></tr><tr><td data-label="공동사업자">乙(모)</td><td data-label="손익분배비율">20%</td><td data-label="출자비율">20%</td></tr><tr><td data-label="공동사업자">丙(자)</td><td data-label="손익분배비율">25%</td><td data-label="출자비율">25%</td></tr><tr><td data-label="공동사업자">丁(자)</td><td data-label="손익분배비율">25%</td><td data-label="출자비율">10%</td></tr><tr><td data-label="공동사업자">합계</td><td data-label="손익분배비율">100%</td><td data-label="출자비율">100%</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" aria-label="공동사업장을 1거주자로 보아 계산한 2016년의 사업소득금액 내역 표 가로 스크롤"><table class="source-table"><caption>공동사업장을 1거주자로 보아 계산한 2016년의 사업소득금액 내역</caption><thead><tr><th scope="col">항목</th><th scope="col">금액</th></tr></thead><tbody><tr><td data-label="항목">총수입금액</td><td data-label="금액">10,000,000,000원</td></tr><tr><td data-label="항목">필요경비</td><td data-label="금액">6,000,000,000원</td></tr><tr><td data-label="항목">사업소득금액</td><td data-label="금액">4,000,000,000원</td></tr></tbody></table></div>
+<p class="source-paragraph">[물음 3] 위 사례에서 乙의 임대료에 대한 「소득세법」상 과세 문제에 대하여 설명하시오. (8점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2186083&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%99%201%EB%B6%80.pdf&amp;fileSeq=2186083&amp;artlSeq=5202005&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2017-08-19</p><p>기준일 확인 상태: 상태 미기재</p><p>2017-08-19 적용 출처: 소득세법 LAWREF-ITA-2017-08-19 (https://www.law.go.kr/법령/소득세법/(20170701,14389,20161220)). 시험일 적용 규정: 소득세법 제41조 및 당시 시행령의 부당행위계산. 보충 시행령 출처 LAWREF-ITA-DECREE-2017-08-19 (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=195500&amp;efYd=20170726, 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>공동사업장 무상사용 부동산의 임대소득 과세 — 시험일 기준: LAWREF-ITA-2017-08-19; 소득세법 제41조 및 당시 시행령의 부당행위계산. 2026-08-29 현재 확인 항목: 공동사업장 무상사용에 대한 부당행위계산 대상과 시가 산정방법. 이 기록은 시험일 시행본을 고정하며, 2026 신고 결론은 해당 최신 시행본 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>소득세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2017-08-19 · 시행일 2017-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20170701,14389,20161220)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>공동사업자 을이 자기 지분의 토지,건물을 무상 제공한 경우 임대료 상당액 과세 여부를 검토한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>(단, 丙을 제외한 나머지 공동사업자들의 손익분배비율 및 출자비율은 사실에 의하지 아니하고 임의로 정한 것으로 확인되었다.) 甲(부) 30% 45% 乙(모) 20% 20% 丙(자) 25% 25% 丁(자) 25% 10% 합계 100% 100% 총수입금액 10,000,000,000원 필요경비 6,000,000,000원 사업소득금액 4,000,000,000원.</li><li>甲, 乙, 丙, 丁(모두 거주자임)이 공동사업자인 A기업은 2014년 7월 1일 사업자등록증을 발급받아 제조업을 영위하고 있다.</li><li>사업장의 건물과 토지는 甲과 乙의 공동명의(지분율 50:50)로 되어 있으나, 乙은 사업장으로 사용하고 있는 건물과 토지의 임대료를 전혀 수령하지 않고 있다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 소득세법 제41조, 소득세법 제19조이다.</li><li>공동사업자가 자기 소유 부동산을 공동사업에 무상 제공한 경우 실제 임대계약,임대료 수취가 없으면 곧바로 임대소득이 발생하지 않는다.</li><li>신고서 반영: 등기 지분, 임대차 약정 부재, 사용면적, 시가 임대료와 공동사업 필요경비 반영 여부를 본다.</li><li>사실포섭,소결: 乙은 경영에 관여하지 않으면서 지분 50%의 토지,건물을 무상 제공했다.</li><li>증빙,세무조사 활용: 등기 지분, 임대차 약정 부재, 사용면적, 시가 임대료와 공동사업 필요경비 반영 여부를 본다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: (단, 丙을 제외한 나머지 공동사업자들의 손익분배비율 및 출자비율은 사실에 의하지 아니하고 임의로 정한 것으로 확인되었다.) 甲(부) 30% 45% 乙(모) 20% 20% 丙(자) 25% 25% 丁(자) 25% 10% 합계 100% 100% 총수입금액 10,000,000,000원 필요경비 6,000,000,000원 사업소득금액 4,000,000,000원. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 甲, 乙, 丙, 丁(모두 거주자임)이 공동사업자인 A기업은 2014년 7월 1일 사업자등록증을 발급받아 제조업을 영위하고 있다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 공동사업장 무상사용 부동산의 임대소득 과세 — 시험일 기준: ; 소득세법 제41조 및 당시 시행령의 부당행위계산. 2026-08-29 현재 확인 항목: 공동사업장 무상사용에 대한 부당행위계산 대상과 시가 산정방법. 이 기록은 시험일 시행본을 고정하며, 2026 신고 결론은 해당 최신 시행본 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>공동사업자가 자기 소유 부동산을 공동사업에 무상 제공한 경우 실제 임대계약,임대료 수취가 없으면 곧바로 임대소득이 발생하지 않는다.</li><li>신고서 반영: 등기 지분, 임대차 약정 부재, 사용면적, 시가 임대료와 공동사업 필요경비 반영 여부를 본다.</li><li>사실포섭,소결: 乙은 경영에 관여하지 않으면서 지분 50%의 토지,건물을 무상 제공했다.</li><li>증빙,세무조사 활용: 등기 지분, 임대차 약정 부재, 사용면적, 시가 임대료와 공동사업 필요경비 반영 여부를 본다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 공동사업장 무상사용 부동산의 임대소득 과세: 공동사업자 을이 자기 지분의 토지·건물을 무상 제공한 경우 임대료 상당액 과세 여부를 검토한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법리·법정요건: 공동사업자가 자기 소유 부동산을 공동사업에 무상 제공한 경우 실제 임대계약·임대료 수취가 없으면 곧바로 임대소득이 발생하지 않는다. 다만 특수관계 거래로 소득세 부담을 부당하게 감소시켰다면 시가 임대료를 기준으로 부당행위계산을 할 수 있다. 시험연도 적용근거는 소득세법 제41조 및 당시 시행령의 부당행위계산이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 세무조정</div><p>등기사항증명서의 乙 지분, 임대차계약의 부재, 공동사업 사용면적과 시가 임대료를 공동사업장 장부의 감가상각비·재산세와 대사한다. 乙이 자기 자산을 공동사업에 무상 제공했다는 사실만으로 임대료 수입을 만들지 말고, 별도 임대행위 또는 특수관계 부당행위계산 요건이 확인되는 때에만 시가 조정을 검토한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>증빙·세무조사 활용: 등기 지분, 임대차 약정 부재, 사용면적, 시가 임대료와 공동사업 필요경비 반영 여부를 본다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>사실포섭·소결: 乙은 경영에 관여하지 않으면서 지분 50%의 토지·건물을 무상 제공했다. 시가 임대료, 공동사업 필요경비 반영과 乙의 다른 소득을 대사해 조세부담 감소가 객관적으로 인정되는지 판단한다. 무상사용 사실만으로 의제임대료를 단정하지 말고 부당행위계산 요건이 충족되는 범위에서 乙의 부동산임대소득을 계산한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>마지막 점검 공동사업장 무상사용 부동산의 임대소득 과세의 계산축을 경계선으로 세운다. 수치는 “단의 경계선”에서 읽는다. 소득세법 제41조를 대입해 분해한다.</p><h3>쉬운 말로</h3><p>조문을 읽고 공동사업장 무상사용 부동산의 임대소득 과세의 계산표를 경계선으로 만든다. “모두의 적용축”에서 수치를 적용축으로 옮긴다. 소득세법 제41조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>증빙 확인 “모두의 판례표”라는 사실을 판례표로 잡는다. 소득세법 제19조의 요건은 계산축에서 확인한다. 공동사업장 무상사용 부동산의 임대소득 과세의 효과를 주체선으로 대조한다.</p><h3>쉬운 말로</h3><p>주체 점검 공동사업장 무상사용 부동산의 임대소득 과세를 판례표로 기억한다. 소득세법 제19조에서 계산축을 찾는다. “사업장의 계산축” 자료를 주체선으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 세무조정</div><h3>왜 필요한가요?</h3><p>증빙 확인 공동사업장 무상사용 부동산의 임대소득 과세를 대조축으로 확정한다. 소득세법 제41조에서 조문표를 읽는다. 세무조사에서는 “사업장의 대조축” 자료를 효과표로 확정한다.</p><h3>쉬운 말로</h3><p>요건표 작성 세무조사에서는 “단의 조문표” 증빙을 대조축으로 찾는다. 공동사업장 무상사용 부동산의 임대소득 과세가 소득세법 제41조 선에서 정한다. 효과표에서 결론은 조문표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>사례 메모 소득세법 제19조가 정한 자료칸을 먼저 본다. 공동사업장 무상사용 부동산의 임대소득 과세에 “단의 자료칸” 자료를 원칙표로 옮긴다. 검토선에서 결론은 소득세법 제19조를 근거로 설명한다.</p><h3>쉬운 말로</h3><p>검산할 때 공동사업장 무상사용 부동산의 임대소득 과세를 자료칸으로 기억한다. 소득세법 제19조에서 원칙표를 찾는다. “모두의 원칙표” 자료를 검토선으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>결론 전 공동사업장 무상사용 부동산의 임대소득 과세를 기준표로 고정한다. 소득세법 제41조에서 기준점을 읽는다. 세무조사에서는 “모두의 기준표” 자료를 금액표로 검산한다.</p><h3>쉬운 말로</h3><p>판정 마무리 “사업장의 기준점”라는 사실을 기준표로 표시한다. 공동사업장 무상사용 부동산의 임대소득 과세가 소득세법 제41조의 범위에서 판단한다. 금액표에서 증빙은 기준점으로 맞춘다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-rental-income-001.html">부동산임대소득과 간주임대료</a></h3><p class="law-name">소득세법</p><p>세무조사에서는 “단의 원가표” 증빙을 원가표로 찾는다. 공동사업장 무상사용 부동산의 임대소득 과세의 효과는 소득세법 제19조와 연결한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-related-party-001.html">특수관계인 거래와 부당행위계산</a></h3><p class="law-name">소득세법</p><p>소득세법 제41조 기준은 검산표로 옮겨 적는다. 공동사업장 무상사용 부동산의 임대소득 과세의 범위는 소득표로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-joint-business-001.html">공동사업의 소득분배와 명의</a></h3><p class="law-name">소득세법</p><p>소득세법 제41조의 기준을 귀속표로 적는다. 공동사업장 무상사용 부동산의 임대소득 과세의 판단은 순서표에서 본다. 세무조사에서는 “사업장의 귀속표” 자료를 계약표로 대조한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [공동사업장 무상사용 부동산의 임대소득 과세에서 소득세법 제41조 및 당시 시행령의 부당행위계산의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 소득세법 제41조의 요건과 공동사업장 무상사용 부동산의 임대소득 과세의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [공동사업장 무상사용 부동산의 임대소득 과세의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 소득세법 제41조의 요건과 공동사업장 무상사용 부동산의 임대소득 과세의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>을이 매월 시가의 절반에 해당하는 임대료를 실제 수령한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2017-P1-Q2-S2/"><span>이전</span><small>2017년 제54회 세법학 1부 문제 2-2</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2017-P1-Q2-S4/"><span>다음</span><small>2017년 제54회 세법학 1부 문제 2-4</small></a></nav></main>
+</body>
+</html>

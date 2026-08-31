@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2016년 제53회 세법학 2부 문제 4-1 · 벤처기업 주식매수선택권 행사이익의 범위와 납부특례 | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>벤처기업 주식매수선택권 행사이익의 범위와 납부특례</h1><p>2016년 제53회 세법학 2부 문제 4-1</p><p class="question-progress">76 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2016년 제53회 세법학 2부 문제 4-1</span><span>10점</span></div><p class="source-paragraph">【문제 4】다음 사례를 읽고 물음에 답하시오. (25점)</p>
+<p class="source-paragraph">&lt;사례&gt; 「벤처기업육성에 관한 특별조치법」에 따른 벤처기업인 A회사는 회사의 기술혁신에 우수인력인 甲이 반드시 필요하다고 판단하고 甲을 상대로 영입조건을 협상하면서 주식매수선택권 부여를 제안하였다. 이에 甲은 주식매수선택권을 받더라도 그 행사에 따른 소득세가 부담이 된다고 하면서 절세대책에 관하여 문의해왔다.</p>
+<p class="source-paragraph">[물음 1] 위 사례에서 甲에게 적용될 수 있는 「조세특례제한법」상의 벤처기업 주식매수선택권 행사이익에 대한 특례제도와 관련하여, 그 행사이익의 범위와 납부특례의 내용에 대하여 설명하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2186104&amp;fileName=(4%EA%B5%90%EC%8B%9C)%EC%84%B8%EB%B2%95%ED%95%99%202%EB%B6%80.pdf&amp;fileSeq=2186104&amp;artlSeq=5191004&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2016-08-06</p><p>기준일 확인 상태: 상태 미기재</p><p>2016-08-06 Q-Net 공식 일정의 제53회 시험 기준. 국가법령정보센터 시행본(20150429)의 조세특례제한법 제16조의2와 관련 부칙을 적용했다.</p><h3>현행법과의 차이</h3><p>벤처기업 주식매수선택권 행사이익의 범위와 납부특례: 2016년 제16조의2 납부특례는 현행 제16조의3으로 이동했고 5년 분할납부를 유지한다. 현행 제16조의2에는 연 2억원·누적 5억원 비과세가 별도로 신설됐다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>조세특례제한법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2016-08-06 · 시행일 2016-08-04) <a href="https://www.law.go.kr/법령/조세특례제한법/(20160804,13983,20160203)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>벤처기업 임직원이 스톡옵션을 행사할 때 시가와 행사가액 차이로 생기는 이익과 소득세 분할납부 제도를 설명한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>갑이 우수인력으로 영입되며 A가 벤처기업이라는 사실을 대상자,부여절차 요건에 연결한다.</li><li>행사주식 수×(행사일 시가-행사가액)로 행사이익을 계산하고 분할연도별 납부세액을 배분한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 제16조의2이다.</li><li>조세특례제한법 제16조의2. 적격 벤처기업 옵션의 행사일 시가에서 실제 행사가액을 차감한 이익에 대한 소득세를 법정 신청에 따라 일정 기간 분할납부할 수 있다.</li><li>행사주식 수×로 행사이익을 계산하고 분할연도별 납부세액을 배분한다.</li><li>갑이 우수인력으로 영입되며 A가 벤처기업이라는 사실을 대상자,부여절차 요건에 연결한다.</li><li>행사일 시가에서 행사가액을 뺀 행사이익에 대한 소득세는 신청 시 원천징수하지 않고 확정신고 때 5분의 1을 낸 뒤 나머지를 4년간 매년 5분의 1씩 분할납부한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 갑이 우수인력으로 영입되며 A가 벤처기업이라는 사실을 대상자,부여절차 요건에 연결한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 행사주식 수×(행사일 시가-행사가액)로 행사이익을 계산하고 분할연도별 납부세액을 배분한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 벤처기업 주식매수선택권 행사이익의 범위와 납부특례: 2016년 제16조의2 납부특례는 현행 제16조의3으로 이동했고 5년 분할납부를 유지한다. 현행 제16조의2에는 연 2억원,누적 5억원 비과세가 별도로 신설됐다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>조세특례제한법 제16조의2. 적격 벤처기업 옵션의 행사일 시가에서 실제 행사가액을 차감한 이익에 대한 소득세를 법정 신청에 따라 일정 기간 분할납부할 수 있다.</li><li>행사주식 수×로 행사이익을 계산하고 분할연도별 납부세액을 배분한다.</li><li>갑이 우수인력으로 영입되며 A가 벤처기업이라는 사실을 대상자,부여절차 요건에 연결한다.</li><li>행사일 시가에서 행사가액을 뺀 행사이익에 대한 소득세는 신청 시 원천징수하지 않고 확정신고 때 5분의 1을 낸 뒤 나머지를 4년간 매년 5분의 1씩 분할납부한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>Ⅰ 행사이익 계산, Ⅱ 근로·기타소득 귀속, Ⅲ 납부특례 신청, Ⅳ 분할납부 기간이 벤처기업 주식매수선택권 행사이익의 범위와 납부특례에서 차례로 판단할 항목이다. 그중 사례에서 먼저 고정할 사실은 갑이 우수인력으로 영입되며 A가 벤처기업이라는 사실을 대상자·부여절차 요건에 연결한다고 보아야 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>조세특례제한법 제16조의2. 적격 벤처기업 옵션의 행사일 시가에서 실제 행사가액을 차감한 이익에 대한 소득세를 법정 신청에 따라 일정 기간 분할납부할 수 있다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>사례에 적용하면 갑이 우수인력으로 영입되며 A가 벤처기업이라는 사실을 대상자·부여절차 요건에 연결한다. 이어서 행사주식 수×(행사일 시가-행사가액)로 행사이익을 계산하고 분할연도별 납부세액을 배분한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 결론</div><p>행사일 시가에서 행사가액을 뺀 행사이익에 대한 소득세는 신청 시 원천징수하지 않고 확정신고 때 5분의 1을 낸 뒤 나머지를 4년간 매년 5분의 1씩 분할납부한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>서류 수령 벤처기업 주식매수선택권 행사이익의 범위와 납부특례의 판단 질문을 기간선으로 만든다. “갑의 기간선” 자료를 사실칸으로 확인한다. 조세특례제한법 제16조의2 근거는 답안에 계산칸으로 남긴다.</p><h3>쉬운 말로</h3><p>계산 전 벤처기업 주식매수선택권 행사이익의 범위와 납부특례와 “행사주식의 사실칸”의 관계를 기간선으로 본다. 조세특례제한법 제16조의2와 사실칸을 함께 읽는다. 계산칸에서 세무조사에서는 장부를 계산칸으로 대조한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>사례 확인 벤처기업 주식매수선택권 행사이익의 범위와 납부특례를 적용축으로 고정한다. 조세특례제한법 제16조의2에서 조사표를 읽는다. 세무조사에서는 “행사주식의 적용축” 자료를 조사표로 맞춘다.</p><h3>쉬운 말로</h3><p>결론 메모 조세특례제한법 제16조의2가 정한 적용축을 읽는다. 벤처기업 주식매수선택권 행사이익의 범위와 납부특례에 “갑의 조사표” 자료를 조사표로 대입한다. 결과는 조사표로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>답안 시작 조세특례제한법 제16조의2가 정한 연결고리를 먼저 본다. 벤처기업 주식매수선택권 행사이익의 범위와 납부특례에 “갑의 연결고리” 자료를 대응표로 옮긴다. 귀속표에서 결론은 조세특례제한법 제16조의2를 근거로 대조한다.</p><h3>쉬운 말로</h3><p>사실부터 벤처기업 주식매수선택권 행사이익의 범위와 납부특례를 연결고리로 기억한다. 조세특례제한법 제16조의2에서 대응표를 찾는다. “행사주식의 대응표” 자료를 귀속표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 결론</div><h3>왜 필요한가요?</h3><p>메모 시작 조세특례제한법 제16조의2의 원칙을 사실칸으로 적는다. 예외는 “행사주식의 사실칸”에서 찾는다. 벤처기업 주식매수선택권 행사이익의 범위와 납부특례의 결론은 자료칸으로 추적한다.</p><h3>쉬운 말로</h3><p>계산 전 “갑의 자료칸”라는 사실을 사실칸으로 표시한다. 벤처기업 주식매수선택권 행사이익의 범위와 납부특례가 조세특례제한법 제16조의2의 범위에서 판단한다. 효과표에서 증빙은 자료칸으로 맞춘다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ita-employment-retirement-001.html">근로소득·복리후생·퇴직소득 구분</a></h3><p class="law-name">소득세법</p><p>조세특례제한법 제16조의2 기준은 대조표로 옮겨 적는다. 벤처기업 주식매수선택권 행사이익의 범위와 납부특례의 범위는 판례표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [옵션 부여일 시가로 행사이익을 계산]이다. 관련 법령인 조세특례제한법 제16조의2의 요건과 벤처기업 주식매수선택권 행사이익의 범위와 납부특례의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [납부특례를 소득 자체의 비과세로 설명]이다. 관련 법령인 조세특례제한법 제16조의2의 요건과 벤처기업 주식매수선택권 행사이익의 범위와 납부특례의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>갑이 옵션 일부만 행사했다면 행사분 이익과 분할납부액을 다시 계산한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2016-P2-Q3-S2/"><span>이전</span><small>2016년 제53회 세법학 2부 문제 3-2</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2016-P2-Q4-S2/"><span>다음</span><small>2016년 제53회 세법학 2부 문제 4-2</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2020년 제57회 세법학 2부 문제 3-2 · 잔금채무 면제의 후발적 경정청구: 특약에 따라 2년 뒤 잔금이 면제된 사실이 이미 신고한 취득세 과세표준의 후발적 경정사유인지 판단한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>잔금채무 면제의 후발적 경정청구: 특약에 따라 2년 뒤 잔금이 면제된 사실이 이미 신고한 취득세 과세표준의 후발적 경정사유인지 판단한다.</h1><p>2020년 제57회 세법학 2부 문제 3-2</p><p class="question-progress">182 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2020년 제57회 세법학 2부 문제 3-2</span><span>10점</span></div><p class="source-paragraph">【문제 3】 다음 사례를 읽고 물음에 답하시오. (20점) &lt;사례&gt; (1) 甲은 A건설회사로부터 부산시 소재 아파트를 분양받은 후 2016년 11월경 아파트 공급계약서 및 A건설회사로부터 제출받은 분양금 납부확인서를 첨부하여 취득세를 신고ㆍ납부하면서 소유권이전등기를 마쳤다. (2) 甲이 A건설회사와 체결한 공급계약서에는 아래와 같은 특약(이하 [이 사건 특약]이라 함)이 포함되어 있다. 제2조 [잔금 납부시 분양대금의 10% 2년간 납부 유예] (1) 매수인이 입주시 납부하여야 할 잔금 중 분양대금의 10%를 입주지정만료일로부터 2년간 납부 유예한다. 다만, 납부 유예한 잔금을 제외한 분양대금을 완납하면 매수인에게 아파트의 소유권을 이전하여 주기로 한다. 제3조 [분양가격 미만으로 시세 하락시 원금 보장제 적용] (1) A건설회사는 입주지정만료일로부터 2년이 경과하는 시점(기준시점)에 아파트에 대한 시세가액이 아파트의 분양가격 대비 하락시 분양가의 최대 10% 범위 내에서 아래와 같은 방법으로 잔금 납부 유예분을 처리하기로 약정한다. ① 분양가격 대비 해당 시세가액이 10% 이상 하락시 → 잔금 납부 유예분 지급면제. ② 분양가격 대비 해당 시세가액이 분양가 미만~10% 미만 하락시 → 잔금 납부 유예분 중 시세 하락분(분양가격-시세가액) 지급면제. (3) 이 사건 특약에 따라 입주지정만료일부터 약 2년이 지난 시점인 2018년 6월 30일 기준으로 아파트 시가감정을 의뢰한 결과 시세가액이 분양가격보다 10% 이상 하락된 것으로 평가되어 2018년 9월 4일 甲에게 유예된 잔금지급채무가 면제되었다. (4) 그 후 甲이 지급면제된 금액에 상응하는 취득세 환급을 구하는 경정청구를 2019년 7월경에 하였으나 乙구청장은 2019년 8월 7일 이를 거부하였다.</p>
+<p class="source-paragraph">물음 2) 「지방세기본법」상 甲에게 유예된 잔금지급채무의 면제 사실이 경정청구를 할 수 있는 사유에 해당하는가를 설명하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2197071&amp;fileName=2%EC%B0%A8%EC%8B%9C%ED%97%98%20%EB%AC%B8%EC%A0%9C%EC%A7%80.pdf&amp;fileSeq=2197071&amp;artlSeq=5207934&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2020-12-05</p><p>기준일 확인 상태: 상태 미기재</p><p>2020-12-05 적용 출처: 지방세법 LAWREF-LTA-2020-12-05 (https://www.law.go.kr/법령/지방세법/(20200828,16568,20190827)). 시험일 적용 규정: 지방세기본법 제50조. 보충 법령 출처 LAWREF-LTBA-2020-12-05 (https://www.law.go.kr/법령/지방세기본법/(20200101,16854,20191231), 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>잔금채무 면제의 후발적 경정청구 — 시험일 기준: LAWREF-LTA-2020-12-05; 지방세기본법 제50조. 2026-08-29 현재 확인 항목: 후발적 경정청구 사유·기한과 취득 후 대금감액 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>지방세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2020-12-05 · 시행일 2020-08-28) <a href="https://www.law.go.kr/법령/지방세법/(20200828,16568,20190827)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/지방세법/(20260701,21308,20251231)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>특약에 따라 2년 뒤 잔금이 면제된 사실이 이미 신고한 취득세 과세표준의 후발적 경정사유인지 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>甲은 2016년 11월 분양금 10% 잔금채무를 포함해 취득세를 신고,납부하고 아파트 소유권이전등기를 마쳤다.</li><li>특약은 입주 후 2년 시세가 분양가보다 10% 이상 하락하면 유예 잔금을 면제하도록 했다.</li><li>2018년 6월 30일 시세가 10% 이상 하락해 9월 4일 잔금채무가 면제되자 甲은 2019년 7월 취득세 경정청구를 했다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>취득 후 계약상 조건에 따라 대금채무가 확정적으로 면제되어 취득 당시 과세표준의 전제가 사후 소멸하면 법정 후발적 경정사유인지 본다.</li><li>산식: 경정요구 과세표준=당초 과세표준-조건 성취로 확정 면제된 잔금, 환급세액=감소 과세표준×적용세율.</li><li>사실포섭,소결: 산식은 경정요구액=×적용세율이며 특약이 취득 전 계약에 내재했는지와 면제일을 확인한다.</li><li>증빙,세무조사 활용: 시가감정, 특약 발효, 채무면제 회계,계좌, 경정청구일과 거부통지를 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 甲은 2016년 11월 분양금 10% 잔금채무를 포함해 취득세를 신고,납부하고 아파트 소유권이전등기를 마쳤다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 특약은 입주 후 2년 시세가 분양가보다 10% 이상 하락하면 유예 잔금을 면제하도록 했다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 잔금채무 면제의 후발적 경정청구 — 시험일 기준: ; 지방세기본법 제50조. 2026-08-29 현재 확인 항목: 후발적 경정청구 사유,기한과 취득 후 대금감액 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>취득 후 계약상 조건에 따라 대금채무가 확정적으로 면제되어 취득 당시 과세표준의 전제가 사후 소멸하면 법정 후발적 경정사유인지 본다.</li><li>산식: 경정요구 과세표준=당초 과세표준-조건 성취로 확정 면제된 잔금, 환급세액=감소 과세표준×적용세율.</li><li>사실포섭,소결: 산식은 경정요구액=×적용세율이며 특약이 취득 전 계약에 내재했는지와 면제일을 확인한다.</li><li>증빙,세무조사 활용: 시가감정, 특약 발효, 채무면제 회계,계좌, 경정청구일과 거부통지를 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>2016년 취득세 신고·등기 뒤 2018년에 원래 계약의 시세하락 특약이 성취되어 잔금채무가 면제된 사실이 취득세를 다시 계산할 법정 후발적 사유인지가 문제다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>취득세 납세의무는 취득 당시의 과세표준과 세율에 따라 성립한다. 지방세기본법의 후발적 경정청구는 판결로 거래·행위가 달라지거나 법령이 정한 사유가 신고 뒤 발생하여 당초 과세표준의 법적 기초가 소멸한 경우에만 인정된다. 취득 후 대금이 감액·면제됐다는 사정만으로 완성된 취득세 납세의무가 소급해 바뀌지 않는다. 시험연도 적용근거는 지방세기본법 제50조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>甲은 분양계약서와 분양금 납부확인서로 2016년 11월 취득세를 신고·납부하고 소유권이전등기를 마쳤다. 잔금 10%는 납부만 2년 유예됐고 취득 당시에는 채무가 존재했다. 2018년 6월 30일 시세가 분양가보다 10% 이상 낮아 9월 4일 채무가 면제된 것은 취득 완료 후의 조건 성취이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 계산</div><p>면제액×취득세율을 환급세액으로 계산하려면 먼저 그 면제가 법정 후발사유에 해당해야 한다. 이 사례의 면제는 취득 당시 확정된 가격을 취소한 판결·해제가 아니므로 세액 감소 계산으로 나아갈 수 없다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>유예된 잔금의 2018년 면제는 2016년 취득세 과세표준을 소급해 감액하는 후발적 경정청구 사유가 아니다. 따라서 甲의 경정청구를 거부한 乙구청장의 처분은 적법하다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>계산 시작 잔금채무 면제의 후발적 경정청구의 계산축을 사실축으로 세운다. 수치는 “2016년의 사실축”에서 읽는다. 시험 당시 적용 조문을 대입해 정리한다.</p><h3>쉬운 말로</h3><p>기준 설정 잔금채무 면제의 후발적 경정청구를 사실축으로 복습한다. 법령은 시험 당시 적용 조문으로 확인하고, “특약의 판례표”에서 핵심을 판례표로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>장부 대조 시험 당시 적용 조문의 원칙을 공제표로 적는다. 예외는 “특약의 공제표”에서 찾는다. 잔금채무 면제의 후발적 경정청구의 결론은 정리축으로 선별한다.</p><h3>쉬운 말로</h3><p>세무조사 “2018년의 정리축”라는 사실을 공제표로 표시한다. 잔금채무 면제의 후발적 경정청구가 시험 당시 적용 조문의 범위에서 판단한다. 답안칸에서 증빙은 정리축으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>질문 풀이 잔금채무 면제의 후발적 경정청구의 판단 질문을 공제표로 만든다. “2018년의 공제표” 자료를 공제표로 확인한다. 시험 당시 적용 조문 근거는 답안에 계산축으로 남긴다.</p><h3>쉬운 말로</h3><p>거래 추적 잔금채무 면제의 후발적 경정청구의 계산표를 공제표로 만든다. “2016년의 공제표”에서 수치를 공제표로 옮긴다. 시험 당시 적용 조문을 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 계산</div><h3>왜 필요한가요?</h3><p>처음 잔금채무 면제의 후발적 경정청구를 사실표로 검산한다. 시험 당시 적용 조문에서 대조축을 읽는다. 세무조사에서는 “2016년의 사실표” 자료를 예외표로 살핀다.</p><h3>쉬운 말로</h3><p>자료 정리 잔금채무 면제의 후발적 경정청구의 원칙과 예외를 사실표로 가른다. “특약의 대조축” 자료를 대조축으로 살핀다. 시험 당시 적용 조문으로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>공제 판단 시험 당시 적용 조문이 정한 계산축을 먼저 본다. 잔금채무 면제의 후발적 경정청구에 “특약의 계산축” 자료를 조문표로 옮긴다. 계산축에서 결론은 시험 당시 적용 조문을 근거로 잡는다.</p><h3>쉬운 말로</h3><p>숫자를 만나면 시험 당시 적용 조문이 정한 계산축을 읽는다. 잔금채무 면제의 후발적 경정청구에 “2018년의 조문표” 자료를 조문표로 대입한다. 결과는 계산축으로 적는다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>잔금채무 면제의 후발적 경정청구를 검토할 때 시험 당시 조문 문언과 결론축 사례를 비교한다. “2016년의 자본표” 자료는 자본표로 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [잔금채무 면제의 후발적 경정청구에서 지방세기본법의 후발적 경정청구 및 지방세법상 취득세 과세표준의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 시험 당시 조문의 요건과 잔금채무 면제의 후발적 경정청구의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [잔금채무 면제의 후발적 경정청구의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 시험 당시 조문의 요건과 잔금채무 면제의 후발적 경정청구의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>당초 계약부터 잔금 면제조건이 확정돼 있었던 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2020-P2-Q3-S1/"><span>이전</span><small>2020년 제57회 세법학 2부 문제 3-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2020-P2-Q4-S1/"><span>다음</span><small>2020년 제57회 세법학 2부 문제 4-1</small></a></nav></main>
+</body>
+</html>

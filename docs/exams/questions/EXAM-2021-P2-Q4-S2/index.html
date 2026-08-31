@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2021년 제58회 세법학 2부 문제 4-2 · 창업자금 증여세 과세특례: 65세 부친이 28세 자녀에게 제조업 창업자금 10억 원을 준 사례의 수증자·업종·사용기한을 판정한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>창업자금 증여세 과세특례: 65세 부친이 28세 자녀에게 제조업 창업자금 10억 원을 준 사례의 수증자·업종·사용기한을 판정한다.</h1><p>2021년 제58회 세법학 2부 문제 4-2</p><p class="question-progress">212 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2021년 제58회 세법학 2부 문제 4-2</span><span>10점</span></div><p class="source-paragraph">【문제 4】다음 사례를 읽고 물음에 답하시오. (25점) &lt;사례&gt; ○ 2021년 현재 甲(65세)의 가족관계는 배우자 乙(61세), 장남 丙(30세), 차남 丁(28세) 이다. 이들은 모두 ｢소득세법｣상 거주자이다. (1) 甲은 2007년 8월경부터 중소기업(상속세 및 증여세법령상 가업상속공제요건을 갖춤)인 A주식회사(이하 [A회사]라 함)의 대표이사이며 발행주식총수의 100분의 40에 해당하는 주식을 소유한 최대주주로 10년 이상 계속하여 A회사를 경영해 왔고, 丙에게 가업을 승계시키려고 하였다. 이에 甲은 2021년 5월 30일 乙이 10년 이상 보유하던 A회사 발행주식총수의 100분의 20에 해당하는 주식을 증여받고, 그 다음 날 자신이 보유하던 주식과 乙로부터 받은 주식을 丙에게 모두 증여 하였다. 2021년 8월 20일 丙은 증여세과세표준신고와 함께 주식등 특례신청서를 관할 세무서장에게 제출하였다. (2) 丁은 평소 소프트웨어와 앱 개발에 관심을 가지고 사업을 준비하던 중 2021년 6월 15일 甲에게 중소기업(제조업) 창업을 위한 자금을 부탁하였다. 2021년 6월 20일 甲은 丁에게 창업자금으로 현금 10억 원을 증여하였다. 2021년 8월 25일 丁은 증여세과세표준신고와 함께 창업자금 특례신청서 및 사용내역서를 관할 세무서장에게 제출하였다.</p>
+<p class="source-paragraph">물음 2) 지문 (2)에서 ｢조세특례제한법｣상 [창업자금에 대한 증여세 과세특례]의 취지, 증여자, 수증자, 특례내용을 설명하고, 丁이 과세특례를 적용받을 수 있는지에 대하여 판단하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2200274&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8(2021).zip&amp;fileSeq=2200274&amp;artlSeq=5209054&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2021-09-04</p><p>기준일 확인 상태: 상태 미기재</p><p>2021-09-04 적용 출처: 조세특례제한법 LAWREF-RSTA-2021-09-04 (https://www.law.go.kr/법령/조세특례제한법/(20210701,17926,20210316)). 시험일 적용 규정: 조세특례제한법 제30조의5(2021년 시행본).</p><h3>현행법과의 차이</h3><p>창업자금 증여세 과세특례 — 시험일 기준: LAWREF-RSTA-2021-09-04; 조세특례제한법 제30조의5(2021년 시행본). 2026-08-29 현재 확인 항목: 창업자금 한도·창업기한·사용기한과 현행 대상업종·사후관리. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>조세특례제한법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20210701,17926,20210316)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>65세 부친이 28세 자녀에게 제조업 창업자금 10억 원을 준 사례의 수증자,업종,사용기한을 판정한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>65세인 甲은 28세 거주자 자녀 丁에게 2021년 6월 20일 제조업 창업자금으로 현금 10억 원을 증여했다.</li><li>丁은 소프트웨어와 앱 개발에 관심을 두고 사업을 준비하다가 중소기업 제조업 창업자금을 요청했다.</li><li>丁은 2021년 8월 25일 증여세 신고와 특례신청서,사용내역서를 제출했지만 실제 창업일과 자금 사용결과는 지문에 없다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 제30조의5이다.</li><li>창업자금 특례는 60세 이상 부모가 18세 이상 거주자 자녀에게 적격 중소기업 창업용 재산을 증여하고, 자녀가 법정 기간 안에 창업,자금사용,신고와 사용명세 제출을 하는 경우 적용한다.</li><li>신고서 반영: 증여계좌, 사업자등록 업종, 설비,인건비 사용내역, 신청서,사용명세와 창업일을 확인한다.</li><li>사실포섭,소결: 甲은 65세, 丁은 28세이고 제조업 창업용 현금 10억 원이며 증여세 신고와 특례신청을 했다.</li><li>증빙,세무조사 활용: 증여계좌, 사업자등록 업종, 설비,인건비 사용내역, 신청서,사용명세와 창업일을 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 65세인 甲은 28세 거주자 자녀 丁에게 2021년 6월 20일 제조업 창업자금으로 현금 10억 원을 증여했다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 丁은 소프트웨어와 앱 개발에 관심을 두고 사업을 준비하다가 중소기업 제조업 창업자금을 요청했다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 창업자금 증여세 과세특례 — 시험일 기준: ; 조세특례제한법 제30조의5(2021년 시행본). 2026-08-29 현재 확인 항목: 창업자금 한도,창업기한,사용기한과 현행 대상업종,사후관리. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>창업자금 특례는 60세 이상 부모가 18세 이상 거주자 자녀에게 적격 중소기업 창업용 재산을 증여하고, 자녀가 법정 기간 안에 창업,자금사용,신고와 사용명세 제출을 하는 경우 적용한다.</li><li>신고서 반영: 증여계좌, 사업자등록 업종, 설비,인건비 사용내역, 신청서,사용명세와 창업일을 확인한다.</li><li>사실포섭,소결: 甲은 65세, 丁은 28세이고 제조업 창업용 현금 10억 원이며 증여세 신고와 특례신청을 했다.</li><li>증빙,세무조사 활용: 증여계좌, 사업자등록 업종, 설비,인건비 사용내역, 신청서,사용명세와 창업일을 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 부모 세대의 재산을 청년의 신규 중소기업 창업과 고용에 조기에 투입하도록 돕는 2021년 창업자금 증여세 특례의 요건과 세액구조, 그리고 丁이 받은 현금 10억 원의 적용 여부이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2021년 조세특례제한법 제30조의5에 따르면 18세 이상 거주자가 60세 이상 부모로부터 토지·건물 등 제외재산이 아닌 재산을 받아 제6조 제3항의 적격 업종 중소기업을 창업하면 특례를 적용한다. 기본 과세가액 한도는 30억 원이고 창업으로 10명 이상을 신규고용하면 50억 원이며, 5억 원을 공제한 뒤 10% 세율을 적용한다. 수증자는 증여일부터 2년 이내 창업하고 4년이 되는 날까지 자금을 모두 사업목적에 사용하며 신고기한 내 신청서와 이후 사용명세를 제출해야 한다. 사업양수·법인전환·폐업 후 같은 사업 재개 등은 창업으로 보지 않고, 기한 미준수나 전용액에는 일반 증여세와 이자상당액을 추징한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 세무조정</div><p>가족관계와 주민등록자료로 甲 65세·丁 28세 거주자 요건을 확인하고, 2021년 6월 20일 금융거래내역의 현금 10억 원이 토지·건물 등 제외재산이 아님을 대조한다. 사업자등록과 업종코드는 실제 신규 제조업 창업인지 밝히고, 설비대금·임차료·인건비 증빙은 증여일부터 4년 안에 자금이 사업에 쓰였는지를 보여 준다. 종업원명부에서 10명 이상 신규고용이 확인될 때만 50억 원 한도를 적용한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>甲과 丁의 연령·거주 요건, 현금 10억 원, 제조업이라는 적격 업종, 신고기한 내 특례신청은 확인된다. 그러나 지문은 丁이 증여일부터 2년 안에 실제로 제조업을 새로 시작했는지와 4년 안에 10억 원을 모두 적격 용도로 썼는지를 밝히지 않는다. 따라서 그 사실을 충족하는 조건 아래 30억 원 기본한도 안의 10억 원에서 5억 원을 공제하고 10%를 적용한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>丁이 2년 이내 신규 제조업을 창업하고 4년 이내 현금 10억 원을 모두 사업에 사용하며 사용명세를 제출하면 특례대상이다. 이 경우 2021년 기본한도 30억 원 안에서 5억 원 공제 후 10% 세율을 적용한다. 실제 창업이나 목적사용을 하지 않은 금액은 일반 증여세와 이자상당액으로 추징한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>처음 “65세인의 계산축”라는 사실을 계산축으로 잡는다. 조세특례제한법 제30조의5의 요건은 공제표에서 확인한다. 창업자금 증여세 과세특례의 효과를 자료칸으로 좁힌다.</p><h3>쉬운 말로</h3><p>사실 표시 “소프트웨어의 공제표”라는 사실을 계산축으로 표시한다. 창업자금 증여세 과세특례가 조세특례제한법 제30조의5의 범위에서 판단한다. 자료칸에서 증빙은 공제표로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>재확인 창업자금 증여세 과세특례를 문장축으로 검산한다. 조세특례제한법 제30조의5에서 예외표를 읽는다. 세무조사에서는 “소프트웨어의 문장축” 자료를 귀속표로 검산한다.</p><h3>쉬운 말로</h3><p>계산 전 세무조사에서는 “2021년의 예외표” 증빙을 문장축으로 찾는다. 창업자금 증여세 과세특례가 조세특례제한법 제30조의5 선에서 정한다. 귀속표에서 결론은 예외표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 세무조정</div><h3>왜 필요한가요?</h3><p>검토할 때 “2021년의 예외표”라는 사실을 예외표로 잡는다. 조세특례제한법 제30조의5의 요건은 자료칸에서 확인한다. 창업자금 증여세 과세특례의 효과를 법리축으로 정리한다.</p><h3>쉬운 말로</h3><p>기간 점검 창업자금 증여세 과세특례를 예외표로 기억한다. 조세특례제한법 제30조의5에서 자료칸을 찾는다. “65세인의 자료칸” 자료를 법리축으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>판례 연결 조세특례제한법 제30조의5가 정한 문장축을 먼저 본다. 창업자금 증여세 과세특례에 “65세인의 문장축” 자료를 세율표로 옮긴다. 증빙표에서 결론은 조세특례제한법 제30조의5를 근거로 대조한다.</p><h3>쉬운 말로</h3><p>판례 연결 창업자금 증여세 과세특례의 원칙과 예외를 문장축으로 가른다. “소프트웨어의 세율표” 자료를 세율표로 살핀다. 조세특례제한법 제30조의5로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>기록 검토 창업자금 증여세 과세특례를 판정선으로 선별한다. 조세특례제한법 제30조의5에서 금액표를 읽는다. 세무조사에서는 “소프트웨어의 판정선” 자료를 법리축으로 대조한다.</p><h3>쉬운 말로</h3><p>수치 확인 창업자금 증여세 과세특례의 원칙과 예외를 판정선으로 가른다. “2021년의 금액표” 자료를 금액표로 살핀다. 조세특례제한법 제30조의5로 효과를 설명한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>조세특례제한법 제30조의5 기준은 문언표로 옮겨 적는다. 창업자금 증여세 과세특례의 범위는 공급표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [창업자금 증여세 과세특례에서 조세특례제한법 제30조의5(2021년 시행본)의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 조세특례제한법 제30조의5의 요건과 창업자금 증여세 과세특례의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [창업자금 증여세 과세특례의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 조세특례제한법 제30조의5의 요건과 창업자금 증여세 과세특례의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>자녀가 증여금 일부로 기존 사업체의 주식을 인수한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2021-P2-Q4-S1/"><span>이전</span><small>2021년 제58회 세법학 2부 문제 4-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2022-P1-Q1-S1/"><span>다음</span><small>2022년 제59회 세법학 1부 문제 1-1</small></a></nav></main>
+</body>
+</html>

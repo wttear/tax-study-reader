@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2019년 제56회 세법학 2부 문제 4-2 · 자경농지와 농지대토 감면의 경작기간: 8년 자경농지 감면과 농지대토 감면에서 인정하는 경작기간을 비교한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>자경농지와 농지대토 감면의 경작기간: 8년 자경농지 감면과 농지대토 감면에서 인정하는 경작기간을 비교한다.</h1><p>2019년 제56회 세법학 2부 문제 4-2</p><p class="question-progress">162 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2019년 제56회 세법학 2부 문제 4-2</span><span>5점</span></div><p class="source-paragraph">【문제 4】 「조세특례제한법」상 공익사업용 토지에 대한 조세지원제도와 영농사업용 토지에 대한 조세지원제도에 관한 다음 물음에 답하시오. (25점)</p>
+<p class="source-paragraph">물음 2) 자경농지에 대한 양도소득세 감면 규정의 경작기간과 농지대토에 대한 양도소득세 감면 규정의 경작기간에 대하여 비교ㆍ설명하시오. (5점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2191434&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%20%EC%A0%84%EA%B3%BC%EB%AA%A9.pdf&amp;fileSeq=2191434&amp;artlSeq=5205972&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2019-08-17</p><p>기준일 확인 상태: 상태 미기재</p><p>2019-08-17 적용 출처: 조세특례제한법 LAWREF-RSTA-2019-08-17 (https://www.law.go.kr/법령/조세특례제한법/(20190430,16413,20190430)). 시험일 적용 규정: 조세특례제한법 제69조·제70조 당시 규정.</p><h3>현행법과의 차이</h3><p>자경농지와 농지대토 감면의 경작기간 — 시험일 기준: LAWREF-RSTA-2019-08-17; 조세특례제한법 제69조·제70조 당시 규정. 2026-08-29 현재 확인 항목: 자경기간 인정, 소득기준 배제와 농지대토 취득기한의 현행 규정. 이 기록은 시험일 시행본을 고정하며, 2026 불복 결론은 해당 최신 법령 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>조세특례제한법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2019-08-17 · 시행일 2019-04-30) <a href="https://www.law.go.kr/법령/조세특례제한법/(20190430,16413,20190430)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/조세특례제한법/(20260701,21223,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>8년 자경농지 감면과 농지대토 감면에서 인정하는 경작기간을 비교한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>8년 자경농지 감면과 농지대토 감면에서 인정하는 경작기간을 비교한다.</li><li>8년 자경농지 감면은 취득일부터 양도일까지 8년 이상 직접 경작을 요구하고, 농지대토 감면은 종전 농지와 새 농지의 일정 경작기간,거주,면적 또는 가액요건을 결합한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 조세특례제한법 시행령 제67조, 조세특례제한법 제70조, 조세특례제한법 제69조이다.</li><li>8년 자경농지 감면은 취득일부터 양도일까지 8년 이상 직접 경작을 요구하고, 농지대토 감면은 종전 농지와 새 농지의 일정 경작기간,거주,면적 또는 가액요건을 결합한다.</li><li>조사 워크페이퍼: 농지원부, 주민등록, 경작확인, 농자재 구매와 종전,대토농지 취득,양도일을 확인한다.</li><li>사실포섭,소결: 농지 소재지 거주기간, 실제 경작일, 종전 농지 양도일과 새 농지 취득일을 각각 계산하고 보유기간만으로 자경기간을 대신하지 않는다.</li><li>증빙,세무조사 활용: 농지원부, 주민등록, 경작확인, 농자재 구매와 종전,대토농지 취득,양도일을 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 8년 자경농지 감면과 농지대토 감면에서 인정하는 경작기간을 비교한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 8년 자경농지 감면은 취득일부터 양도일까지 8년 이상 직접 경작을 요구하고, 농지대토 감면은 종전 농지와 새 농지의 일정 경작기간,거주,면적 또는 가액요건을 결합한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 2014. 2. 21. 대통령령 제25211호 시행본은 기존 농지 4년 경작, 새 농지의 법정 기간 내 취득·경작 개시, 두 기간 합계 8년 구조로 농지대토를 판단한다. 새 농지에 독립된 3년 요건을 더하지 않는다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>8년 자경농지 감면은 취득일부터 양도일까지 8년 이상 직접 경작을 요구하고, 농지대토 감면은 종전 농지와 새 농지의 일정 경작기간,거주,면적 또는 가액요건을 결합한다.</li><li>조사 워크페이퍼: 농지원부, 주민등록, 경작확인, 농자재 구매와 종전,대토농지 취득,양도일을 확인한다.</li><li>사실포섭,소결: 농지 소재지 거주기간, 실제 경작일, 종전 농지 양도일과 새 농지 취득일을 각각 계산하고 보유기간만으로 자경기간을 대신하지 않는다.</li><li>증빙,세무조사 활용: 농지원부, 주민등록, 경작확인, 농자재 구매와 종전,대토농지 취득,양도일을 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 자경농지와 농지대토 감면의 경작기간: 조세특례제한법 제69조의 8년 자경과 제70조의 농지대토 기간요건을 따로 계산해야 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2019년 조세특례제한법 제69조와 당시 시행령 제66조는 양도일까지 농지소재지에 거주하며 8년 이상 직접 경작한 농지를 자경농지 감면 대상으로 삼는다. 제70조와 당시 시행령 제67조는 종전 농지에서 4년 이상 거주·직접 경작하고 법정기한 안에 새 농지를 취득해 경작을 시작할 것을 요구한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>농지대토는 새 농지에서 계속 거주·경작한 기간과 종전 농지 경작기간을 합쳐 8년 이상이어야 한다. 종전 농지 4년과 별도로 새 농지 3년만 채우면 충분하다는 식으로 쓰면 2019년 시행령 제67조의 합산 8년 요건을 충족하지 못한다. 농지원부, 주민등록표, 농자재 거래내역과 종전·새 농지의 계약서에서 취득·양도일 및 실제 경작일을 확인하고 두 농지의 기간을 월별 작업지와 대사한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>자경농지 감면은 한 농지 자체의 8년 거주·직접 경작을 묻고, 농지대토는 종전 농지의 최소 4년과 새 농지 취득·경작 개시기한 및 양 농지 합계 8년을 함께 본다. 두 제도의 기간을 합치거나 서로 대신할 수 없다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>따라서 시험연도 답안에는 자경농지의 8년과 농지대토의 종전 농지 4년·합계 8년을 구분해 적는다. 3년이라는 숫자를 새 농지의 독립 완성요건으로 적어 농지대토 감면을 인정해서는 안 된다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>재검토 자경농지와 농지대토 감면의 경작기간의 계산축을 결론축으로 세운다. 수치는 “8년의 결론축”에서 읽는다. 조특령 제67조를 대입해 가른다.</p><h3>쉬운 말로</h3><p>첫 복습 자경농지와 농지대토 감면의 경작기간을 결론축으로 복습한다. 법령은 조특령 제67조로 확인하고, “8년의 기준점”에서 핵심을 기준점으로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>사례 메모 자경농지와 농지대토 감면의 경작기간의 판단 질문을 대조축으로 만든다. “8년의 대조축” 자료를 법리축으로 확인한다. 조세특례제한법 제70조 근거는 답안에 연결고리로 남긴다.</p><h3>쉬운 말로</h3><p>처음에는 세무조사에서는 “8년의 법리축” 증빙을 대조축으로 찾는다. 자경농지와 농지대토 감면의 경작기간이 조세특례제한법 제70조 선에서 정한다. 연결고리에서 결론은 법리축으로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>계산 시작 자경농지와 농지대토 감면의 경작기간을 주체선으로 정리한다. 조세특례제한법 제69조에서 기록표를 읽는다. 세무조사에서는 “8년의 주체선” 자료를 자료칸으로 살핀다.</p><h3>쉬운 말로</h3><p>한 줄 자경농지와 농지대토 감면의 경작기간의 원칙과 예외를 주체선으로 가른다. “8년의 기록표” 자료를 기록표로 살핀다. 조세특례제한법 제69조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>사례 메모 자경농지와 농지대토 감면의 경작기간의 계산축을 문언표로 세운다. 수치는 “8년의 문언표”에서 읽는다. 조특령 제67조를 대입해 고정한다.</p><h3>쉬운 말로</h3><p>증빙 정리 “8년의 사실칸”라는 사실을 문언표로 표시한다. 자경농지와 농지대토 감면의 경작기간이 조특령 제67조의 범위에서 판단한다. 사실표에서 증빙은 사실칸으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>소득 귀속 자경농지와 농지대토 감면의 경작기간과 “8년의 주체선”의 연결을 주체선으로 선별한다. 조세특례제한법 제70조와 주체선을 읽는다. 조사자료는 결론축으로 맞춘다.</p><h3>쉬운 말로</h3><p>공제 판단 자경농지와 농지대토 감면의 경작기간을 주체선으로 기억한다. 조세특례제한법 제70조에서 주체선을 찾는다. “8년의 주체선” 자료를 결론축으로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>조세특례제한법 제70조와 시행령 제67조가 정한 자경농지·농지대토 요건을 비교한다. 새 농지의 취득과 경작 개시가 기존 농지의 4년과 합계 8년 요건에 어떻게 이어지는지 확인한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [자경농지와 농지대토 감면의 경작기간에서 조세특례제한법 제69조,제70조 당시 규정의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 조세특례제한법 시행령 제67조의 요건과 자경농지와 농지대토 감면의 경작기간의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [자경농지와 농지대토 감면의 경작기간의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 조세특례제한법 시행령 제67조의 요건과 자경농지와 농지대토 감면의 경작기간의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>농지 일부 기간을 임대한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2019-P2-Q4-S1/"><span>이전</span><small>2019년 제56회 세법학 2부 문제 4-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2020-P1-Q1-S1/"><span>다음</span><small>2020년 제57회 세법학 1부 문제 1-1</small></a></nav></main>
+</body>
+</html>

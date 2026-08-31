@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2019년 제56회 세법학 1부 문제 2-1 · 사례금 기타소득의 의미·금액·과세방법: 사무처리 또는 편의 제공의 대가인 사례금이 기타소득이 되는 판단기준과 필요경비·과세방식을 설명한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>사례금 기타소득의 의미·금액·과세방법: 사무처리 또는 편의 제공의 대가인 사례금이 기타소득이 되는 판단기준과 필요경비·과세방식을 설명한다.</h1><p>2019년 제56회 세법학 1부 문제 2-1</p><p class="question-progress">143 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2019년 제56회 세법학 1부 문제 2-1</span><span>12점</span></div><p class="source-paragraph">【문제 2】 다음 각 사례를 읽고 물음에 답하시오. (30점) &lt;사례1&gt; 거주자 甲은 내국법인 A주식회사에서 1998년경부터 근무하였다. 그러던 중 2013년 3월경부터 2014년 6월경까지 A주식회사의 실질적인 최대주주인 거주자 乙에 대한 구속수사 및 형사재판이 진행되는 동안 甲은 장기간 근무에 따른 오랜 친분관계가 있어 제반 사정을 잘 알고 있었던 관계로 乙 및 乙의 가족들과 변호인 사이의 연락 담당, 형사재판에 필요한 자료수집, 乙의 구치소 및 병원생활 지원 등의 일을 도맡아 수행하였다. 甲은 乙이 법원의 집행유예 판결에 따라 석방된 이후인 2014년 7월 12일 乙로부터 A주식회사의 주식을 양수받기로 하였다가 乙이 이를 이행하지 않아 민사소송을 거쳐 2018년 1월 30일에 70억원을 지급받았다. 甲은 乙로부터 받은 위 금원을 「소득세법」상 일시적 인적 용역에 대한 대가로 보아 2018년 귀속 종합소득세신고를 하였으나, 관할 세무서장은 이 금원이 사례금에 해당한다고 보아 관련 세법규정을 적용하여 甲에게 2018년 귀속 종합소득세 경정부과처분을 하였다. &lt;사례2&gt; 거주자 丙과 거주자 丁은 2004년경 봉제완구 제조ㆍ판매에 관한 동업을 하기로 하고 홍콩과 국내에 각각 법인을 설립하여 영업을 하였다. 그런데 국제금융불안과 국내경기 부진으로 2016년 2월 27일 동업을 청산하기로 하면서 丙과 丁은 동업관계 청산에 있어서 서로 이해관계가 대립하는 당사자의 지위에서 각자의 지분에 상응하는 몫을 정하기 위하여 합의에 이르렀는바, 이에 따라 丙이 丁으로부터 청산의 대가로 15억원을 지급받되, 丙은 홍콩 관련 고객들의 진행 제품에 대한 원본 패턴과 견본을, 丁은 나머지 고객들의 진행 제품에 대한 원본 패턴과 견본을 각각 소지하고 일방이 갖고 있는 원본 패턴에 대해 상대방은 복사본을 요구할 수 있으며, 위 15억원의 지급이 완료되는 때에 패턴의 공유의무를 종결하기로 하였다. 丙은 이 합의에 따라 丁으로부터 2016년 10월 15일 현금 15억원을 지급받았다. 관할 세무서장은 丙이 丁으로부터 받은 이 금원이 「소득세법」상 사례금에 해당한다고 보아 관련 세법규정을 적용하여 丙에게 종합소득세 부과처분을 하였다.</p>
+<p class="source-paragraph">물음 1) 「소득세법」이 기타소득의 하나로 규정한 [사례금]의 의미와 이에 해당하는지 여부의 판단방법, 소득금액의 계산 및 그 과세방법에 대하여 설명하시오. (12점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2191434&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8%20%EC%A0%84%EA%B3%BC%EB%AA%A9.pdf&amp;fileSeq=2191434&amp;artlSeq=5205972&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2019-08-17</p><p>기준일 확인 상태: 상태 미기재</p><p>2019-08-17 적용 출처: 소득세법 LAWREF-ITA-2019-08-17 (https://www.law.go.kr/법령/소득세법/(20190101,16104,20181231)). 시험일 적용 규정: 소득세법 제21조 제1항 제17호·제37조.</p><h3>현행법과의 차이</h3><p>사례금 기타소득의 의미·금액·과세방법 — 시험일 기준: LAWREF-ITA-2019-08-17; 소득세법 제21조 제1항 제17호·제37조. 2026-08-29 현재 확인 항목: 사례금 필요경비 인정범위·분리과세 기준과 현행 해석기준 판단요소. 이 기록은 시험일 시행본을 고정하며, 2026 신고 결론은 해당 최신 시행본 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>소득세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2019-08-17 · 시행일 2019-01-01) <a href="https://www.law.go.kr/법령/소득세법/(20190101,16104,20181231)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/소득세법/(20260701,21221,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>사무처리 또는 편의 제공의 대가인 사례금이 기타소득이 되는 판단기준과 필요경비,과세방식을 설명한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>甲은 乙의 형사재판 동안 가족,변호인 연락, 자료수집, 구치소와 병원생활 지원을 맡았다.</li><li>乙은 주식이전 약정을 이행하지 않았고 甲은 민사소송을 거쳐 2018년 1월 30일 70억 원을 받았다.</li><li>甲은 일시적 인적용역 대가로 신고했으나 세무서장은 사무처리와 편의 제공에 대한 사례금으로 보아 경정했다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 소득세법 제21조 제1항 제17호, 소득세법 제21조이다.</li><li>사례금은 사무처리나 편의 제공 등과 관련하여 감사의 뜻으로 지급되는 금품으로, 계약상 독립 사업활동의 대가인지,일시 우발적 보상인지 지급동기와 관계를 본다.</li><li>산식: 기타소득금액=사례금 총수입금액-직접 대응해 입증된 필요경비, 원천징수세액=지급 시 기타소득금액×법정 세율.</li><li>사실포섭,소결: 산식은 기타소득금액=받은 사례금-그 수입에 직접 대응해 입증된 필요경비이고, 원천징수 대상 금액은 지급 시 법정 세율을 적용한다.</li><li>증빙,세무조사 활용: 용역계약 유무, 지급경위, 반복성, 지급명세서와 실제 비용자료를 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 甲은 乙의 형사재판 동안 가족,변호인 연락, 자료수집, 구치소와 병원생활 지원을 맡았다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 乙은 주식이전 약정을 이행하지 않았고 甲은 민사소송을 거쳐 2018년 1월 30일 70억 원을 받았다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 사례금 기타소득의 의미,금액,과세방법 — 시험일 기준: ; 소득세법 제21조 제1항 제17호,제37조. 2026-08-29 현재 확인 항목: 사례금 필요경비 인정범위,분리과세 기준과 현행 해석기준 판단요소. 이 기록은 시험일 시행본을 고정하며, 2026 신고 결론은 해당 최신 시행본 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>사례금은 사무처리나 편의 제공 등과 관련하여 감사의 뜻으로 지급되는 금품으로, 계약상 독립 사업활동의 대가인지,일시 우발적 보상인지 지급동기와 관계를 본다.</li><li>산식: 기타소득금액=사례금 총수입금액-직접 대응해 입증된 필요경비, 원천징수세액=지급 시 기타소득금액×법정 세율.</li><li>사실포섭,소결: 산식은 기타소득금액=받은 사례금-그 수입에 직접 대응해 입증된 필요경비이고, 원천징수 대상 금액은 지급 시 법정 세율을 적용한다.</li><li>증빙,세무조사 활용: 용역계약 유무, 지급경위, 반복성, 지급명세서와 실제 비용자료를 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 甲이 乙과 그 가족에게 제공한 연락·자료수집·생활지원의 대가로 받은 70억 원이 사례금인지, 그 기타소득금액과 2018년 귀속 과세방법을 어떻게 정하는지이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2019년 소득세법 제21조 제1항 제17호의 사례금은 사무처리나 편의 제공과 관련하여 감사 또는 보답의 뜻으로 지급된 금품이며, 명칭보다 지급동기·목적, 당사자 관계와 제공행위의 내용을 종합한다. 같은 법 제37조에 따라 그 수입에 직접 대응해 실제 지출하고 입증한 필요경비를 총수입금액에서 뺀다. 당시 제14조 제3항의 선택 규정에 따라 원천징수된 기타소득금액이 연 300만 원 이하이면 납세자가 종합소득에 합산하지 않는 분리과세를 선택할 수 있고, 300만 원을 초과하면 종합과세한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>70억 원에서 연락·자료수집·생활지원의 대가를 얻기 위해 직접 지출했다고 증빙되는 비용만 제37조의 필요경비로 뺀다. 이렇게 계산한 기타소득금액이 300만 원 이하인지가 선택적 분리과세 기준이며, 70억 원 자체를 그 기준과 비교하는 것이 아니다. 이 사례에서는 별도 경비가 제시되지 않아 70억 원 전액이 기타소득금액이 되고 300만 원을 초과한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>근로계약이나 계속적 독립사업 계약이 아니라 오랜 친분을 바탕으로 乙의 형사절차와 생활을 도운 경위, 석방 뒤 주식양도 약정과 그 불이행에 따른 70억 원 지급을 함께 보면 사무처리와 편의에 대한 보답이라는 성격이 강하다. 민사소송을 거쳐 받았다는 형식만으로 사례금성이 사라지지 않는다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>70억 원은 소득세법 제21조 제1항 제17호의 사례금에 해당하고, 입증된 직접 필요경비가 없으므로 기타소득금액도 70억 원이다. 2018년 귀속 기타소득금액이 300만 원을 넘으므로 선택적 분리과세 대상이 아니며 종합소득에 합산한다. 일반론상 연간 기타소득금액이 300만 원 이하이고 원천징수된 경우에만 납세자가 분리과세를 선택할 수 있다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>사례 확인 사례금 기타소득의 의미 금액 과세방법을 확인표로 설명한다. 소득세법 제21조제1항 제17호에서 사실축을 읽는다. 세무조사에서는 “형사재판의 확인표” 자료를 조문표로 확정한다.</p><h3>쉬운 말로</h3><p>요건표 작성 “주식이전의 사실축”라는 사실을 확인표로 표시한다. 사례금 기타소득의 의미 금액 과세방법이 소득세법 제21조제1항 제17호의 범위에서 판단한다. 조문표에서 증빙은 사실축으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>신고 전 사례금 기타소득의 의미 금액 과세방법의 판단 질문을 사례표로 만든다. “주식이전의 사례표” 자료를 원칙표로 확인한다. 소득세법 제21조 근거는 답안에 결론축으로 남긴다.</p><h3>쉬운 말로</h3><p>계산 전 사례금 기타소득의 의미 금액 과세방법을 사례표로 기억한다. 소득세법 제21조에서 원칙표를 찾는다. “일시적의 원칙표” 자료를 결론축으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>답안 압축 소득세법 제21조제1항 제17호의 원칙을 문장축으로 적는다. 예외는 “일시적의 문장축”에서 찾는다. 사례금 기타소득의 의미 금액 과세방법의 결론은 증빙칸으로 선별한다.</p><h3>쉬운 말로</h3><p>판례 연결 사례금 기타소득의 의미 금액 과세방법의 원칙과 예외를 문장축으로 가른다. “형사재판의 증빙칸” 자료를 증빙칸으로 살핀다. 소득세법 제21조제1항 제17호로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>답안 시작 사례금 기타소득의 의미 금액 과세방법을 검산표로 설명한다. 소득세법 제21조에서 검산표를 읽는다. 세무조사에서는 “형사재판의 검산표” 자료를 기간선으로 확인한다.</p><h3>쉬운 말로</h3><p>예외 찾기 사례금 기타소득의 의미 금액 과세방법을 검산표로 복습한다. 법령은 소득세법 제21조로 확인하고, “주식이전의 검산표”에서 핵심을 검산표로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>실무 검토 소득세법 제21조제1항 제17호가 정한 답안칸을 먼저 본다. 사례금 기타소득의 의미 금액 과세방법에 “주식이전의 답안칸” 자료를 연결고리로 옮긴다. 검산표에서 결론은 소득세법 제21조제1항 제17호를 근거로 확인한다.</p><h3>쉬운 말로</h3><p>숫자를 만나면 사례금 기타소득의 의미 금액 과세방법의 계산표를 답안칸으로 만든다. “일시적의 연결고리”에서 수치를 연결고리로 옮긴다. 소득세법 제21조제1항 제17호를 기준으로 검산한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ita-compensation-goodwill-001.html">위약금·배상금·사례금·영업권 대가의 소득구분</a></h3><p class="law-name">소득세법</p><p>세무조사에서는 “형사재판의 검산표” 증빙을 검산표로 찾는다. 사례금 기타소득의 의미 금액 과세방법의 효과는 소득세법 제21조와 연결한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-income-classification-001.html">사업소득과 기타소득의 구분</a></h3><p class="law-name">소득세법</p><p>소득세법 제21조제1항 제17호의 기준을 계산축으로 적는다. 사례금 기타소득의 의미 금액 과세방법의 판단은 결론표에서 본다. 세무조사에서는 “주식이전의 계산축” 자료를 소득표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ita-withholding-statement-001.html">원천징수와 지급명세서</a></h3><p class="law-name">소득세법</p><p>소득세법 제21조제1항 제17호 기준은 주체선으로 옮겨 적는다. 사례금 기타소득의 의미 금액 과세방법의 범위는 증빙축으로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [사례금 기타소득의 의미,금액,과세방법에서 소득세법 제21조 제1항 제17호,제37조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 소득세법 제21조 제1항 제17호의 요건과 사례금 기타소득의 의미,금액,과세방법의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [사례금 기타소득의 의미,금액,과세방법의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 소득세법 제21조 제1항 제17호의 요건과 사례금 기타소득의 의미,금액,과세방법의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>동일 업무를 매월 반복하고 사업자등록을 한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2019-P1-Q1-S2/"><span>이전</span><small>2019년 제56회 세법학 1부 문제 1-2</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2019-P1-Q2-S2/"><span>다음</span><small>2019년 제56회 세법학 1부 문제 2-2</small></a></nav></main>
+</body>
+</html>

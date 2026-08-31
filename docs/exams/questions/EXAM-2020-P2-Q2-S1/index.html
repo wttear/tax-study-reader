@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2020년 제57회 세법학 2부 문제 2-1 · 고급가방 개별소비세 과세물품·표준가격·납세의무: 수탁제조 고급가방의 과세물품 판정, 포장비 포함 가액, 세율과 신고주체를 계산한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>고급가방 개별소비세 과세물품·표준가격·납세의무: 수탁제조 고급가방의 과세물품 판정, 포장비 포함 가액, 세율과 신고주체를 계산한다.</h1><p>2020년 제57회 세법학 2부 문제 2-1</p><p class="question-progress">178 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2020년 제57회 세법학 2부 문제 2-1</span><span>10점</span></div><p class="source-paragraph">【문제 2】 다음 사례를 읽고 물음에 답하시오. (20점) &lt;사례&gt; (1) A사는 2020년 1월부터 고급가방(특정물품 운반ㆍ보관용 아님)을 직접 생산하되 일부 부족한 수량은 B사에게 생산을 위탁하여 판매하고 있다. B사가 A사에게 공급하는 가액은 개당 500만 원이고 A사의 판매가격은 직접 생산분과 위탁 생산분 모두 1,200만 원이다. 위 각 가액에는 포장비용 50만 원이 포함되어 있고, 해당 포장은 개봉 이후 재활용할 수 없다. 가방표면에는 보석이 장식되어 있고 제조원가 중 보석의 구성비율은 30%이며 나머지는 모두 가방제조원가에 해당한다. B사는 수탁제조물품을 반출하면서 개별소비세를 신고ㆍ납부하지 않았고, 미납세반출승인신청도 하지 않았다. (2) 한편, A사는 직접 생산한 고급가방 10개를 국외 전시회에 출품하였다가 전시회 종료 후 제조장에 환입하였다. 출품 시에는 관련 승인을 받았으나, 환입 시에는 별도의 신고를 하거나 승인을 받지 아니하였다. (3) 이후 2020년 10월 5일 A사는 합의 하에 B사로부터 제조장을 사실상 이전하지 않고 제조업의 영업을 포괄승계받았는바, 당시 제조장에는 고급가방 50개가 반출되지 아니하고 있는 상태였다.</p>
+<p class="source-paragraph">물음 1) 지문(1)과 관련하여 개별소비세의 과세물품, 과세표준, 세율, 납세의무자에 대하여 설명하시오. (10점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2197071&amp;fileName=2%EC%B0%A8%EC%8B%9C%ED%97%98%20%EB%AC%B8%EC%A0%9C%EC%A7%80.pdf&amp;fileSeq=2197071&amp;artlSeq=5207934&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2020-12-05</p><p>기준일 확인 상태: 상태 미기재</p><p>2020-12-05 적용 출처: 개별소비세법 LAWREF-ETAX-2020-12-05 (https://www.law.go.kr/법령/개별소비세법/(20200609,17339,20200609)). 시험일 적용 규정: 개별소비세법 제1조·제3조 및 당시 시행령의 고급가방 기준. 보충 시행령 출처 LAWREF-ETAX-DECREE-2020-12-05 (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=219781&amp;efYd=20200701, 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>고급가방 개별소비세 과세물품·표준가격·납세의무 — 시험일 기준: LAWREF-ETAX-2020-12-05; 개별소비세법 제1조·제3조 및 당시 시행령의 고급가방 기준. 2026-08-29 현재 확인 항목: 고급가방 기준가격·세율과 수탁제조 납세의무자 규정의 현행 금액. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율·한도 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>개별소비세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2020-12-05 · 시행일 2020-06-09) <a href="https://www.law.go.kr/법령/개별소비세법/(20200609,17339,20200609)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-04-24) <a href="https://www.law.go.kr/법령/개별소비세법/(20260424,21216,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>수탁제조 고급가방의 과세물품 판정, 포장비 포함 가액, 세율과 신고주체를 계산한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>A사 직접생산분과 B사 수탁생산분의 A사 판매가격은 개당 1,200만 원이고, B사의 A사 공급가액은 개당 500만 원이다.</li><li>각 가액에 포함된 50만 원 포장은 개봉 후 재활용할 수 없고, 보석은 제조원가의 30%이며 나머지 70%는 가방 제조원가이다.</li><li>B사는 수탁제조물품을 반출하면서 개별소비세를 신고,납부하지 않았고 미납세반출승인도 신청하지 않았다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 개별소비세법 제1조이다.</li><li>고급가방은 법정 기준가격을 초과하는 제품의 제조장 반출에 과세하며 수탁제조에서는 실질 제조자와 반출자를 판정한다.</li><li>산식: 제품별 과세표준=max, 개별소비세=과세표준×20%.</li><li>사실포섭,소결: 산식은 과세표준=max, 개별소비세=과세표준×20%가다.</li><li>증빙,세무조사 활용: 개당 공급,판매가격, 포장비, 제조위탁계약, 반출수량과 신고서를 검산한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: A사 직접생산분과 B사 수탁생산분의 A사 판매가격은 개당 1,200만 원이고, B사의 A사 공급가액은 개당 500만 원이다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 각 가액에 포함된 50만 원 포장은 개봉 후 재활용할 수 없고, 보석은 제조원가의 30%이며 나머지 70%는 가방 제조원가이다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 고급가방 개별소비세 과세물품,표준가격,납세의무 — 시험일 기준: ; 개별소비세법 제1조,제3조 및 당시 시행령의 고급가방 기준. 2026-08-29 현재 확인 항목: 고급가방 기준가격,세율과 수탁제조 납세의무자 규정의 현행 금액. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율,한도 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>고급가방은 법정 기준가격을 초과하는 제품의 제조장 반출에 과세하며 수탁제조에서는 실질 제조자와 반출자를 판정한다.</li><li>산식: 제품별 과세표준=max, 개별소비세=과세표준×20%.</li><li>사실포섭,소결: 산식은 과세표준=max, 개별소비세=과세표준×20%가다.</li><li>증빙,세무조사 활용: 개당 공급,판매가격, 포장비, 제조위탁계약, 반출수량과 신고서를 검산한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>A사가 직접 생산한 가방과 B사가 수탁생산한 가방을 나누어, 과세물품·포장비·기준가격·세율·제조자를 각각 판정해야 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>2020년 규정의 고급가방은 개당 가격이 200만 원을 넘는 경우 그 초과금액에 20%를 과세한다. 여러 재료가 결합된 물품은 주된 재료·용도로 분류하며, 재활용할 수 없는 통상 포장의 비용은 반출가격에서 빼지 않는다. 시험연도 적용근거는 개별소비세법 제1조·제3조 및 당시 시행령의 고급가방 기준이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>보석은 제조원가의 30%이고 나머지 70%가 가방 제조원가이며, 특정물품의 운반·보관용도 아니므로 이 제품은 보석제품이 아니라 고급가방으로 과세한다. 50만 원 포장비는 500만 원과 1,200만 원 가액에 이미 포함되어 있고 개봉 후 재사용할 수 없으므로 별도 차감하지 않는다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 계산</div><p>A사 직접생산분은 개당 과세표준이 1,200만 원-200만 원=1,000만 원이고, 개별소비세는 1,000만 원×20%=200만 원이다. B사 수탁생산분은 B사의 반출가액 500만 원을 기준으로 하여 개당 과세표준 300만 원, 세액 60만 원이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>직접생산분의 납세의무자는 제조자 A사이다. 수탁생산분은 B사가 자기 제조장에서 반출했고 미납세반출 승인도 받지 않았으므로 B사가 개당 60만 원을 신고·납부해야 한다. A사의 1,200만 원 판매가격을 B사 반출분의 과세표준으로 쓰지 않는다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>마지막 점검 고급가방 개별소비세 과세물품 표준가격 납세의무를 법리축으로 선별한다. 개별소비세법 제1조에서 기간표를 읽는다. 세무조사에서는 “A사의 법리축” 자료를 원칙표로 검증한다.</p><h3>쉬운 말로</h3><p>공제 판단 개별소비세법 제1조가 정한 법리축을 읽는다. 고급가방 개별소비세 과세물품 표준가격 납세의무에 “각의 기간표” 자료를 기간표로 대입한다. 결과는 원칙표로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>숫자 확인 개별소비세법 제1조가 정한 기간표를 먼저 본다. 고급가방 개별소비세 과세물품 표준가격 납세의무에 “각의 기간표” 자료를 기간선으로 옮긴다. 정리축에서 결론은 개별소비세법 제1조를 근거로 세운다.</p><h3>쉬운 말로</h3><p>사례 대입 “B사의 기간선”라는 사실을 기간표로 표시한다. 고급가방 개별소비세 과세물품 표준가격 납세의무가 개별소비세법 제1조의 범위에서 판단한다. 정리축에서 증빙은 기간선으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>소득 귀속 고급가방 개별소비세 과세물품 표준가격 납세의무를 법리축으로 잡는다. 개별소비세법 제1조에서 법리칸을 읽는다. 세무조사에서는 “B사의 법리축” 자료를 기간표로 확인한다.</p><h3>쉬운 말로</h3><p>숫자를 만나면 고급가방 개별소비세 과세물품 표준가격 납세의무의 계산표를 법리축으로 만든다. “A사의 법리칸”에서 수치를 법리칸으로 옮긴다. 개별소비세법 제1조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 계산</div><h3>왜 필요한가요?</h3><p>읽기 출발 고급가방 개별소비세 과세물품 표준가격 납세의무를 주체표로 분리한다. 개별소비세법 제1조에서 증빙칸을 읽는다. 세무조사에서는 “A사의 주체표” 자료를 요건표로 대조한다.</p><h3>쉬운 말로</h3><p>판례 연결 고급가방 개별소비세 과세물품 표준가격 납세의무와 “각의 증빙칸”의 관계를 주체표로 본다. 개별소비세법 제1조와 증빙칸을 함께 읽는다. 요건표에서 세무조사에서는 장부를 요건표로 대조한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>사실 선택 고급가방 개별소비세 과세물품 표준가격 납세의무와 “각의 기준점”의 연결을 기준점으로 좁힌다. 개별소비세법 제1조와 적용축을 읽는다. 조사자료는 조문표로 기록한다.</p><h3>쉬운 말로</h3><p>처음에는 고급가방 개별소비세 과세물품 표준가격 납세의무를 기준점으로 기억한다. 개별소비세법 제1조에서 적용축을 찾는다. “B사의 적용축” 자료를 조문표로 확인한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">extension</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>개별소비세법 제1조의 기준을 판정선으로 적는다. 고급가방 개별소비세 과세물품 표준가격 납세의무의 판단은 적용축에서 본다. 세무조사에서는 “A사의 판정선” 자료를 기준표로 대조한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [고급가방 개별소비세 과세물품,표준가격,납세의무에서 개별소비세법 제1조,제3조 및 당시 시행령의 고급가방 기준의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 개별소비세법 제1조의 요건과 고급가방 개별소비세 과세물품,표준가격,납세의무의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [고급가방 개별소비세 과세물품,표준가격,납세의무의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 개별소비세법 제1조의 요건과 고급가방 개별소비세 과세물품,표준가격,납세의무의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>재활용 가능한 고가 포장용기를 별도 가격으로 판매한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2020-P2-Q1-S3/"><span>이전</span><small>2020년 제57회 세법학 2부 문제 1-3</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2020-P2-Q2-S2/"><span>다음</span><small>2020년 제57회 세법학 2부 문제 2-2</small></a></nav></main>
+</body>
+</html>

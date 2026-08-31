@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2021년 제58회 세법학 2부 문제 1-2 · 재화·용역 공급과 수입의 세금계산서 발급주체: 국내 공급은 사업자, 수입은 세관장이 발급하는 원칙과 위탁·대리 등 예외를 설명한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>재화·용역 공급과 수입의 세금계산서 발급주체: 국내 공급은 사업자, 수입은 세관장이 발급하는 원칙과 위탁·대리 등 예외를 설명한다.</h1><p>2021년 제58회 세법학 2부 문제 1-2</p><p class="question-progress">201 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2021년 제58회 세법학 2부 문제 1-2</span><span>5점</span></div><p class="source-paragraph">【문제 1】｢부가가치세법｣상 세금계산서 제도와 관련하여 다음 물음에 답하시오. (35점)</p>
+<p class="source-paragraph">물음 2) 사업자가 부가가치세 과세대상 재화 또는 용역을 공급하는 경우와 재화를 수입하는 경우, ｢부가가치세법｣상 세금계산서를 발급하여야 하는 자에 대하여 원칙과 예외로 구분하여 설명하시오. (5점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2200274&amp;fileName=%EC%84%B8%EB%AC%B4%EC%82%AC%202%EC%B0%A8(2021).zip&amp;fileSeq=2200274&amp;artlSeq=5209054&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2021-09-04</p><p>기준일 확인 상태: 상태 미기재</p><p>2021-09-04 적용 출처: 부가가치세법 LAWREF-VAT-2021-09-04 (https://www.law.go.kr/법령/부가가치세법/(20210701,17653,20201222)). 시험일 적용 규정: 부가가치세법 제32조·제35조.</p><h3>현행법과의 차이</h3><p>재화·용역 공급과 수입의 세금계산서 발급주체 — 시험일 기준: LAWREF-VAT-2021-09-04; 부가가치세법 제32조·제35조. 2026-08-29 현재 확인 항목: 위탁·신탁 세금계산서 발급주체와 수입부가세 과세표준의 현행 규정. 이 기록은 시험일 시행본을 고정하며, 2026 세무조정 결론은 해당 최신 개정문 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>부가가치세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2021-09-04 · 시행일 2021-07-01) <a href="https://www.law.go.kr/법령/부가가치세법/(20210701,17653,20201222)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-01-02) <a href="https://www.law.go.kr/법령/부가가치세법/(20260102,21065,20251001)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>국내 공급은 사업자, 수입은 세관장이 발급하는 원칙과 위탁,대리 등 예외를 설명한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>국내 공급은 사업자, 수입은 세관장이 발급하는 원칙과 위탁,대리 등 예외를 설명한다.</li><li>국내 재화,용역 공급은 실제 공급자인 사업자가, 수입재화는 세관장이 수입자에게 세금계산서를 발급한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 부가가치세법 제32조이다.</li><li>국내 재화,용역 공급은 실제 공급자인 사업자가, 수입재화는 세관장이 수입자에게 세금계산서를 발급한다.</li><li>산식: 수입부가세 과세표준=관세가격+관세+개별소비세 등 법정 가산액, 세액=과세표준×10%.</li><li>사실포섭,소결: 수입세금계산서 세액=관세 과세가격과 관세,개별소비세 등 법정 가산액의 합계×10%이고 발급자는 세관장이다.</li><li>증빙,세무조사 활용: 공급계약 명의, 실제 공급자, 수입신고필증과 세금계산서 발급자를 대사한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 국내 공급은 사업자, 수입은 세관장이 발급하는 원칙과 위탁,대리 등 예외를 설명한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 국내 재화,용역 공급은 실제 공급자인 사업자가, 수입재화는 세관장이 수입자에게 세금계산서를 발급한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 재화,용역 공급과 수입의 세금계산서 발급주체 — 시험일 기준: ; 부가가치세법 제32조,제35조. 2026-08-29 현재 확인 항목: 위탁,신탁 세금계산서 발급주체와 수입부가세 과세표준의 현행 규정. 이 기록은 시험일 시행본을 고정하며, 2026 세무조정 결론은 해당 최신 개정문 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>국내 재화,용역 공급은 실제 공급자인 사업자가, 수입재화는 세관장이 수입자에게 세금계산서를 발급한다.</li><li>산식: 수입부가세 과세표준=관세가격+관세+개별소비세 등 법정 가산액, 세액=과세표준×10%.</li><li>사실포섭,소결: 수입세금계산서 세액=관세 과세가격과 관세,개별소비세 등 법정 가산액의 합계×10%이고 발급자는 세관장이다.</li><li>증빙,세무조사 활용: 공급계약 명의, 실제 공급자, 수입신고필증과 세금계산서 발급자를 대사한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>국내에서 과세재화·용역을 공급할 때의 발급자와 수입재화의 발급자를 구분하고, 위탁·대리·공동사업·신탁·매입자발행 특례를 원칙에 덧붙여야 한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>국내 공급에서는 실제로 재화·용역을 공급하는 사업자가 공급받는 자에게 세금계산서를 발급한다. 공급자가 부도·폐업하거나 계약 해제·해지, 공급가액 변경 등 법정 사유로 발급하지 않은 경우에는 요건을 갖춘 매입자가 관할 세무서의 확인을 받아 매입자발행세금계산서를 발행할 수 있다. 시험연도 적용근거는 부가가치세법 제32조·제35조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>위탁판매와 대리판매에서는 수탁자·대리인이 위탁자·본인 명의로 발급하고 자신의 등록번호를 부기한다. 위탁매입에서는 공급자가 실제 위탁자를 공급받는 자로 적고 수탁자를 부기하며, 공동사업의 공동매입은 대표자가 조합원별 지분에 따라 발급한다. 신탁재산은 거래일에 시행되는 신탁 납세의무·세금계산서 특례에 따라 수탁자와 위탁자 중 발급주체를 정한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>재화를 수입하는 경우에는 세관장이 수입자에게 수입세금계산서를 발급한다. 수입 부가가치세의 세금을 매기는 기준 금액은 관세의 과세가격에 관세, 개별소비세·주세·교통·에너지·환경세 및 농어촌특별세·교육세를 법이 정한 방식으로 더한 금액이며 세율은 10%다. 세관장의 결정·경정에 따른 수정수입세금계산서는 수입자의 귀책사유 등 법정 발급제한을 별도로 본다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>국내 공급은 실제 공급자, 수입은 세관장이 발급하는 것이 출발점이다. 다만 위탁·대리·공동매입·신탁·매입자발행은 각 유형의 요건과 명의·부기 방식을 확인해 일반원칙에서 발급주체를 조정한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>공제 판단 부가가치세법 제32조의 원칙을 대응표로 적는다. 예외는 “국내의 대응표”에서 찾는다. 재화 용역 공급과 수입의 세금계산서 발급주체의 결론은 원칙표로 분해한다.</p><h3>쉬운 말로</h3><p>사실부터 재화 용역 공급과 수입의 세금계산서 발급주체와 “국내의 원칙표”의 관계를 대응표로 본다. 부가가치세법 제32조와 원칙표를 함께 읽는다. 수치표에서 세무조사에서는 장부를 수치표로 대조한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>먼저 재화 용역 공급과 수입의 세금계산서 발급주체와 “국내의 자료칸”의 연결을 자료칸으로 가른다. 부가가치세법 제32조와 증빙표를 읽는다. 조사자료는 정리축으로 연결한다.</p><h3>쉬운 말로</h3><p>질문 확인 세무조사에서는 “국내의 증빙표” 증빙을 자료칸으로 찾는다. 재화 용역 공급과 수입의 세금계산서 발급주체가 부가가치세법 제32조 선에서 정한다. 정리축에서 결론은 증빙표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>증빙 확인 재화 용역 공급과 수입의 세금계산서 발급주체의 계산축을 판정선으로 세운다. 수치는 “국내의 판정선”에서 읽는다. 부가가치세법 제32조를 대입해 정리한다.</p><h3>쉬운 말로</h3><p>과세 확인 재화 용역 공급과 수입의 세금계산서 발급주체를 판정선으로 기억한다. 부가가치세법 제32조에서 첫 단서를 찾는다. “국내의 첫 단서” 자료를 증빙칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>결론 전 “국내의 기준점”라는 사실을 기준점으로 잡는다. 부가가치세법 제32조의 요건은 원칙표에서 확인한다. 재화 용역 공급과 수입의 세금계산서 발급주체의 효과를 정리축으로 가른다.</p><h3>쉬운 말로</h3><p>사실 표시 재화 용역 공급과 수입의 세금계산서 발급주체를 사례 한 줄로 줄인다. 근거는 부가가치세법 제32조에서 찾고, “국내의 원칙표” 자료를 기준점으로 남긴다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>핵심은 재화 용역 공급과 수입의 세금계산서 발급주체를 대응표로 고정한다. 부가가치세법 제32조에서 결론축을 읽는다. 세무조사에서는 “국내의 대응표” 자료를 조문표로 검증한다.</p><h3>쉬운 말로</h3><p>실무에서는 재화 용역 공급과 수입의 세금계산서 발급주체의 원칙과 예외를 대응표로 가른다. “국내의 결론축” 자료를 결론축으로 살핀다. 부가가치세법 제32조로 효과를 설명한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-vat-invoice-001.html">사실과 다른 세금계산서와 매입세액 불공제</a></h3><p class="law-name">부가가치세법</p><p>부가가치세법 제32조의 기준을 환급표로 적는다. 재화 용역 공급과 수입의 세금계산서 발급주체의 판단은 검토축에서 본다. 세무조사에서는 “국내의 환급표” 자료를 기준표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-vat-agency-trust-supply-001.html">대리·위탁매매·신탁과 실제 공급자</a></h3><p class="law-name">부가가치세법</p><p>부가가치세법 제32조 기준은 연결표로 옮겨 적는다. 재화 용역 공급과 수입의 세금계산서 발급주체의 범위는 사례표로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-vat-export-import-zero-rate-001.html">수출·수입·영세율 증빙</a></h3><p class="law-name">부가가치세법</p><p>세무조사에서는 “국내의 결론축” 증빙을 결론축으로 찾는다. 재화 용역 공급과 수입의 세금계산서 발급주체의 효과는 부가가치세법 제32조와 연결한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [재화,용역 공급과 수입의 세금계산서 발급주체에서 부가가치세법 제32조,제35조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 부가가치세법 제32조의 요건과 재화,용역 공급과 수입의 세금계산서 발급주체의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [재화,용역 공급과 수입의 세금계산서 발급주체의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 부가가치세법 제32조의 요건과 재화,용역 공급과 수입의 세금계산서 발급주체의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>위탁판매 재화를 수탁자가 자기 명의로 판매한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2021-P2-Q1-S1/"><span>이전</span><small>2021년 제58회 세법학 2부 문제 1-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2021-P2-Q1-S3/"><span>다음</span><small>2021년 제58회 세법학 2부 문제 1-3</small></a></nav></main>
+</body>
+</html>

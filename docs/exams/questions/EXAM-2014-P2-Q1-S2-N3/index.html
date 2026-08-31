@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2014년 제51회 세법학 2부 문제 1-2-(3) · 임대 광고전광판 전력비의 매입세액 공제 | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>임대 광고전광판 전력비의 매입세액 공제</h1><p>2014년 제51회 세법학 2부 문제 1-2-(3)</p><p class="question-progress">22 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2014년 제51회 세법학 2부 문제 1-2-(3)</span><span>배점 미확인</span></div><p class="source-paragraph">【 문제 1 】부가가치세의 과세방법 및 매입세액 공제 등에 관하여 다음 물음에 답하시오. (35점)</p>
+<p class="source-paragraph">2. 다음 각 사안에서 비용 지출과 관련된 매입세액을 매출세액에서 공제할 수 있는지 논거를 들어 설명하시오.</p>
+<p class="source-paragraph">(3) 갑(甲) 회사는 그 소유의 광고전광판을 을(乙) 회사가 사용하기로 하는 임대차계약을 체결하면서 광고전광판의 운영에 소요되는 비용의 부담에 관하여는 특별한 약정을 하지 않았다. 갑 회사는 광고전광판의 운영에 소요되는 전력비를 지출하였다.</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2093351&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%992%EB%B6%80.hwp&amp;fileSeq=2093351&amp;artlSeq=5104409&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 공식 정확한 날짜 확인 불가(시험일 시행본 표기)</p><p>기준일 확인 상태: official_exact_date_unavailable</p><p>2014년 제51회 Q-Net 표지는 정확한 시험일을 인쇄하지 않았다. 문제의 현행법 지시와 사례 귀속·거래일을 기준으로 국가법령정보센터 시행본(20140101, 20140221)의 부가가치세법 제38조·제39조, 부가가치세법 시행령 제77조 및 각 부칙을 대조했으며, 임의 시험일은 사용하지 않았다.</p><h3>현행법과의 차이</h3><p>임대 광고전광판 전력비의 매입세액 공제: 매입세액 공제·불공제 조문은 현행 제38조·제39조에 유지되며 토지관련 매입세액과 의료보건용역 면세의 현재 범위를 적용한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>부가가치세법</strong><ul><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-01-02) <a href="https://www.law.go.kr/법령/부가가치세법/(20260102,21065,20251001)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>소유자가 전광판을 임대하면서 운영비 부담 약정 없이 전력비를 지급한 경우 임대사업 관련 매입세액인지 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>운영비 부담 특약이 없고 갑이 실제 지급했다는 사실에서 전광판 운영,임대수익과의 관련성을 평가한다.</li><li>전력비 중 임대기간,전광판 사용분을 계량자료로 산정하고 임대료에 포함 또는 별도 청구된 금액을 구분한다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 부가가치세법 제38조, 부가가치세법 시행령 제77조, 부가가치세법 제9조이다.</li><li>부가가치세법 제38조,제39조, 부가가치세법 시행령 제77조.</li><li>전력비 중 임대기간,전광판 사용분을 계량자료로 산정하고 임대료에 포함 또는 별도 청구된 금액을 구분한다.</li><li>운영비 부담 특약이 없고 갑이 실제 지급했다는 사실에서 전광판 운영,임대수익과의 관련성을 평가한다.</li><li>과세 임대용 전광판 운영에 직접 사용된 전력비는 사업관련 매입세액으로 공제하며, 임차인에게 별도 청구한 전기료가 대가에 포함되는지도 매출과 대응한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 운영비 부담 특약이 없고 갑이 실제 지급했다는 사실에서 전광판 운영,임대수익과의 관련성을 평가한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 전력비 중 임대기간,전광판 사용분을 계량자료로 산정하고 임대료에 포함 또는 별도 청구된 금액을 구분한다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 임대 광고전광판 전력비의 매입세액 공제: 매입세액 공제,불공제 조문은 현행 제38조,제39조에 유지되며 토지관련 매입세액과 의료보건용역 면세의 현재 범위를 적용한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>부가가치세법 제38조,제39조, 부가가치세법 시행령 제77조.</li><li>전력비 중 임대기간,전광판 사용분을 계량자료로 산정하고 임대료에 포함 또는 별도 청구된 금액을 구분한다.</li><li>운영비 부담 특약이 없고 갑이 실제 지급했다는 사실에서 전광판 운영,임대수익과의 관련성을 평가한다.</li><li>과세 임대용 전광판 운영에 직접 사용된 전력비는 사업관련 매입세액으로 공제하며, 임차인에게 별도 청구한 전기료가 대가에 포함되는지도 매출과 대응한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>임대 광고전광판 전력비의 매입세액 공제에 답하려면 먼저 운영비 부담 특약이 없고 갑이 실제 지급했다는 사실에서 전광판 운영·임대수익과의 관련성을 평가한다는 사실을 확인해야 한다. 답안은 Ⅰ 임대용역 과세, Ⅱ 전력비 부담주체, Ⅲ 사업관련성·대가 포함, Ⅳ 매입세액 공제이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>거래일 또는 귀속연도와 출제문이 요구한 거래일과 귀속연도에 시행된 조문을 적용한다. 부가가치세법 제38조·제39조, 부가가치세법 시행령 제77조. 임대인이 법적·계약상 부담한 전력비가 과세 임대용역 제공에 직접 관련되면 공제 가능하지만 임차인 대납·사적 지출이면 실제 귀속을 확인한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>운영비 부담 특약이 없고 갑이 실제 지급했다는 사실에서 전광판 운영·임대수익과의 관련성을 평가한다는 점과 전력비 중 임대기간·전광판 사용분을 계량자료로 산정하고 임대료에 포함 또는 별도 청구된 금액을 구분한다는 사실을 함께 놓고 기준을 적용한다. 두 사실을 분리해 검토해야 과세 임대용 전광판 운영에 직접 사용된 전력비는 사업관련 매입세액으로 공제하며, 임차인에게 별도 청구한 전기료가 대가에 포함되는지도 매출과 대응한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 계산</div><p>계량기가 전광판 사용량을 따로 표시하면 과세 임대에 사용된 전력비와 그 매입세액을 직접 귀속한다. 공용전력만 확인되면 공제대상 매입세액은 전체 전력비 매입세액×과세 임대의 실제 사용량÷전체 사용량으로 안분하고, 임대기간 밖 사용분과 임차인 대납분은 제외한다. 임차인에게 다시 청구한 전기료는 임대용역 대가에 포함해 매출과세 여부를 함께 처리한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>과세 임대용 전광판 운영에 직접 사용된 전력비는 사업관련 매입세액으로 공제하며, 임차인에게 별도 청구한 전기료가 대가에 포함되는지도 매출과 대응한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>세무조사 부가가치세법 제38조의 원칙을 연결고리로 적는다. 예외는 “운영비의 연결고리”에서 찾는다. 임대 광고전광판 전력비의 매입세액 공제의 결론은 확인축으로 고정한다.</p><h3>쉬운 말로</h3><p>판정 마무리 “전력비의 확인축”라는 사실을 연결고리로 표시한다. 임대 광고전광판 전력비의 매입세액 공제가 부가가치세법 제38조의 범위에서 판단한다. 기록선에서 증빙은 확인축으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>신고 전 임대 광고전광판 전력비의 매입세액 공제를 귀속표로 정리한다. 부가령 제77조의 요건과 “전력비의 귀속표” 자료를 조문표로 맞춘다. 최종 판단은 수치표로 설명한다.</p><h3>쉬운 말로</h3><p>예외 찾기 임대 광고전광판 전력비의 매입세액 공제의 계산표를 귀속표로 만든다. “운영비의 조문표”에서 수치를 조문표로 옮긴다. 부가령 제77조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>질문 풀이 임대 광고전광판 전력비의 매입세액 공제와 “운영비의 주체표”의 연결을 주체표로 추적한다. 부가가치세법 제9조와 경계선을 읽는다. 조사자료는 금액표로 검증한다.</p><h3>쉬운 말로</h3><p>두 번째 임대 광고전광판 전력비의 매입세액 공제를 주체표로 기억한다. 부가가치세법 제9조에서 경계선을 찾는다. “전력비의 경계선” 자료를 금액표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 계산</div><h3>왜 필요한가요?</h3><p>실무 검토 임대 광고전광판 전력비의 매입세액 공제를 자료칸으로 분해한다. 부가령 제18조에서 기간선을 읽는다. 세무조사에서는 “전력비의 자료칸” 자료를 연결고리로 기록한다.</p><h3>쉬운 말로</h3><p>기준 설정 임대 광고전광판 전력비의 매입세액 공제를 자료칸으로 기억한다. 부가령 제18조에서 기간선을 찾는다. “운영비의 기간선” 자료를 연결고리로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>재확인 임대 광고전광판 전력비의 매입세액 공제의 사실과 법리를 기준점으로 나눈다. 부가가치세법 제38조가 정한 기준에 “운영비의 기준점” 자료를 대입한다. 효과는 효과표로 기록한다.</p><h3>쉬운 말로</h3><p>판례 연결 임대 광고전광판 전력비의 매입세액 공제와 “전력비의 효과표”의 관계를 기준점으로 본다. 부가가치세법 제38조와 효과표를 함께 읽는다. 첫 단서에서 세무조사에서는 장부를 첫 단서로 대조한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-vat-business-input-001.html">사업 관련 매입세액과 비영업용·개인적 지출</a></h3><p class="law-name">부가가치세법</p><p>부가가치세법 제38조의 기준을 금액표로 적는다. 임대 광고전광판 전력비의 매입세액 공제의 판단은 판정표에서 본다. 세무조사에서는 “운영비의 금액표” 자료를 기간선으로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-vat-supply-001.html">재화·용역 공급과 실제 공급자</a></h3><p class="law-name">부가가치세법</p><p>임대 광고전광판 전력비의 매입세액 공제를 검토할 때 부가가치세법 제9조 문언과 세율표 사례를 비교한다. “전력비의 기준표” 자료는 기준표로 확인한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-vat-tax-base-adjustment-001.html">과세표준·에누리·환입·보조금·위약금</a></h3><p class="law-name">부가가치세법</p><p>부가가치세법 제38조 기준은 조사표로 옮겨 적는다. 임대 광고전광판 전력비의 매입세액 공제의 범위는 기준표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [소유자가 지급했다는 이유만으로 공제를 인정]이다. 관련 법령인 부가가치세법 제38조의 요건과 임대 광고전광판 전력비의 매입세액 공제의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [임차인에게 재청구한 전력비의 매출과세를 누락]이다. 관련 법령인 부가가치세법 제38조의 요건과 임대 광고전광판 전력비의 매입세액 공제의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>을이 전력비 전액을 갑에게 정산해 주었다면 매입·매출세액 처리를 다시 구성한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2014-P2-Q1-S2-N2/"><span>이전</span><small>2014년 제51회 세법학 2부 문제 1-2-(2)</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2014-P2-Q2-S1/"><span>다음</span><small>2014년 제51회 세법학 2부 문제 2-1</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2017년 제54회 세법학 1부 문제 3-2 · 분식회계 과다납부세액 공제특례: 수정신고 납부세액에서 최초 과다납부세액의 20% 한도로 공제하고 남은 세액을 이후 사업연도로 이월하는 순서를 계산한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>분식회계 과다납부세액 공제특례: 수정신고 납부세액에서 최초 과다납부세액의 20% 한도로 공제하고 남은 세액을 이후 사업연도로 이월하는 순서를 계산한다.</h1><p>2017년 제54회 세법학 1부 문제 3-2</p><p class="question-progress">86 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2017년 제54회 세법학 1부 문제 3-2</span><span>12점</span></div><p class="source-paragraph">【문제 3】법인의 분식결산은 법인의 이익과 재산을 과대계상할 목적으로 허위의 재무제표를 작성하는 유형과 회사의 임직원이 회사의 재산을 횡령하면서 이를 숨기고 재무제표를 작성하는 유형 등이 있다. 다음 각 사례를 읽고 물음에 답하시오. (30점) &lt;사례 1&gt; 주식회사 A는 기업개선작업 과정에서 실시된 회계감사 결과 분식결산 사실이 발견되어 2016년 12월부터 2017년 6월까지 실지조사 등을 통한 재무제표 감리를 받았다. 그 결과, 2014사업연도에 비용 375억 원을, 2015사업연도에 비용 285억 원을, 2013사업연도까지의 누적된 비용 1,336억 원을 각각 과소계상하여 2015년 12월 31일 기준으로 총 1,996억 원의 비용이 과소계상되었음이 밝혀졌다. 이후 A의 대표이사 등 분식결산 관련 자들은「주식회사의 외부감사에 관한 법률」위반으로 유죄판결을 선고받았다. 한편 과세관청은 A의 접대비한도초과액을 손금불산입하는 등으로 2013, 2014, 2015사업연도의 법인세를 증액경정처분한 바 있다. 이상의 내용과 관련하여 A는 스스로 장부가 조작되 었음을 주장하면서 조작된 부분을 손금산입하여 과세표준과 세액을 다시 계산하여야 한다며 과세관청에 의해 이루어진 부과처분의 취소를 구하였고, 과세관청은 A가 분식 결산이 적발되자 비로소 그 취소를 구하는 것은 신의성실의무에 반하는 것으로서 허용 될 수 없다고 주장하였다. &lt;사례 2&gt; 주식회사 B의 대주주 겸 대표이사인 甲은 2013년 7월 영국령 케이만군도에 역외펀드 를 설립하고, 2013년 8월과 9월 B로 하여금 회사 자금 각 5,000만 달러를 송금하게 한 후, 다시 역외펀드로 하여금 그 중 8,000만 달러를 바하마에 있는 제3자의 개인계좌에 송금하게 하였다. 이에 대하여 과세관청은 甲이 B의 자금 8,000만 달러를 횡령한 것으 로 보아 727억 원(8,000만 달러의 원화환산액)을 해당 사업연도의 익금에 산입하면서 甲에 대한 상여로 소득처분하고, 2017년 6월 9일 B에게 소득금액변동통지를 하였다. 한 편 甲과 그 가족들이 보유하고 있는 B의 지분은 45%였으며, 나머지 지분은 B의 임직 원들과 계열회사 등에 분산되어 있었다. 금융감독원은 횡령이 있은 후 약 1년 6개월이 지나 甲을 수사기관에 고발하였고, 그 후 B는 甲을 상대로 손해배상청구소송을 제기하 여 승소확정 판결을 받았다. 이상의 내용과 관련하여 B는 甲에 대한 손해배상채권을 가 지고 있을 뿐만 아니라 횡령금액을 회수하기 위한 정상적인 절차를 취했으므로 과세관 청의 소득처분은 부당하다고 주장하였다.</p>
+<p class="source-paragraph">[물음 2] [물음 1]과는 별개로, &lt;사례 1&gt;과 같은 경우 「법인세법」 제58조의3에서는 분식결산으로 인한 과다납부세액의 환급을 제한하는 특례규정을 두고 있는 바, 동 규정의 의의와 적용요건 및 구체적인 환급제한 방법에 대하여 설명하시오. (단, 2017년 1월 1일 이후 경정하는 분부터 적용되는 규정을 대상으로 하시오.) (12점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2186083&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%99%201%EB%B6%80.pdf&amp;fileSeq=2186083&amp;artlSeq=5202005&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2017-08-19</p><p>기준일 확인 상태: 상태 미기재</p><p>2017-08-19 적용 출처: 법인세법 LAWREF-CTA-2017-08-19 (https://www.law.go.kr/법령/법인세법/(20170101,14386,20161220)), 국세기본법 LAWREF-NTBA-2017-08-19 (https://www.law.go.kr/법령/국세기본법/(20170101,14382,20161220)). 법인세법 제58조의3 제2항은 과다납부세액을 수정신고 납부세액에서 공제하되 공제액을 최초 과다납부세액의 20%로 제한한다. 국세기본법 제45조의2의 경정청구와 법정 공식조치 요건을 함께 적용한다.</p><h3>현행법과의 차이</h3><p>2017-08-19 시험일과 2026-08-29 현행 법인세법 제58조의3은 사실과 다른 회계처리로 생긴 과다납부세액을 즉시 현금환급하지 않는다. 수정신고 납부세액에는 최초 과다납부세액의 20% 한도에서 먼저 공제하고, 남은 과다납부세액은 이후 사업연도 법인세에서 같은 연간 한도로 공제한다. 2017년 적용본부터 종전 5년 제한이 폐지됐으므로 기간 종료 환급을 쓰지 않는다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>법인세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2017-08-19 · 시행일 2017-01-01) <a href="https://www.law.go.kr/법령/법인세법/(20170101,14386,20161220)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20260701,21217,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>사실과 다른 회계처리로 생긴 과다납부세액이 100이고 수정신고 납부세액이 30인 경우, 최초 과다납부세액의 20% 한도를 적용해 당장 납부할 금액과 남은 과다납부세액을 계산한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>A는 비용 과소계상 분식으로 법인세를 과다납부했다.</li><li>법인,감사인,공인회계사의 법정 제재조치와 경정청구로 과다납부세액이 확정되어야 제58조의3이 적용된다.</li><li>2017년 1월 1일 이후 경정분은 최초 과다납부세액의 20% 연간한도로 후속 법인세에서 공제하며 종전 5년 제한이 없다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 법인세법 제58조의3 제2항, 국세기본법 제45조의2, 법인세법 제58조의3이다.</li><li>자산,이익 과대계상 또는 부채,비용 과소계상으로 거짓 회계처리를 하고 법인,감사인,공인회계사가 증권선물위원회 등으로부터 법정 조치를 받은 뒤 국세기본법 제45조의2에 따라 경정청구하여 과다납부세액이 생겨야 법인세법 제58조의3을 적용한다.</li><li>공제방향,계산: 법인세법 제58조의3 제2항은 과다납부세액을 수정신고 납부세액에서 공제하며, 그 공제액은 최초 과다납부세액의 20%가 한도다.</li><li>잔액 처리,소결: 남은 80은 즉시 환급하지 않고 이후 사업연도 산출세액에서 공제하며, 각 사업연도 공제액도 최초 과다납부세액 100의 20%인 20을 넘지 않는다.</li><li>증빙,세무조사 활용: 사업보고서,감사보고서, 증권선물위원회 조치서, 경정청구 결정, 수정신고서,납부서, 최초 과다납부세액과 사업연도별 공제명세를 대사해 30,20,10,80의 흐름을 검증한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: A는 비용 과소계상 분식으로 법인세를 과다납부했다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 법인,감사인,공인회계사의 법정 제재조치와 경정청구로 과다납부세액이 확정되어야 제58조의3이 적용된다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 2017-08-19 시험일과 2026-08-29 현행 법인세법 제58조의3은 사실과 다른 회계처리로 생긴 과다납부세액을 즉시 현금환급하지 않는다. 수정신고 납부세액에는 최초 과다납부세액의 20% 한도에서 먼저 공제하고, 남은 과다납부세액은 이후 사업연도 법인세에서 같은 연간 한도로 공제한다. 2017년 적용본부터 종전 5년 제한이 폐지됐으므로 기간 종료 환급을 쓰지 않는다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>자산,이익 과대계상 또는 부채,비용 과소계상으로 거짓 회계처리를 하고 법인,감사인,공인회계사가 증권선물위원회 등으로부터 법정 조치를 받은 뒤 국세기본법 제45조의2에 따라 경정청구하여 과다납부세액이 생겨야 법인세법 제58조의3을 적용한다.</li><li>공제방향,계산: 법인세법 제58조의3 제2항은 과다납부세액을 수정신고 납부세액에서 공제하며, 그 공제액은 최초 과다납부세액의 20%가 한도다.</li><li>잔액 처리,소결: 남은 80은 즉시 환급하지 않고 이후 사업연도 산출세액에서 공제하며, 각 사업연도 공제액도 최초 과다납부세액 100의 20%인 20을 넘지 않는다.</li><li>증빙,세무조사 활용: 사업보고서,감사보고서, 증권선물위원회 조치서, 경정청구 결정, 수정신고서,납부서, 최초 과다납부세액과 사업연도별 공제명세를 대사해 30,20,10,80의 흐름을 검증한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>법인세법 제58조의3은 사실과 다른 회계처리로 법인세를 과다납부한 법인에게 즉시 현금환급을 하지 않고, 향후 납부할 법인세에서 연차적으로 공제하게 하는 특례다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>자산·이익을 과대계상하거나 부채·비용을 과소계상하는 등 사실과 다른 회계처리를 하고, 법인·감사인·공인회계사가 증권선물위원회 등의 법정 조치를 받은 뒤, 국세기본법상 경정청구로 과다납부세액이 확정되어야 한다. 시험연도 적용근거인 법인세법 제58조의3 제2항은 수정신고 납부세액에서 공제할 금액을 최초 과다납부세액의 20%로 제한한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>경정으로 확정된 과다납부세액은 그 법인이 수정신고하여 납부할 법인세에서 먼저 공제한다. 한 사업연도의 공제액은 최초 과다납부세액의 20%를 넘을 수 없고, 공제하고 남은 잔액은 다음 사업연도 법인세에서 같은 한도로 계속 공제한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>A의 감리결과·제재조치와 경정청구 결정서로 적용요건을 확인한 뒤, 최초 과다납부세액, 각 연도 수정신고 납부세액, 20% 한도, 이월잔액을 연도별로 표시한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>2017년 1월 1일 이후 경정분에는 종전의 5년 공제기간 제한이 폐지된 규정을 적용한다. 따라서 미공제 잔액을 5년 경과 시 현금으로 환급한다고 쓰지 않고, 후속 사업연도의 산출세액에서 계속 공제한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>판례 연결 분식회계 과다납부세액 공제특례의 판단 질문을 증빙칸으로 만든다. “A의 증빙칸” 자료를 확인축으로 확인한다. 법인세법 제58조의3제2항 근거는 답안에 검산표로 남긴다.</p><h3>쉬운 말로</h3><p>세무조사 분식회계 과다납부세액 공제특례를 증빙칸으로 기억한다. 법인세법 제58조의3제2항에서 확인축을 찾는다. “법인의 확인축” 자료를 검산표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>결론 정리 분식회계 과다납부세액 공제특례의 계산축을 확인축으로 세운다. 수치는 “법인의 확인축”에서 읽는다. 국세기본법 제45조의2를 대입해 좁힌다.</p><h3>쉬운 말로</h3><p>처음에는 분식회계 과다납부세액 공제특례를 확인축으로 기억한다. 국세기본법 제45조의2에서 정리축을 찾는다. “2017년의 정리축” 자료를 자료칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>숫자 확인 법인세법 제58조의3가 정한 확인표를 먼저 본다. 분식회계 과다납부세액 공제특례에 “2017년의 확인표” 자료를 귀속표로 옮긴다. 대응표에서 결론은 법인세법 제58조의3를 근거로 추적한다.</p><h3>쉬운 말로</h3><p>답 선택 세무조사에서는 “A의 귀속표” 증빙을 확인표로 찾는다. 분식회계 과다납부세액 공제특례가 법인세법 제58조의3 선에서 정한다. 대응표에서 결론은 귀속표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>주체 확인 사례의 “A의 적용축” 자료를 적용축으로 분해한다. 분식회계 과다납부세액 공제특례가 법인세법 제13조의 선 안에서 본다. 문언표에서 조사자료는 사례표로 살핀다.</p><h3>쉬운 말로</h3><p>규범부터 분식회계 과다납부세액 공제특례의 계산표를 적용축으로 만든다. “법인의 사례표”에서 수치를 사례표로 옮긴다. 법인세법 제13조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>사실 선택 분식회계 과다납부세액 공제특례를 요건표로 대조한다. 법인세법 제58조의3제2항에서 예외표를 읽는다. 세무조사에서는 “법인의 요건표” 자료를 예외표로 연결한다.</p><h3>쉬운 말로</h3><p>규범부터 “2017년의 예외표”라는 사실을 요건표로 표시한다. 분식회계 과다납부세액 공제특례가 법인세법 제58조의3제2항의 범위에서 판단한다. 예외표에서 증빙은 예외표로 맞춘다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-cta-tax-adjustment-map-001.html">재무제표에서 세무조정으로 가는 기본 지도</a></h3><p class="law-name">법인세법</p><p>법인세법 제13조 기준은 계약표로 옮겨 적는다. 분식회계 과다납부세액 공제특례의 범위는 계산축으로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [수정신고 납부세액을 과다납부세액에서 빼는 반대 방향으로 계산]이다. 관련 법령인 법인세법 제58조의3 제2항의 요건과 분식회계 과다납부세액 공제특례의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [20% 한도의 기준을 최초 과다납부세액이 아니라 남은 잔액으로 바꾸는 것]이다. 관련 법령인 법인세법 제58조의3 제2항의 요건과 분식회계 과다납부세액 공제특례의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [2017년에 폐지된 5년 제한을 적용해 잔액의 현금환급을 단정]이다. 관련 법령인 법인세법 제58조의3 제2항의 요건과 분식회계 과다납부세액 공제특례의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>과다납부세액 100, 수정신고 납부세액 15라면 한도 20보다 납부세액이 작으므로 15 전액을 공제하고 당기 납부액 0·과다납부세액 잔액 85가 되는지 계산한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2017-P1-Q3-S1/"><span>이전</span><small>2017년 제54회 세법학 1부 문제 3-1</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2017-P1-Q3-S3/"><span>다음</span><small>2017년 제54회 세법학 1부 문제 3-3</small></a></nav></main>
+</body>
+</html>

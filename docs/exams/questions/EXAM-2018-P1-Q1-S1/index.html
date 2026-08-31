@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2018년 제55회 세법학 1부 문제 1-1 · 가산세의 의의와 법적 성격: 과세소득 신고 누락에 붙는 가산세가 납세의무 위반에 대한 행정상 제재인지 본세인지 구분한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>가산세의 의의와 법적 성격: 과세소득 신고 누락에 붙는 가산세가 납세의무 위반에 대한 행정상 제재인지 본세인지 구분한다.</h1><p>2018년 제55회 세법학 1부 문제 1-1</p><p class="question-progress">107 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2018년 제55회 세법학 1부 문제 1-1</span><span>7점</span></div><p class="source-paragraph">【문제 1】 다음 사례를 읽고 물음에 답하시오. (20점) &lt;사례&gt; 변호사 甲은 2005년부터 2017년까지 다수의 법인파산사건에 대한 파산관재 업무를 수행하고 지급받은 보수를 기타소득으로 신고하였다. 2014년 2월 과세관청은 해당 소득이 기타소득임을 증명할 수 있는 자료를 제출할 것을 요청하였으나 甲은 아무런 조치를 취하지 않았다. 2018년 5월 과세관청은 이를 기타소득이 아닌 사업소득으로 보아 부과제척기간 내의 과세연도 귀속 종합소득세 부과처분을 하면서 가산세도 함께 부과하였다. 한편, 과세관청은 2002년 질의회신 등을 통하여 변호사이면서 파산관재인으로 일시적 용역을 제공하고 지급받는 대가는 기타소득에 해당하는 것으로 견해를 표명하였으나, 파산관재 업무를 계속적ㆍ반복적으로 수행한 경우에 그 보수가 사업소득에 해당하는지에 대해서는 구체적으로 견해를 밝힌 바 없다. 또한, 세법 해석상으로도 파산관재인의 보수가 사업소득으로 과세될 수 있는지에 대하여 견해의 대립이 있다.</p>
+<p class="source-paragraph">물음 1) 「국세기본법」상 가산세의 의의와 법적 성격에 대하여 설명하시오. (7점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2187520&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%991%EB%B6%80.pdf&amp;fileSeq=2187520&amp;artlSeq=5203643&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2018-08-18</p><p>기준일 확인 상태: 상태 미기재</p><p>2018-08-18 적용 출처: 국세기본법 LAWREF-NTBA-2018-08-18 (https://www.law.go.kr/법령/국세기본법/(20180401,15220,20171219)). 시험일 적용 규정: 국세기본법 제47조·제47조의2 이하.</p><h3>현행법과의 차이</h3><p>가산세의 의의와 법적 성격 — 시험일 기준: LAWREF-NTBA-2018-08-18; 국세기본법 제47조·제47조의2 이하. 2026-08-29 현재 확인 항목: 가산세 체계·명칭·세율과 납부지연가산세 계산방식의 현행 개정. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율·한도 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>국세기본법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2018-08-18 · 시행일 2018-04-01) <a href="https://www.law.go.kr/법령/국세기본법/(20180401,15220,20171219)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-08-11) <a href="https://www.law.go.kr/법령/국세기본법/(20260811,21860,20260811)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>과세소득 신고 누락에 붙는 가산세가 납세의무 위반에 대한 행정상 제재인지 본세인지 구분한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>변호사 甲은 2005년부터 2017년까지 다수의 법인파산사건에 대한 파산관재 업무를 수행하고 지급받은 보수를 기타소득으로 신고하였다.</li><li>2014년 2월 과세관청은 해당 소득이 기타소득임을 증명할 수 있는 자료를 제출할 것을 요청하였으나 甲은 아무런 조치를 취하지 않았다.</li><li>2018년 5월 과세관청은 이를 기타소득이 아닌 사업소득으로 보아 부과제척기간 내의 과세연도 귀속 종합소득세 부과처분을 하면서 가산세도 함께 부과하였다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 국세기본법 제47조이다.</li><li>가산세는 세법상 신고,납부,자료제출 의무의 성실한 이행을 확보하기 위해 본세와 별도로 부과하는 행정상 제재이다.</li><li>신고서 반영: 본세 경정내역에서 위반 유형별 과소신고액,미납기간을 분리하고 2018년 적용 가산세 조문으로 각 가산세를 독립 계산한다.</li><li>사실포섭,소결: 누락소득에 붙은 금액을 본세의 구성부분으로 보지 말고, 위반 유형,과소신고액,기간에 따라 독립 산정하는 제재로 설명한다.</li><li>증빙,세무조사 활용: 본세 경정내역, 가산세 종류,산식, 신고 당시 법령과 납세자 행위를 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 변호사 甲은 2005년부터 2017년까지 다수의 법인파산사건에 대한 파산관재 업무를 수행하고 지급받은 보수를 기타소득으로 신고하였다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 2014년 2월 과세관청은 해당 소득이 기타소득임을 증명할 수 있는 자료를 제출할 것을 요청하였으나 甲은 아무런 조치를 취하지 않았다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 가산세의 의의와 법적 성격 — 시험일 기준: ; 국세기본법 제47조,제47조의2 이하. 2026-08-29 현재 확인 항목: 가산세 체계,명칭,세율과 납부지연가산세 계산방식의 현행 개정. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율,한도 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>가산세는 세법상 신고,납부,자료제출 의무의 성실한 이행을 확보하기 위해 본세와 별도로 부과하는 행정상 제재이다.</li><li>신고서 반영: 본세 경정내역에서 위반 유형별 과소신고액,미납기간을 분리하고 2018년 적용 가산세 조문으로 각 가산세를 독립 계산한다.</li><li>사실포섭,소결: 누락소득에 붙은 금액을 본세의 구성부분으로 보지 말고, 위반 유형,과소신고액,기간에 따라 독립 산정하는 제재로 설명한다.</li><li>증빙,세무조사 활용: 본세 경정내역, 가산세 종류,산식, 신고 당시 법령과 납세자 행위를 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 가산세의 의의와 법적 성격: 과세소득 신고 누락에 붙는 가산세가 납세의무 위반에 대한 행정상 제재인지 본세인지 구분한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법리·법정요건: 가산세는 세법상 신고·납부·자료제출 의무의 성실한 이행을 확보하기 위해 본세와 별도로 부과하는 행정상 제재이다. 고의·과실은 원칙적으로 요건이 아니며 형벌과도 구별된다. 시험연도 적용근거는 국세기본법 제47조·제47조의2 이하이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 세무조정</div><p>본세 경정내역에서 위반 유형별 과소신고액·미납기간을 분리하고 2018년 적용 가산세 조문으로 각 가산세를 독립 계산한다. 본세 취소·감액이 가산세 과세표준에 미치는 영향도 함께 검산한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>증빙·세무조사 활용: 본세 경정내역, 가산세 종류·산식, 신고 당시 법령과 납세자 행위를 확인한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>사실포섭·소결: 누락소득에 붙은 금액을 본세의 구성부분으로 보지 말고, 위반 유형·과소신고액·기간에 따라 독립 산정하는 제재로 설명한다. 적법한 의무와 위반이 있으면 원칙적으로 가산세가 성립하되 정당한 사유 감면을 별도로 심사한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>이 문제 가산세의 의의와 법적 성격의 경계를 첫 단서로 표시한다. “변호사의 첫 단서”의 흔적이 선을 넘는지 본다. 국세기본법 제47조를 근거로 조정 방향을 사실칸으로 설명한다.</p><h3>쉬운 말로</h3><p>사실부터 가산세의 의의와 법적 성격을 첫 단서로 기억한다. 국세기본법 제47조에서 사실칸을 찾는다. “2014년의 사실칸” 자료를 법리칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>재확인 국세기본법 제47조의 원칙을 기록표로 적는다. 예외는 “2014년의 기록표”에서 찾는다. 가산세의 의의와 법적 성격의 결론은 계산칸으로 좁힌다.</p><h3>쉬운 말로</h3><p>첫 복습 가산세의 의의와 법적 성격의 계산표를 기록표로 만든다. “2018년의 계산칸”에서 수치를 계산칸으로 옮긴다. 국세기본법 제47조를 기준으로 검산한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 세무조정</div><h3>왜 필요한가요?</h3><p>첫 단계 가산세의 의의와 법적 성격과 “2018년의 기준표”의 연결을 기준표로 추적한다. 국세기본법 제47조와 기간선을 읽는다. 조사자료는 세율표로 검산한다.</p><h3>쉬운 말로</h3><p>핵심만 세무조사에서는 “변호사의 기간선” 증빙을 기준표로 찾는다. 가산세의 의의와 법적 성격이 국세기본법 제47조 선에서 정한다. 세율표에서 결론은 기간선으로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>법리 출발 국세기본법 제47조가 정한 사례표를 먼저 본다. 가산세의 의의와 법적 성격에 “변호사의 사례표” 자료를 판정선으로 옮긴다. 기준표에서 결론은 국세기본법 제47조를 근거로 추적한다.</p><h3>쉬운 말로</h3><p>서류 대조 가산세의 의의와 법적 성격을 사례표로 기억한다. 국세기본법 제47조에서 판정선을 찾는다. “2014년의 판정선” 자료를 기준표로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>조문 확인 가산세의 의의와 법적 성격을 요건표로 세운다. 국세기본법 제47조에서 주체표를 읽는다. 세무조사에서는 “2014년의 요건표” 자료를 조사표로 맞춘다.</p><h3>쉬운 말로</h3><p>메모할 때 가산세의 의의와 법적 성격의 원칙과 예외를 요건표로 가른다. “2018년의 주체표” 자료를 주체표로 살핀다. 국세기본법 제47조로 효과를 설명한다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-ntba-penalty-001.html">가산세와 정당한 사유</a></h3><p class="law-name">국세기본법</p><p>국세기본법 제47조의 기준을 기록표로 적는다. 가산세의 의의와 법적 성격의 판단은 계산표에서 본다. 세무조사에서는 “변호사의 기록표” 자료를 효과표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-ntba-legality-001.html">조세법률주의와 법원·적용순위</a></h3><p class="law-name">국세기본법</p><p>국세기본법 제47조 기준은 신고표로 옮겨 적는다. 가산세의 의의와 법적 성격의 범위는 순서표로 제한한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [가산세의 의의와 법적 성격에서 국세기본법 제47조,제47조의2 이하의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 국세기본법 제47조의 요건과 가산세의 의의와 법적 성격의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [가산세의 의의와 법적 성격의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 국세기본법 제47조의 요건과 가산세의 의의와 법적 성격의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>세법해석상 의문 없이 단순 계산착오로 과소신고한 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2017-P2-Q4-S3/"><span>이전</span><small>2017년 제54회 세법학 2부 문제 4-3</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2018-P1-Q1-S2/"><span>다음</span><small>2018년 제55회 세법학 1부 문제 1-2</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2018년 제55회 세법학 1부 문제 3-4 · 특수관계인 후순위차입 20% 이자의 부당행위계산: B에게서 50억 원을 연 20% 후순위조건으로 차입해 10억 원을 지급한 거래를 A의 가중평균차입이자율 12%와 사업위험에 비추어 판단한다. | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>특수관계인 후순위차입 20% 이자의 부당행위계산: B에게서 50억 원을 연 20% 후순위조건으로 차입해 10억 원을 지급한 거래를 A의 가중평균차입이자율 12%와 사업위험에 비추어 판단한다.</h1><p>2018년 제55회 세법학 1부 문제 3-4</p><p class="question-progress">117 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2018년 제55회 세법학 1부 문제 3-4</span><span>8점</span></div><p class="source-paragraph">【문제 3】 다음 사례를 읽고 물음에 답하시오. (30점) &lt;사례&gt; 주식회사 A는 2005년 3월 5일 X 고속도로의 건설과 운영을 목적으로 「사회기반시설에 대한 민간투자법」에 의해 설립된 민간투자사업법인이다. A는 건설교통부장관과 2005년 10월 5일 X 고속도로의 준공과 동시에 해당 시설의 소유권을 정부에 귀속시키되, 30년 간 무상사용권 및 관리운영권을 부여받고 추정통행료 수입의 최소 90%를 보장받는 실시협약을 체결하였다. 이에 따라 A는 X 고속도로를 건설하여 2007년 12월 5일 운영을 개시하였다. 주식회사 B는 A의 발행주식 80%를 보유하고 있었고, A는 2007년 12월 23일 B가 보유한 A 발행주식 가액 중 50억원을 유상감자하였다. 이후 A는 2008년 1월 1일 유상감자한 금액을 20년 만기, 고정금리 연 20%의 이자를 매년 말 지급하는 조건으로 B로부터 차입하는 후순위차입약정을 체결하였다. A의 자본구조 변경 후 B의 주식 지분율은 60%였으며 이후 변동되지 않았다. 한편, 건설교통부장관은 최소운영수입보장률을 90%에서 80%로 낮추어 A의 자본구조 변경에 따른 법인세 절감 등의 이익을 정부와 공유한다는 조건으로 A와 B의 후순위차입약정을 2007년 12월 20일 승인하였다. A는 2017년 12월 31일 B에게 지급한 차입금 이자비용 10억원을 법인세 각 사업연도소득에 손금산입하여 2017 사업연도 법인세를 2018년 3월 30일 신고 및 납부하였다. A의 관할 세무서는 2017 사업연도 A의 후순위차입금 이자지급 거래가 경제적 합리성이 없는 특수관계인 간의 거래로 부당행위계산에 해당한다고 판단하여 당좌대출이자율을 초과하는 금액을 손금불산입하여 2018년 8월 10일 법인세를 증액경정처분하였다. (단, 2017년 기획재정부령이 정하는 당좌대출이자율은 5%, A의 가중평균차입이자율은 12%이고, 해당 차입거래와 유사한 상황에서 A가 B 외의 불특정다수인과 계속적으로 거래한 이자율 또는 B가 아닌 제3자 간에 일반적으로 거래한 이자율은 확인되지 않는다고 가정한다.)</p>
+<p class="source-paragraph">물음 4) 위 사례에서 A가 B에게 지급한 이자비용이 「법인세법」상 부당행위계산 부인대상에 해당하는지 여부에 대하여 논하시오. (단, 계산과정은 불필요하다.) (8점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2187520&amp;fileName=%EC%84%B8%EB%B2%95%ED%95%991%EB%B6%80.pdf&amp;fileSeq=2187520&amp;artlSeq=5203643&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2018-08-18</p><p>기준일 확인 상태: 상태 미기재</p><p>2018-08-18 적용 출처: 법인세법 LAWREF-CTA-2018-08-18 (https://www.law.go.kr/법령/법인세법/(20180101,15222,20171219)). 시험일 적용 규정: 법인세법 제52조 및 당시 시행령 제89조. 보충 시행령 출처 LAWREF-CTA-DECREE-2018-08-18 (https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=204153&amp;efYd=20180731, 확인상태 official_history_version_checked).</p><h3>현행법과의 차이</h3><p>특수관계인 후순위차입 20% 이자의 부당행위계산 — 시험일 기준: LAWREF-CTA-2018-08-18; 법인세법 제52조 및 당시 시행령 제89조. 2026-08-29 현재 확인 항목: 금전차입 시가와 후순위·위험 프리미엄을 인정하는 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율·한도 대조 후 정한다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>법인세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2018-08-18 · 시행일 2018-01-01) <a href="https://www.law.go.kr/법령/법인세법/(20180101,15222,20171219)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20260701,21217,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>B에게서 50억 원을 연 20% 후순위조건으로 차입해 10억 원을 지급한 거래를 A의 가중평균차입이자율 12%와 사업위험에 비추어 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>A는 2017년 12월 31일 B에게 지급한 차입금 이자비용 10억원을 법인세 각 사업연도소득에 손금산입하여 2017 사업연도 법인세를 2018년 3월 30일 신고 및 납부하였다.</li><li>A의 관할 세무서는 2017 사업연도 A의 후순위차입금 이자지급 거래가 경제적 합리성이 없는 특수관계인 간의 거래로 부당행위계산에 해당한다고 판단하여 당좌대출이자율을 초과하는 금액을 손금불산입하여 2018년 8월 10일 법인세를 증액경정처분하였다.</li><li>주식회사 B는 A의 발행주식 80%를 보유하고 있었고, A는 2007년 12월 23일 B가 보유한 A 발행주식 가액 중 50억원을 유상감자하였다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 법인세법 제52조이다.</li><li>특수관계 차입의 지급이자도 차입법인 관점의 경제적 합리성과 정상 차입금리를 비교한다.</li><li>산식: 실제이자=50억 원×20%=10억 원, 가중평균차입이자율 12% 적용액=6억 원, 초과액=4억 원.</li><li>사실포섭,소결: B 차입원금 50억 원, 약정금리 20%, 지급이자 10억 원이고 A의 가중평균차입이자율은 12%이다.</li><li>증빙,세무조사 활용: 후순위약정, 자본구조 변경, 정부 승인조건, 5%,12% 비교금리와 10억 이자를 확인한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: A는 2017년 12월 31일 B에게 지급한 차입금 이자비용 10억원을 법인세 각 사업연도소득에 손금산입하여 2017 사업연도 법인세를 2018년 3월 30일 신고 및 납부하였다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: A의 관할 세무서는 2017 사업연도 A의 후순위차입금 이자지급 거래가 경제적 합리성이 없는 특수관계인 간의 거래로 부당행위계산에 해당한다고 판단하여 당좌대출이자율을 초과하는 금액을 손금불산입하여 2018년 8월 10일 법인세를 증액경정처분하였다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 특수관계인 후순위차입 20% 이자의 부당행위계산 — 시험일 기준: ; 법인세법 제52조 및 당시 시행령 제89조. 2026-08-29 현재 확인 항목: 금전차입 시가와 후순위,위험 프리미엄을 인정하는 현행 해석기준. 이 기록은 시험일 시행본을 고정하며, 2026 계산 결론은 해당 최신 세율,한도 대조 후 정한다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>특수관계 차입의 지급이자도 차입법인 관점의 경제적 합리성과 정상 차입금리를 비교한다.</li><li>산식: 실제이자=50억 원×20%=10억 원, 가중평균차입이자율 12% 적용액=6억 원, 초과액=4억 원.</li><li>사실포섭,소결: B 차입원금 50억 원, 약정금리 20%, 지급이자 10억 원이고 A의 가중평균차입이자율은 12%이다.</li><li>증빙,세무조사 활용: 후순위약정, 자본구조 변경, 정부 승인조건, 5%,12% 비교금리와 10억 이자를 확인한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>쟁점은 특수관계인 후순위차입 20% 이자의 부당행위계산: B에게서 50억 원을 연 20% 후순위조건으로 차입해 10억 원을 지급한 거래를 A의 가중평균차입이자율 12%와 사업위험에 비추어 판단한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법리·법정요건: 특수관계 차입의 지급이자도 차입법인 관점의 경제적 합리성과 정상 차입금리를 비교한다. 후순위 위험, 무담보, 장기성 등 실제 조건 차이는 시가 조정요소가 될 수 있다. 시험연도 적용근거는 법인세법 제52조 및 당시 시행령 제89조이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 계산</div><p>실제이자=50억 원×20%=10억 원, 가중평균차입이자율 12% 적용액=6억 원, 초과액=4억 원. 소결: 후순위 위험이 20%를 정당화하지 못한 범위에서 4억 원을 손금불산입한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 사실 포섭</div><p>증빙·세무조사 활용: 후순위약정, 자본구조 변경, 정부 승인조건, 5%·12% 비교금리와 10억 이자를 확인한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>사실포섭·소결: B 차입원금 50억 원, 약정금리 20%, 지급이자 10억 원이고 A의 가중평균차입이자율은 12%이다. 후순위성과 최소운영수입 보장 축소라는 사정을 독립 거래조건과 비교한다. 12%를 시가로 적용하면 정상 이자 6억 원을 넘는 4억 원이 부당행위계산 대상이지만 후순위 위험이 독립가격으로 입증되면 그 범위를 다시 정한다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>장부 대조 “A의 주체선”라는 사실을 주체선으로 잡는다. 법인세법 제52조의 요건은 사실축에서 확인한다. 특수관계인 후순위차입 20 이자의 부당행위계산의 효과를 공제표로 세운다.</p><h3>쉬운 말로</h3><p>사례를 보면 “A의 사실축”라는 사실을 주체선으로 표시한다. 특수관계인 후순위차입 20 이자의 부당행위계산이 법인세법 제52조의 범위에서 판단한다. 공제표에서 증빙은 사실축으로 맞춘다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>숫자 확인 법인세법 제52조가 정한 경계선을 먼저 본다. 특수관계인 후순위차입 20 이자의 부당행위계산에 “A의 경계선” 자료를 기록표로 옮긴다. 확인표에서 결론은 법인세법 제52조를 근거로 세운다.</p><h3>쉬운 말로</h3><p>사례를 보면 세무조사에서는 “주식회사의 기록표” 증빙을 경계선으로 찾는다. 특수관계인 후순위차입 20 이자의 부당행위계산이 법인세법 제52조 선에서 정한다. 확인표에서 결론은 기록표로 기록한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 계산</div><h3>왜 필요한가요?</h3><p>결론 정리 법인세법 제52조의 원칙을 판례표로 적는다. 예외는 “주식회사의 판례표”에서 찾는다. 특수관계인 후순위차입 20 이자의 부당행위계산의 결론은 조사표로 분리한다.</p><h3>쉬운 말로</h3><p>문장 풀이 특수관계인 후순위차입 20 이자의 부당행위계산을 판례표로 복습한다. 법령은 법인세법 제52조로 확인하고, “A의 조사표”에서 핵심을 조사표로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>계산 시작 특수관계인 후순위차입 20 이자의 부당행위계산과 “A의 금액표”의 연결을 금액표로 설명한다. 법인세법 제52조와 기록표를 읽는다. 조사자료는 귀속표로 기록한다.</p><h3>쉬운 말로</h3><p>사실 표시 법인세법 제52조가 정한 금액표를 읽는다. 특수관계인 후순위차입 20 이자의 부당행위계산에 “A의 기록표” 자료를 기록표로 대입한다. 결과는 귀속표로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>기초부터 사례의 “A의 원칙표” 자료를 원칙표로 분해한다. 특수관계인 후순위차입 20 이자의 부당행위계산이 법인세법 제52조의 선 안에서 본다. 적용축에서 조사자료는 검산표로 검증한다.</p><h3>쉬운 말로</h3><p>자료 정리 법인세법 제52조가 정한 원칙표를 읽는다. 특수관계인 후순위차입 20 이자의 부당행위계산에 “주식회사의 검산표” 자료를 검산표로 대입한다. 결과는 적용축으로 적는다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-cta-related-party-001.html">부당행위계산 부인의 요건과 경제적 합리성</a></h3><p class="law-name">법인세법</p><p>법인세법 제52조 기준은 대사표로 옮겨 적는다. 특수관계인 후순위차입 20 이자의 부당행위계산의 범위는 판정선으로 제한한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-cta-loan-imputed-interest-001.html">가지급금·대여금·인정이자</a></h3><p class="law-name">법인세법</p><p>법인세법 제52조의 기준을 법리표로 적는다. 특수관계인 후순위차입 20 이자의 부당행위계산의 판단은 사실축에서 본다. 세무조사에서는 “A의 법리표” 자료를 법리표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">related</div><h3><a href="../../../lesson-reader/material-cta-affiliate-support-001.html">계열사 지원·지급보증·상표권·경영자문료</a></h3><p class="law-name">법인세법</p><p>세무조사에서는 “주식회사의 대응표” 증빙을 대응표로 찾는다. 특수관계인 후순위차입 20 이자의 부당행위계산의 효과는 법인세법 제52조와 연결한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [특수관계인 후순위차입 20% 이자의 부당행위계산에서 법인세법 제52조 및 당시 시행령 제89조의 적용시점과 법정요건을 쓰지 않는 것]이다. 관련 법령인 법인세법 제52조의 요건과 특수관계인 후순위차입 20% 이자의 부당행위계산의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [특수관계인 후순위차입 20% 이자의 부당행위계산의 소결에 이르는 핵심 사실과 반대사실을 증빙에 연결]이다. 관련 법령인 법인세법 제52조의 요건과 특수관계인 후순위차입 20% 이자의 부당행위계산의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>후순위 위험을 반영한 독립 금융기관의 12% 대출제안서가 있는 경우로 바꾼다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2018-P1-Q3-S3/"><span>이전</span><small>2018년 제55회 세법학 1부 문제 3-3</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2018-P1-Q4-S1/"><span>다음</span><small>2018년 제55회 세법학 1부 문제 4-1</small></a></nav></main>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <title>2015년 제52회 세법학 1부 문제 3-2-② · 결손금 보전에 사용한 출자전환 채무면제익의 익금 | 세무사 2차 기출문제 학습</title>
+  <style>
+    :root {
+      --ink: #16283d;
+      --muted: #536170;
+      --stone-0: #f8f5ed;
+      --stone-1: #eee9dd;
+      --stone-2: #ddd5c6;
+      --paper: #fffdf7;
+      --line: #8d9aa5;
+      --control-line: #687684;
+      --official: #155d9c;
+      --verified: #0b6f69;
+      --verified-soft: #d9ece8;
+      --amber: #8b4d00;
+      --amber-soft: #f6e4c4;
+      --focus: #005fcc;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--stone-0);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--stone-0);
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Malgun Gothic", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: var(--official);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 0.08em;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    ::selection { color: var(--ink); background: var(--verified-soft); }
+
+    .skip-link {
+      position: fixed;
+      left: 0.65rem;
+      top: 0.5rem;
+      z-index: 40;
+      min-height: 44px;
+      padding: 0.65rem 0.85rem;
+      color: var(--paper);
+      background: var(--ink);
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.35rem;
+      padding: max(0.5rem, env(safe-area-inset-top))
+        max(0.65rem, env(safe-area-inset-right))
+        0.5rem max(0.65rem, env(safe-area-inset-left));
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .top-nav a,
+    .bottom-nav a {
+      display: flex;
+      min-height: 44px;
+      align-items: center;
+      justify-content: center;
+      padding: 0.55rem 0.4rem;
+      font-weight: 750;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .top-nav a:hover,
+    .bottom-nav a:hover { color: var(--paper); background: var(--official); }
+
+    .reader-shell {
+      width: min(100% - 1.25rem, 780px);
+      margin: 0 auto;
+      padding: 1rem 0 calc(2.25rem + env(safe-area-inset-bottom));
+    }
+
+    .hero {
+      padding: 2.4rem 0 1.5rem;
+    }
+
+    .hero h1 {
+      max-width: 32ch;
+      margin: 0 0 0.7rem;
+      font-size: 1.8rem;
+      line-height: 1.23;
+      letter-spacing: -0.025em;
+    }
+
+    .hero > p:last-child { margin: 0; color: var(--muted); }
+
+    .question-progress,
+    .section-kicker {
+      margin: 0;
+      color: var(--official);
+      font-size: 0.78rem;
+      font-weight: 850;
+    }
+
+    .question-progress { margin: 0.8rem 0 0; color: var(--muted); }
+
+    .learning-section {
+      margin: 0 0 1rem;
+      padding: clamp(1.1rem, 4vw, 2rem);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      scroll-margin-top: 4.5rem;
+    }
+
+    .learning-section:nth-of-type(even) { background: var(--stone-0); }
+
+    .learning-section > h2 {
+      margin: 0.15rem 0 1.1rem;
+      font-size: 1.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+    }
+
+    h3 { margin: 1rem 0 0.35rem; font-size: 1rem; }
+    p { margin: 0.45rem 0 0.9rem; }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.8rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .source-paragraph {
+      white-space: normal;
+      line-height: 1.82;
+    }
+
+    .source-credit,
+    .answer-warning,
+    .law-bridge,
+    .precedent-box {
+      margin-top: 1.2rem;
+      padding: 1rem;
+      background: var(--verified-soft);
+    }
+
+    .source-credit {
+      display: grid;
+      gap: 0.3rem;
+      font-size: 0.9rem;
+    }
+
+    .law-bridge { background: var(--stone-1); }
+
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+    }
+
+    .source-table {
+      width: 100%;
+      min-width: 32rem;
+      border-collapse: collapse;
+      background: var(--paper);
+    }
+
+    .source-table caption {
+      padding: 0.7rem;
+      background: var(--stone-1);
+      font-weight: 800;
+      text-align: left;
+    }
+
+    .source-table th,
+    .source-table td {
+      padding: 0.65rem;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .source-table th { background: var(--stone-0); }
+
+    .reading-lead,
+    .reading-grid article,
+    .practice-grid article,
+    .related-card,
+    .explanation-card {
+      padding: 1rem;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .reading-lead { border-top: 4px solid var(--official); }
+
+    .reading-grid,
+    .practice-grid,
+    .related-grid {
+      display: grid;
+      gap: 0.75rem;
+      margin-top: 0.85rem;
+    }
+
+    .plain-list { margin: 0.4rem 0 0; padding-left: 1.25rem; }
+    .plain-list li + li { margin-top: 0.45rem; }
+
+    .glance-list {
+      display: grid;
+      gap: 0.7rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: glance;
+    }
+
+    .glance-list li {
+      position: relative;
+      min-height: 3rem;
+      padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+      background: var(--verified-soft);
+      counter-increment: glance;
+    }
+
+    .glance-list li::before {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.65rem;
+      display: grid;
+      width: 1.8rem;
+      height: 1.8rem;
+      place-items: center;
+      border-radius: 999px;
+      color: var(--paper);
+      background: var(--verified);
+      content: counter(glance);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .answer-warning {
+      display: grid;
+      gap: 0.2rem;
+      margin: 0 0 1rem;
+      color: var(--amber);
+      background: var(--amber-soft);
+    }
+
+    .answer-paragraph {
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .answer-paragraph:last-of-type { border-bottom: 0; }
+
+    .answer-label,
+    .relation-badge {
+      display: inline-flex;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      color: var(--verified);
+      background: var(--verified-soft);
+      font-size: 0.76rem;
+      font-weight: 850;
+    }
+
+    .precedent-box ul { margin: 0; padding-left: 1.2rem; }
+    .connection-reason { color: var(--muted); }
+    .explanation-card + .explanation-card { margin-top: 0.75rem; }
+    .relation-badge { text-transform: uppercase; }
+    .related-card h3 { margin-top: 0.55rem; font-size: 1.08rem; }
+    .law-name { color: var(--muted); font-size: 0.87rem; }
+
+    .bottom-nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 0.6rem;
+      margin-top: 1rem;
+      padding: 0.8rem max(0.65rem, env(safe-area-inset-right))
+        calc(0.8rem + env(safe-area-inset-bottom))
+        max(0.65rem, env(safe-area-inset-left));
+    }
+
+    .bottom-nav a {
+      min-height: 52px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .nav-edge { flex-direction: column; }
+    .nav-edge small { color: var(--muted); font-size: 0.67rem; font-weight: 600; }
+    .nav-list { color: var(--paper); background: var(--official) !important; }
+
+    @media (min-width: 680px) {
+      .reader-shell { width: min(100% - 2.5rem, 820px); }
+      .reading-grid { grid-template-columns: repeat(3, 1fr); }
+      .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .practice-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 679px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero h1 { font-size: 1.48rem; }
+      .top-nav a { font-size: 0.76rem; }
+      .learning-section { padding: 1rem 0.85rem; }
+    }
+
+    @media (max-width: 560px) {
+      .table-scroll { overflow-x: visible; border: 0; }
+      .source-table { display: block; min-width: 0; }
+      .source-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+      .source-table tbody,
+      .source-table tr,
+      .source-table td { display: block; }
+      .source-table tr {
+        margin: 0.75rem 0;
+        border: 1px solid var(--line);
+        background: var(--paper);
+      }
+      .source-table td {
+        display: grid;
+        grid-template-columns: minmax(5rem, 35%) minmax(0, 1fr);
+        gap: 0.65rem;
+        border-top: 1px solid var(--line);
+        border-right: 0;
+      }
+      .source-table td:first-child { border-top: 0; }
+      .source-table td::before {
+        content: attr(data-label);
+        color: var(--muted);
+        font-weight: 800;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media print {
+      body { background: #fff; color: #000; font-size: 11pt; }
+      .top-nav,
+      .bottom-nav { display: none; }
+      .reader-shell { width: 100%; padding: 0; }
+      .hero { padding: 0 0 1rem; }
+      .learning-section {
+        break-inside: avoid-page;
+        border: 1px solid #000;
+      }
+      a { color: #000; text-decoration: none; }
+      .table-scroll { overflow: visible; }
+      .source-table { min-width: 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문으로 건너뛰기</a>
+  <nav class="top-nav" aria-label="전체 메뉴"><a href="../../../dashboard/index.html">대시보드</a><a href="../../">기출 쟁점</a><a href="../../archive/">기출 전체</a><a href="../../../precedents/">최신판례</a></nav><main id="main-content" class="reader-shell"><header class="hero"><h1>결손금 보전에 사용한 출자전환 채무면제익의 익금</h1><p>2015년 제52회 세법학 1부 문제 3-2-②</p><p class="question-progress">42 / 362 문항</p></header><section class="learning-section" id="source-question"><div class="section-kicker">01</div><h2>기출문제 원문</h2><div class="source-meta"><span>2015년 제52회 세법학 1부 문제 3-2-②</span><span>배점 미확인</span></div><p class="source-paragraph">【문제 3】다음 사례를 읽고 물음에 답하시오. (30점)</p>
+<p class="source-paragraph">&lt;사례&gt; 발행주식 총수가 100주(주당 액면가액 2억 원, 주당 발행가액 3억 원, 자본금 200억 원)인 영리내국법인 주식회사 A는 2010년에 주식발행액면초과액을 전부 자본전입하여 무상주를 교부하였다. 그러나 자본전입 당시에 상법상 자기주식의 취득이 제한되어 A가 보유한 자기주식에 대한 신주를 A에게 무상교부하지 못하였다. 따라서 거주자인 다른 주주들이 자기주식 지분에 대하여 무상으로 교부될 신주에 해당하는 만큼의 주식을 초과 배정받았다. 그 후 A는 주식회사 B로부터 200억 원을 대출받았으나 계속된 실적부진으로 재무상황이 악화되었다. 그러던 중 2014년에 B는 A에 대한 채권을 전부 A의 주식(주당 액면가액 2억 원, 주당 시가 3억 원, 주당 발행가액 5억 원)으로 출자전환하였다. A는 이로 인한 출자전환 채무면제이익의 일부를 현재까지 공제되지 않은 2000년 사업연도 발생 이월결손금의 보전에 충당하였다.</p>
+<p class="source-paragraph">2. 위 사례에서 B의 출자전환으로 A에게 발생한 ① 주식발행액면초과액과 채무면제이익을 계산하고, ② A가 이월결손금의 보전에 충당한 채무면제이익이 익금에 산입되는지 여부 및 ③ 이월결손금의 공제시한이 존재함에도 불구하고 A가 채무면제이익의 일부를 2000년 사업연도 발생 이월결손금의 보전에 충당한 것이 적법한지 여부를 설명하시오. (15점)</p><aside class="source-credit" aria-label="원문 출처와 이용조건"><strong>출처</strong> <a href="https://www.q-net.or.kr/cst003.do?id=cst00302s01&amp;gSite=L&amp;gId=22&amp;fileCode=R001&amp;filePath=bbs%2fQ004%2fQ004_2126755&amp;fileName=3%EA%B5%90%EC%8B%9C(%EC%84%B8%EB%B2%95%ED%95%991%EB%B6%80)%20%EC%8B%9C%ED%97%98%EB%AC%B8%EC%A0%9C.hwp&amp;fileSeq=2126755&amp;artlSeq=5143403&amp;href=0">한국산업인력공단 Q-Net 공식 문제지</a><span>공공누리 제1유형</span><span>출처 확인일 2026-08-29</span></aside><div class="law-bridge"><h3>시험 당시 법령</h3><p>시험 법령 기준일: 2015-08-08</p><p>기준일 확인 상태: 상태 미기재</p><p>2015-08-08 Q-Net 공식 일정의 제52회 시험 기준. 국가법령정보센터 시행본(20150319, 20150721)의 법인세법 제15조·제16조·제17조·제18조, 법인세법 시행령 제11조·제15조와 관련 부칙을 적용했다.</p><h3>현행법과의 차이</h3><p>결손금 보전에 사용한 출자전환 채무면제익의 익금: 주식발행액면초과액·출자전환 채무면제익의 자본거래 구분은 유지되지만 적격 회생·금융기관 과세이연의 적용범위와 기한은 현행 규정을 따른다.</p><div class="official-law-sources"><h3>공식 법령 원문</h3><ul><li><strong>법인세법</strong><ul><li><strong>시험일 시행본</strong> (기준일 2015-08-08 · 시행일 2015-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20150701,12850,20141223)">국가법령정보센터 원문</a></li><li><strong>현행 대조본</strong> (기준일 2026-08-29 · 시행일 2026-07-01) <a href="https://www.law.go.kr/법령/법인세법/(20260701,21217,20251223)">국가법령정보센터 원문</a></li></ul></li></ul></div></div></section><section class="learning-section" id="beginner-reading"><div class="section-kicker">02</div><h2>초보자용 문제 읽기</h2><div class="reading-lead"><h3>무엇을 답해야 하나요?</h3><p>A가 출자전환 채무면제익을 오래된 세무상 결손금 보전에 충당한 경우 익금불산입 범위를 판단한다.</p></div><div class="reading-grid"><article><h3>핵심 사실</h3><ul class="plain-list"><li>2000년 발생 결손금이 현재까지 공제되지 않았다는 사실과 실제 보전 회계처리를 확인한다.</li><li>채무면제익에서 실제 보전에 충당한 세무상 결손금 잔액을 한도로 익금,익금불산입액을 나눈다.</li></ul></article><article><h3>먼저 알 개념</h3><ul class="plain-list"><li>시험 당시 적용할 직접 법령은 법인세법 제15조, 법인세법 시행령 제11조이다.</li><li>법인세법 제15조,제16조,제17조,제18조, 법인세법 시행령 제11조,제15조.</li><li>채무면제익에서 실제 보전에 충당한 세무상 결손금 잔액을 한도로 익금,익금불산입액을 나눈다.</li><li>2000년 발생 결손금이 현재까지 공제되지 않았다는 사실과 실제 보전 회계처리를 확인한다.</li><li>출자전환 채무면제이익을 세법상 이월결손금 보전에 충당한 금액은 제18조에 따라 익금불산입하고 남는 금액만 과세소득에 반영한다.</li></ul></article><article><h3>헷갈리기 쉬운 점</h3><ul class="plain-list"><li>먼저 표시할 사실: 2000년 발생 결손금이 현재까지 공제되지 않았다는 사실과 실제 보전 회계처리를 확인한다. 이 사실이 적용 범위를 가른다.</li><li>따로 확인할 사실: 채무면제익에서 실제 보전에 충당한 세무상 결손금 잔액을 한도로 익금,익금불산입액을 나눈다. 앞 사실과 섞지 않고 별도로 판단한다.</li><li>현행 대조: 결손금 보전에 사용한 출자전환 채무면제익의 익금: 주식발행액면초과액,출자전환 채무면제익의 자본거래 구분은 유지되지만 적격 회생,금융기관 과세이연의 적용범위와 기한은 현행 규정을 따른다.</li></ul></article></div></section><section class="learning-section" id="answer-glance"><div class="section-kicker">03</div><h2>한눈에 보는 정답</h2><ol class="glance-list"><li>법인세법 제15조,제16조,제17조,제18조, 법인세법 시행령 제11조,제15조.</li><li>채무면제익에서 실제 보전에 충당한 세무상 결손금 잔액을 한도로 익금,익금불산입액을 나눈다.</li><li>2000년 발생 결손금이 현재까지 공제되지 않았다는 사실과 실제 보전 회계처리를 확인한다.</li><li>출자전환 채무면제이익을 세법상 이월결손금 보전에 충당한 금액은 제18조에 따라 익금불산입하고 남는 금액만 과세소득에 반영한다.</li></ol></section><section class="learning-section" id="model-answer"><div class="section-kicker">04</div><h2>완성형 학습용 모범답안</h2><div class="answer-warning"><strong>학습용 모범답안이며 공식답안이 아님</strong><span>Q-Net 공식 채점기준이 아님</span></div><article class="answer-paragraph"><div class="answer-label">문단 1 · 쟁점</div><p>결손금 보전에 사용한 출자전환 채무면제익의 익금에 답하려면 먼저 2000년 발생 결손금이 현재까지 공제되지 않았다는 사실과 실제 보전 회계처리를 확인한다는 사실을 확인해야 한다. 답안은 Ⅰ 채무면제익 익금 원칙, Ⅱ 결손금 보전 사용, Ⅲ 익금불산입 한도, Ⅳ 세무조정이다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 2 · 법령·법리</div><p>법인세법 제15조·제16조·제17조·제18조, 법인세법 시행령 제11조·제15조. 채무면제이익 중 세무상 결손금 보전에 충당한 금액은 법정 요건과 한도에서 익금불산입될 수 있으며 장부상 결손과 세무상 결손을 구분한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 3 · 사실 포섭</div><p>사례 포섭은 두 단계다. 첫째, 2000년 발생 결손금이 현재까지 공제되지 않았다는 사실과 실제 보전 회계처리를 확인한다는 사실을 법정 요건과 대조한다. 둘째, 채무면제익에서 실제 보전에 충당한 세무상 결손금 잔액을 한도로 익금·익금불산입액을 나눈다는 사실을 확인한다. 그 결과 출자전환 채무면제이익을 세법상 이월결손금 보전에 충당한 금액은 제18조에 따라 익금불산입하고 남는 금액만 과세소득에 반영한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 4 · 세무조정</div><p>당기에 인식한 채무면제익 중 실제로 세무상 미공제 결손금 보전에 충당한 금액은 그 결손금 잔액을 한도로 익금불산입한다. 보전에 쓰지 않은 미충당 채무면제익과 결손금 잔액을 초과한 부분은 당기 과세소득에 남긴다. 장부에 채무면제익 전액을 수익으로 계상했다면 충당액만 익금불산입하는 세무조정을 기록한다.</p></article><article class="answer-paragraph"><div class="answer-label">문단 5 · 결론</div><p>따라서 익금불산입액은 당기 채무면제익, 실제 결손보전액과 세무상 미공제 결손금 잔액 중 가장 작은 금액이다. 나머지 미충당 금액은 당기 과세소득에 산입하며, 문제에 실제 충당액이 없으므로 임의 숫자를 만들지 않고 이 한도식으로 결론낸다.</p></article></section><section class="learning-section" id="answer-explanations"><div class="section-kicker">05</div><h2>초보자용 답안 해설</h2><article class="explanation-card"><div class="answer-label">문단 1 · 쟁점</div><h3>왜 필요한가요?</h3><p>재검토 결손금 보전에 사용한 출자전환 채무면제익의 익금을 첫 단서로 고정한다. 법인세법 제15조에서 사실표를 읽는다. 세무조사에서는 “2000년의 첫 단서” 자료를 귀속표로 대조한다.</p><h3>쉬운 말로</h3><p>주체 점검 법인세법 제15조가 정한 첫 단서를 읽는다. 결손금 보전에 사용한 출자전환 채무면제익의 익금에 “채무면제익의 사실표” 자료를 사실표로 대입한다. 결과는 귀속표로 적는다.</p></article><article class="explanation-card"><div class="answer-label">문단 2 · 법령·법리</div><h3>왜 필요한가요?</h3><p>법률효과 결손금 보전에 사용한 출자전환 채무면제익의 익금과 “채무면제익의 공제표”의 연결을 공제표로 고정한다. 법인세령 제11조와 순서표를 읽는다. 조사자료는 증빙칸으로 연결한다.</p><h3>쉬운 말로</h3><p>소득 구분 결손금 보전에 사용한 출자전환 채무면제익의 익금을 공제표로 기억한다. 법인세령 제11조에서 순서표를 찾는다. “2000년의 순서표” 자료를 증빙칸으로 확인한다.</p></article><article class="explanation-card"><div class="answer-label">문단 3 · 사실 포섭</div><h3>왜 필요한가요?</h3><p>수치 검산 “2000년의 적용축”라는 사실을 적용축으로 잡는다. 법인세법 제15조의 요건은 사실축에서 확인한다. 결손금 보전에 사용한 출자전환 채무면제익의 익금의 효과를 조사표로 연결한다.</p><h3>쉬운 말로</h3><p>두 번째 결손금 보전에 사용한 출자전환 채무면제익의 익금의 원칙과 예외를 적용축으로 가른다. “채무면제익의 사실축” 자료를 사실축으로 살핀다. 법인세법 제15조로 효과를 설명한다.</p></article><article class="explanation-card"><div class="answer-label">문단 4 · 세무조정</div><h3>왜 필요한가요?</h3><p>결론 정리 결손금 보전에 사용한 출자전환 채무면제익의 익금의 판단 질문을 귀속표로 만든다. “채무면제익의 귀속표” 자료를 확인표로 확인한다. 법인세령 제11조 근거는 답안에 예외표로 남긴다.</p><h3>쉬운 말로</h3><p>기준 설정 결손금 보전에 사용한 출자전환 채무면제익의 익금을 귀속표로 복습한다. 법령은 법인세령 제11조로 확인하고, “2000년의 확인표”에서 핵심을 확인표로 다시 본다.</p></article><article class="explanation-card"><div class="answer-label">문단 5 · 결론</div><h3>왜 필요한가요?</h3><p>답안 압축 결손금 보전에 사용한 출자전환 채무면제익의 익금과 “2000년의 확인표”의 연결을 확인표로 가른다. 법인세법 제15조와 수치표를 읽는다. 조사자료는 주체선으로 확인한다.</p><h3>쉬운 말로</h3><p>요건표 작성 “채무면제익의 수치표”라는 사실을 확인표로 표시한다. 결손금 보전에 사용한 출자전환 채무면제익의 익금이 법인세법 제15조의 범위에서 판단한다. 주체선에서 증빙은 수치표로 맞춘다.</p></article></section><section class="learning-section" id="related-issues"><div class="section-kicker">06</div><h2>관련 쟁점 연결</h2><div class="related-grid"><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-cta-gross-income-001.html">익금의 범위와 귀속시기</a></h3><p class="law-name">법인세법</p><p>법인세법 제15조의 기준을 대사표로 적는다. 결손금 보전에 사용한 출자전환 채무면제익의 익금의 판단은 사실표에서 본다. 세무조사에서는 “2000년의 대사표” 자료를 답안표로 대조한다.</p></article><article class="related-card"><div class="relation-badge">direct</div><h3><a href="../../../lesson-reader/material-cta-tax-adjustment-map-001.html">재무제표에서 세무조정으로 가는 기본 지도</a></h3><p class="law-name">법인세법</p><p>세무조사에서는 “채무면제익의 판례표” 증빙을 판례표로 찾는다. 결손금 보전에 사용한 출자전환 채무면제익의 익금의 효과는 법인세법 제15조와 연결한다.</p></article></div><div class="practice-grid"><article><h3>자주 하는 실수</h3><ul class="plain-list"><li>답안에서 빠지기 쉬운 내용은 [채무면제익 전액을 결손 여부와 무관하게 익금불산입]이다. 관련 법령인 법인세법 제15조의 요건과 결손금 보전에 사용한 출자전환 채무면제익의 익금의 효과까지 적어야 결론이 완성된다.</li><li>답안에서 빠지기 쉬운 내용은 [회계상 이월결손과 세무상 결손을 동일시]이다. 관련 법령인 법인세법 제15조의 요건과 결손금 보전에 사용한 출자전환 채무면제익의 익금의 효과까지 적어야 결론이 완성된다.</li></ul></article><article><h3>변형 연습문제</h3><p>채무면제익이 결손금 잔액을 초과했다면 초과분의 익금을 계산한다.</p></article></div></section><nav class="bottom-nav" aria-label="문항 이동"><a class="nav-edge" rel="prev" href="../EXAM-2015-P1-Q3-S2-C1/"><span>이전</span><small>2015년 제52회 세법학 1부 문제 3-2-①</small></a><a class="nav-list" href="../../archive/">기출 목록</a><a class="nav-edge" rel="next" href="../EXAM-2015-P1-Q3-S2-C3/"><span>다음</span><small>2015년 제52회 세법학 1부 문제 3-2-③</small></a></nav></main>
+</body>
+</html>
