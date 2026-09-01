@@ -373,6 +373,84 @@
       padding-bottom: 4rem;
     }
 
+    .lesson-completion {
+      margin: 0 clamp(1.25rem, 4vw, 2.8rem) 4rem;
+      padding: 1.35rem 1.2rem 1.5rem;
+      border: 2px solid var(--blue);
+      background: var(--stone-0);
+    }
+
+    .lesson-completion__label {
+      margin: 0;
+      color: var(--blue);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+    }
+
+    .lesson-completion > h2 {
+      margin: 0.3rem 0 0;
+      font-size: clamp(1.35rem, 3vw, 1.7rem);
+      font-weight: 900;
+    }
+
+    .lesson-completion__note {
+      margin: 0.65rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+    }
+
+    .lesson-completion__actions {
+      margin-top: 1.1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+    }
+
+    .lesson-completion__button,
+    .lesson-completion__clear {
+      min-width: 44px;
+      min-height: 44px;
+      padding: 0.6rem 0.95rem;
+      border: 1px solid var(--blue);
+      border-radius: 0;
+      color: var(--paper);
+      background: var(--blue);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .lesson-completion__button:hover,
+    .lesson-completion__button:focus-visible {
+      color: var(--paper);
+      background: var(--ink);
+    }
+
+    .lesson-completion__clear {
+      color: var(--blue);
+      background: var(--paper);
+    }
+
+    .lesson-completion__clear:hover,
+    .lesson-completion__clear:focus-visible {
+      color: var(--ink);
+      background: var(--stone-1);
+    }
+
+    .lesson-completion__status {
+      min-height: 1.7em;
+      margin: 0.7rem 0 0;
+      color: var(--teal);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
+
+    .lesson-completion__status[data-state="error"] {
+      color: var(--ink);
+    }
+
     .lesson-section > h2 {
       margin: 0 0 1.25rem;
       padding-bottom: 0.75rem;
@@ -609,8 +687,22 @@
         padding-inline: 1rem;
       }
 
+      .lesson-completion {
+        margin-inline: 1rem;
+      }
+
       .lesson-section {
         padding-top: 3.5rem;
+      }
+
+      .lesson-completion__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .lesson-completion__button,
+      .lesson-completion__clear {
+        width: 100%;
       }
 
       h1 {
@@ -721,7 +813,8 @@
       .progress-strip,
       .dashboard-link,
       .mode-chip,
-      .reader-rail {
+      .reader-rail,
+      .lesson-completion__actions {
         display: none !important;
       }
 
@@ -844,7 +937,7 @@
         <header class="lesson-header">
           <p class="lesson-kicker">Morning tax docket · lesson brief</p>
           <h1 id="lesson-title">세금·공과금·벌금·과태료의 손금성 학습 레슨</h1>
-          <ul class="lesson-meta" aria-label="수업 메타데이터">
+        <ul class="lesson-meta" aria-label="수업 메타데이터">
 <li class="meta-chip">세목 법인세법</li>
 <li class="meta-chip">난도 중급</li>
 <li class="meta-chip">예상 30분</li>
@@ -1306,6 +1399,7 @@
 <p>기준일: 2026-08-27</p>
 <p><a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%B2%95%EC%9D%B8%EC%84%B8%EB%B2%95/%EC%A0%9C21%EC%A1%B0" rel="noopener noreferrer">2026년 7월 1일 시행 법인세법 제21조</a> <a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%B2%95%EC%9D%B8%EC%84%B8%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9" rel="noopener noreferrer">2026년 2월 27일 시행 법인세법 시행령</a> <a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%EB%B2%95%EC%9D%B8%EC%84%B8%EB%B2%95%EC%8B%9C%ED%96%89%EA%B7%9C%EC%B9%99" rel="noopener noreferrer">2026년 7월 1일 시행 법인세법 시행규칙과 별지서식</a> <a href="https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?mi=2323&amp;cntntsId=7706" rel="noopener noreferrer">국세청 법인세 신고안내</a></p>
 </section>
+
       </article>
     </main>
   </div>
@@ -1317,6 +1411,154 @@
   <script>
     (() => {
       "use strict";
+
+      const completionKey = "tax-study.lesson-completions.v1";
+      const completionPanel = document.querySelector(
+        "#lesson-completion[data-lesson-id]"
+      );
+      const completionButton = document.querySelector(
+        "#lesson-completion-button"
+      );
+      const completionClear = document.querySelector(
+        "#lesson-completion-clear"
+      );
+      const completionStatus = document.querySelector(
+        "#lesson-completion-status"
+      );
+      const completionId = completionPanel
+        ? completionPanel.getAttribute("data-lesson-id")
+        : null;
+      const completionDatePattern = /^\d{4}-\d{2}-\d{2}$/;
+      const completionLessonPattern = /^LESSON-[A-Z0-9-]+$/;
+
+      const setCompletionStatus = (message, state) => {
+        if (!completionStatus) {
+          return;
+        }
+        completionStatus.textContent = message;
+        completionStatus.setAttribute("data-state", state);
+      };
+
+      const completionStorage = (() => {
+        if (!completionPanel || !completionId) {
+          return null;
+        }
+        try {
+          if (!window.localStorage) {
+            throw new Error("localStorage unavailable");
+          }
+          return window.localStorage;
+        } catch (error) {
+          setCompletionStatus(
+            "이 브라우저에서는 완료 표시를 저장할 수 없습니다.",
+            "error"
+          );
+          return null;
+        }
+      })();
+
+      const readCompletions = () => {
+        const completions = Object.create(null);
+        if (!completionStorage) {
+          return completions;
+        }
+        try {
+          const stored = completionStorage.getItem(completionKey);
+          if (!stored || stored.length > 24000) {
+            return completions;
+          }
+          const parsed = JSON.parse(stored);
+          if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+            return completions;
+          }
+          Object.keys(parsed).slice(0, 128).forEach((key) => {
+            if (
+              completionLessonPattern.test(key) &&
+              typeof parsed[key] === "string" &&
+              completionDatePattern.test(parsed[key])
+            ) {
+              completions[key] = parsed[key];
+            }
+          });
+        } catch (error) {
+          setCompletionStatus(
+            "저장된 완료 표시를 읽지 못했습니다. 다시 표시할 수 있습니다.",
+            "error"
+          );
+        }
+        return completions;
+      };
+
+      const writeCompletions = (completions) => {
+        if (!completionStorage) {
+          setCompletionStatus(
+            "이 브라우저에서는 완료 표시를 저장할 수 없습니다.",
+            "error"
+          );
+          return false;
+        }
+        try {
+          completionStorage.setItem(completionKey, JSON.stringify(completions));
+          return true;
+        } catch (error) {
+          setCompletionStatus(
+            "완료 표시를 저장하지 못했습니다. 브라우저 저장 권한이나 공간을 확인하세요.",
+            "error"
+          );
+          return false;
+        }
+      };
+
+      const todayInKorea = () => {
+        try {
+          return new Intl.DateTimeFormat("sv-SE", {
+            timeZone: "Asia/Seoul",
+          }).format(new Date());
+        } catch (error) {
+          return new Date().toISOString().slice(0, 10);
+        }
+      };
+
+      const renderCompletion = (completions, message) => {
+        if (!completionPanel || !completionButton || !completionClear) {
+          return;
+        }
+        const completedOn = completions[completionId];
+        if (completedOn) {
+          completionButton.textContent = `완료 표시됨 · ${completedOn}`;
+          completionClear.hidden = false;
+          setCompletionStatus(
+            "이 기기에만 저장됨 · 공식 진도는 기존 완료 처리 경로에서 갱신합니다.",
+            "success"
+          );
+          return;
+        }
+        completionButton.textContent = "수업 완료";
+        completionClear.hidden = true;
+        if (message) {
+          setCompletionStatus(message, "success");
+        }
+      };
+
+      if (completionPanel && completionButton && completionClear) {
+        if (completionStorage) {
+          renderCompletion(readCompletions(), "");
+        }
+        completionButton.addEventListener("click", () => {
+          const completions = readCompletions();
+          completions[completionId] = todayInKorea();
+          if (writeCompletions(completions)) {
+            renderCompletion(completions, "");
+          }
+        });
+        completionClear.addEventListener("click", () => {
+          const completions = readCompletions();
+          delete completions[completionId];
+          if (writeCompletions(completions)) {
+            renderCompletion(completions, "완료 표시를 지웠습니다.");
+          }
+        });
+      }
 
       const sections = Array.from(
         document.querySelectorAll(".lesson-section[id]")
